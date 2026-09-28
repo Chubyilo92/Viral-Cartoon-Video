@@ -1,0 +1,88 @@
+/* ---------------- SCENES (video 2: "when she says 'i'm fine'") ---------------- */
+const G=1180;
+function phoneMock(x,y,s,rot,build){ctx.save();ctx.translate(x,y);ctx.rotate(rot);ctx.scale(s,s);
+  blob(rectPts(-78,-300,156,300,24),'#2b2830');
+  ctx.save();blob(rectPts(-66,-286,132,272,16),'#eef0f5',{stroke:false});ctx.clip();build();ctx.restore();
+  ctx.restore();}
+function dishPile(x,y,s){ctx.save();ctx.translate(x,y);ctx.scale(s,s);
+  for(let i=0;i<3;i++){ell(0,-i*14,60-i*4,16-i*1.5,'#e7e0d2',{lw:4});}
+  ell(70,6,34,12,'#e7e0d2',{lw:4});ell(70,-2,26,9,'#cfc6b4',{stroke:false});
+  ctx.restore();}
+function raincloudSmall(x,y,a){if(a<=0)return;ctx.save();ctx.globalAlpha=a;cloud(x,y,.34,'#aeb4bb');
+  ctx.strokeStyle='#7fa8c9';ctx.lineWidth=3.5;for(let i=0;i<5;i++){const rx=x-30+i*16,ry=y+24+fract(T*2+i*.3)*30;ctx.beginPath();ctx.moveTo(rx,ry);ctx.lineTo(rx-4,ry+14);ctx.stroke();}
+  ctx.restore();}
+
+const SCENES=[
+{d:5,cap:["when she says","\"i'm fine\" 🙂","she's not","always fine","she's waiting to","see if you 👀","notice"],draw(u){
+  room('#f3cfa8','#d09d72');
+  windowBox(620,430,320,320,()=>{const g=ctx.createLinearGradient(0,430,0,750);g.addColorStop(0,'#f6a878');g.addColorStop(1,'#f9dca8');ctx.fillStyle=g;ctx.fillRect(610,420,340,340);ell(790,690,58,58,'#fbe7a6',{lw:4});});
+  frame(140,470,200,240,(cx,cy)=>heart(cx,cy,58,'#ec7489'));
+  const turn=P(u,1.6,2.4),sm=1-P(u,.4,1.2);
+  pup({kind:'girl',x:560,y:G+10,s:1.4,flip:-1,look:[lerp(0,-.8,turn),0],mouth:lerp(1,0,sm)>0?'smile':'flat',tilt:lerp(0,-.14,turn),eyes:'open',blush:.15});
+  raincloudSmall(760,760,P(u,2.6,3.4));
+  if(u>1.2&&u<2.6){ctx.save();ctx.globalAlpha=win(u,1.2,2.6);bubbleText(760,880,"i'm fine",1,.9);ctx.restore();}
+}},
+{d:6,cap:["she might go quiet","after a long day 😔","not to","punish you","she's just tired","of explaining","the same hurt","twice"],draw(u){
+  room('#e3c9a0','#bf9670');
+  ell(650,G+30,340,80,'#c98f76');ell(650,G+8,280,50,'#f2dcc4',{lw:4});
+  pup({kind:'girl',pose:'lie',x:600,y:G+10,s:1.16,eyes:'closed',mouth:'flat',brows:'sad',blush:.15,breath:1,hy:6,tilt:.06});
+  const walk=P(u,1,3),bx=lerp(-260,260,ease(walk));
+  pup({kind:'boy',x:bx,y:G+18,s:1.28,bob:walk>0&&walk<1?-Math.abs(Math.sin(u*8))*10:0,look:[.8,-.2],eyes:u>3.4?'open':'open',brows:u>3.4?'sad':null,mouth:u>3.4?'flat':'w',earLift:u>3.4?-.3:0});
+  if(u>4)floatHearts(600,880,4,u,0,0);
+  if(u>3.6){ctx.save();ctx.globalAlpha=win(u,3.6,6);ctx.strokeStyle=INK;ctx.lineWidth=3;ctx.setLineDash([8,8]);ctx.beginPath();ctx.moveTo(bx+40,900);ctx.lineTo(560,940);ctx.stroke();ctx.setLineDash([]);ctx.restore();}
+}},
+{d:6.2,cap:["she might bring up","something small","from last week","it's not about","the dishes 🍽️","it's about","feeling heard 💭"],draw(u){
+  room('#f6d7c6','#d6a286');
+  frame(150,470,190,220,(cx,cy)=>{ell(cx-24,cy,24,24,'#f3e2c8');ell(cx+24,cy,24,24,'#dca46a');});
+  dishPile(700,G+70,1.15);
+  pup({kind:'girl',x:600,y:G+10,s:1.34,flip:-1,look:[.4,.3],mouth:'flat',brows:P(u,.3,1)>0?'sad':null,tilt:.05,blush:.1});
+  pup({kind:'boy',x:320,y:G+10,s:1.34,look:[.8,.2],eyes:'wide',mouth:'flat',earLift:-.2,tilt:-.05});
+  if(u>2){const k=pop(u,2,.4);ctx.save();ctx.globalAlpha=win(u,2,5.6);ctx.font='40px Poppins';ctx.textAlign='center';ctx.fillStyle=INK;ctx.strokeStyle='#fffaf0';ctx.lineWidth=6;ctx.strokeText('💭 "you never listen"',700,700);ctx.fillText('💭 "you never listen"',700,700);ctx.restore();}
+}},
+{d:6.4,cap:["she doesn't need","you to fix it 🔧","she needs you to","put the phone down📱","and ask","\"what's really","wrong?\" 🤍"],draw(u){
+  room('#f1d5b0','#caa070');
+  ell(650,G+40,380,64,'#e7b9a0',{lw:5});
+  const put=P(u,1.6,2.6);
+  phoneMock(870-put*40,880-put*140,.42*(1-put*.25),.1-put*.25,()=>{ctx.fillStyle='#dfe4ee';ctx.fillRect(-70,-290,140,280);ctx.fillStyle='#b7c0d4';for(let i=0;i<6;i++)ctx.fillRect(-60,-260+i*38,120,8);});
+  pup({kind:'boy',x:560,y:G+10,s:1.3,look:[lerp(.7,-.6,put),lerp(-.2,.2,put)],tilt:lerp(0,-.1,put),eyes:'open',mouth:u>3?'smile':'w',paw:{x:200,y:-40,k:0}});
+  pup({kind:'girl',x:300,y:G+10,s:1.3,flip:-1,look:[.6,-.1],mouth:u>3.2?'smile':'flat',tilt:u>3.2?.1:0,blush:.35*P(u,3.2,4.2),eyes:u>3.2?'happy':'open'});
+  if(u>3.2)floatHearts(430,800,3.2,u,3,100);
+}},
+{d:4.2,cap:["if you're the one","who goes quiet 🤫","send this to","the one who","keeps asking 💌"],draw(u){
+  room('#e9ceb8','#c39a76',1180,'rgba(255,255,255,.2)');
+  ell(540,G+16,300,30,'#00000010',{stroke:false});
+  const k=pop(u,.2,.4);
+  pup({kind:'girl',x:400,y:G+10,s:1.5,flip:-1,eyes:'happy',mouth:'smile',blush:.5,tilt:-.08,wag:.3});
+  pup({kind:'boy',x:700,y:G+10,s:1.5,eyes:'happy',mouth:'smile',blush:.4,tilt:.08,wag:.3});
+  if(u>.6)floatHearts(540,760,.6,u,5,160);
+  sparkle(540,650,50*k,win(u,.2,3.8));
+}},
+{d:5.8,cap:["but if you only","listen when","it's easy","one day","she'll stop","telling you"],draw(u){
+  room('#8f8b95','#716c75','rgba(255,255,255,.07)');
+  windowBox(610,440,300,300,()=>{ctx.fillStyle='#4d5670';ctx.fillRect(600,430,320,320);ell(820,540,26,26,'#d9d5c4',{lw:4});});
+  pup({kind:'girl',x:540,y:G+10,s:1.36,look:[.5,.5],brows:'sad',mouth:'flat',earLift:-.4,hy:6});
+  phoneMock(830,880,.44,.05,()=>{ctx.fillStyle='#2b2830';ctx.fillRect(-70,-290,140,280);});
+  if(u>1)raincloudSmall(540,730,win(u,1,5.6));
+}},
+{d:5.4,cap:["because the girl","who still tells you","what's wrong","is the girl","who still wants","to make it work 🤍"],draw(u){
+  room('#f1d5b0','#caa070');
+  plant(970,G+6,.9);
+  const hug=P(u,.4,1.4);
+  pup({kind:'girl',x:lerp(560,500,hug),y:G+10,s:1.34,flip:-1,look:[-.3,.2],eyes:'happy',mouth:'smile',tilt:-.1,blush:.5,paw:{x:70,y:-190,k:hug}});
+  pup({kind:'boy',x:lerp(380,440,hug),y:G+10,s:1.34,look:[.4,.1],eyes:'happy',mouth:'smile',tilt:.08,blush:.4,earLift:.1});
+  if(u>1.6)floatHearts(470,800,1.6,u,5,140);
+}},
+{d:7,cap:["overthinking isn't","random 🧠","it's usually your","attachment style","find yours in","60 seconds ⏱️","link in bio 🔗"],draw(u){
+  room('#3d4b6c','#303b57','rgba(255,255,255,.05)');
+  const lg=ctx.createRadialGradient(540,760,20,540,760,560);lg.addColorStop(0,'rgba(255,200,120,.35)');lg.addColorStop(1,'rgba(255,200,120,0)');ctx.fillStyle=lg;ctx.fillRect(-100,-100,W+200,H+200);
+  pup({kind:'girl',x:340,y:G+30,s:1.1,flip:-1,eyes:'happy',mouth:'smile',blush:.4,tilt:-.06,shadow:false,wag:.3});
+  pup({kind:'boy',x:600,y:G+30,s:1.1,eyes:'happy',mouth:'smile',blush:.4,tilt:.06,shadow:false,wag:.3});
+  const rise=pop(u,.5,.5);
+  phoneMock(770,910-rise*40,.62+.05*rise,-.04,()=>{
+    const g=ctx.createLinearGradient(0,-290,0,-10);g.addColorStop(0,'#fbdfe4');g.addColorStop(1,'#fff6e8');ctx.fillStyle=g;ctx.fillRect(-70,-290,140,280);
+    heart(0,-190,44,'#ec7489');ctx.font='bold 20px Poppins';ctx.fillStyle=INK;ctx.textAlign='center';ctx.fillText('Secure',0,-118);
+    ctx.font='15px Poppins';ctx.fillText('attachment style',0,-96);
+    ctx.strokeStyle='#e0a8b4';ctx.lineWidth=3;ctx.beginPath();ctx.roundRect(-46,-70,92,26,13);ctx.stroke();ctx.font='13px Poppins';ctx.fillText('your result ✨',0,-53);
+  });
+  if(u>1.2){ctx.save();ctx.globalAlpha=win(u,1.2,6.6);ctx.font='bold 34px Poppins';ctx.textAlign='center';ctx.fillStyle='#fff8e8';ctx.strokeStyle=INK;ctx.lineWidth=6;ctx.lineJoin='round';ctx.strokeText('🔗 60-sec test in bio',540,1620);ctx.fillText('🔗 60-sec test in bio',540,1620);ctx.restore();}
+}}];
