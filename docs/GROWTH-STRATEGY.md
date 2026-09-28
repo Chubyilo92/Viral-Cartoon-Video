@@ -68,6 +68,11 @@ Rules for picking which quiz:
 - Conflict-resolution videos → the 5-minute-fight-fix feature page instead
   of a quiz (`https://www.coupleinapp.com/solve-fights-in-5-minutes`).
 
+**Current standing simplification (from 2026-09-28 batch onward): use the
+Love Language quiz on every Instagram video regardless of topic**, to keep
+the weekly batch simple while the pipeline is new. Revert to the per-topic
+rule above whenever asked.
+
 End-card pattern (visual: the two pups looking at a phone showing a mock quiz
 result screen):
 
@@ -91,11 +96,16 @@ belongs in bio text or a pinned comment, never the voiceover/end-card.
 
 TikTok's bio link doesn't unlock until 1,000 followers, so the TikTok ending
 asks for a follow instead of a click — but never as a bare "help me get to
-1k," which reads as begging. Two endings chosen, **not yet switched on** —
-turn these on once told to:
+1k," which reads as begging.
 
-**1. The puppies ask, with a live follower counter on screen** (preferred —
-a visible near-complete goal pulls people to finish it):
+**Active as of the 2026-09-28 batch: ending #1 below, on every TikTok video.**
+Starting counter: 4 followers (set 2026-09-28). **Update the on-screen count
+every batch** to the real current TikTok follower number — check it via
+Metricool analytics each run rather than trusting a stale value here or in
+`PRODUCTION-LOG.md`.
+
+**1. The puppies ask, with a live follower counter on screen** (the one in
+active use — a visible near-complete goal pulls people to finish it):
 > "We're two little pups trying to find a thousand people who love like
 > this… If this made you think of someone… follow us. We'll keep making them
 > for you."
@@ -115,10 +125,19 @@ Two more endings discussed but not chosen for regular rotation:
 
 ## Posting
 
-- JJ puppy videos: 2/day on each of Instagram and TikTok.
+- Target cadence once fully ramped: 2/day on each of Instagram and TikTok.
+- **Current standing process (from 2026-09-28): a weekly batch of 6 new
+  videos**, built and QA'd in one session, scheduled as **Metricool drafts**
+  (not auto-published) across the coming week on the JJ account (Metricool
+  brand id `7128333`, IG `@jj_lovemonkey`, TikTok `@jjthelovemonkey`). The
+  user taps publish per post in Metricool — Claude's job is to make sure only
+  videos that pass `docs/QA-CHECKLIST.md` ever reach that stage, so the
+  user's review is a glance, not a line-by-line check.
 - Puppy videos post on a separate profile from the CoupleIn quiz-content
   profile (see `/docs/BRANDS.md` for the full account map).
-- Scheduling goes through Metricool.
+- See `/docs/PRODUCTION-LOG.md` for what's been made, the script rotation
+  order, and the current standing settings (batch size, endings, publish
+  mode) — check it before every batch run since these can change.
 
 ## Quality bar
 

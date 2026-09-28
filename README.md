@@ -18,6 +18,12 @@ prior conversation.
    6 drafted and ready to build, plus scaling ideas.
 4. [`docs/BRANDS.md`](docs/BRANDS.md) — where this fits among the other
    social accounts/repos.
+5. [`docs/PRODUCTION-LOG.md`](docs/PRODUCTION-LOG.md) — what's been made,
+   what's next in rotation, and the current standing batch settings. **Read
+   this first if you're running a batch** — it's the state file.
+6. [`docs/QA-CHECKLIST.md`](docs/QA-CHECKLIST.md) — mechanical checks to run
+   on every video before it's scheduled, since Claude can't watch/listen to
+   verify a video by eye or ear.
 
 ## Repo layout
 
