@@ -4,6 +4,18 @@ Two scripts are fully built (source in `/videos/`). Six more are drafted and
 ready to build — pick from these before inventing a new topic, and check each
 new one against `/docs/GROWTH-STRATEGY.md` before writing scenes.
 
+**Standing approval (2026-09-28): once the drafted list runs dry, invent new
+topics freely** — no need to check back with the user first. The only bar is
+the same one applied to everything else: must be relationship-focused (same
+"loves you" reframe format), must hit the 10/10 quality bar in
+`GROWTH-STRATEGY.md` (cut it rather than ship a weak one), and should be the
+kind of topic likely to generate comments/engagement, not just passive
+watching — pick beats specific enough that people feel named by it and want
+to reply "this is literally us" or debate it in the comments, not generic
+platitudes. Pull from the "Scaling beyond these 8" seed list below first,
+then branch further once those are used. Append every new script here before
+building it, so the library stays the source of truth.
+
 Every script follows the same shape: hook naming the viewer → 3–4 "looks bad,
 but here's the loving reason" beats → a share-line beat → a warning contrast →
 a one-line payoff → a platform-specific ending (quiz for Instagram, follow ask
