@@ -27,9 +27,21 @@ Once all are used, start again with a boy/girl swap of #1 and #2, then a
 relationship-stage variant (long distance, first year living together, etc.
 — see the scaling list at the bottom of `docs/SCRIPTS.md`).
 
+**Note (2026-09-28): at 14 videos/week, the 5 currently-drafted scripts
+(4–8) only cover roughly one batch.** Once the drafted list runs dry mid-run,
+each batch must write new scripts on the fly using the reusable template in
+`docs/GROWTH-STRATEGY.md` §"Why this format at all" and the scaling/topic
+list at the bottom of `docs/SCRIPTS.md`, then append them to `SCRIPTS.md`
+before building, so the script library stays the source of truth rather than
+scripts existing only inside a single batch run.
+
 ## Standing settings (current)
 
-- **6 new videos per weekly batch.**
+- **2 batches per week, 7 new videos per batch — 14 videos/week total**
+  (updated 2026-09-28; was 6/week single batch before any batch had run).
+  Batches run independently (each picks up wherever the rotation order left
+  off, so a mid-week batch continues from the Sunday batch's last script,
+  not from the top).
 - **Instagram ending**: Love Language quiz, on every video, regardless of
   topic (simplification for the initial batches — the per-topic
   Attachment-Style override in `docs/GROWTH-STRATEGY.md` can be reinstated

@@ -126,9 +126,10 @@ Two more endings discussed but not chosen for regular rotation:
 ## Posting
 
 - Target cadence once fully ramped: 2/day on each of Instagram and TikTok.
-- **Current standing process (from 2026-09-28): a weekly batch of 6 new
-  videos**, built and QA'd in one session, scheduled as **Metricool drafts**
-  (not auto-published) across the coming week on the JJ account (Metricool
+- **Current standing process (updated 2026-09-28): two batches per week, 7
+  new videos each — 14 videos/week total**, each built and QA'd in one
+  session, scheduled as **Metricool drafts** (not auto-published) across the
+  coming days on the JJ account (Metricool
   brand id `7128333`, IG `@jj_lovemonkey`, TikTok `@jjthelovemonkey`). The
   user taps publish per post in Metricool — Claude's job is to make sure only
   videos that pass `docs/QA-CHECKLIST.md` ever reach that stage, so the
