@@ -16,6 +16,12 @@ ending used, Metricool post status.
 |---|---|---|---|---|
 | 2026-09-26 | 1. When a boy loves you | Love Language quiz | — (built before TikTok ending existed) | Delivered to user directly, not scheduled |
 | 2026-09-27 | 2. When she says 'I'm fine' | Love Language quiz (per batch default; topic would normally suggest Attachment Style) | — (built before TikTok ending existed) | Delivered to user directly, not scheduled |
+| 2026-09-29 | 2. When she says 'I'm fine' | Love Language quiz (Quality Time) | Follow counter (3/1,000) | Scheduled Mon 5 Oct 10:00 (IG+FB Reel, TikTok) |
+| 2026-09-29 | 1. When a boy loves you | Love Language quiz | Follow counter (3/1,000) | Scheduled Mon 5 Oct 18:00 |
+| 2026-09-29 | 4. Trust (when a hurt girl loves you) | Love Language quiz | Follow counter (3/1,000) | Scheduled Tue 6 Oct 10:00 |
+| 2026-09-29 | 5. Fidelity (a loyal man) | Love Language quiz | Follow counter (3/1,000) | Scheduled Tue 6 Oct 18:00 |
+| 2026-09-29 | 6. Prioritisation | Love Language quiz | Follow counter (3/1,000) | Scheduled Wed 7 Oct 10:00 |
+| 2026-09-29 | 8. Love languages | Love Language quiz | Follow counter (3/1,000) | Scheduled Wed 7 Oct 18:00 |
 
 ## Rotation order for future batches
 
@@ -53,10 +59,9 @@ scripts existing only inside a single batch run.
   TikTok follower count** (starting count: 4, set 2026-09-28 — check the real
   number each run via Metricool analytics rather than trusting this file,
   since it goes stale).
-- **Publish mode: scheduled as Metricool drafts, not auto-published.** The
-  user reviews/taps publish in the Metricool app; Claude's job is to make
-  sure only videos that pass QA reach that stage at all — see
-  `docs/QA-CHECKLIST.md`.
+- **Publish mode (updated 2026-09-29): auto-publish** (`autoPublish:true`, `draft:false`) on Metricool JJ brand 7128333, tz Europe/London. **2 videos/day at 10:00 and 18:00** (TikTok best slots). Each video = one IG+Facebook Reel post (IG cut) + one TikTok post (TikTok cut), same time. **First JJ post: Mon 5 Oct 2026; never schedule earlier.** Each batch starts the day after the last already-scheduled JJ post (check Metricool first).
+- **Pipeline**: all builds use `pipeline/` (see `pipeline/README.md`). Built: scripts 1, 2, 4, 5, 6, 8 (batch of 2026-09-29, scheduled 5-7 Oct). Still unbuilt: 7 (Kids, needs baby pup), then new scripts from the scaling list. Music = the 3 user-supplied sounds (rotated), not synthesized.
+- TikTok follower count on 2026-09-29: 3.
 - **Media hosting**: finished MP4s are pushed to the public `JJCutecouple`
   repo and referenced by their `raw.githubusercontent.com` URL as Metricool's
   media source (Metricool's post tools require a public media URL — there's

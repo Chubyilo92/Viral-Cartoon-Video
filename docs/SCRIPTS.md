@@ -1,6 +1,6 @@
 # Script library
 
-Two scripts are fully built (source in `/videos/`). Six more are drafted and
+Scripts 1, 2, 4, 5, 6 and 8 are built (see PRODUCTION-LOG; specs in `pipeline/specs/`). Originally two scripts were fully built (source in `/videos/`). Six more are drafted and
 ready to build — pick from these before inventing a new topic, and check each
 new one against `/docs/GROWTH-STRATEGY.md` before writing scenes.
 
