@@ -86,3 +86,24 @@ scripts existing only inside a single batch run.
   repo and referenced by their `raw.githubusercontent.com` URL as Metricool's
   media source (Metricool's post tools require a public media URL — there's
   no direct file-upload path from this pipeline).
+
+## Ads / promos (outside the regular weekly rotation)
+
+One-off direct-response ads for CoupleIn itself, narrated by the puppies but
+built and scheduled outside the normal script rotation/cadence above — don't
+count these toward the "7 videos" batch math or the script numbering in
+`docs/SCRIPTS.md`.
+
+| Date | What | Platform | Status |
+|---|---|---|---|
+| 2026-09-30 | "The fight you keep having" — painkiller angle selling CoupleIn's 5-minute fight fix feature, mocked-up phone UI (no real screenshots — coupleinapp.com is blocked by this session's network policy), custom download-CTA end card instead of the usual quiz/follow-counter ending, custom cover image | IG+FB Reel + TikTok (same creative both cuts — no platform-specific ending needed for a direct-response ad) | Scheduled as a 3rd post on 6 Oct 2026, 20:00 Europe/London (that day already had 2 organic posts at 10:00/18:00) |
+
+**Build tool**: `pipeline/build_ad.py <slug>` (not `make_video.py` — ads need
+a custom end card/CTA rather than the quiz or follow-counter ending, so they
+skip `J.end_ig`/`J.end_tt` entirely). Spec needs `TITLE`, `BODY_LINES`,
+`SCENES`, `END_LINE` (CTA voice line), `END_SCENE_JS` (built via `_kit.S`
+like any other scene), optional `PRELUDE`/`MUSIC_N`. Produces
+`<slug>-instagram.mp4` and `<slug>-tiktok.mp4` as identical files. See
+`pipeline/specs/ad_couplein_fightfix.py` for a worked example, including the
+`adTag()`/`appBadge()` PRELUDE helpers for an on-screen "Ad" disclosure tag
+and app-store-style badges.

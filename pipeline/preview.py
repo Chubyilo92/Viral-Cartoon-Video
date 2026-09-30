@@ -4,7 +4,7 @@ import jjlib as J
 slug=sys.argv[1];spec=importlib.import_module(slug)
 W=f'{J.ROOT}/work/{slug}';os.makedirs(W,exist_ok=True)
 n=len(spec.SCENES);dur=[7.0]*n
-html=J.build_html(slug,spec.TITLE,spec.SCENES,dur,J.end_tt(3),6.0)
+html=J.build_html(slug,spec.TITLE,spec.SCENES,dur,J.end_tt(3),6.0,getattr(spec,'PRELUDE',''))
 open(W+'/prev.html','w').write(html)
 from playwright.sync_api import sync_playwright
 with sync_playwright() as p:
