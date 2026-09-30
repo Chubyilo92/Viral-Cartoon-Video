@@ -22,16 +22,35 @@ ending used, Metricool post status.
 | 2026-09-29 | 5. Fidelity (a loyal man) | Love Language quiz | Follow counter (3/1,000) | Scheduled Tue 6 Oct 18:00 |
 | 2026-09-29 | 6. Prioritisation | Love Language quiz | Follow counter (3/1,000) | Scheduled Wed 7 Oct 10:00 |
 | 2026-09-29 | 8. Love languages | Love Language quiz | Follow counter (3/1,000) | Scheduled Wed 7 Oct 18:00 |
+| 2026-09-30 | 9. Overthinker | Love Language quiz (Words of Affirmation) | Follow counter (3/1,000) | Scheduled Thu 8 Oct 10:00 |
+| 2026-09-30 | 10. Bad texter | Love Language quiz (Acts of Service) | Follow counter (3/1,000) | Scheduled Thu 8 Oct 18:00 |
+| 2026-09-30 | 11. Quiet after a fight | Love Language quiz (Quality Time) | Follow counter (3/1,000) | Scheduled Fri 9 Oct 10:00 |
+| 2026-09-30 | 12. Tired/hangry | Love Language quiz (Physical Touch) | Follow counter (3/1,000) | Scheduled Fri 9 Oct 18:00 |
+| 2026-09-30 | 13. Long distance | Love Language quiz (Quality Time) | Follow counter (3/1,000) | Scheduled Sat 10 Oct 10:00 |
+| 2026-09-30 | 14. First year living together | Love Language quiz (Acts of Service) | Follow counter (3/1,000) | Scheduled Sat 10 Oct 18:00 |
+| 2026-09-30 | 15. Guarded heart | Love Language quiz (Physical Touch) | Follow counter (3/1,000) | Scheduled Sun 11 Oct 10:00 |
 
 ## Rotation order for future batches
 
-Pull the next unused script from `docs/SCRIPTS.md` §"Drafted, not yet built"
-in this order (skip any already logged above as built for the platform in
-question): 4 (Trust), 5 (Fidelity), 6 (Prioritisation), 7 (Kids — needs a baby
-puppy prop added to `engine/puppy-engine.js` first), 8 (Love languages).
-Once all are used, start again with a boy/girl swap of #1 and #2, then a
-relationship-stage variant (long distance, first year living together, etc.
-— see the scaling list at the bottom of `docs/SCRIPTS.md`).
+The originally-drafted script list (4–8) is now fully built. #7 (Kids) is
+still skipped — it still needs a baby puppy prop added to
+`engine/puppy-engine.js`. As of the 2026-09-30 batch, scripts 9–15 (new,
+invented topics — see `docs/SCRIPTS.md` §"Batch of 2026-09-30") are also
+built. **Next batch**: pull further topics from the "Scaling beyond these 8"
+seed list in `docs/SCRIPTS.md` (a boy/girl swap of #1/#2, or another
+untouched seed — introvert, tiny things, etc.), invent freely once that list
+is exhausted too (standing approval), append each script to `SCRIPTS.md`
+before building, and keep the 10/10 bar.
+
+**Word-count lesson (2026-09-30): keep each script tight.** The renderer's
+QA duration cap is 75s per cut. At Kokoro `am_michael` speed 0.9, roughly
+0.39s of audio per word plus ~0.75s pad per scene. For 7 body lines + 1 end
+line, that means body word count + end-line word count should stay under
+~165 words total (body lines alone under ~145) to land the IG cut (the
+longer of the two, because its end line is longest) comfortably under 75s.
+Scripts 9 and 12–15 in this batch initially ran 76–90s and needed trimming
+after the first render — write lean the first time instead of relying on a
+second pass.
 
 **Note (2026-09-28): at 14 videos/week, the 5 currently-drafted scripts
 (4–8) only cover roughly one batch.** Once the drafted list runs dry mid-run,
@@ -59,9 +78,10 @@ scripts existing only inside a single batch run.
   TikTok follower count** (starting count: 4, set 2026-09-28 — check the real
   number each run via Metricool analytics rather than trusting this file,
   since it goes stale).
-- **Publish mode (updated 2026-09-29): auto-publish** (`autoPublish:true`, `draft:false`) on Metricool JJ brand 7128333, tz Europe/London. **2 videos/day at 10:00 and 18:00** (TikTok best slots). Each video = one IG+Facebook Reel post (IG cut) + one TikTok post (TikTok cut), same time. **First JJ post: Mon 5 Oct 2026; never schedule earlier.** Each batch starts the day after the last already-scheduled JJ post (check Metricool first).
-- **Pipeline**: all builds use `pipeline/` (see `pipeline/README.md`). Built: scripts 1, 2, 4, 5, 6, 8 (batch of 2026-09-29, scheduled 5-7 Oct). Still unbuilt: 7 (Kids, needs baby pup), then new scripts from the scaling list. Music = the 3 user-supplied sounds (rotated), not synthesized.
-- TikTok follower count on 2026-09-29: 3.
+- **Publish mode (updated 2026-09-29): auto-publish** (`autoPublish:true`, `draft:false`) on Metricool JJ brand 7128333, tz Europe/London. **2 videos/day at 10:00 and 18:00** (TikTok best slots). Each video = one IG+Facebook Reel post (IG cut) + one TikTok post (TikTok cut), same time. **First JJ post: Mon 5 Oct 2026; never schedule earlier.** Each batch starts the day after the last already-scheduled JJ post (check Metricool first — probe day by day, 1-3 days per `getScheduledPosts` call, to avoid oversized responses).
+- **Pipeline**: all builds use `pipeline/` (see `pipeline/README.md`). Built: scripts 1, 2, 4, 5, 6, 8 (batch of 2026-09-29, scheduled 5-7 Oct); scripts 9-15 (batch of 2026-09-30, scheduled 8-11 Oct). Still unbuilt: 7 (Kids, needs baby pup prop). Next batch pulls further topics from the scaling list / invents new ones. Music = the 3 user-supplied sounds (rotated), not synthesized.
+- TikTok follower count on 2026-09-30: 3 (checked via Metricool analytics, metric TKEV07 — last reported value, from 2026-09-29; unchanged since the previous batch).
+- Last scheduled JJ day as of the 2026-09-30 batch: Sun 11 Oct 2026 (10:00 slot only — 7 videos is an odd number, so the 7th video takes only the morning slot and the next batch's first video can take Sun 11 Oct 18:00).
 - **Media hosting**: finished MP4s are pushed to the public `JJCutecouple`
   repo and referenced by their `raw.githubusercontent.com` URL as Metricool's
   media source (Metricool's post tools require a public media URL — there's

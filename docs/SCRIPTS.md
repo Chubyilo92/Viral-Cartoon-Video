@@ -1,8 +1,11 @@
 # Script library
 
-Scripts 1, 2, 4, 5, 6 and 8 are built (see PRODUCTION-LOG; specs in `pipeline/specs/`). Originally two scripts were fully built (source in `/videos/`). Six more are drafted and
-ready to build — pick from these before inventing a new topic, and check each
-new one against `/docs/GROWTH-STRATEGY.md` before writing scenes.
+Scripts 1, 2, 4, 5, 6, 8, and 9-15 are built (see PRODUCTION-LOG; specs in
+`pipeline/specs/`). Originally two scripts were fully built (source in
+`/videos/`). The rest were drafted first, then (once the drafted list ran
+dry as of the 2026-09-30 batch) invented fresh per the standing approval
+below — check each new one against `/docs/GROWTH-STRATEGY.md` before
+writing scenes.
 
 **Standing approval (2026-09-28): once the drafted list runs dry, invent new
 topics freely** — no need to check back with the user first. The only bar is
@@ -139,21 +142,161 @@ quiz ending (most direct fit of any script to this quiz).
 
 ---
 
+## Batch of 2026-09-30 — new scripts (drafted list was exhausted)
+
+Scripts 1, 2, 4, 5, 6, 8 are built. #7 (Kids) remains skipped — still needs
+the baby-pup prop. The drafted list is now used up, so per the standing
+approval above, these 7 are pulled from the "Scaling beyond these 8" seed
+list below and written fresh, each checked against the 10/10 bar and the
+"would someone actually send this" test before being appended here.
+
+### 9. Overthinker — "When an overthinker loves you"
+
+> When an overthinker loves you... they'll reread your text three times
+> before replying. Not because they're playing games. They're terrified of
+> saying the wrong thing to the right person. They'll ask "are you sure
+> you're not mad at me?" out of nowhere. Not because you gave a reason.
+> Their mind invents ten before you're even up. They'll apologize for
+> things that were never their fault. It's not weakness. It's a habit
+> built from bracing for a blow that hasn't come yet. They need you to say
+> it out loud, even when it's obvious. Not because they doubt you. Because
+> their brain needs the proof their heart already has. But if you roll
+> your eyes at the reassurance… they'll learn to stop asking, and start
+> assuming the worst instead. Because when an overthinker chooses to trust
+> you anyway… they've quieted a whole war just to be with you.
+
+Built (`pipeline/specs/overthinker.py`). → Love Language quiz ending
+(result: Words of Affirmation).
+
+### 10. Bad texter — "When a bad texter loves you"
+
+> When he's terrible at texting… but loves you… he'll leave your message
+> on read for three hours. Not because he's ignoring you. He's the kind
+> of person who's fully wherever his hands already are. He'll reply to
+> your whole paragraph with just "lol." It's not that he doesn't care.
+> Words on a screen have just never come easy to him. He'll forget to
+> text good morning… but he'll show up at your door with your coffee
+> order memorized. He'd rather say it in person than type it. A text
+> just can't hold what he actually means. But if weeks go by and the
+> effort never shows up anywhere… that's not a texting problem anymore.
+> Because a bad texter who still shows up for you… loves you in the
+> language that actually counts.
+
+Built (`pipeline/specs/bad_texter.py`). → Love Language quiz ending
+(result: Acts of Service).
+
+### 11. Quiet after a fight — "When he goes quiet after a fight"
+
+> When he goes quiet after a fight… it's not the silent treatment. He's
+> trying not to say something in anger he can't take back. He'll leave
+> the room for a minute — not to walk away from you, but from the version
+> of himself that fights dirty. He'll come back and just sit next to you
+> before either of you says a word. That's him choosing you over being
+> right. He might need an hour before he can talk, because he cares too
+> much to answer before he's calm. But if the quiet never ends, if he
+> shuts the door and never opens it again… that's not calming down
+> anymore, that's checking out. Because a man who comes back after the
+> silence… chose the relationship over his pride.
+
+Built (`pipeline/specs/quiet_after_fight.py`). → Love Language quiz
+ending (result: Quality Time).
+
+### 12. Tired/hangry — "When she's hangry but loves you"
+
+> When she's tired or hangry… but still loves you… she'll snap about the
+> dishes that have nothing to do with the dishes. Feed her before you
+> respond. She'll go quiet in the car — it's not you, it's the day,
+> stacked on the day before it. She'll say "I'm fine" in a tone that
+> means the opposite, but still reach for your hand at the same time.
+> She doesn't need advice. She needs a snack, a blanket, and ten minutes
+> without being asked if she's okay. But if you take the snapping
+> personally every time… you'll turn a bad day into a bad week. Because
+> the girl who's exhausted and still shows up for you… is showing you
+> what her love looks like on its worst day.
+
+Built (`pipeline/specs/hangry.py`). Lighter/playful tone by design — a
+comment-bait "tag the person who does this" topic. → Love Language quiz
+ending (result: Physical Touch).
+
+### 13. Long distance — "Loving someone from far away"
+
+> When someone loves you from far away… they'll fall asleep on a video
+> call just to hear you breathing on the other end. They'll send a
+> picture of their lunch, their commute, nothing special — because
+> "nothing special" is the only way to share a day you can't share in
+> person. They'll count down the days out loud, unasked, because the
+> countdown makes the distance feel temporary. They'll get upset over
+> three seconds of video lag, because losing three seconds of you feels
+> bigger when three seconds is all you get. But if the calls get shorter
+> and the days stop getting counted… the distance isn't the problem
+> anymore. Because loving someone you can't touch, can't hold, can't just
+> show up for… and choosing to stay anyway… that's not convenient love.
+> That's the real thing.
+
+Built (`pipeline/specs/long_distance.py`). → Love Language quiz ending
+(result: Quality Time).
+
+### 14. First year living together — "The first year you live together"
+
+> The first year you live together… you'll find out he leaves cabinet
+> doors open every single time. That's just the real him, uncurated.
+> You'll fight about towels, dishes, whose turn it was — not because
+> you're falling apart, but because you finally have enough of a life
+> together to fight over. She'll fall asleep with the TV on, and you'll
+> learn to love the noise, because it means she's home. You'll learn what
+> he sounds like sick, what she's like before coffee — all the parts no
+> one else gets to see. That's not the honeymoon ending, that's the real
+> thing starting. But if a year in you still feel like guests in each
+> other's space… that's worth a real conversation, not just more time.
+> Because the first year isn't about staying in love the way you
+> started — it's about loving the real, unpolished version even more.
+
+Built (`pipeline/specs/living_together.py`). → Love Language quiz ending
+(result: Acts of Service).
+
+### 15. Guarded heart — "When a guarded heart loves you"
+
+> When someone with a guarded heart finally loves you… they won't say it
+> first. They'll show up early, every time, and let the pattern say it
+> for them. They'll test you without meaning to — a canceled plan, a late
+> reply — just to see if you leave, because most people did. They'll
+> crack a joke right after a real moment, because it mattered too much to
+> sit in for long. They'll let you meet the people they don't let just
+> anyone meet — that introduction is their "I love you," said in the only
+> language they trust. But if you mistake their guard for indifference
+> and give up before they open… you'll prove them right about everyone.
+> Because when a guarded heart finally chooses you… it's the biggest risk
+> they know how to take.
+
+Built (`pipeline/specs/guarded_heart.py`). Distinct from #4 (a hurt girl
+learning to trust one specific person) — this one is about someone whose
+walls predate the relationship entirely. → Love Language quiz ending
+(result: Physical Touch).
+
+---
+
 ## Scaling beyond these 8
 
 Each of the 8 above can run as a boy-version or girl-version script (doubles
 to ~16), and swapping the relationship stage (dating / long distance /
 engaged / married / new parents / living together) multiplies further
 without the scripts feeling recycled. Other topic seeds validated by the
-"would someone actually send this?" test:
+"would someone actually send this?" test — **built ones struck through**,
+built in the 2026-09-30 batch as scripts 9-15 above:
+
 - When a **boy** loves you (gender flip of the built script — reaches a
-  second audience)
-- When an **introvert** loves you (goes quiet, cancels plans, texts less)
-- When an **overthinker** loves you
-- When your partner is **bad at texting** but loves you
-- When he goes **quiet** after a fight
-- When she's **tired or hangry** but still loves you
-- **Long distance**: when someone loves you from far away
-- The **first year living together**
-- When they remember the **tiny things** about you
-- When someone with a **guarded heart** finally loves you
+  second audience) — not yet built
+- When an **introvert** loves you (goes quiet, cancels plans, texts less) —
+  not yet built (distinct enough from #11 "quiet after a fight" to still be
+  worth writing — this one is about a standing trait, not a single fight)
+- ~~When an **overthinker** loves you~~ → built as #9
+- ~~When your partner is **bad at texting** but loves you~~ → built as #10
+- ~~When he goes **quiet** after a fight~~ → built as #11
+- ~~When she's **tired or hangry** but still loves you~~ → built as #12
+- ~~**Long distance**: when someone loves you from far away~~ → built as #13
+- ~~The **first year living together**~~ → built as #14
+- When they remember the **tiny things** about you — not yet built
+- ~~When someone with a **guarded heart** finally loves you~~ → built as #15
+
+Remaining seeds for the next batch: the boy/girl swap of #1/#2, introvert,
+tiny things — then invent further per the standing approval above.
