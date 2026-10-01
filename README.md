@@ -6,6 +6,8 @@ local voice, and an original synthesized music bed. Built so a brand-new
 Claude session — or a human — can pick this up cold, with no memory of any
 prior conversation.
 
+**Making a marketing video with the puppies? Read [`docs/VIRAL-BLUEPRINT.md`](docs/VIRAL-BLUEPRINT.md) first — it is the standard every one must follow.**
+
 **Start here, in order:**
 
 1. [`docs/BUILD-METHOD.md`](docs/BUILD-METHOD.md) — how the renderer works,

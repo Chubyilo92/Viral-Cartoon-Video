@@ -1,0 +1,113 @@
+# Viral blueprint — JJ puppy marketing videos
+
+**Status: the standard for every puppy video that markets CoupleIn.** Built from
+"the last biscuit" (`pipeline/specs/biscuit2.py`, rendered 2026-10-01), the
+video the user rated *really good* after five earlier versions were rejected as
+"good on paper, not viral". Read this before writing any new marketing script.
+
+## The core rule
+
+A script that is well structured is **not** a 10/10. Virality needs the
+**unexpected**: a hook that shocks, a middle that keeps re-hooking, and a twist
+nobody predicts. Score every script on real viral potential (likes, comments,
+shares, downloads), not on structure. Report the score every time.
+
+## Format
+
+- **Dialogue, no narrator.** The two pups *are* the couple and talk to each
+  other. Boy = `am_puck` ×1.36 pitch, girl = `af_heart` ×1.24 (see `voices/`).
+- One spoken line per scene, short lines (≈1.5–3s each), captions tinted by
+  speaker (boy blue, girl pink), mouths animate only on the speaker.
+- Target 40–50s. Hard ceiling 55s. Cut soft lines before cutting the fight.
+- Built with `pipeline/dialogue.py <slug>` — see BUILD-METHOD.md §8.
+
+## Act 1 — The nasty hook (0–15s)
+
+- **The first line lands at 0.2s and it is brutal.** No set-up, no title card
+  pause. Real things couples say in their worst fights:
+  - "I can't stand you anymore!"
+  - "Good! Because I can't stand your mom!"
+  - "Don't you DARE talk about my mom!"
+  - "You know what? Maybe we need a break."
+  - "Fine. You were never good enough for me anyway."
+  - "Then I'm done." (he walks out of frame)
+- **Every insult is answered with something just as bad** — both sides escalate,
+  so the viewer can't pick a side (that's what drives comments).
+- Hit the emotional triggers: mothers/family, "a break", worth ("never good
+  enough"), leaving.
+- Visuals: red-tinted room, screen shake on the speaker, rainclouds stacking up
+  one per line, pups at larger scale (1.3–1.4) and angry brows.
+- Title pill is a curiosity hook, not a description: **"we almost broke up over
+  this"**.
+
+## The open loop (runs under Act 1)
+
+- A label under the captions from the very first second: **"it started over
+  something stupid 👇"**. The viewer now needs to know *what* — they stay for
+  the answer. The answer is held back until Act 3.
+- As someone storms out, swap it for a re-hook: **"wait for it 👀"**.
+
+## Act 2 — The break and the stakes (15–30s)
+
+- **Time cut + mood shift**: "1 HOUR LATER", dark blue room, one pup alone,
+  one beat of regret ("…Why did I say that?").
+- The other comes back, softer: **"Babe… remember why we got the app?"**
+- **Never name the app in the dialogue or on in-story phone screens.** It's
+  "the app". This keeps it feeling like a real couple, not an ad. The phone UI
+  shows only a heart + the feature name ("Resolve").
+- **Put the relationship on the line**: "For moments like this. **If it doesn't
+  help… we break up.**" Then a persistent **"last try 💔"** label stays on
+  screen until it's resolved. Live stakes = the viewer has to see the outcome.
+
+## Act 3 — The feature, with a failure (30–45s)
+
+- Show the actual mechanic in one line ("You talk, I repeat it back.") with a
+  phone mock of the feature, plus top chips for each step ("🗣️ SHE SPEAKS",
+  "👂 HE REPEATS").
+- **Pay off the open loop**: the real cause comes out and it's tiny and
+  relatable — "You ate the last biscuit. And you didn't even ask." Show the
+  object big on screen with the label "the something stupid".
+- **The first attempt fails**: he repeats it back wrong ("What I heard is… you
+  hate me."), she snaps ("That is NOT what I said!"), the red flashes back —
+  a mid-video jolt that nearly re-ignites the fight. This proves *why* the
+  feature matters instead of claiming it.
+- Second try works and names the real feeling underneath ("…and you felt
+  forgotten."), label flips to **"it worked 💗"**.
+
+## Act 4 — Solution + twist (45–50s)
+
+- **A concrete, cute solution** from the one who messed up: "Next time, I
+  promise not to eat the last biscuit" — and he pulls out a brand-new packet.
+- **End on a laugh twist**: "…You had a spare packet this whole time?!" →
+  hug, hearts.
+
+## End card
+
+- This is the only place the brand appears: "CoupleIn · link in bio" pill +
+  phone with the app logo and "start free".
+- Spoken line generalises the story to the viewer: "Every couple fights over
+  something stupid. This is how we fix ours. Link in bio!"
+
+## Checklist before building any new one
+
+1. Is the first line shocking enough to stop a scroll on its own?
+2. Does each insult get an equally bad reply?
+3. Is there an open-loop label from second 1, answered later?
+4. Is there a re-hook at the walk-out / time cut?
+5. Are the stakes explicit and on screen ("if it doesn't help, we break up")?
+6. Is the app unnamed everywhere except the end card?
+7. Does the feature fail once before it works?
+8. Is the real cause small, specific and relatable?
+9. Is the solution concrete, and does the final line land a laugh/twist?
+10. Under 55s? Score it honestly (viral potential) and report the score.
+
+## Swappable parts for new videos
+
+Keep the four-act skeleton; change the trigger and the feature:
+- **Cause** ("the something stupid"): last biscuit, left the toilet seat up,
+  liked his ex's photo, forgot the milk, took the good side of the bed.
+- **Feature**: Resolve repeat-back (fights), shared calendar reminders
+  (forgetting), browny points → gestures (feeling unappreciated), Grow
+  together (repeated behaviour).
+- **Solution prop**: new packet, a reminder set on the phone, a gesture
+  redeemed, a calendar event added.
