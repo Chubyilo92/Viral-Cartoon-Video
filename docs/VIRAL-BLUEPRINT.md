@@ -111,3 +111,10 @@ Keep the four-act skeleton; change the trigger and the feature:
   together (repeated behaviour).
 - **Solution prop**: new packet, a reminder set on the phone, a gesture
   redeemed, a calendar event added.
+
+## Built from this blueprint
+
+| Date | Video | Spec | Cause / fail / twist |
+|---|---|---|---|
+| 2026-10-01 | the last biscuit (the original) | `biscuit2.py` | last biscuit / "you hate me" / spare packet |
+| 2026-10-01 | browny points (blueprint test) | `brownies_bp.py` | she made tea for herself, not him (he makes hers daily) / his points read ZERO / she'd already baked the brownies - to throw at him |
