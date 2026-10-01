@@ -219,3 +219,34 @@ captions became reliable and locked to the voice.)
   the *method*, not a media archive. Finished videos are delivered directly
   to the user each time; brand-asset repos (see `/docs/BRANDS.md`) are for
   published media.
+
+## 8. Dialogue videos — two puppy voices, no narrator (added 2026-10-01)
+
+Format for CoupleIn story videos: the puppies *are* the characters and talk to
+each other; there is no narrator. Built with `pipeline/dialogue.py <slug>`
+(spec in `pipeline/specs/<slug>.py`; worked examples: `milk.py`, `argue.py`,
+`brownies.py`).
+
+- **Voices** (Kokoro, free/local, then pitched up with ffmpeg `rubberband`,
+  `formant=shifted` so they sound small and cartoon-cute rather than just
+  higher): boy pup = `am_puck`, speed 0.9, pitch ×1.36; girl pup =
+  `af_heart`, speed 0.9, pitch ×1.24. Tune in `VOICES` at the top of
+  `dialogue.py`.
+- **Spec**: `TITLE`, `LINES = [D(who, text, sceneJS, emoji), ...]` — one
+  spoken line per scene, `who` = `'boy'|'girl'` — plus `END` (end card, built
+  with `ENDCARD(tagline, extraJS, speaker)`), optional `MUSIC_N`.
+- **Captions** auto-chunk each line into ≤3-word / ≤15-char phrases and are
+  tinted by speaker (boy light blue, girl pink) so viewers can follow who's
+  talking with sound off.
+- **Talking mouths**: call `SP(kind, u, {..., talk:1})` instead of `pup()` for
+  the speaker — the mouth animates and the head bobs only while that line's
+  audio is playing.
+- Helpers in its PRELUDE: `chip(text)` (top label: DAY 2, ROUND 1…),
+  `fridge`, `milk`, `cereal`, `brownies`, `cityOut` (street/office),
+  `bag`, `appUI`/`pill` (CoupleIn phone screens), `ENDCARD`.
+- Scene pad is 0.8s per line (snappier than narration's 0.75 + slower read).
+- `python3 dialogue.py <slug> preview` renders one still per line to
+  `work/<slug>/pv_*.png` for a layout check before the full render.
+- Scene-space gotcha: the camera zooms 1.2× around (540,1180), so x < ~230 or
+  x > ~850 at pup scale 1.3 gets cropped. Two pups + a phone need `s:1.1`.
+- Output is one file per video (same creative for IG and TikTok, like ads).
