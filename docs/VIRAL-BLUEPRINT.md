@@ -88,6 +88,10 @@ shares, downloads), not on structure. Report the score every time.
 - Spoken line generalises the story to the viewer: "Every couple fights over
   something stupid. This is how we fix ours. Link in bio!"
 
+- **Ending line must match the feature's message**, not one generic line for every video:
+  fights (Resolve) → "Every couple fights over something stupid. This is how we fix ours.";
+  browny points / gestures → "A relationship full of kindness will overcome the small fights. This is how we turn ours into a kindness machine."
+
 ## Checklist before building any new one
 
 1. Is the first line shocking enough to stop a scroll on its own?

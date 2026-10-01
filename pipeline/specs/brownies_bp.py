@@ -88,5 +88,5 @@ D('girl', "I was going to throw them at you.", CALM + '''
   if(u>1.5)floatHearts(540,760,1.5,u,6,170);''', '😂'),
 ]
 
-END = D('girl', "Every couple fights over something stupid. This is how we fix ours. Link in bio!",
-        ENDCARD('fix the small stuff', 'brownies(400,G+60,.5,1);'), '🔗')
+END = D('girl', "A relationship full of kindness will overcome the small fights. This is how we turn ours into a kindness machine. Link in bio!",
+        ENDCARD('your kindness machine', 'brownies(400,G+60,.5,1);'), '🔗')
