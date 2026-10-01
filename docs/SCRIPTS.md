@@ -281,22 +281,166 @@ Each of the 8 above can run as a boy-version or girl-version script (doubles
 to ~16), and swapping the relationship stage (dating / long distance /
 engaged / married / new parents / living together) multiplies further
 without the scripts feeling recycled. Other topic seeds validated by the
-"would someone actually send this?" test — **built ones struck through**,
-built in the 2026-09-30 batch as scripts 9-15 above:
+"would someone actually send this?" test — **built ones struck through**:
 
-- When a **boy** loves you (gender flip of the built script — reaches a
-  second audience) — not yet built
-- When an **introvert** loves you (goes quiet, cancels plans, texts less) —
-  not yet built (distinct enough from #11 "quiet after a fight" to still be
-  worth writing — this one is about a standing trait, not a single fight)
+- ~~When a **boy** loves you (gender flip of the built script)~~ → built as
+  #16 ("When a girl loves you" — reverse gender flip, targets a male
+  audience watching his girlfriend's behaviors reframed)
+- ~~When an **introvert** loves you~~ → built as #18
 - ~~When an **overthinker** loves you~~ → built as #9
 - ~~When your partner is **bad at texting** but loves you~~ → built as #10
 - ~~When he goes **quiet** after a fight~~ → built as #11
 - ~~When she's **tired or hangry** but still loves you~~ → built as #12
 - ~~**Long distance**: when someone loves you from far away~~ → built as #13
 - ~~The **first year living together**~~ → built as #14
-- When they remember the **tiny things** about you — not yet built
+- ~~When they remember the **tiny things** about you~~ → built as #19
 - ~~When someone with a **guarded heart** finally loves you~~ → built as #15
 
-Remaining seeds for the next batch: the boy/girl swap of #1/#2, introvert,
-tiny things — then invent further per the standing approval above.
+Remaining seed for a future batch: none left on the original list — the
+2026-10-01 batch (below) branched into fresh invented topics per the
+standing approval once this list ran dry too.
+
+---
+
+## Batch of 2026-10-01 — new scripts (seed list now fully exhausted)
+
+Scripts 1, 2, 4, 5, 6, 8, 9-15 are built. #7 (Kids) remains skipped — still
+needs the baby-pup prop. The "Scaling beyond these 8" seed list above is now
+fully used (the last three seeds — gender-flip, introvert, tiny things — are
+built below as #16, #18, #19). Per the standing approval, the remaining 4
+scripts in this batch (#17, #20, #21, #22) are freshly invented topics,
+each checked against the 10/10 bar and the "would someone actually send
+this" test before being appended here.
+
+### 16. Gender-flip of #1 — "When a girl loves you"
+
+> When a girl loves you... she won't always say it first. She'll show up
+> with your favourite snack after a long week. She'll remember the little
+> thing you mentioned once, and bring it up weeks later. She might tease
+> you in front of everyone, not to embarrass you, because she loves your
+> laugh. She'll go quiet when she's overwhelmed. Not pulling away, she just
+> needs you close, not a hundred questions. If she does this for you...
+> tag her. Let her know it doesn't go unnoticed. But if you only show up
+> when it's convenient... she'll stop waiting for you to notice. Because
+> when a girl truly loves you... you'll never have to guess.
+
+Built (`pipeline/specs/girl_loves_you.py`). Reaches a second (male)
+audience with the same template as #1. → Love Language quiz ending
+(result: Acts of Service).
+
+### 17. Gender-flip of #2 — "When he says 'I'm fine'"
+
+> When he says I'm fine... he's not always fine. He's just not sure how to
+> say what's actually wrong. He might go quiet and disappear into a task,
+> not to shut you out, just to feel useful for a minute. He might snap
+> about something small — it's about carrying something all day with no
+> one to hand it to. He doesn't need you to fix it. He needs you to sit
+> with him and not take the silence personally. If you're the one who goes
+> quiet to cope... send this to the one who stays anyway. But if you only
+> check on him when it's easy... one day he'll stop saying anything at
+> all. Because the boy who still says I'm fine, even when he isn't... is
+> still trying to protect you from his bad day.
+
+Built (`pipeline/specs/he_says_im_fine.py`). Distinct from #11 (quiet after
+a specific fight) — this one is everyday stress, not post-conflict. → Love
+Language quiz ending (result: Quality Time).
+
+### 18. Introvert — "When an introvert loves you"
+
+> When an introvert loves you... they'll cancel plans with everyone else,
+> just to stay in with you. They'll go quiet in a loud room, not checked
+> out, just recharging so they can actually be present with you later.
+> They'll text less than you'd like, but read every message twice because
+> it's from you. They'll let you into the one hour of their day they
+> protect from everyone else. If you're the loud one who learned to love
+> the quiet one... send this to them. But if you mistake their quiet for
+> not caring... you'll miss the biggest compliment they know how to give.
+> Because when an introvert chooses to be around you... it costs them more
+> energy than you'll ever see, and they spend it on you anyway.
+
+Built (`pipeline/specs/introvert.py`). → Love Language quiz ending
+(result: Quality Time).
+
+### 19. Tiny things — "They remember the tiny things"
+
+> When someone truly loves you... they remember the tiny things. How you
+> take your coffee. The side of the bed you like. They remember the song
+> that makes you cry, and skip it in the car without you asking. They
+> notice when you've had a haircut, before you even mention it. They
+> remember the order you always get, and already said it before you
+> opened your mouth. If someone remembers the small stuff about you...
+> send them this. Let them know you noticed, too. But if they forget the
+> little things on purpose, again and again... that's not forgetfulness
+> anymore. Because the tiny things are never really tiny. They're proof
+> someone's been paying attention the whole time.
+
+Built (`pipeline/specs/tiny_things.py`). → Love Language quiz ending
+(result: Acts of Service).
+
+### 20. Stubborn love — "When a stubborn person loves you" (invented)
+
+> When a stubborn person loves you... they will not say sorry first. Not
+> because they don't mean it. The words just get stuck on the way out.
+> They'll fix the thing you were upset about, before they ever bring it
+> up. They'll sit in the same room as you, still annoyed, because leaving
+> isn't an option they consider. They'll agree to disagree out loud, then
+> quietly do it your way anyway. If someone's never once said sorry, but
+> always shows it... send this to them. But if the fixing never comes,
+> and only the stubbornness does... that's not pride anymore. Because a
+> stubborn person who still chooses you, every single time... loves you in
+> the only way they know how to bend.
+
+Built (`pipeline/specs/stubborn_love.py`). Comment-bait angle: "he's never
+said sorry in his life, but—". → Love Language quiz ending (result: Acts
+of Service).
+
+### 21. Forgives easily — "Someone who forgives easily" (invented)
+
+> When someone who forgives easily loves you... they'll let the little
+> thing go, before you even finish apologizing. They won't bring up the
+> fight from last month, because to them, it's already done. They'll
+> choose to believe the best version of why you were short with them,
+> even when it's easier to assume the worst. They'll forgive you before
+> they even understand why you need it, because the relationship matters
+> more than being right. If someone's forgiven you faster than you've
+> forgiven yourself... send this to them. But if you keep giving them the
+> same thing to forgive... their patience isn't a loophole. Because
+> someone who forgives easily isn't weak. They just decided loving you
+> mattered more than keeping score.
+
+Built (`pipeline/specs/forgives_easily.py`). Pairs well against #20 in the
+same batch (giving vs. receiving an apology). → Love Language quiz ending
+(result: Words of Affirmation).
+
+### 22. The planner — "When the planner loves you" (invented)
+
+> When the planner in the relationship loves you... they'll check the
+> weather for your trip, three days before you even pack. They'll have
+> snacks, chargers, and a backup plan in the car, just in case. They'll
+> text, did you eat, before they say anything else, every single day.
+> They'll map the route the night before, so you never have to worry
+> about being lost. If someone's quietly planned around you your whole
+> relationship... send this to them. But if the planning turns into
+> control, and your yes stops being a choice... that's not care anymore.
+> Because someone who plans three steps ahead for you... is just trying to
+> make sure you never have to.
+
+Built (`pipeline/specs/the_planner.py`). The on-screen TITLE is shortened
+("when the planner loves you") from the full spoken hook — the original
+longer title overflowed the caption pill at render width 1080px; keep
+on-screen TITLEs under ~33 characters going forward (see **Word-count /
+title-length lesson** in `PRODUCTION-LOG.md`). → Love Language quiz ending
+(result: Acts of Service).
+
+---
+
+## Scaling beyond these 22
+
+The original 8-script seed list and its "Scaling beyond these 8" extension
+are now both fully used. Future batches continue inventing fresh
+relationship-focused topics per the standing approval (10/10 bar, the "would
+someone actually send this" test, append-before-building) — candidate seeds
+for next time include: a competitive partner, someone who struggles to ask
+for help, the "fixer" who can't just listen, opposites who balance each
+other, a partner who's bad at receiving compliments, and further gender/
+relationship-stage swaps of any script above.
