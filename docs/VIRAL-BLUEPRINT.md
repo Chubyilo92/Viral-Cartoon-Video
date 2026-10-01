@@ -92,6 +92,28 @@ shares, downloads), not on structure. Report the score every time.
   fights (Resolve) → "Every couple fights over something stupid. This is how we fix ours.";
   browny points / gestures → "A relationship full of kindness will overcome the small fights. This is how we turn ours into a kindness machine."
 
+## Adapting the blueprint to a different feature
+
+Acts 1–2 (nasty hook, open loop, walk-out, "remember why we got the app?",
+live stakes) stay the same for every feature. Acts 3–4 must be rebuilt around
+**what that feature actually does** — don't reuse fight/Resolve language
+("ROUND 2", "repeat it back", "it worked") on a non-Resolve video.
+
+| | Resolve (conflict) | Browny points / gestures (kindness) |
+|---|---|---|
+| Real problem | not hearing each other | effort nobody sees / feeling unappreciated |
+| Feature fails once | wrong repeat-back ("you hate me") | his points read **0** — "you never log anything!" |
+| Feature works | right repeat-back names the feeling | he logs what he already does and the points climb on screen |
+| Mid-twist | — | the hidden kindness is revealed ("YOU make my tea? I thought it just appeared") |
+| Something stupid | last biscuit | she made herself a tea and not him |
+| Solution | promise + spare packet | spend the points on a gesture ("warm brownies, baked by you") |
+| Twist | "you had a spare packet this whole time?!" | "I made them before the fight… I was going to throw them at you." (one speaker, one line) |
+| Loop close | — | he logs HER gesture: "+10 points… for not throwing them" — kindness flows both ways |
+| Labels | "last try 💔" → "it worked 💗" | "nice things = points 💗", "last try 💔" → "kindness unlocked 💗" |
+| Ending line | "Every couple fights over something stupid. This is how we fix ours." | "A relationship full of kindness will overcome the small fights. This is how we turn ours into a kindness machine." |
+
+Twist lines stay with one speaker — don't split a punchline across both pups.
+
 ## Checklist before building any new one
 
 1. Is the first line shocking enough to stop a scroll on its own?
@@ -121,4 +143,5 @@ Keep the four-act skeleton; change the trigger and the feature:
 | Date | Video | Spec | Cause / fail / twist |
 |---|---|---|---|
 | 2026-10-01 | the last biscuit (the original) | `biscuit2.py` | last biscuit / "you hate me" / spare packet |
-| 2026-10-01 | browny points (blueprint test) | `brownies_bp.py` | she made tea for herself, not him (he makes hers daily) / his points read ZERO / she'd already baked the brownies - to throw at him |
+| 2026-10-01 | browny points (first test - superseded) | `brownies_bp.py` | she made tea for herself, not him (he makes hers daily) / his points read ZERO / she'd already baked the brownies - to throw at him |
+| 2026-10-01 | kindness machine (browny points, feature-adapted) | `kindness.py` | tea for herself not him / his points read 0 / brownies were baked to throw at him / +10 for not throwing |
