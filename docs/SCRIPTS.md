@@ -1,6 +1,6 @@
 # Script library
 
-Scripts 1, 2, 4, 5, 6, 8, and 9-15 are built (see PRODUCTION-LOG; specs in
+Scripts 1, 2, 4, 5, 6, 8, and 9-22 are built (see PRODUCTION-LOG; specs in
 `pipeline/specs/`). Originally two scripts were fully built (source in
 `/videos/`). The rest were drafted first, then (once the drafted list ran
 dry as of the 2026-09-30 batch) invented fresh per the standing approval
@@ -312,6 +312,23 @@ scripts in this batch (#17, #20, #21, #22) are freshly invented topics,
 each checked against the 10/10 bar and the "would someone actually send
 this" test before being appended here.
 
+**Note (2026-10-01, later run same day):** this section was first committed
+(docs + script text only, no actual spec files) by an earlier run that
+stopped before writing `pipeline/specs/*.py`, rendering anything, or
+scheduling — this file said "Built" for #16-22 while no spec file, video, or
+Metricool post existed for any of them. A second run the same day caught the
+mismatch, pre-build-scored every script 1-10 on downloads/engagement/
+conversion/relatability against Metricool's analytics for brand 7128333
+(too thin to set a hook/pacing bar yet — only ~150-320 views/day and 1-8
+interactions/day so far, all pre-dating the first scheduled JJ post — so the
+GROWTH-STRATEGY.md template and the 10/10 rubric were used instead), wrote
+all 7 spec files, found #21 ("forgives easily") scoring weakest pre-build
+(~8.4 avg — too soft a hook, no urgency in the share line), rewrote it
+before building (text below is the rewritten version actually in
+`pipeline/specs/forgives_easily.py`, replacing the original draft), then
+rendered, QA'd and scheduled all 14 cuts (11-14 Oct 2026) — see
+`PRODUCTION-LOG.md` for the full scoring table and schedule.
+
 ### 16. Gender-flip of #1 — "When a girl loves you"
 
 > When a girl loves you... she won't always say it first. She'll show up
@@ -394,23 +411,31 @@ Built (`pipeline/specs/stubborn_love.py`). Comment-bait angle: "he's never
 said sorry in his life, but—". → Love Language quiz ending (result: Acts
 of Service).
 
-### 21. Forgives easily — "Someone who forgives easily" (invented)
+### 21. Forgives easily — "Someone who forgives easily loves you" (invented, hook rewritten before building)
 
-> When someone who forgives easily loves you... they'll let the little
-> thing go, before you even finish apologizing. They won't bring up the
-> fight from last month, because to them, it's already done. They'll
-> choose to believe the best version of why you were short with them,
-> even when it's easier to assume the worst. They'll forgive you before
-> they even understand why you need it, because the relationship matters
-> more than being right. If someone's forgiven you faster than you've
-> forgiven yourself... send this to them. But if you keep giving them the
-> same thing to forgive... their patience isn't a loophole. Because
-> someone who forgives easily isn't weak. They just decided loving you
-> mattered more than keeping score.
+> When someone who forgives easily loves you... they cut you off
+> mid-apology, because they already decided it's not worth the fight.
+> They won't bring up the fight from last month. To them, it's already
+> closed, filed away, done. They'll choose to believe the kindest reason
+> you were short with them, even when the worst reason is sitting right
+> there, easier to grab. They'll forgive you before you've even forgiven
+> yourself, because being right has never mattered to them as much as
+> being together. If someone's handed you grace you didn't ask for...
+> send this to them, right now, before you forget. But if you keep
+> handing them the same thing to forgive, over and over... their patience
+> was never a free pass. Because someone who forgives easily isn't naive.
+> They just decided choosing you, every time, mattered more than keeping
+> score.
 
-Built (`pipeline/specs/forgives_easily.py`). Pairs well against #20 in the
-same batch (giving vs. receiving an apology). → Love Language quiz ending
-(result: Words of Affirmation).
+Built (`pipeline/specs/forgives_easily.py`). Scored weakest pre-build of
+this batch (~8.4 avg: the original opening — "when someone who forgives
+easily loves you... they'll let the little thing go, before you even
+finish apologizing" — was too abstract for a 2-second hook, and the share
+line had no urgency). Rewritten to open on a sharper, more visual beat
+("cut you off mid-apology") and add urgency to the share line ("right now,
+before you forget") before building — re-scored ~9 avg after the rewrite.
+Pairs well against #20 in the same batch (giving vs. receiving an
+apology). → Love Language quiz ending (result: Words of Affirmation).
 
 ### 22. The planner — "When the planner loves you" (invented)
 
