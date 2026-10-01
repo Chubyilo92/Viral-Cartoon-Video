@@ -1,0 +1,5 @@
+{
+  "_about": "JJ puppy character voices (dialogue videos, no narrator). Kokoro TTS (free, local) then pitched up with ffmpeg rubberband, formant=shifted, so they sound small and cartoon-cute. Used by pipeline/dialogue.py (VOICES dict) - keep the two in sync.",
+  "boy":  {"name": "boy pup (blue bandana)", "kokoro_voice": "am_puck",  "speed": 0.9, "pitch": 1.36, "formant": "shifted"},
+  "girl": {"name": "girl pup (pink bow)",    "kokoro_voice": "af_heart", "speed": 0.9, "pitch": 1.24, "formant": "shifted"}
+}
