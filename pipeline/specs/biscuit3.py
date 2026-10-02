@@ -7,4 +7,4 @@ LINES = list(B2.LINES) + [B2.END, q]
 END = a
 END_TAIL = OUTRO_SECS
 # faaaack on: the opening insult, the "something stupid" reveal, the spare-packet twist, the ex's text
-SFX = [(0, 'end', 'faaak'), (10, 'end', 'faaak'), (16, 'end', 'faaak'), (18, 'start', 'text+faaak')]
+SFX = [(18, 'start', 'text')]

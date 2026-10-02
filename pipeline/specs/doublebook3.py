@@ -7,4 +7,4 @@ LINES = list(DB.LINES) + [DB.END, q]
 END = a
 END_TAIL = OUTRO_SECS
 # faaaack on: "short guy", the dinner isn't in the app, his mum's text
-SFX = [(0, 'end', 'faaak'), (8, 'end', 'faaak'), (14, 'start', 'text+faaak')]
+SFX = [(14, 'start', 'text')]

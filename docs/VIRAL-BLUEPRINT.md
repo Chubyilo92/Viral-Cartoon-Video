@@ -147,10 +147,8 @@ that?", the owner says "…No one.", and a like goal for part 2 sits on screen (
 part 2 👀"). Built with `pipeline/specs/sting.py` → `sting(owner, sender, line1, line2, goal)`.
 
 **Sound + staging rules (from 2026-10-02):**
-- A loud **faaaack** (`pipeline/sfx/faaaack_once.m4a`, the same one the viral chat videos use) lands on every
-  twist: the opening insult, the "it's not in the app" moment, any "plot twist" line, and the final text.
-  In a spec: `SFX = [(line, 'end', 'faaak'), (line, 'start', 'text+faaak')]`. An 'end' cue adds ~1.45s of
-  space after the line so the faaaack never talks over the next one; 'start' delays the voice instead.
+- **No faaaack in the puppy videos.** It was tried on every twist (2026-10-02) and the user rejected it as
+  used wrong — removed from all three. The SFX hook still supports it, but don't use it unless asked.
 - Text arrivals play a two-note **ding** (`pipeline/sfx/text_ding.wav`) right before the faaaack.
 - The pup getting the text **holds the phone and looks at it**; the message itself is shown big at the
   top of the screen like a caption.

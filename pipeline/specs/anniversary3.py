@@ -7,4 +7,4 @@ LINES = list(AN.LINES[:-1]) + [q]          # AN.LINES already ends with the end 
 END = a
 END_TAIL = OUTRO_SECS
 # faaaack on: the opening insult, "nothing" in the calendar, "why are you mad at ME?", the ex's text
-SFX = [(0, 'end', 'faaak'), (8, 'end', 'faaak'), (11, 'end', 'faaak'), (17, 'start', 'text+faaak')]
+SFX = [(17, 'start', 'text')]
