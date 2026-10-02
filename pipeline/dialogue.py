@@ -4,7 +4,7 @@ Each spec line = (who, text). who: 'boy' | 'girl'. Boy = Kokoro am_puck pitched 
 girl = Kokoro af_heart pitched up (rubberband, formant shifted -> cute cartoon pup).
 Usage: python3 dialogue.py <slug>     spec at specs/<slug>.py
 Spec: TITLE, LINES=[D(...),...], END=D(...) (end card scene), optional MUSIC_N."""
-import importlib, json, os, re, subprocess, sys, time, hashlib, base64
+import importlib, re, json, os, re, subprocess, sys, time, hashlib, base64
 sys.path.insert(0, '/home/claude/jj'); sys.path.insert(0, '/home/claude/jj/specs')
 import numpy as np, soundfile as sf
 import jjlib as J
@@ -17,8 +17,8 @@ VOICES = {
 }
 
 PRELUDE = r'''
-let CURVO=3,CAPCOL='#fffaf0';
-function talking(u){return u>.22&&u<.12+CURVO;}
+let CURVO=3,CURLEAD=0,CAPCOL='#fffaf0';
+function talking(u){return u>.22+CURLEAD&&u<.12+CURLEAD+CURVO;}
 function tm(u,rest){if(!talking(u))return rest;const seq=['open','o','w','open','smile','o','open','w','o'];return seq[(Math.floor(u*9)*7+3)%seq.length];}
 function SP(kind,u,o){const b=Object.assign({kind,y:G+10,s:1.3},o);if(o.talk&&talking(u)){b.mouth=tm(u,o.mouth||'smile');b.bob=(b.bob||0)-Math.abs(Math.sin(u*9))*6;}pup(b);}
 function chip(txt,a){if(a<=0)return;ctx.save();ctx.setTransform(1,0,0,1,0,0);ctx.globalAlpha=clamp(a);ctx.font='bold 46px Poppins, "Noto Color Emoji"';const w=ctx.measureText(txt).width+70;ctx.translate(540,440);ctx.fillStyle='#2c1d13';ctx.beginPath();ctx.roundRect(-w/2,-38,w,76,38);ctx.fill();ctx.fillStyle='#fff3c4';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(txt,0,3);ctx.restore();}
@@ -132,15 +132,71 @@ def render(html_path, mp4):
         return total
 
 
-def build_html(spec, durs):
+def build_html(spec, durs, vo=None, lead=None):
     scenes = [s['js'] for s in spec.LINES]
-    html = J.build_html(spec.SLUG, spec.TITLE, scenes, durs[:-1], spec.END['js'], durs[-1], PRELUDE + getattr(spec, 'PRELUDE', ''))
-    for a, b in [("SC=0;", "SC=0;CURVO=VO[i];"),
+    n = len(durs)
+    lead = lead or [0] * n
+    html = J.build_html(spec.SLUG, spec.TITLE, scenes, durs[:-1], spec.END['js'], durs[-1],
+                        PRELUDE + 'const LEAD=%s;\n' % json.dumps(lead) + getattr(spec, 'PRELUDE', ''))
+    if vo is not None:
+        html = re.sub(r'const VO=\[[^\]]*\];', 'const VO=%s;' % json.dumps([round(v, 3) for v in vo]), html, count=1)
+    for a, b in [("SC=0;", "SC=0;CURVO=VO[i];CURLEAD=LEAD[i];"),
+                 ("const endT=.2+VO[si];let t=.2;", "const endT=.2+LEAD[si]+VO[si];let t=.2+LEAD[si];"),
+                 ("t+=w/tot*(endT-.2)", "t+=w/tot*VO[si]"),
                  ("ctx.fillStyle='#fffaf0';ctx.fillText(tx,x0,0);", "ctx.fillStyle=CAPCOL;ctx.fillText(tx,x0,0);"),
                  ("if(withCap){title();", "if(withCap){title();CAPCOL=s.who=='boy'?'#bfe3ff':s.who=='girl'?'#ffc9dc':'#fffaf0';")]:
         assert html.count(a) >= 1, a
         html = html.replace(a, b, 1)
     return html
+
+
+# --- sound effects -----------------------------------------------------------------
+# spec.SFX = [(line_index, 'end'|'start', 'faaak'|'text'), ...]; -1 = END scene.
+# 'end'  : sound plays right after that line's voice, scene gets FAAAK_TAIL extra seconds so nothing talks over it.
+# 'start': sound plays at the top of the scene (text arrives), voice is delayed by START_LEAD.
+FAAAK_TAIL = 1.45
+START_LEAD = {'faaak': 1.75, 'text': 0.6, 'text+faaak': 2.0}
+SFX_DIR = '/home/claude/jj/sfx'
+
+def _sfx(name, sr):
+    a, s2 = sf.read(f'{SFX_DIR}/{name}.wav')
+    if a.ndim > 1: a = a.mean(1)
+    if s2 != sr:
+        x = np.linspace(0, len(a) - 1, int(len(a) * sr / s2)); a = np.interp(x, np.arange(len(a)), a)
+    return a
+
+def sfx_plan(spec, n):
+    lead = [0.0] * n; tail = [0.0] * n; events = []   # (line, kind, name, offset_from_voice_or_scene)
+    for idx, where, name in getattr(spec, 'SFX', []):
+        i = idx % n
+        if where == 'end':
+            tail[i] += FAAAK_TAIL; events.append((i, 'end', name))
+        else:
+            lead[i] += START_LEAD[name]; events.append((i, 'start', name))
+    return lead, tail, events
+
+def mix_lines(durs, lead, wavs, out, sr=24000):
+    buf = np.zeros(int(sum(durs) * sr) + 5 * sr); t = 0; starts = []
+    for di, li, w in zip(durs, lead, wavs):
+        a, _ = sf.read(w); st = int((t + 0.2 + li) * sr); starts.append(t + 0.2 + li)
+        buf[st:st + len(a)] += a[:len(buf) - st]; t += di
+    sf.write(out, buf[:int(sum(durs) * sr)], sr)
+    return starts
+
+def sfx_track(durs, starts, vo, events, total, out, sr=44100):
+    buf = np.zeros(int((total + 1) * sr)); t0 = np.cumsum([0] + durs[:-1])
+    fa = _sfx('faaaack_once', sr); k = int(1.0 * sr); m = int(1.45 * sr)
+    fa = fa[:m].copy(); fa[k:] *= np.linspace(1, 0, m - k)
+    tx = _sfx('text_ding', sr)
+    def put(t, sig, g):
+        i = int(t * sr); buf[i:i + len(sig)] += g * sig[:len(buf) - i]
+    for i, kind, name in events:
+        if kind == 'end':
+            put(starts[i] + vo[i] + 0.08, fa, 1.0)
+        else:
+            if 'text' in name: put(t0[i] + 0.05, tx, 0.7)
+            if 'faaak' in name: put(t0[i] + (0.45 if 'text' in name else 0.1), fa, 1.0)
+    sf.write(out, np.clip(buf[:int(total * sr)], -1, 1), sr)
 
 
 if __name__ == '__main__':
@@ -156,9 +212,11 @@ if __name__ == '__main__':
         vo = json.load(open(meta))['durs']
     else:
         vo = tts(lines, W); json.dump({'key': key, 'durs': vo}, open(meta, 'w'))
-    durs = [round(d + PAD, 2) for d in vo]
-    durs[-1] = round(durs[-1] + 1.2, 2)          # let the end card breathe
-    hp = f'{W}/v.html'; open(hp, 'w').write(build_html(spec, durs))
+    n = len(lines)
+    lead, tail, events = sfx_plan(spec, n)
+    durs = [round(d + PAD + lead[i] + tail[i], 2) for i, d in enumerate(vo)]
+    durs[-1] = round(durs[-1] + 1.2 + getattr(spec, 'END_TAIL', 0), 2)          # let the end card breathe (+ outro)
+    hp = f'{W}/v.html'; open(hp, 'w').write(build_html(spec, durs, vo, lead))
     print('lines', len(lines), 'est total', round(sum(durs), 1))
     if mode == 'preview':
         from playwright.sync_api import sync_playwright
@@ -168,26 +226,34 @@ if __name__ == '__main__':
             pg.evaluate("async()=>{await document.fonts.load('bold 80px Poppins');await document.fonts.load('70px \"Noto Color Emoji\"');}")
             t = 0
             for i, d in enumerate(durs):
-                pg.evaluate("t=>render(t,true)", t + min(d * .5, 1.4)); pg.locator('#c').screenshot(path=f'{W}/pv_{i:02d}.png'); t += d
+                pg.evaluate("t=>render(t,true)", t + min(lead[i] + vo[i] * .5 + .2, d - .1)); pg.locator('#c').screenshot(path=f'{W}/pv_{i:02d}.png'); t += d
+            pg.evaluate("t=>render(t,true)", sum(durs) - .3); pg.locator('#c').screenshot(path=f'{W}/pv_last.png')
             b.close(); print('errs', errs[:3])
         sys.exit()
     silent = f'{W}/silent.mp4'; t0 = time.time(); total = render(hp, silent)
     wavs = [f'{W}/b{i}.wav' for i in range(len(lines))]
-    J.mix_voice(durs, wavs, f'{W}/vo_raw.wav')
+    starts = mix_lines(durs, lead, wavs, f'{W}/vo_raw.wav')
     subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', f'{W}/vo_raw.wav', '-af',
                     'highpass=f=90,acompressor=threshold=-20dB:ratio=3:attack=5:release=120,aecho=0.8:0.4:30:0.08,loudnorm=I=-14:TP=-1.5:LRA=7',
                     '-ar', '44100', '-ac', '2', f'{W}/vo.wav'], check=True)
     music = J.ROOT + '/music/sound%d.wav' % getattr(spec, 'MUSIC_N', 1)
     subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', f'{W}/vo.wav', '-i', music, '-filter_complex',
                     f'[1:a]volume=0.4,aloop=loop=-1:size=2e9,atrim=0:{total:.2f},asetpts=PTS-STARTPTS,afade=t=in:d=1,afade=t=out:st={total-2:.2f}:d=2[m];[0:a][m]amix=inputs=2:duration=first:dropout_transition=0,loudnorm=I=-14:TP=-1.5:LRA=8[a]',
-                    '-map', '[a]', '-ar', '44100', '-ac', '2', f'{W}/mix.wav'], check=True)
+                    '-map', '[a]', '-ar', '44100', '-ac', '2', f'{W}/mix0.wav'], check=True)
+    if events:
+        sfx_track(durs, starts, vo, events, total, f'{W}/sfx.wav')
+        subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', f'{W}/mix0.wav', '-i', f'{W}/sfx.wav', '-filter_complex',
+                        '[1:a]aformat=channel_layouts=stereo,volume=1.6[s];[0:a][s]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.95[a]',
+                        '-map', '[a]', '-ar', '44100', '-ac', '2', f'{W}/mix.wav'], check=True)
+    else:
+        os.replace(f'{W}/mix0.wav', f'{W}/mix.wav')
     final = f'{OUT}/{slug.replace("_", "-")}.mp4'
     subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', silent, '-i', f'{W}/mix.wav', '-map', '0:v', '-map', '1:a',
                     '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-shortest', '-movflags', '+faststart', final], check=True)
     qa = {'total_s': round(total, 1), 'render_s': round(time.time() - t0)}
     gaps = []; t = 0
     for di, w in zip(durs, wavs):
-        a, sr = sf.read(w); gaps.append(round(t + di - (t + 0.2 + len(a) / sr), 2)); t += di
+        a, sr = sf.read(w); gaps.append(round(t + di - (starts[len(gaps)] + len(a) / sr), 2)); t += di
     qa['min_gap'] = min(gaps); qa['overlap_ok'] = min(gaps) > 0; qa['duration_ok'] = 25 <= total <= 75
     st = json.loads(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'stream=codec_type,duration', '-of', 'json', final],
                                    capture_output=True, text=True).stdout)['streams']
