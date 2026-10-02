@@ -112,6 +112,14 @@ live stakes) stay the same for every feature. Acts 3–4 must be rebuilt around
 | Labels | "last try 💔" → "it worked 💗" | "nice things = points 💗", "last try 💔" → "kindness unlocked 💗" |
 | Ending line | "Every couple fights over something stupid. This is how we fix ours." | "A relationship full of kindness will overcome the small fights. This is how we turn ours into a kindness machine." |
 
+**Shared calendar + notifications (forgetting)** — real problem: important dates live in one
+person's head. Forgotten thing: the anniversary ("he forgot something HUGE 👇"). Feature check: the
+day is empty ("nothing today"). Twist: *she* was the one meant to put every important date in so he'd
+get notified — "So… why are you mad at ME?" ("plot twist 👀"), she admits it. Solution: she adds it
+("every year · notify him") and his phone pings instantly → he takes her out. Laugh button: a second
+ping — his mum's birthday is tomorrow. Ending: "Love shouldn't depend on one person's memory. Put it
+in once, and you both get reminded." Spec: `anniversary.py`.
+
 Twist lines stay with one speaker — don't split a punchline across both pups.
 
 ## Checklist before building any new one
@@ -145,3 +153,4 @@ Keep the four-act skeleton; change the trigger and the feature:
 | 2026-10-01 | the last biscuit (the original) | `biscuit2.py` | last biscuit / "you hate me" / spare packet |
 | 2026-10-01 | browny points (first test - superseded) | `brownies_bp.py` | she made tea for herself, not him (he makes hers daily) / his points read ZERO / she'd already baked the brownies - to throw at him |
 | 2026-10-01 | kindness machine (browny points, feature-adapted) | `kindness.py` | tea for herself not him / his points read 0 / brownies were baked to throw at him / +10 for not throwing |
+| 2026-10-02 | forgot the anniversary (shared calendar + notifications) | `anniversary.py` | anniversary / calendar day empty / she never added it - "why are you mad at ME?" / mum's birthday is tomorrow |
