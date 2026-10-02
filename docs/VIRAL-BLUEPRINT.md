@@ -141,6 +141,11 @@ a text from her ex ("Happy anniversary baby. I miss you 🥺"), he asks "Babe…
 ends on a cliffhanger built for comments, likes and a sequel. Use this kind of sting when the opening
 fight mentions an ex or a third person.
 
+**Standard ending for every dialogue ad (from 2026-10-02):** after the end card, a text lands on one
+pup's phone from someone who threatens the couple (an ex, his mum…), the other asks "Babe… who was
+that?", the owner says "…No one.", and a like goal for part 2 sits on screen ("1k / 5k / 10k likes for
+part 2 👀"). Built with `pipeline/specs/sting.py` → `sting(owner, sender, line1, line2, goal)`.
+
 Twist lines stay with one speaker — don't split a punchline across both pups.
 
 ## Checklist before building any new one

@@ -165,3 +165,15 @@ like any other scene), optional `PRELUDE`/`MUSIC_N`. Produces
 `pipeline/specs/ad_couplein_fightfix.py` for a worked example, including the
 `adTag()`/`appBadge()` PRELUDE helpers for an on-screen "Ad" disclosure tag
 and app-store-style badges.
+
+## 2026-10-02 reshuffle (test the dialogue ads ASAP — goal: 500k views + 2k users by 21 Oct)
+
+The three blueprint dialogue ads now take the **18:00 slot** next week (IG+FB Reel + TikTok, same file):
+- Mon 5 Oct 18:00 — last biscuit v3 (`biscuit3.py`): ends on ex's text "I got your favourite biscuits 🍪😉" → "Babe… who was that?" / "…No one." — **1k likes for part 2**
+- Wed 7 Oct 18:00 — double-booked v3 (`doublebook3.py`): ends on his mum's text "She's not the one. Don't marry her." → "…No one." — **5k likes for part 2**
+- Fri 9 Oct 18:00 — forgot the anniversary v3 (`anniversary.py`): ends on ex's text "Happy anniversary baby. I miss you 🥺" → "…No one." — **10k likes for part 2**
+
+Displaced organic videos moved to the end of the batch: "When a boy loves you" → Thu 15 Oct 10:00; "Love languages" → Thu 15 Oct 18:00; "Hangry" → Fri 16 Oct 10:00.
+Removed from their old slots: anniversary (was 15 Oct 20:00), biscuit (was 20 Oct 20:00), double-booked (was 27 Oct 20:00). Kindness machine stays Wed 21 Oct 20:00.
+**Last scheduled organic JJ slot is now Fri 16 Oct 10:00 — the next batch starts at Fri 16 Oct 18:00.**
+Each video's part 2 is promised on screen: build it if the like goal is hit (check Metricool).
