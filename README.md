@@ -6,7 +6,7 @@ local voice, and an original synthesized music bed. Built so a brand-new
 Claude session — or a human — can pick this up cold, with no memory of any
 prior conversation.
 
-**Making a marketing video with the puppies? Read [`docs/VIRAL-BLUEPRINT.md`](docs/VIRAL-BLUEPRINT.md) first — it is the standard every one must follow.**
+**Making a marketing video with the puppies? Start with [`docs/DIALOGUE-AD-TEMPLATE.md`](docs/DIALOGUE-AD-TEMPLATE.md)** — the reusable template (what makes a 10, what flexes, how to adapt). Code: `pipeline/adkit.py` + `pipeline/specs/_template_ad.py`. Rule history: `docs/VIRAL-BLUEPRINT.md`.
 
 **Start here, in order:**
 

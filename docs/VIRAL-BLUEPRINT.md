@@ -1,5 +1,7 @@
 # Viral blueprint — JJ puppy marketing videos
 
+> **Superseded as the entry point by [`DIALOGUE-AD-TEMPLATE.md`](DIALOGUE-AD-TEMPLATE.md)** (the clean reusable template). This file is the history of how each rule was learned.
+
 **Status: the standard for every puppy video that markets CoupleIn.** Built from
 "the last biscuit" (`pipeline/specs/biscuit2.py`, rendered 2026-10-01), the
 video the user rated *really good* after five earlier versions were rejected as
