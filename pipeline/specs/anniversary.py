@@ -93,5 +93,25 @@ D('girl', "Oh, and your mum's birthday... is tomorrow.", CALM + '''
   SP('boy',u,{x:680,look:[-.5,-.2],eyes:u>2?'wide':'happy',mouth:u>2?'o':'smile',earLift:u>2?.5:0,hx:u>2.2?Math.sin(u*40)*3:0});''', '😂'),
 ]
 
-END = D('girl', "Love shouldn't depend on one person's memory. Put it in once, and you both get reminded. Link in bio!",
-        ENDCARD('never forget the big days', ''), '🔗')
+# End card becomes the second-to-last scene; the final beat is the ex's text (cliffhanger -> comments).
+LINES.append(D('girl', "Love shouldn't depend on one person's memory. Put it in once, and you both get reminded forever. Link in bio!",
+        ENDCARD('never forget the big days', ''), '🔗'))
+
+TEXT = r'''
+  const k=pop(u,.0,.35);
+  ctx.save();ctx.translate(540,560);ctx.scale(k,k);
+  ctx.fillStyle='#fff';ctx.strokeStyle=INK;ctx.lineWidth=5;ctx.beginPath();ctx.roundRect(-300,-110,600,220,34);ctx.fill();ctx.stroke();
+  ctx.fillStyle='#2b2830';ctx.beginPath();ctx.arc(-240,-58,30,0,7);ctx.fill();ctx.fillStyle='#fff';ctx.font='bold 28px Poppins';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText('E',-240,-56);
+  ctx.textAlign='left';ctx.fillStyle=INK;ctx.font='bold 30px Poppins, "Noto Color Emoji"';ctx.fillText('Ex 🚩',-196,-70);
+  ctx.fillStyle='#8a7b80';ctx.font='20px Poppins';ctx.fillText('message · now',-196,-38);
+  ctx.fillStyle='#e9e9ee';ctx.beginPath();ctx.roundRect(-270,-6,540,96,26);ctx.fill();
+  ctx.fillStyle=INK;ctx.font='bold 30px Poppins, "Noto Color Emoji"';ctx.fillText('Happy anniversary baby.',-246,28);ctx.fillText('I miss you 🥺',-246,66);
+  ctx.restore();'''
+
+LINES.append(D('boy', "Babe... who was that?", CALM + "corner('wait... WHAT 👀',win(u,.4,9));" + TEXT + '''
+  SP('girl',u,{x:300,flip:-1,look:[.6,-.3],eyes:'wide',mouth:'o',earLift:.4,blush:.6});
+  SP('boy',u,{x:780,look:[-.6,-.3],eyes:'squint',talk:1,mouth:'flat',brows:'angry',tilt:.08});''', '🤨'))
+
+END = D('girl', "...No one.", CALM + "corner('10k likes for part 2 👀',win(u,.5,99));" + TEXT.replace("pop(u,.0,.35)", "1") + '''
+  SP('girl',u,{x:300,flip:-1,look:[-.6,.2],eyes:'squint',talk:1,mouth:'smile',blush:.8,tilt:-.1,hx:Math.sin(u*3)*3});
+  SP('boy',u,{x:780,look:[-.6,0],eyes:'squint',mouth:'flat',brows:'angry',tilt:.1});''', '🙂')

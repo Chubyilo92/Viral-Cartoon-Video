@@ -135,6 +135,12 @@ we got the app?" was one way in; others: "Okay. Let's just check the app." / "Ch
 not there, I'll apologise." / "Fine. It's in there. Then you're apologising." The stakes label can
 change too ("last try 💔", "who's apologising? 👀").
 
+**Post-end-card sting (anniversary v3):** after the end card, one more beat — her phone lights up with
+a text from her ex ("Happy anniversary baby. I miss you 🥺"), he asks "Babe… who was that?", she says
+"…No one." with "10k likes for part 2 👀" on screen. It pays off the opening "my ex was better" line and
+ends on a cliffhanger built for comments, likes and a sequel. Use this kind of sting when the opening
+fight mentions an ex or a third person.
+
 Twist lines stay with one speaker — don't split a punchline across both pups.
 
 ## Checklist before building any new one
