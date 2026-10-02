@@ -22,7 +22,7 @@ function ping(x,y,s,title,sub,a){if(a<=0)return;ctx.save();ctx.translate(x,y);ct
   ctx.fillStyle=INK;ctx.font='bold 32px Poppins, "Noto Color Emoji"';ctx.fillText(title,-200,14);ctx.font='22px Poppins, "Noto Color Emoji"';ctx.fillText(sub,-200,48);ctx.restore();}
 function ring(x,y,u){ctx.save();ctx.strokeStyle=INK;ctx.lineWidth=5;ctx.lineCap='round';for(let i=0;i<3;i++){const r=30+i*22+Math.sin(u*14)*3;ctx.globalAlpha=.7-i*.2;ctx.beginPath();ctx.arc(x,y,r,-.7,.7);ctx.stroke();ctx.beginPath();ctx.arc(x,y,r,Math.PI-.7,Math.PI+.7);ctx.stroke();}ctx.restore();}
 '''
-RED, SAD, CALM, FLICK, SH, STAKES = B.RED, B.SAD, B.CALM, B.FLICK, B.SH, B.STAKES
+RED, SAD, CALM, FLICK, SH, STAKES = B.RED, B.SAD, B.CALM, B.FLICK, B.SH, "corner('who\\'s apologising? 👀',1);"
 HOOK = "corner('he forgot something HUGE 👇',1);"
 
 LINES = [
@@ -47,11 +47,11 @@ D('girl', "At least HE remembered what today was.", RED + "corner('wait for it �
 D('boy', "...What IS today?", SAD + "chip('1 HOUR LATER',win(u,.1,2.6));" + '''
   SP('boy',u,{x:540,look:[.2,.4],brows:'sad',talk:1,mouth:'o',eyes:'wide',earLift:-.4,tilt:.12});
   raincloudSmall(540,640,1);''', '😰'),
-D('boy', "Babe... remember why we got the app?", SAD + '''
+D('boy', "Okay. Let's just check the app.", SAD + '''
   const k=P(u,.0,1.0);
   SP('girl',u,{x:330,flip:-1,look:[.6,0],brows:'angry',mouth:'pout',eyes:'squint',earLift:-.2});
   SP('boy',u,{x:lerp(1100,760,k),look:[-.5,.1],brows:'sad',talk:1,mouth:'flat',earLift:-.3});''', '📱'),
-D('girl', "Fine. Check it. If it's not in there... we're done.", SAD + "corner('last try 💔',win(u,2.2,9));" + '''
+D('girl', "Fine. It's in there. Then you're apologising.", SAD + "corner('who\\'s apologising? 👀',win(u,1.8,9));" + '''
   SP('girl',u,{x:330,flip:-1,look:[.6,0],brows:'angry',talk:1,mouth:'flat',earLift:-.2});
   SP('boy',u,{x:760,look:[-.5,.1],brows:'sad',mouth:u>2.6?'o':'flat',eyes:u>2.6?'wide':'open',earLift:-.2});'''),
 D('boy', "Shared calendar... today... nothing.", CALM + STAKES + '''
@@ -59,7 +59,7 @@ D('boy', "Shared calendar... today... nothing.", CALM + STAKES + '''
   SP('girl',u,{x:250,s:1.1,flip:-1,look:[.5,-.2],brows:'angry',mouth:'flat'});
   SP('boy',u,{x:510,s:1.1,look:[.5,-.2],talk:1,mouth:'flat',brows:'sad',paw:{x:90,y:-150,k:P(u,.1,.5)}});
   calPhone(830,1010-r*40,1.5*r+.01,-.04,'Today · 14 Oct',[],u>1.4);''', '📅'),
-D('girl', "It's our ANNIVERSARY!", CALM + FLICK + "corner('last try 💔',1);" + '''
+D('girl', "It's our ANNIVERSARY!", CALM + FLICK + "corner('who\\'s apologising? 👀',1);" + '''
   SP('girl',u,{x:330,flip:-1,look:[.6,0],brows:'angry',talk:1,mouth:'open',earLift:.5,%s});
   SP('boy',u,{x:760,look:[-.5,0],eyes:'wide',brows:'sad',mouth:'o',earLift:-.4});
   if(u>.6){ctx.save();ctx.globalAlpha=win(u,.6,9);const k=pop(u,.6,.4);heart(540,640,70*k,'#ec7489');ctx.font='bold 44px Poppins, "Noto Color Emoji"';ctx.textAlign='center';ctx.fillStyle=INK;ctx.fillText('the thing he forgot',540,520);ctx.restore();}''' % SH, '💔'),

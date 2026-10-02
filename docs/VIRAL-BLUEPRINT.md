@@ -120,6 +120,19 @@ get notified — "So… why are you mad at ME?" ("plot twist 👀"), she admits 
 ping — his mum's birthday is tomorrow. Ending: "Love shouldn't depend on one person's memory. Put it
 in once, and you both get reminded." Spec: `anniversary.py`.
 
+**Shared calendar, variant 2 — double-booking** (`doublebook.py`): avoids the "why can't he just
+remember?" objection the anniversary one invites. Hook: "This is why I never wanted to marry a short
+guy!" / "I'm not short. You're just freakishly tall!" Cause: he booked a work meeting over the dinner
+she set up with the neighbours. Check: "Check the app. If it's not there, I'll apologise." — it is.
+He adds his meeting to move it, both sit at 7pm side by side → twist: his meeting is WITH Tom, the
+neighbour. Laugh: "Business dinner. And Tom's paying." Ending: "Two diaries, one life. Put it all in
+one shared calendar and you'll see the clash before the fight."
+
+**Framework, not wording.** Never reuse the same transition line across videos. "Babe… remember why
+we got the app?" was one way in; others: "Okay. Let's just check the app." / "Check the app. If it's
+not there, I'll apologise." / "Fine. It's in there. Then you're apologising." The stakes label can
+change too ("last try 💔", "who's apologising? 👀").
+
 Twist lines stay with one speaker — don't split a punchline across both pups.
 
 ## Checklist before building any new one
@@ -154,3 +167,4 @@ Keep the four-act skeleton; change the trigger and the feature:
 | 2026-10-01 | browny points (first test - superseded) | `brownies_bp.py` | she made tea for herself, not him (he makes hers daily) / his points read ZERO / she'd already baked the brownies - to throw at him |
 | 2026-10-01 | kindness machine (browny points, feature-adapted) | `kindness.py` | tea for herself not him / his points read 0 / brownies were baked to throw at him / +10 for not throwing |
 | 2026-10-02 | forgot the anniversary (shared calendar + notifications) | `anniversary.py` | anniversary / calendar day empty / she never added it - "why are you mad at ME?" / mum's birthday is tomorrow |
+| 2026-10-02 | double-booked (shared calendar) | `doublebook.py` | short-guy insult / dinner vs work meeting / app proves her right / meeting is WITH the neighbour / Tom's paying |

@@ -153,6 +153,8 @@ count these toward the "7 videos" batch math or the script numbering in
 | 2026-09-30 | "The fight you keep having" — painkiller angle selling CoupleIn's 5-minute fight fix feature, mocked-up phone UI (no real screenshots — coupleinapp.com is blocked by this session's network policy), custom download-CTA end card instead of the usual quiz/follow-counter ending, custom cover image | IG+FB Reel + TikTok (same creative both cuts — no platform-specific ending needed for a direct-response ad) | Scheduled as a 3rd post on 6 Oct 2026, 20:00 Europe/London (that day already had 2 organic posts at 10:00/18:00) |
 | 2026-10-01 | "We almost broke up over this" - last biscuit (Resolve; VIRAL-BLUEPRINT original, `biscuit2.py`), two-voice dialogue, app unnamed in story | IG+FB Reel + TikTok (same file) | Scheduled Tue 20 Oct 2026 20:00 Europe/London (auto-publish) |
 | 2026-10-01 | "We almost broke up over this" - kindness machine (browny points, `kindness.py`) | IG+FB Reel + TikTok (same file) | Scheduled Wed 21 Oct 2026 20:00 Europe/London (auto-publish) |
+| 2026-10-02 | "She broke up with me over this" - forgot the anniversary (shared calendar, `anniversary.py`); test: comments vs conversions | IG+FB Reel + TikTok (same file) | Scheduled Thu 15 Oct 2026 20:00 Europe/London (auto-publish) |
+| 2026-10-02 | "She called me short over THIS" - double-booked (shared calendar, `doublebook.py`) | IG+FB Reel + TikTok (same file) | Scheduled Tue 27 Oct 2026 20:00 Europe/London (auto-publish) |
 
 **Build tool**: `pipeline/build_ad.py <slug>` (not `make_video.py` — ads need
 a custom end card/CTA rather than the quiz or follow-counter ending, so they
