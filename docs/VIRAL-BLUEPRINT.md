@@ -124,9 +124,11 @@ in once, and you both get reminded." Spec: `anniversary.py`.
 remember?" objection the anniversary one invites. Hook: "This is why I never wanted to marry a short
 guy!" / "I'm not short. You're just freakishly tall!" Cause: he booked a work meeting over the dinner
 she set up with the neighbours. Check: "Check the app. If it's not there, I'll apologise." — it is.
-He adds his meeting to move it, both sit at 7pm side by side → twist: his meeting is WITH Tom, the
-neighbour. Laugh: "Business dinner. And Tom's paying." Ending: "Two diaries, one life. Put it all in
-one shared calendar and you'll see the clash before the fight."
+It isn't there — only his work meeting is ("plot twist 👀"). She realises and apologises:
+"…I was so sure I put it in." / "I'm sorry, babe. I shouldn't have called you short." / "And?" /
+"…And you're the perfect height." Ending is one plain line: "This is what CoupleIn is for."
+(v1 had a "his meeting is WITH Tom the neighbour" twist and a feature-pitch ending — the user
+rejected both as too salesy. Keep twists human and the closing line short.)
 
 **Framework, not wording.** Never reuse the same transition line across videos. "Babe… remember why
 we got the app?" was one way in; others: "Okay. Let's just check the app." / "Check the app. If it's

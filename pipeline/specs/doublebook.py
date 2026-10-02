@@ -18,7 +18,7 @@ def cal(x, y, s, rows, extra=''):
     return "calPhone(%s,%s,%s,-.04,'Friday · 7:00 pm',%s,false);%s" % (x, y, s, rows, extra)
 
 DINNER = "['🍝 Tom & Sarah','dinner · added by her']"
-MEET = "['💼 client: Tom','meeting · added by him']"
+MEET = "['💼 work meeting','7pm · added by him']"
 
 LINES = [
 D('girl', "This is why I never wanted to marry a short guy!", RED + HOOK + '''
@@ -46,36 +46,30 @@ D('boy', "Because you NEVER tell me anything!", RED + "corner('wait for it 👀'
 D('girl', "I told you two weeks ago. Check the app. If it's not there, I'll apologise.", CALM + "corner('who\\'s apologising? 👀',win(u,2.4,9));" + '''
   SP('girl',u,{x:300,flip:-1,look:[.6,0],brows:'angry',talk:1,mouth:'flat',eyes:'squint',tilt:-.1,s:1.35});
   SP('boy',u,{x:790,look:[-.6,0],brows:'angry',mouth:'flat',s:1.15});''', '📱'),
-D('boy', "Friday, seven o'clock... dinner with Tom and Sarah.", CALM + WHO + '''
+D('boy', "Friday, seven o'clock... just my meeting.", CALM + WHO + '''
   const r=pop(u,.2,.5);
-  SP('girl',u,{x:240,s:1.05,flip:-1,look:[.5,-.2],eyes:'squint',mouth:'smile',tilt:-.1});
-  SP('boy',u,{x:450,s:.95,look:[.5,-.2],talk:1,mouth:'flat',brows:'sad',earLift:-.3,paw:{x:90,y:-150,k:P(u,.1,.5)}});
-  ''' + cal('770', '1010-r*40', '1.5*r+.01', '[%s]' % DINNER), '📅'),
-D('girl', "So. Who's apologising?", CALM + WHO + '''
-  SP('girl',u,{x:330,flip:-1,look:[.5,0],eyes:'squint',talk:1,mouth:'smile',tilt:-.12,s:1.35});
-  SP('boy',u,{x:780,look:[-.4,.3],brows:'sad',mouth:'pout',earLift:-.5,hy:6,s:1.15});''', '😌'),
-D('boy', "Fine. I'll add my meeting so I can move it.", CALM + WHO + '''
-  const r=pop(u,.2,.5);
-  SP('girl',u,{x:240,s:1.05,flip:-1,look:[.5,-.2],eyes:'squint',mouth:'smile'});
-  SP('boy',u,{x:450,s:.95,look:[.5,-.2],talk:1,mouth:'flat',brows:'sad',paw:{x:90,y:-150,k:P(u,.1,.5)}});
-  ''' + cal('770', '1010-r*40', '1.5*r+.01', '[%s].concat(u>1.6?[%s]:[])' % (DINNER, MEET)), '💼'),
-D('boy', "Wait... my meeting is with Tom.", CALM + "corner('plot twist 👀',win(u,.2,9));" + '''
-  SP('girl',u,{x:240,s:1.05,flip:-1,look:[.5,-.2],eyes:u>1.2?'wide':'squint',mouth:u>1.2?'o':'smile',earLift:u>1.2?.4:0});
-  SP('boy',u,{x:450,s:.95,look:[.5,-.2],talk:1,eyes:'wide',mouth:'o',earLift:.4});
-  ''' + cal('770', '970', '1.5', '[%s,%s]' % (DINNER, MEET),
-            "if(u>.6){ctx.save();ctx.globalAlpha=win(u,.6,9);ctx.strokeStyle='#d9503f';ctx.lineWidth=7;ctx.beginPath();ctx.ellipse(770,745,175,175,0,0,7);ctx.stroke();ctx.font='bold 42px Poppins, \"Noto Color Emoji\"';ctx.fillStyle=INK;ctx.textAlign='center';ctx.fillText('same Tom?! 🤯',700,540);ctx.restore();}"), '🤯'),
-D('girl', "Tom from number twelve is your CLIENT?", CALM + '''
-  SP('girl',u,{x:330,flip:-1,look:[.5,0],eyes:'wide',talk:1,mouth:'open',earLift:.5,s:1.35});
-  SP('boy',u,{x:780,look:[-.5,0],eyes:'wide',mouth:'flat',s:1.15});''', '😳'),
-D('girl', "So we just fought... about the same dinner.", CALM + '''
-  SP('girl',u,{x:330,flip:-1,look:[.4,.2],eyes:'closed2',talk:1,mouth:'pout',blush:.9,earLift:-.4,s:1.35});
-  SP('boy',u,{x:780,look:[-.5,0],eyes:'happy',mouth:'smile',wag:.6,s:1.15});''', '🙈'),
-D('boy', "Business dinner. And Tom's paying.", CALM + '''
-  const hug=P(u,.8,1.6);
-  SP('girl',u,{x:lerp(330,420,hug),flip:-1,look:[.5,0],eyes:'happy',mouth:'open',blush:.7,paw:{x:70,y:-190,k:hug},s:1.3});
-  SP('boy',u,{x:lerp(780,670,hug),look:[-.5,0],eyes:'happy',talk:1,mouth:'smile',blush:.5,wag:1,s:1.15});
-  if(u>1)floatHearts(540,800,1,u,6,170);''', '😂'),
+  SP('girl',u,{x:240,s:1.05,flip:-1,look:[.5,-.2],eyes:u>1.8?'wide':'squint',mouth:u>1.8?'o':'smile',earLift:u>1.8?.3:0});
+  SP('boy',u,{x:450,s:.95,look:[.5,-.2],talk:1,mouth:'flat',paw:{x:90,y:-150,k:P(u,.1,.5)}});
+  ''' + cal('770', '1010-r*40', '1.5*r+.01', '[%s]' % MEET), '📅'),
+D('boy', "No dinner. Nothing.", CALM + "corner('plot twist 👀',win(u,.2,9));" + '''
+  SP('girl',u,{x:240,s:1.05,flip:-1,look:[.5,-.2],eyes:'wide',mouth:'o',earLift:.4,blush:lerp(0,.8,P(u,.3,1))});
+  SP('boy',u,{x:450,s:.95,look:[-.4,0],eyes:'squint',talk:1,mouth:'flat',tilt:.1});
+  ''' + cal('770', '970', '1.5', '[%s]' % MEET), '🤨'),
+D('girl', "...I was so sure I put it in.", CALM + '''
+  SP('girl',u,{x:330,flip:-1,look:[.3,.4],eyes:'closed2',brows:'sad',talk:1,mouth:'pout',blush:1,earLift:-.5,hy:6,s:1.35});
+  SP('boy',u,{x:780,look:[-.5,.1],eyes:'open',mouth:'flat',s:1.15});''', '🙈'),
+D('girl', "I'm sorry, babe. I shouldn't have called you short.", CALM + '''
+  SP('girl',u,{x:330,flip:-1,look:[.5,.1],eyes:'open',brows:'sad',talk:1,mouth:'flat',blush:.8,s:1.35});
+  SP('boy',u,{x:780,look:[-.5,.1],eyes:'squint',mouth:'smile',tilt:.1,s:1.15});''', '🥺'),
+D('boy', "And?", CALM + '''
+  SP('girl',u,{x:330,flip:-1,look:[.5,.1],eyes:'open',brows:'sad',mouth:'pout',blush:.8,s:1.35});
+  SP('boy',u,{x:780,look:[-.5,.1],eyes:'squint',talk:1,mouth:'smile',tilt:.14,s:1.15});''', '😏'),
+D('girl', "...And you're the perfect height.", CALM + '''
+  const hug=P(u,1,1.8);
+  SP('girl',u,{x:lerp(330,420,hug),flip:-1,look:[.5,0],eyes:'happy',talk:1,mouth:'smile',blush:.8,paw:{x:70,y:-190,k:hug},s:1.3});
+  SP('boy',u,{x:lerp(780,670,hug),look:[-.5,0],eyes:'happy',mouth:'smile',blush:.5,wag:1,s:1.15});
+  if(u>1.2)floatHearts(540,800,1.2,u,6,170);''', '💗'),
 ]
 
-END = D('boy', "Two diaries, one life. Put it all in one shared calendar and you'll see the clash before the fight. Link in bio!",
-        ENDCARD('one calendar for two', '', speaker='boy'), '🔗')
+END = D('boy', "This is what CoupleIn is for.",
+        ENDCARD('one calendar for two', '', speaker='boy'), '💗')
