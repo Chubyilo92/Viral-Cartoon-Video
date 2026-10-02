@@ -49,14 +49,14 @@ D('girl', "Then get out.", RED + "corner('wait for it 👀',win(u,.5,9));" + '''
 D('girl', "...Why did I say that?", SAD + "chip('1 HOUR LATER',win(u,.1,2.6));" + '''
   SP('girl',u,{x:420,look:[.1,.5],brows:'sad',talk:1,mouth:'pout',eyes:'closed2',earLift:-.6,hy:10,blush:.3});
   raincloudSmall(420,640,1);''', '🥺'),
-D('boy', "Babe... remember why we got the app?", SAD + '''
+D('boy', "Babe, get the app. Let's try again.", SAD + '''
   const k=P(u,0,1);
   SP('girl',u,{x:330,flip:-1,look:[.6,0],brows:'sad',mouth:'pout',eyes:u>.6?'wide':'closed2',earLift:-.4});
   SP('boy',u,{x:lerp(1100,760,k),look:[-.5,.1],brows:'sad',talk:1,mouth:'flat',earLift:-.3});''', '📱'),
-D('girl', "For moments like this. If it doesn't help... we break up.", SAD + "corner('last try 💔',win(u,2,9));" + '''
+D('girl', "Fine. If it doesn't help... we break up.", SAD + "corner('last try 💔',win(u,2,9));" + '''
   SP('girl',u,{x:330,flip:-1,look:[.6,0],brows:'sad',talk:1,mouth:'flat',earLift:-.2});
   SP('boy',u,{x:760,look:[-.5,.1],brows:'sad',mouth:u>2.4?'o':'flat',eyes:u>2.4?'wide':'open',earLift:-.2});'''),
-D('boy', "Deal. You talk, I repeat it back.", CALM + STAKES + "chip('ROUND 2',win(u,.1,2.6));" + '''
+D('boy', "Let's follow the instructions on screen. You go first.", CALM + STAKES + "chip('ROUND 2',win(u,.1,2.6));" + '''
   const r=pop(u,.3,.5);
   SP('girl',u,{x:250,s:1.1,flip:-1,look:[.5,-.2],brows:'sad',mouth:'flat'});
   SP('boy',u,{x:510,s:1.1,look:[.5,-.2],talk:1,mouth:'flat',paw:{x:90,y:-150,k:P(u,.2,.6)}});
