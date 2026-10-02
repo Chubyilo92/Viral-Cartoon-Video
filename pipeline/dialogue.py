@@ -14,7 +14,11 @@ J.PAD = PAD
 VOICES = {
     'boy':  dict(voice='am_puck',  speed=0.9, pitch=1.36),
     'girl': dict(voice='af_heart', speed=0.9, pitch=1.24),
+    'friend': dict(voice='af_sky', speed=0.95, pitch=1.36),
+    'mum':    dict(voice='bf_emma', speed=0.88, pitch=1.1),
+    'ex':     dict(voice='bm_lewis', speed=0.92, pitch=1.42),
 }
+CAPCOLS = {'boy': '#bfe3ff', 'girl': '#ffc9dc', 'friend': '#fff0a0', 'mum': '#e3ccff', 'ex': '#ffb4a8'}
 
 PRELUDE = r'''
 let CURVO=3,CURLEAD=0,CAPCOL='#fffaf0';
@@ -144,7 +148,12 @@ def build_html(spec, durs, vo=None, lead=None):
                  ("const endT=.2+VO[si];let t=.2;", "const endT=.2+LEAD[si]+VO[si];let t=.2+LEAD[si];"),
                  ("t+=w/tot*(endT-.2)", "t+=w/tot*VO[si]"),
                  ("ctx.fillStyle='#fffaf0';ctx.fillText(tx,x0,0);", "ctx.fillStyle=CAPCOL;ctx.fillText(tx,x0,0);"),
-                 ("if(withCap){title();", "if(withCap){title();CAPCOL=s.who=='boy'?'#bfe3ff':s.who=='girl'?'#ffc9dc':'#fffaf0';")]:
+                 ("if(withCap){title();", "if(withCap){title();CAPCOL=(%s)[s.who]||'#fffaf0';" % json.dumps(CAPCOLS)),
+                 ("const c=PAL[o.kind];", "const c=o.pal||PAL[o.kind];"),
+                 ("if(o.kind=='boy'&&o.bandana)blob([[-68,-160],[0,-150],[68,-160],[42,-126],[0,-100],[-42,-126]],'#6f95ba');",
+                  "if((o.kind=='boy'||o.collar)&&o.bandana)blob([[-68,-160],[0,-150],[68,-160],[42,-126],[0,-100],[-42,-126]],o.bandCol||'#6f95ba');"),
+                 ("blob([[0,0],[-44,-26],[-50,4],[-40,28]],'#ee8fa2');blob([[0,0],[44,-26],[50,4],[40,28]],'#ee8fa2');ell(0,0,14,13,'#f4a9b8');",
+                  "blob([[0,0],[-44,-26],[-50,4],[-40,28]],o.bowCol||'#ee8fa2');blob([[0,0],[44,-26],[50,4],[40,28]],o.bowCol||'#ee8fa2');ell(0,0,14,13,o.bowCol2||'#f4a9b8');")]:
         assert html.count(a) >= 1, a
         html = html.replace(a, b, 1)
     return html

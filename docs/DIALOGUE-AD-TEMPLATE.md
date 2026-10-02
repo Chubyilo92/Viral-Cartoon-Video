@@ -120,6 +120,19 @@ short." · "And?" · "…And you're the perfect height."
 - Sounds: background music bed (user's 3 sounds); a soft two-note ding when a text arrives. No faaaack.
 - Outro: full-screen pink card, huge "1k / 5k / 10k", "likes for part 2 👀", ~2.6s.
 
+## 6b. Extra cast (from 2026-10-02)
+
+Besides the couple, three reusable characters, each with its own look, voice, caption colour and name tag
+(`pipeline/cast.py` → `P(role, x, face, mood, talk)`, `S(who, text, room, [pups…])`):
+- **friend** — "HER BESTIE": golden fur, yellow bow, yellow captions (Kokoro af_sky ×1.36)
+- **mum** — "HIS MUM": grey fur, lilac bow, white collar, lilac captions (bf_emma ×1.1)
+- **ex** — "HER EX 🚩": dark fur, red bandana, red captions (bm_lewis ×1.42)
+Third characters make the story feel like a Reddit thread: a bestie who escalates, a mum who oversteps,
+an ex who knows too much. Keep at most three on screen; app scenes are just the couple.
+
+**Naming the app — exception:** when the ultimatum *is* the app ("put every Thursday in our CoupleIn
+calendar", "you're going to add me on CoupleIn, or we're done!") it can be named once, by the user's choice.
+
 ## 7. Scoring (report every time)
 
 Score each script **and** each finished video out of 10 on: **likes**, **comments**, **shares/sends**,
@@ -144,3 +157,7 @@ genuine surprise. Say what stops it from being a 10 and the fix.
 | kindness machine | browny points | made tea for herself, not him | his points read 0 | he makes her tea every morning; brownies were for throwing | — |
 | forgot the anniversary | shared calendar | anniversary | day is empty | she never added it — "why are you mad at ME?" | ex: "Happy anniversary baby. I miss you" — 10k |
 | double-booked | shared calendar | dinner vs work meeting | dinner not in the app | she apologises — "…you're the perfect height" | his mum: "She's not the one. Don't marry her." — 5k |
+| Lily, every Thursday (bestie → him) | shared calendar | 'Lily ❤️' every Thursday | — | Lily is his 74-year-old dance teacher; the bestie already keyed his car | Lily: "Same time Thursday, handsome? 😘" — 1k |
+| the goldfish | Resolve | fish named after his ex | "you want to feed her once a day" | she renames it Kevin — her ex | Kevin: "Did you just name a fish after me? ❤️" — 5k |
+| mum on the honeymoon (+ his mum) | private shared calendar | he shares his calendar with his mum | — | he planted a decoy dinner in Leeds | Mum: "I'm at the restaurant. Where ARE you two? 😡" — 10k |
+| the wedding planner (+ her ex) | Resolve | he hired her ex | "you want a different cake" | she hates lemon and has eaten his lemon cake for 3 years | the mistake: "He doesn't even know your favourite cake. I do." — 20k |
