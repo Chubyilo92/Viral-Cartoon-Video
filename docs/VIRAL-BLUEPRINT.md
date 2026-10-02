@@ -155,6 +155,11 @@ part 2 👀"). Built with `pipeline/specs/sting.py` → `sting(owner, sender, li
 - The like goal is a **full-screen pink outro** after "…No one." ("1k / 5k / 10k likes for part 2 👀"),
   never a small label. `END_TAIL = OUTRO_SECS` in the spec.
 
+**Keep the feature on screen while it works (from 2026-10-02):** once the app is opened, its screen stays
+visible on the right for every step — e.g. Resolve: "her turn" lit while she speaks, "his turn" while he
+repeats (with "❌ try again" / "✅ heard"), then "the fix" while the solution happens, then "💗 resolved".
+Pups shrink and shift left (s≈1.0–1.05, x≈230/480) to make room. Helper: `RES()` in `biscuit.py`.
+
 Twist lines stay with one speaker — don't split a punchline across both pups.
 
 ## Checklist before building any new one

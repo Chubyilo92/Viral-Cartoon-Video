@@ -27,6 +27,16 @@ SH = "hx:Math.sin(u*45)*4"
 HOOK = "corner('it started over something stupid 👇',1);"
 STAKES = "corner('last try 💔',1);"
 
+
+def RES(rows, active, note, done="[]"):
+    """Resolve screen kept on the right through the whole fix: her turn / his turn / the fix."""
+    return """
+  phoneMock(820,1010,1.35,-.04,()=>{appUI('Resolve');
+    const L={her:'🗣️  her turn',his:'👂  his turn',fix:'🤝  the fix'},R=%s,A=%s,Dn=%s;
+    R.forEach((k,i)=>{const on=i===A,ok=Dn.includes(i);pill(-200+i*42,(ok?'✓ ':'')+L[k],on,ok?'#3fae6a':'#ff6b9d');});
+    const nt=%s;if(nt){ctx.fillStyle=nt.startsWith('❌')?'#d9503f':nt.startsWith('✅')||nt.startsWith('💗')?'#3fae6a':INK;ctx.font='bold 14px Poppins, \"Noto Color Emoji\"';ctx.textAlign='center';ctx.fillText(nt,0,-48);}
+  });""" % (rows, active, done, note)
+
 LINES = [
 D('girl', "I can't stand you anymore!", RED + HOOK + '''
   SP('girl',u,{x:320,flip:-1,look:[.6,0],brows:'angry',talk:1,mouth:'open',earLift:.5,tilt:-.08,%s,s:1.4});
@@ -63,34 +73,34 @@ D('boy', "Let's follow the instructions on screen. You go first.", CALM + STAKES
   phoneMock(830,1000-r*40,1.4*r+.01,-.04,()=>{appUI('Resolve');
     ctx.fillStyle=INK;ctx.font='bold 15px Poppins';ctx.textAlign='center';ctx.fillText('One speaks.',0,-190);ctx.fillText('One repeats',0,-170);ctx.fillText('what they heard.',0,-150);
     pill(-118,'🗣️  her turn',true);pill(-80,'👂  his turn',false);});'''),
-D('girl', "You ate the last biscuit. And you didn't even ask.", CALM + STAKES + "chip('🗣️ SHE SPEAKS',win(u,.1,9));" + '''
-  SP('girl',u,{x:330,flip:-1,look:[.5,.2],brows:'sad',talk:1,mouth:'pout',earLift:-.2,blush:.3});
-  SP('boy',u,{x:760,look:[-.5,.1],eyes:u>1.3?'wide':'open',mouth:u>1.3?'o':'flat'});
-  if(u>1.2){ctx.save();ctx.globalAlpha=win(u,1.2,9);biscuit(540,780,2.2*pop(u,1.2,.4));ctx.font='bold 44px Poppins, "Noto Color Emoji"';ctx.textAlign='center';ctx.fillStyle=INK;ctx.fillText('the something stupid',540,670);ctx.restore();}''', '🍪'),
-D('boy', "What I heard is... you hate me.", CALM + STAKES + "chip('👂 HE REPEATS',win(u,.1,9));" + '''
-  SP('girl',u,{x:330,flip:-1,look:[.5,.1],eyes:u>1.2?'wide':'open',brows:u>1.4?'angry':'sad',mouth:u>1.4?'o':'flat',earLift:u>1.4?.4:0});
-  SP('boy',u,{x:760,look:[-.5,.1],brows:'sad',talk:1,mouth:'flat'});''', '😬'),
-D('girl', "That is NOT what I said!", CALM + FLICK + "corner('last try 💔',1);" + '''
-  SP('girl',u,{x:330,flip:-1,look:[.6,0],brows:'angry',talk:1,mouth:'open',earLift:.5,%s});
-  SP('boy',u,{x:760,look:[-.5,0],eyes:'wide',brows:'sad',mouth:'o',earLift:-.4});''' % SH, '😤'),
-D('boy', "Sorry. I took the last one... and you felt forgotten.", CALM + STAKES + "chip('👂 TRY AGAIN',win(u,.1,9));" + '''
-  SP('girl',u,{x:330,flip:-1,look:[.5,.1],eyes:'open',brows:'sad',mouth:'flat'});
-  SP('boy',u,{x:760,look:[-.5,.1],brows:'sad',talk:1,mouth:'flat',earLift:-.2});''', '🥺'),
-D('girl', "...Yeah. That's exactly it.", CALM + "corner('it worked 💗',win(u,.6,9));" + '''
-  SP('girl',u,{x:330,flip:-1,look:[.5,.1],eyes:'happy',talk:1,mouth:'smile',blush:.6,tilt:-.08});
-  SP('boy',u,{x:760,look:[-.5,.1],eyes:'happy',mouth:'smile',blush:.3,wag:.5});
-  sparkle(540,640,50*pop(u,.4,.4),win(u,.4,9));'''),
-D('boy', "Next time, I promise not to eat the last biscuit.", CALM + '''
+D('girl', "You ate the last biscuit. And you didn't even ask.", CALM + STAKES + RES("['her','his','fix']", "0", "u>1.2?'🍪 the last biscuit':''") + '''
+  SP('girl',u,{x:230,s:1.05,flip:-1,look:[.5,.2],brows:'sad',talk:1,mouth:'pout',earLift:-.2,blush:.3});
+  SP('boy',u,{x:480,s:1.0,look:[-.5,.1],eyes:u>1.3?'wide':'open',mouth:u>1.3?'o':'flat'});
+  if(u>1.2){ctx.save();ctx.globalAlpha=win(u,1.2,9);biscuit(360,700,1.8*pop(u,1.2,.4));ctx.font='bold 40px Poppins, "Noto Color Emoji"';ctx.textAlign='center';ctx.fillStyle=INK;ctx.fillText('the something stupid',360,600);ctx.restore();}''', '🍪'),
+D('boy', "What I heard is... you hate me.", CALM + STAKES + RES("['her','his','fix']", "1", "''", "[0]") + '''
+  SP('girl',u,{x:230,s:1.05,flip:-1,look:[.5,.1],eyes:u>1.2?'wide':'open',brows:u>1.4?'angry':'sad',mouth:u>1.4?'o':'flat',earLift:u>1.4?.4:0});
+  SP('boy',u,{x:480,s:1.0,look:[-.5,.1],brows:'sad',talk:1,mouth:'flat'});''', '😬'),
+D('girl', "That is NOT what I said!", CALM + FLICK + "corner('last try 💔',1);" + RES("['her','his','fix']", "1", "'❌ try again'", "[0]") + '''
+  SP('girl',u,{x:230,s:1.05,flip:-1,look:[.6,0],brows:'angry',talk:1,mouth:'open',earLift:.5,%s});
+  SP('boy',u,{x:480,s:1.0,look:[-.5,0],eyes:'wide',brows:'sad',mouth:'o',earLift:-.4});''' % SH, '😤'),
+D('boy', "Sorry. I took the last one... and you felt forgotten.", CALM + STAKES + RES("['her','his','fix']", "1", "''", "[0]") + '''
+  SP('girl',u,{x:230,s:1.05,flip:-1,look:[.5,.1],eyes:'open',brows:'sad',mouth:'flat'});
+  SP('boy',u,{x:480,s:1.0,look:[-.5,.1],brows:'sad',talk:1,mouth:'flat',earLift:-.2});''', '🥺'),
+D('girl', "...Yeah. That's exactly it.", CALM + "corner('it worked 💗',win(u,.6,9));" + RES("['her','his','fix']", "2", "u>.6?'✅ heard':''", "[0,1]") + '''
+  SP('girl',u,{x:230,s:1.05,flip:-1,look:[.5,.1],eyes:'happy',talk:1,mouth:'smile',blush:.6,tilt:-.08});
+  SP('boy',u,{x:480,s:1.0,look:[-.5,.1],eyes:'happy',mouth:'smile',blush:.3,wag:.5});
+  sparkle(360,640,50*pop(u,.4,.4),win(u,.4,9));'''),
+D('boy', "Next time, I promise not to eat the last biscuit.", CALM + RES("['her','his','fix']", "2", "'🤝 the fix'", "[0,1]") + '''
   const k=pop(u,1.6,.5);
-  SP('girl',u,{x:330,flip:-1,look:[.5,.1],eyes:u>1.8?'wide':'happy',mouth:u>1.8?'o':'smile',blush:.5,earLift:u>1.8?.4:0});
-  SP('boy',u,{x:760,look:[-.5,.1],eyes:'happy',talk:1,mouth:'smile',blush:.4,paw:{x:-110,y:-130,k:P(u,1.4,1.9)}});
-  if(u>1.5){packet(545,G-30-k*30,k*1.05+.01,-.1);sparkle(680,780,40,win(u,1.8,9));}''', '🍪'),
-D('girl', "...You had a spare packet this whole time?!", CALM + '''
+  SP('girl',u,{x:230,s:1.05,flip:-1,look:[.5,.1],eyes:u>1.8?'wide':'happy',mouth:u>1.8?'o':'smile',blush:.5,earLift:u>1.8?.4:0});
+  SP('boy',u,{x:480,s:1.0,look:[-.5,.1],eyes:'happy',talk:1,mouth:'smile',blush:.4,paw:{x:-110,y:-130,k:P(u,1.4,1.9)}});
+  if(u>1.5){packet(330,G-75-k*15,k*.68+.01,-.1);sparkle(470,880,36,win(u,1.8,9));}''', '🍪'),
+D('girl', "...You had a spare packet this whole time?!", CALM + RES("['her','his','fix']", "-1", "'💗 resolved'", "[0,1,2]") + '''
   const hug=P(u,1.4,2.2);
-  packet(545,G-60,1.05,-.1);
-  SP('girl',u,{x:lerp(330,400,hug),flip:-1,look:[.5,0],eyes:u<1.4?'wide':'happy',talk:1,mouth:u<1.4?'open':'smile',blush:.6,brows:u<1.4?'angry':null});
-  SP('boy',u,{x:lerp(760,700,hug),look:[-.5,0],eyes:'squint',mouth:'smile',blush:.6,wag:1,tilt:.1});
-  if(u>1.6)floatHearts(540,760,1.6,u,6,170);''', '😂'),
+  SP('girl',u,{x:lerp(230,280,hug),s:1.05,flip:-1,look:[.5,0],eyes:u<1.4?'wide':'happy',talk:1,mouth:u<1.4?'open':'smile',blush:.6,brows:u<1.4?'angry':null});
+  SP('boy',u,{x:lerp(480,440,hug),s:1.0,look:[-.5,0],eyes:'squint',mouth:'smile',blush:.6,wag:1,tilt:.1});
+  packet(355,G-60,.68,-.1);
+  if(u>1.6)floatHearts(360,760,1.6,u,6,140);''', '😂'),
 ]
 
 END = D('girl', "Every couple fights over something stupid. This is how we fix ours. Link in bio!",
