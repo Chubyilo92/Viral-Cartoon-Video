@@ -177,3 +177,12 @@ Displaced organic videos moved to the end of the batch: "When a boy loves you" �
 Removed from their old slots: anniversary (was 15 Oct 20:00), biscuit (was 20 Oct 20:00), double-booked (was 27 Oct 20:00). Kindness machine stays Wed 21 Oct 20:00.
 **Last scheduled organic JJ slot is now Fri 16 Oct 10:00 — the next batch starts at Fri 16 Oct 18:00.**
 Each video's part 2 is promised on screen: build it if the like goal is hit (check Metricool).
+
+## 2026-10-02 (late) — drama ads, max 3 ads per week
+
+User rule: **no more than three ads ("salesy" dialogue videos) per week.** All at 18:00, IG+FB Reel + TikTok, same file.
+- Week of 5 Oct: biscuit (Mon 5), double-booked (Wed 7), anniversary (Fri 9) — unchanged.
+- Week of 12 Oct: Lily (Mon 12, 1k), goldfish (Thu 15, 5k), mum on the honeymoon (Sun 18, 10k).
+- Week of 19 Oct: wedding planner (Mon 19, 20k) + kindness machine (Wed 21, 20:00).
+Displaced organic: "When an introvert loves you" Mon 12 18:00 → Fri 16 Oct 18:00; "Love languages" Thu 15 18:00 → Sat 17 Oct 10:00.
+**Last scheduled organic JJ slot is now Sat 17 Oct 10:00 — next batch starts Sat 17 Oct 18:00 and must skip the ad slots (Sun 18, Mon 19 18:00; Wed 21 20:00).**
