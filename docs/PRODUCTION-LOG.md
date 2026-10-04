@@ -36,47 +36,130 @@ ending used, Metricool post status.
 | 2026-10-01 | 20. Stubborn love | Love Language quiz (Acts of Service) | Follow counter (3/1,000) | Scheduled Tue 13 Oct 18:00 |
 | 2026-10-01 | 21. Forgives easily (hook rewritten pre-build — see SCRIPTS.md) | Love Language quiz (Words of Affirmation) | Follow counter (3/1,000) | Scheduled Wed 14 Oct 10:00 |
 | 2026-10-01 | 22. The planner | Love Language quiz (Acts of Service) | Follow counter (3/1,000) | Scheduled Wed 14 Oct 18:00 |
+| 2026-10-04 | 23. Competitive partner | Love Language quiz (Quality Time) | Follow counter (3/1,000) | Scheduled Sat 17 Oct 2026 18:00 (IG+FB Reel, TikTok) |
+| 2026-10-04 | 24. Struggles to ask for help | Love Language quiz (Acts of Service) | Follow counter (3/1,000) | Scheduled Sun 18 Oct 2026 10:00 |
+| 2026-10-04 | 25. The fixer | Love Language quiz (Words of Affirmation) | Follow counter (3/1,000) | Scheduled Mon 19 Oct 2026 10:00 |
+| 2026-10-04 | 26. Opposites balance | Love Language quiz (Physical Touch) | Follow counter (3/1,000) | Scheduled Tue 20 Oct 2026 10:00 |
+| 2026-10-04 | 27. Bad at compliments | Love Language quiz (Acts of Service) | Follow counter (3/1,000) | Scheduled Tue 20 Oct 2026 18:00 |
+| 2026-10-04 | 28. Hurt boy (gender-flip of #4, share line added pre-build — see SCRIPTS.md) | Love Language quiz (Physical Touch) | Follow counter (3/1,000) | Scheduled Wed 21 Oct 2026 10:00 |
+| 2026-10-04 | 29. Private partner | Love Language quiz (Quality Time) | Follow counter (3/1,000) | Scheduled Wed 21 Oct 2026 18:00 |
 
-## Batch of 2026-10-01 — 10/10 scoring (downloads / engagement / conversion / relatability)
+## Batch of 2026-10-04 — 10/10 scoring (downloads / engagement / conversion / relatability)
 
 Metricool analytics for brand 7128333 were pulled first (`getAnalyticsDataByMetrics`,
-TKEV02/06/01 evolution, 24 Sep - 1 Oct): ~150-320 views/day and 1-8
-interactions/day, all from the two videos delivered directly to the user
-before the Metricool scheduling pipeline existed — too thin to extract a
-hook/pacing bar (no JJ post has gone through the actual posting pipeline yet;
-the first is scheduled for 5 Oct). Scored against the `GROWTH-STRATEGY.md`
-template and the established 10/10 rubric instead. TikTok follower count
-checked via TKEV07: 3 (unchanged since 2026-09-30).
+TikTok evolution TKEV01-08 and Instagram evolution IGEV01/22/23/25/26/09, last
+30 days, plus `getScheduledPosts` for 4-6 Oct). Still too thin to set a
+hook/pacing bar: no JJ post has gone through the real posting pipeline yet —
+the first organic post was scheduled for Mon 5 Oct 2026 10:00 and was still
+PENDING as of this batch (run on 4 Oct, before that slot fired). All visible
+TikTok views/interactions in the last 30 days predate the pipeline (the two
+videos delivered directly to the user in late Sept). So, same as every prior
+batch, scored against the `GROWTH-STRATEGY.md` template and the established
+10/10 rubric instead of real post-level data. TikTok follower count checked
+via TKEV07 (1-4 Oct): still 3 — unchanged since 2026-09-30, confirming no JJ
+video has gone live yet to move it.
+
+**Pre-build scores:**
 
 | # | Script | Downloads | Engagement | Conversion | Relatability | Avg | Notes |
 |---|---|---|---|---|---|---|---|
-| 16 | When a girl loves you | 9 | 9 | 9 | 9 | 9.0 | Mirrors #1's proven hook/structure for a new (male) audience |
-| 17 | When he says I'm fine | 9 | 9 | 9 | 9 | 9.0 | Mirrors #2; everyday-stress angle, distinct from #11 |
-| 18 | When an introvert loves you | 9 | 9 | 9 | 9 | 9.0 | |
-| 19 | Tiny things | 9 | 9 | 9 | 10 | 9.25 | Most universal hook in the batch |
-| 20 | Stubborn love | 9 | 9 | 9 | 9 | 9.0 | Comment-bait framing ("never said sorry, but—") |
-| 21 | Forgives easily | 8 | 8 | 9 | 8.5 | 8.4 → 9.0 | **Weakest pre-build.** Hook was abstract ("when someone who forgives easily loves you...") and the share line had no urgency. Rewritten before building: opens on a sharper visual beat ("they cut you off mid-apology") and the share line now reads "send this to them, right now, before you forget." Re-scored 9/9/9/9 = 9.0 after rewrite; built from the rewritten version. |
-| 22 | The planner | 9 | 9 | 9 | 9 | 9.0 | On-screen title pre-shortened per the title-length lesson below |
+| 23 | Competitive partner | 9 | 9 | 9 | 9 | 9.0 | Strong visual hook (races to the car/remote); comment-bait potential |
+| 24 | Struggles to ask for help | 9 | 9 | 9 | 9.5 | 9.1 | Near-universal behavior; highest relatability in the batch |
+| 25 | The fixer | 9 | 9 | 9 | 9 | 9.0 | One beat ("they're learning, slowly...") dropped from the original 8-beat draft to fit the fixed 7-line format, folded into the payoff |
+| 26 | Opposites balance | 9 | 9 | 9 | 9 | 9.0 | Couple-dynamic rather than single-partner-trait; both pups shown throughout |
+| 27 | Bad at compliments | 9.5 | 9 | 9 | 9 | 9.1 | Strong "tag someone who does this" comment-bait |
+| 28 | Hurt boy (gender-flip of #4) | 9 | 9 | 8 | 9 | 8.75 → 9.0 | **Weakest pre-build.** Original draft (like #4) had no explicit mid-video share line, unlike every other script in this batch — weaker conversion. Rewritten before building: dropped the "he'll test it... canceled plan" beat and replaced it with an explicit share line ("If someone's slowly letting you prove the old pattern wrong... send this to him."), keeping the 7-line/7-scene format. Re-scored 9/9/9/9 = 9.0 after rewrite; built from the rewritten version (see `pipeline/specs/hurt_boy_trust.py` and `SCRIPTS.md`). |
+| 29 | Private partner | 9 | 9 | 9 | 9.5 | 9.1 | Most culturally current topic in the batch (present-day social-media-oversharing norms); one beat ("defend fiercely") dropped from the original 8-beat draft to fit the fixed 7-line format |
+
+All 7 scripts were also trimmed to the word-count budget (body ≤145 words,
+body + IG end-line ≤165 words) before building — the drafts handed into this
+batch ran slightly over (119-148 words body-only) and were tightened,
+preserving the hook and payoff lines exactly, per the standing word-count
+lesson below.
+
+**Post-build scores (after render + full QA):** unchanged from pre-build for
+all 7 — every cut passed every mechanical check in `QA-CHECKLIST.md` on the
+first render (no second pass, no re-encode needed), and manual frame
+inspection found no visual glitches, correct captions, correct
+platform-specific end cards (IG quiz card with the right result label;
+TikTok 3/1,000 follower counter) and expressions matching each line, so
+nothing was found to lower or raise any score from its pre-build value.
+
+| # | Script | Downloads | Engagement | Conversion | Relatability | Avg |
+|---|---|---|---|---|---|---|
+| 23 | Competitive partner | 9 | 9 | 9 | 9 | 9.0 |
+| 24 | Struggles to ask for help | 9 | 9 | 9 | 9.5 | 9.1 |
+| 25 | The fixer | 9 | 9 | 9 | 9 | 9.0 |
+| 26 | Opposites balance | 9 | 9 | 9 | 9 | 9.0 |
+| 27 | Bad at compliments | 9.5 | 9 | 9 | 9 | 9.1 |
+| 28 | Hurt boy | 9 | 9 | 9 | 9 | 9.0 |
+| 29 | Private partner | 9 | 9 | 9 | 9.5 | 9.1 |
 
 All 7 passed every mechanical check in `QA-CHECKLIST.md` on the first render
-(no second pass needed): overlap gaps all ≥0.55s, durations 54.8-71.5s (all
-within the 35-75s band — #21's IG cut at 71.5s is the longest in the batch,
-still inside range), audio streams present and matched to video duration on
-every file, and all 14 files 13.1-18.0MB (well under the 25MB cap, no
-re-encode needed).
+(no second pass needed for any script): overlap gaps all exactly 0.55s (the
+pipeline's by-design gap) on every one of the 14 cuts, durations 57.7-65.2s
+(all comfortably within the 35-75s band — tightest margin yet, well clear of
+both ends), audio streams present and matched to video duration on every
+file (`ffprobe` confirmed both streams on every cut), all 14 files
+14.1-17.1MB (well under the 25MB cap, no re-encode needed), and IG vs TikTok
+cuts confirmed genuinely different files (distinct md5 hashes) on every one
+of the 7 scripts.
+
+**Hashtags.** `vidiq_instagram_tiktok_outlier_search` was checked via
+`vidiq_balance` first and confirmed to cost 5 credits/call while the account
+only had 3 credits total — skipped per the standing risk-averse rule (any
+doubt about spending credits → skip) rather than risk a failed/overdrawn
+call. Shortlist built instead from: (1) this account's own caption history
+visible in Metricool's scheduled-posts data for brand 7128333 (tags already
+in rotation: #relationshipadvice, #couplegoals, #cutedogs, #datingadvice,
+#cartooncouple, #relationships, #puppylove, #lovelanguages, #trustissues,
+#healing, #loyalty, #greenflags, #redflags, #forgiveness,
+#wordsofaffirmation, #actsofservice, #introvert, #overthinker), and (2) a
+WebSearch cross-check against current banned/shadowbanned-hashtag lists
+(none of the shortlist or chosen tags appear on them) plus a confirmation
+that #relationship, #relationshipadvice, #lovelanguage/#lovelanguages and
+#healthyrelationships are still active, tracked, non-banned tags in this
+niche. Never used: #fyp #foryou #viral #trending. No two videos share an
+identical 5-tag set on the same posting day (verified for both double-booked
+days, 20 and 21 Oct). IG and TikTok sets differ per video (the IG set always
+includes a "60-second test in bio" mention via the caption text, not a
+hashtag; TikTok captions carry no links).
+
+| # | Script | Platform | 5 tags | Score |
+|---|---|---|---|---|
+| 23 | Competitive partner | IG | #competitivecouple #playfulcouple #cartooncouple #couplegoals #relationshipadvice | 8.5 |
+| 23 | Competitive partner | TikTok | #competitivecouple #cutedogs #datingadvice #puppylove #relationships | 8.5 |
+| 24 | Struggles to ask | IG | #actsofservice #independent #relationshipadvice #couplegoals #cartooncouple | 8.5 |
+| 24 | Struggles to ask | TikTok | #actsofservice #cutedogs #datingadvice #puppylove #relationships | 8.5 |
+| 25 | The fixer | IG | #wordsofaffirmation #goodlistener #relationshipadvice #couplegoals #cartooncouple | 8.0 |
+| 25 | The fixer | TikTok | #wordsofaffirmation #cutedogs #datingadvice #relationships #puppylove | 8.0 |
+| 26 | Opposites balance | IG | #oppositesattract #physicaltouch #relationshipadvice #couplegoals #cartooncouple | 8.0 |
+| 26 | Opposites balance | TikTok | #oppositesattract #cutedogs #datingadvice #relationships #puppylove | 8.0 |
+| 27 | Bad at compliments | IG | #actsofservice #awkwardlove #relationshipadvice #datingadvice #cutedogs | 7.5 |
+| 27 | Bad at compliments | TikTok | #actsofservice #awkwardlove #couplegoals #relationships #puppylove | 7.5 |
+| 28 | Hurt boy | IG | #trustissues #healing #relationshipadvice #couplegoals #cartooncouple | 9.0 |
+| 28 | Hurt boy | TikTok | #trustissues #healing #cutedogs #datingadvice #relationships | 9.0 |
+| 29 | Private partner | IG | #qualitytime #privaterelationship #relationshipadvice #datingadvice #puppylove | 8.0 |
+| 29 | Private partner | TikTok | #qualitytime #privaterelationship #couplegoals #cutedogs #relationships | 8.0 |
+
+Lowest-scoring set (#27, 7.5) leans on a lower-volume exact-topic tag
+(`#awkwardlove`) to match a fairly specific topic — accepted rather than
+swapped for a higher-volume but less relevant tag, consistent with the
+"1-2 exact-topic tags matching its specific script" rule.
 
 ## Rotation order for future batches
 
-Scripts 1, 2, 4, 5, 6, 8, 9-22 are now built. #7 (Kids) is still skipped — it
+Scripts 1, 2, 4, 5, 6, 8, 9-29 are now built. #7 (Kids) is still skipped — it
 still needs a baby puppy prop added to `engine/puppy-engine.js`. The original
-8-script seed list and its "Scaling beyond these 8" extension (16 topics) are
-both now fully used. **Next batch**: invent fresh relationship-focused
-topics per the standing approval in `docs/SCRIPTS.md` (10/10 bar, cut weak
-ones) — see the "Scaling beyond these 22" candidate list at the bottom of
-`SCRIPTS.md` (a competitive partner, someone who struggles to ask for help,
-the "fixer" who can't just listen, opposites who balance each other, bad at
-receiving compliments, or further gender/relationship-stage swaps), append
-each script to `SCRIPTS.md` before building, and keep the 10/10 bar.
+8-script seed list and both extensions ("Scaling beyond these 8" and
+"Scaling beyond these 22") are now fully used. **Next batch**: invent fresh
+relationship-focused topics per the standing approval in `docs/SCRIPTS.md`
+(10/10 bar, cut weak ones) — see the "Scaling beyond these 29" candidate
+list at the bottom of `SCRIPTS.md` (a jealous partner, someone who always
+says "we're fine" to end an argument too fast, someone who shows love
+through memory/nostalgia, a workaholic partner, or further gender/
+relationship-stage swaps), append each script to `SCRIPTS.md` before
+building, and keep the 10/10 bar.
 
 **Word-count lesson (2026-09-30): keep each script tight.** The renderer's
 QA duration cap is 75s per cut. At Kokoro `am_michael` speed 0.9, roughly
@@ -88,12 +171,26 @@ Scripts 9 and 12–15 in this batch initially ran 76–90s and needed trimming
 after the first render — write lean the first time instead of relying on a
 second pass. **Confirmed again 2026-10-01**: all 7 new scripts (16-22) were
 written to this budget and landed 54.8-71.5s on the first render with no
-trimming needed.
+trimming needed. **Confirmed again 2026-10-04**: all 7 new scripts (23-29)
+were trimmed to this budget *before* the first render (several of the
+handed-in drafts ran 140-148 words body-only and needed tightening up
+front) and landed 57.7-65.2s on the first render with no second pass.
+**New sub-lesson this batch**: a draft with 4 "loving reason" beats (instead
+of the usual 3) runs to 8 sentences total (hook + 4 beats + share + warning
++ payoff), one more than the fixed 7-scene/7-line format allows — drop the
+least essential beat (or fold it into the payoff) *before* writing scenes,
+not after discovering the line/scene-count mismatch (caught this on
+`the_fixer` and `private_partner` in this batch before building, and on
+`struggles_to_ask` only after writing scenes, which required rewriting the
+spec once to fix the body-lines/scenes mismatch and missing payoff line —
+double-check line count and that the payoff survives the trim before moving
+on to scene-writing next time).
 
 **Title-length lesson (2026-10-01, carried over from script #22's first
 draft): keep on-screen TITLEs under ~33 characters.** A longer title
 overflows the caption pill at render width 1080px. Check this before the
-first `preview.py` run, not after.
+first `preview.py` run, not after. All 7 titles in the 2026-10-04 batch were
+written under this limit from the start (24-32 chars).
 
 **Doc-vs-reality lesson (2026-10-01): a script isn't "Built" until the spec
 file, the rendered/QA'd videos, and the Metricool post all exist.** An
@@ -103,7 +200,11 @@ before writing `pipeline/specs/*.py` or rendering anything. A later run the
 same day caught this by checking `pipeline/specs/` and the `JJCutecouple`
 `videos/` listing against what `SCRIPTS.md` claimed, rather than trusting the
 doc text alone. Future batches: verify the actual spec files and rendered
-output exist (not just the docs) before assuming a script is built.
+output exist (not just the docs) before assuming a script is built. The
+2026-10-04 batch followed this correctly: scripts were appended to
+`SCRIPTS.md` as the final step (via a dedicated commit) only once the specs,
+renders, QA and Metricool scheduling for all 7 were already done, so no
+doc/reality gap was introduced this time.
 
 **Note (2026-09-28): at 14 videos/week, the 5 currently-drafted scripts
 (4–8) only cover roughly one batch.** Once the drafted list runs dry mid-run,
@@ -130,12 +231,13 @@ scripts existing only inside a single batch run.
   "🐾 [count] / 1,000". **Update `[count]` each batch to the real current
   TikTok follower count** (starting count: 4, set 2026-09-28 — check the real
   number each run via Metricool analytics rather than trusting this file,
-  since it goes stale). Still 3 as of the 2026-10-01 batch (checked via
-  TKEV07 — no JJ posts have published yet; the first is 5 Oct).
+  since it goes stale). Still 3 as of the 2026-10-04 batch (checked via
+  TKEV07, 1-3 Oct — no JJ posts have published yet; the first organic slot,
+  5 Oct 10:00, was still pending when this batch ran).
 - **Publish mode (updated 2026-09-29): auto-publish** (`autoPublish:true`, `draft:false`) on Metricool JJ brand 7128333, tz Europe/London. **2 videos/day at 10:00 and 18:00** (TikTok best slots). Each video = one IG+Facebook Reel post (IG cut) + one TikTok post (TikTok cut), same time. **First JJ post: Mon 5 Oct 2026; never schedule earlier.** Each batch starts the day after the last already-scheduled JJ post (check Metricool first — probe day by day, 1-3 days per `getScheduledPosts` call, to avoid oversized responses).
-- **Pipeline**: all builds use `pipeline/` (see `pipeline/README.md`). Built: scripts 1, 2, 4, 5, 6, 8 (batch of 2026-09-29, scheduled 5-7 Oct); scripts 9-15 (batch of 2026-09-30, scheduled 8-11 Oct); scripts 16-22 (batch of 2026-10-01, scheduled 11-14 Oct). Still unbuilt: 7 (Kids, needs baby pup prop). Next batch pulls further topics from the "Scaling beyond these 22" list / invents new ones. Music = the 3 user-supplied sounds (rotated), not synthesized.
-- TikTok follower count on 2026-10-01: 3 (checked via Metricool analytics, metric TKEV07 — unchanged since 2026-09-30; no JJ posts have gone live yet to move it).
-- **Last scheduled JJ day as of the 2026-10-01 batch: Wed 14 Oct 2026 (10:00 and 18:00 — both slots filled).** Next batch starts Thu 15 Oct 2026, 10:00.
+- **Pipeline**: all builds use `pipeline/` (see `pipeline/README.md`). Built: scripts 1, 2, 4, 5, 6, 8 (batch of 2026-09-29, scheduled 5-7 Oct); scripts 9-15 (batch of 2026-09-30, scheduled 8-11 Oct); scripts 16-22 (batch of 2026-10-01, scheduled 11-14 Oct); scripts 23-29 (batch of 2026-10-04, scheduled 17-21 Oct). Still unbuilt: 7 (Kids, needs baby pup prop). Next batch pulls further topics from the "Scaling beyond these 29" list / invents new ones. Music = the 3 user-supplied sounds (rotated), not synthesized.
+- TikTok follower count on 2026-10-04: 3 (checked via Metricool analytics, metric TKEV07 — unchanged since 2026-09-30; no JJ posts have gone live yet to move it, since the first organic slot, 5 Oct 10:00, was still pending when this batch ran on 4 Oct).
+- **Last scheduled JJ day as of the 2026-10-04 batch: Wed 21 Oct 2026 (10:00 and 18:00 organic — both filled; 20:00 that day is the separate "kindness machine" ad, unaffected).** Next batch starts Thu 22 Oct 2026, 10:00 — verify live via `getScheduledPosts` first rather than trusting this line, since ad reshuffles have moved this pointer mid-week before (see the 2026-10-02 reshuffle notes below).
 - **Media hosting**: finished MP4s are pushed to the public `JJCutecouple`
   repo and referenced by their `raw.githubusercontent.com` URL as Metricool's
   media source (Metricool's post tools require a public media URL — there's
@@ -186,3 +288,31 @@ User rule: **no more than three ads ("salesy" dialogue videos) per week.** All a
 - Week of 19 Oct: wedding planner (Mon 19, 20k) + kindness machine (Wed 21, 20:00).
 Displaced organic: "When an introvert loves you" Mon 12 18:00 → Fri 16 Oct 18:00; "Love languages" Thu 15 18:00 → Sat 17 Oct 10:00.
 **Last scheduled organic JJ slot is now Sat 17 Oct 10:00 — next batch starts Sat 17 Oct 18:00 and must skip the ad slots (Sun 18, Mon 19 18:00; Wed 21 20:00).**
+
+## Batch of 2026-10-04 — scheduling
+
+Verified live via `getScheduledPosts`, probing the dates the 2026-10-02
+(late) note pointed to (Sat 17 Oct, then day-by-day forward through Wed 21
+Oct) rather than trusting the note blindly. Confirmed: Sat 17 Oct 10:00 was
+filled (Love languages, from the reshuffle), Sat 17 Oct 18:00 was free, Sun
+18 Oct 18:00 and Mon 19 Oct 18:00 were filled by the "mum on the honeymoon"
+and "wedding planner" drama ads (per the 3-ads-per-week rule above), and Wed
+21 Oct 20:00 was filled by the kindness-machine ad — all other 10:00/18:00
+slots Sat 17 through Wed 21 were free. Filled forward in order, 2
+videos/day, no gaps, skipping the already-filled ad slots:
+
+- Sat 17 Oct 2026, 18:00 — Competitive partner (#23)
+- Sun 18 Oct 2026, 10:00 — Struggles to ask for help (#24)
+- Mon 19 Oct 2026, 10:00 — The fixer (#25)
+- Tue 20 Oct 2026, 10:00 — Opposites balance (#26)
+- Tue 20 Oct 2026, 18:00 — Bad at compliments (#27)
+- Wed 21 Oct 2026, 10:00 — Hurt boy (#28)
+- Wed 21 Oct 2026, 18:00 — Private partner (#29)
+
+All 14 posts (7 IG+FB Reel, 7 TikTok) created via `createScheduledPost` with
+`autoPublish:true`, `draft:false`; every IG+FB post includes the `instagram`
+provider (double-checked, no FB-only posts). Media pushed to `JJCutecouple`
+as `videos/<date>-<slug>-{instagram,tiktok}.mp4` (date = the day it's
+scheduled) and all 14 raw.githubusercontent.com URLs verified HTTP 200
+before scheduling. **Last scheduled organic JJ slot is now Wed 21 Oct 2026
+18:00 — next batch starts Thu 22 Oct 2026 10:00 (verify live first).**
