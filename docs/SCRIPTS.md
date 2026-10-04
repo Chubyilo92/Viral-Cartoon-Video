@@ -459,13 +459,166 @@ title-length lesson** in `PRODUCTION-LOG.md`). → Love Language quiz ending
 
 ---
 
-## Scaling beyond these 22
+## Batch of 2026-10-04 — new scripts (further invented topics)
 
-The original 8-script seed list and its "Scaling beyond these 8" extension
-are now both fully used. Future batches continue inventing fresh
+Scripts 1, 2, 4, 5, 6, 8, 9-22 are built. #7 (Kids) remains skipped — still
+needs the baby-pup prop. This batch pulls from the "Scaling beyond these 22"
+candidate list: a competitive partner, someone who struggles to ask for
+help, the "fixer" who can't just listen, opposites who balance each other, a
+partner bad at receiving compliments, and two further gender/angle swaps
+(a hurt *boy* — gender-flip of #4, and a private partner). Metricool
+analytics for brand 7128333 were pulled first (evolution + TKEV07, last 30
+days): still too thin to set a hook/pacing bar — no JJ post has gone live
+through the real posting pipeline yet (the first was scheduled for 5 Oct
+2026 10:00, still pending as of this batch on 4 Oct), so the established
+10/10 rubric was used instead, same as prior batches. All 7 scripts were
+trimmed to the word-count budget (body ≤145 words, body+IG end-line ≤165)
+before building — several of the original drafts handed into this batch ran
+slightly over and needed trimming (hook and payoff lines preserved exactly).
+
+### 23. Competitive partner — "When a competitive partner loves you" (invented)
+
+> When a competitive partner loves you... they'll race you to the car, to
+> the remote — and still let you win the one that matters. They'll turn
+> grocery runs into a contest for the better deal... that's how they make
+> errands fun. They'll argue the smallest fact to the death, then bring you
+> a blanket mid-argument — right and caring were never opposite teams.
+> They'll keep score at games they invented an hour ago, but you'll never
+> lose the one that counts. If someone's turned your relationship into a
+> running tally of silly wins... send them this. But if winning starts
+> mattering more than how you feel... that's not playful anymore. Because a
+> competitive partner who still picks you first, every time it counts...
+> loves you as hard as they play.
+
+Built (`pipeline/specs/competitive_partner.py`). Pre-build score 9.0
+(9/9/9/9). Comment-bait angle ("tag the person who still lets you win the
+one that matters"). → Love Language quiz ending (result: Quality Time).
+
+### 24. Struggles to ask for help — "When someone who struggles to ask for help loves you" (invented)
+
+> When someone who struggles to ask for help loves you... they'll carry six
+> bags up three flights rather than say the word "help." Not stubbornness —
+> asking has always felt like proof they couldn't manage. They'll say "I'm
+> fine, I've got it" through gritted teeth, and mean it, even when they
+> clearly don't. They'll quietly do the favor back double, because
+> receiving feels like debt and giving feels like safety. If you've learned
+> to just start helping, without waiting to be asked... send this to them.
+> But if "I've got it" turns into carrying everything alone, every time...
+> that's not independence anymore. Because someone who struggles to ask for
+> help and still lets you in, even a little... is trusting you with the
+> hardest thing they own.
+
+Built (`pipeline/specs/struggles_to_ask.py`). Pre-build score 9.1
+(9/9/9/9.5 — highest relatability in the batch, near-universal behavior).
+→ Love Language quiz ending (result: Acts of Service).
+
+### 25. The fixer — "When 'the fixer' loves you" (invented)
+
+> When "the fixer" loves you... they'll have three solutions ready before
+> you've finished the sentence. Not because your feelings don't matter —
+> fixing is the only way they know to show they heard you. They'll search
+> the problem at midnight instead of just lying there with you in it.
+> They'll go quiet and hurt when you say "I just need you to listen" —
+> because to them, fixing was listening. If someone loves you loud through
+> solutions but is learning to love you quiet too... send this to them. But
+> if every feeling gets turned into a problem to solve instead of a moment
+> to share... that's worth saying out loud. Because a fixer who learns to
+> just listen first... is doing the hardest rewiring love ever asked of
+> them.
+
+Built (`pipeline/specs/the_fixer.py`). Pre-build score 9.0 (9/9/9/9). One
+beat ("they're learning, slowly...") was dropped from the original 8-beat
+draft to fit the fixed 7-scene/7-line format — folded into the payoff line
+instead. → Love Language quiz ending (result: Words of Affirmation).
+
+### 26. Opposites balance — "When opposites love each other" (invented)
+
+> When opposites love each other... one of you has a five-year plan, one
+> doesn't know what's for dinner — and you've never missed a flight. One of
+> you replies in seconds, one reads it Tuesday and answers Thursday, and
+> you've learned neither one is wrong. One of you needs the weekend
+> planned, one needs to wake up and see — so you take turns choosing,
+> instead of losing. The loud one got quieter around you. The quiet one got
+> louder around them. If your opposite somehow balances you instead of
+> fighting you... send this to them. But if different stops balancing and
+> starts just colliding, every time... that's worth a real conversation.
+> Because opposites who choose each other, on purpose, every day... build
+> something neither one could build alone.
+
+Built (`pipeline/specs/opposites_balance.py`). Pre-build score 9.0
+(9/9/9/9). Couple-dynamic rather than single-partner-trait script — both
+pups shown throughout rather than one "loved" character. → Love Language
+quiz ending (result: Physical Touch).
+
+### 27. Bad at compliments — "When someone bad at receiving compliments loves you" (invented)
+
+> When someone bad at receiving compliments loves you... they'll deflect
+> "you look amazing" with a joke before it even lands. Not because they
+> don't want to hear it — they just never learned where to put it. They'll
+> argue with "you're so thoughtful" like it's a fact to be checked, then go
+> quietly do something thoughtful an hour later. They can't say "thank you,
+> I know" — so they say it back in actions instead, over and over. If
+> someone shows you what they can't say out loud... send this to them. But
+> if every kind word just bounces off and nothing ever lands... that's
+> worth gently naming. Because someone who can't take a compliment but
+> keeps earning them anyway... is still trying, in the only language that
+> feels safe.
+
+Built (`pipeline/specs/bad_at_compliments.py`). Pre-build score 9.1
+(9.5/9/9/9 — strong "tag someone who does this" comment-bait potential). →
+Love Language quiz ending (result: Acts of Service).
+
+### 28. Hurt boy — "When a hurt boy loves you" (gender-flip of #4)
+
+> When a boy who's been hurt before loves you... he'll check his phone
+> less, once he's sure you're not the one who disappears. Not distrust of
+> you — he was just braced for the old pattern to repeat. He'll go quiet
+> when you're five minutes late, then exhale the second you walk through
+> the door. He'll let you meet the people he protects, because that's the
+> only "I trust you" he knows how to give. If someone's slowly letting you
+> prove the old pattern wrong... send this to him. But if you use what he
+> told you in confidence against him, even once... you become proof he was
+> right to guard it. Because when a hurt boy finally lets someone in...
+> it's the bravest bet he's placed in years.
+
+Built (`pipeline/specs/hurt_boy_trust.py`). **Weakest pre-build of this
+batch** (8.75 avg: 9/9/8/9 — the original draft, like #4 it flips, had no
+explicit mid-video share line, unlike every other script in this batch).
+Rewritten before building to drop the "he'll test it... canceled plan" beat
+and replace it with an explicit share line ("If someone's slowly letting
+you prove the old pattern wrong... send this to him."), keeping the
+7-line/7-scene format. Re-scored 9.0 (9/9/9/9) after the rewrite. → Love
+Language quiz ending (result: Physical Touch).
+
+### 29. Private partner — "When a private partner loves you" (invented)
+
+> When a private partner loves you... they won't post the anniversary, the
+> flowers, the relationship for strangers to rate. Not because they're not
+> proud — the best parts feel too good to perform. They'll tell their best
+> friend everything, and still never caption a single photo of you two.
+> They'll hold your hand under the table at dinner, where no one's
+> watching, because that's who it's actually for. If "we don't post each
+> other" has people asking if something's wrong, when nothing's ever been
+> more right... send this to them. But if private starts meaning hidden,
+> like you're a secret instead of a person... that's worth asking about.
+> Because a private partner who loves you loud behind closed doors... was
+> never performing it for anyone but you.
+
+Built (`pipeline/specs/private_partner.py`). Pre-build score 9.1
+(9/9/9/9.5 — most culturally current topic in the batch, given present-day
+social-media-oversharing norms). One beat ("they'll defend you fiercely...")
+was dropped from the original 8-beat draft to fit the fixed 7-scene format.
+→ Love Language quiz ending (result: Quality Time).
+
+---
+
+## Scaling beyond these 29
+
+The original 8-script seed list and both extensions ("beyond 8" and "beyond
+22") are now fully used. Future batches continue inventing fresh
 relationship-focused topics per the standing approval (10/10 bar, the "would
 someone actually send this" test, append-before-building) — candidate seeds
-for next time include: a competitive partner, someone who struggles to ask
-for help, the "fixer" who can't just listen, opposites who balance each
-other, a partner who's bad at receiving compliments, and further gender/
-relationship-stage swaps of any script above.
+for next time include: a jealous partner (the loving read), a partner who
+always says "we're fine" to end an argument too fast, someone who shows love
+through memory/nostalgia (keeps old tickets, photos), a workaholic partner,
+and further gender/relationship-stage swaps of any script above.
