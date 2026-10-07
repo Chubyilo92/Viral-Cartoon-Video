@@ -612,13 +612,199 @@ was dropped from the original 8-beat draft to fit the fixed 7-scene format.
 
 ---
 
-## Scaling beyond these 29
+## Scaling beyond these 29 (superseded — see "Scaling beyond these 36" below)
 
-The original 8-script seed list and both extensions ("beyond 8" and "beyond
-22") are now fully used. Future batches continue inventing fresh
-relationship-focused topics per the standing approval (10/10 bar, the "would
-someone actually send this" test, append-before-building) — candidate seeds
-for next time include: a jealous partner (the loving read), a partner who
-always says "we're fine" to end an argument too fast, someone who shows love
-through memory/nostalgia (keeps old tickets, photos), a workaholic partner,
-and further gender/relationship-stage swaps of any script above.
+## Batch of 2026-10-07 — new scripts (first batch with real post-level data)
+
+Scripts 1, 2, 4, 5, 6, 8, 9-29 are built. #7 (Kids) remains skipped — still
+needs the baby-pup prop. This is the first batch where real Metricool
+post-level data existed before writing (the pipeline's first organic posts
+went live 5-6 Oct 2026). Pulled via `getAnalyticsDataByMetrics` (TikTok
+evolution TKEV01-08 and per-post TKPO02/05/07-10/13, Instagram reel metrics
+IGRE02/03/09/11/23/27, 7 Sep - 7 Oct 2026) and cross-checked with
+`getScheduledPosts`. Four real videos had published by run time (5-6 Oct):
+scripts 2 ("I'm fine"), 4 ("hurt girl"/trust), 5 ("loyal man"/fidelity), plus
+one drama ad. **Script 4 (trust/healing) dramatically outperformed every
+other video on both platforms** — IG Reel: 1637 views / 98 interactions /
+1468 reach (≈6.7% engagement on reach) vs. 187-348 views and 5-14
+interactions for the others; TikTok: 701 views / 22 likes / 3 shares vs.
+678-715 views and 7-17 likes / 0-1 shares for the others. TikTok followers
+still flat at 3 (no movement from the follow-counter ending yet, per TKEV07).
+This is the first real signal this series has had (every prior batch scored
+against the rubric alone, too thin to compare) and it clearly rewards sharp
+emotional vulnerability over purely sweet/quirky framing — this batch's
+hooks and warning beats were written and scored with that in mind, and it's
+now the standing bar for future batches to beat, not just the 10/10 rubric.
+
+This batch pulls from the "Scaling beyond these 29" candidate list (a
+jealous partner, "we're fine" said too fast to end a fight, love shown
+through memory/nostalgia, a workaholic partner) and extends it with three
+more invented angles chosen for the same vulnerability-over-cute quality the
+data just validated: an overprotective partner (distinct from jealous —
+physical watchfulness vs. emotional insecurity, each with its own
+protection-vs-control warning so they don't collide), a partner who grew up
+counting every penny and spends it all on you anyway, and a peacemaker who
+apologizes first even when it's not their fault (completes a trio with
+#20 stubborn-love and #21 forgives-easily without duplicating either — this
+one is about offering the apology, not withholding or receiving it). All 7
+were written to the established word-count budget (body lines alone under
+~145 words) from the start, following the proven 7-line shape (hook +
+behavior's reason, two more beats, a share line, a warning contrast, a
+one-line payoff).
+
+### 30. Jealous heart — "When a jealous heart loves you" (invented)
+
+> When a jealous heart loves you... they'll go quiet for a second when
+> someone flirts with you. Not because they don't trust you. It's because
+> they can't stand the thought of losing this. They'll ask who texted back,
+> then laugh it off before it turns into a thing. They'll hold your hand a
+> little tighter in a crowded room, not to control you, just to feel close.
+> If someone gets quiet because they're scared of losing you, not because
+> they don't trust you... send this to them. But if quiet turns into
+> checking your phone, or counting who you talked to... that's not love
+> anymore, that's control. Because a little jealousy means they see what
+> they have... but the moment it takes your freedom, it stops being love.
+
+Built (`pipeline/specs/jealous_heart.py`). Pre-build score 9.1 (9/9.5/9/9 —
+strong comment-bait potential, but the control-warning beat is load-bearing:
+written explicitly and unambiguously so the video never reads as excusing
+controlling behavior). → Love Language quiz ending (result: Physical Touch).
+
+### 31. "We're fine" too fast — "When 'we're fine' ends it fast" (invented)
+
+> When someone rushes to say "we're fine"... it's not that the fight's
+> over. It's that they can't stand you being upset with them. They'll
+> change the subject fast, make a joke, reach for your hand — anything to
+> skip the part where it's still tense. They're not avoiding you. They're
+> terrified the silence means you're already halfway out the door. They'll
+> apologize for their tone before they even know what they did wrong, just
+> to make it stop hurting faster. If you've learned to rush past a fight
+> just to feel safe again... send this to the one who's patient with your
+> pace. But if "we're fine" means nothing ever actually gets said, fight
+> after fight... that's not peace, that's just postponed. Because rushing
+> to fine isn't dishonesty... it's panic dressed up as calm. And it
+> deserves patience, not an eye roll.
+
+Built (`pipeline/specs/too_fast_fine.py`). Pre-build score 9.1 (9/9/9/9.5 —
+conflict-avoidance read as panic rather than dishonesty tests well against
+the batch's new vulnerability bar; distinct from #2/#17 "I'm fine" — this
+is about rushing *past* a fight, not withdrawing from one). → Love Language
+quiz ending (result: Quality Time).
+
+### 32. Workaholic — "When a workaholic loves you" (invented)
+
+> When a workaholic loves you... they'll answer one more email at
+> midnight, then still make it to bed before you fall asleep. They're not
+> choosing work over you. They're trying to build something so you never
+> have to worry about money. They'll reschedule a call for your
+> appointment, then feel guilty about it for the rest of the day. They'll
+> fall asleep mid-sentence telling you about their day, because they gave
+> you what was left after giving everyone else everything first. If
+> someone's tired, but still chooses the last twenty minutes of their day
+> for you... send this to them. But if "just this one project" becomes
+> every project, and you're always what's left over... that's not ambition
+> anymore, that's avoidance. Because a workaholic who still shows up
+> exhausted, every single night... is telling you exactly where you rank,
+> even when they can't say it.
+
+Built (`pipeline/specs/workaholic.py`). Pre-build score 9.0 (9/9/8.5/9.5 —
+near-universal, the "last twenty minutes" detail is the comment-bait hook).
+→ Love Language quiz ending (result: Acts of Service).
+
+### 33. The protector — "When a protector loves you" (invented)
+
+> When a protector loves you... they'll walk on the side closest to
+> traffic without even thinking about it. They'll text "let me know when
+> you're home" and actually stay awake until you do. They'll go quiet and
+> still when someone's rude to you in public, just watching to see if they
+> need to step in. They'll ask who's picking you up, not to control your
+> night, but because they'd rather be the one who knows. If someone needs
+> to know you got home safe before they can really relax... send this to
+> them. But if "who were you with" turns into questioning every plan you
+> make without them... that's not protection anymore, that's control.
+> Because real protection makes you feel safer, not smaller... and the
+> moment it shrinks you, it was never about you at all.
+
+Built (`pipeline/specs/protector.py`). Pre-build score 8.9 (9/9/9/8.5).
+Deliberately distinct from #30 (jealous): physical watchfulness and
+vigilance, not emotional insecurity — each gets its own
+protection-vs-control warning line so the two videos don't collide or blur
+together. → Love Language quiz ending (result: Acts of Service).
+
+### 34. Nostalgic heart — "When a nostalgic heart loves you" (invented)
+
+> When a nostalgic heart loves you... they'll still have the ticket stub
+> from your first date, folded in their wallet. Not because they're stuck
+> in the past. It's because that night is proof this was always going to
+> be real. They'll replay the same playlist from your first road trip,
+> every single time, and never skip a single song. They'll bring up a tiny
+> thing you said months ago, word for word, because it mattered enough to
+> keep. If someone's kept every little proof that you happened... send
+> this to them, and let them know you kept some too. But if they're more
+> in love with the memory than the person standing in front of them now...
+> that's worth a gentle conversation. Because someone who keeps the small
+> proof of you... isn't living in the past. They're just making sure none
+> of it gets lost.
+
+Built (`pipeline/specs/nostalgic_heart.py`). Pre-build score 9.0
+(9/9/9/9 — sharpened to open on the visual ticket-stub-in-the-wallet image
+rather than an abstract "they remember things" hook, which scored closer to
+8.75 in an earlier draft). Distinct from #19 (tiny things, which is about
+noticing present-day detail) — this one is specifically about preserving
+physical/sentimental keepsakes from the past. → Love Language quiz ending
+(result: Quality Time).
+
+### 35. Frugal but generous — "When a frugal partner loves you" (invented)
+
+> When a frugal partner loves you... they'll wear the same old jacket for
+> five years, then buy you the coffee you actually like without blinking.
+> It's not that they're cheap. It's that they grew up counting every
+> penny, and they're not about to waste one on themselves. They'll drive
+> the long way to save on parking, then quietly cover the whole bill when
+> you're not looking. They'll say "we don't need that" about everything
+> they want, and "get it" about anything you need. If someone's careful
+> with every penny except the ones spent on you... send this to them. But
+> if careful turns into controlling what you spend, or guilt over every
+> purchase... that's not frugal anymore, that's fear with a grip on you.
+> Because someone who goes without so you don't have to... isn't being
+> careful with money. They're being careful with you.
+
+Built (`pipeline/specs/frugal_partner.py`). Pre-build score 9.0
+(9/9/8.5/9.5 — culturally current, cost-of-living-era relatability; the
+"we don't need that / get it" contrast is the comment-bait line). → Love
+Language quiz ending (result: Acts of Service).
+
+### 36. The peacemaker — "When a peacemaker loves you" (invented)
+
+> When a peacemaker loves you... they'll say sorry first, even when the
+> fight wasn't their fault to begin with. Not because they're a pushover.
+> It's because the relationship matters more to them than being right.
+> They'll change the topic the second it gets too sharp, not to dodge it,
+> but because they hate seeing you hurt more than they hate losing.
+> They'll check in an hour later with your favorite snack, like nothing
+> happened, because to them, nothing did. If someone keeps the peace even
+> when it costs them being right... send this to them. But if they're
+> always the one bending, and you're never the one who says sorry first...
+> that peace is costing them more than you know. Because a peacemaker who
+> keeps choosing calm over winning... isn't weak. They just love you more
+> than they love being right.
+
+Built (`pipeline/specs/peacemaker.py`). Pre-build score 9.0 (9/9/9/9 —
+completes a trio with #20 stubborn-love and #21 forgives-easily, each a
+distinct angle on conflict/apology, without duplicating). → Love Language
+quiz ending (result: Words of Affirmation).
+
+---
+
+## Scaling beyond these 36
+
+Every seed from the original list and both extensions is now used. The
+real-data lesson from this batch (vulnerability and specificity beat purely
+sweet/quirky framing — see the 2026-10-07 batch note in PRODUCTION-LOG.md)
+should keep shaping topic choice going forward, not just the 10/10 rubric.
+Candidate seeds for next time: someone who struggles to celebrate their own
+wins, a partner recovering from a past breakup who's slow to fully let go,
+someone who shows love through unsolicited advice they're learning to hold
+back, a partner who's the "responsible one" in every friend group and
+never gets to fall apart, and further gender/relationship-stage swaps of
+any script above.
