@@ -614,6 +614,24 @@ was dropped from the original 8-beat draft to fit the fixed 7-scene format.
 
 ## Scaling beyond these 29 (superseded — see "Scaling beyond these 36" below)
 
+**Correction (batch of 2026-10-10):** the "2026-10-07" section below was
+committed as script text and "Built" labels only — no `pipeline/specs/*.py`
+files existed for #30-36, `docs/PRODUCTION-LOG.md` was never updated with a
+2026-10-07 entry, and no videos or Metricool posts existed for any of them
+(confirmed by checking `pipeline/specs/` and the `JJCutecouple` `videos/`
+listing, same doc-vs-reality check the 2026-10-01 lesson above calls for).
+The real-data performance claims in that batch's intro paragraph (TikTok
+evolution TKEV01-08, Instagram reel metrics) could not be verified against
+this repo's history either. The 2026-10-10 batch treated #30-36 as drafted-
+but-unbuilt (same status as #3-8 originally), re-scored them independently
+against real Metricool post-level data pulled fresh on 2026-10-10 (see
+`PRODUCTION-LOG.md`), sharpened two scripts whose pre-build average landed
+under the 9.0 bar (`workaholic` and `protector` — both had their strongest
+beat buried instead of leading the hook; both reordered and re-scored
+before building), and then actually wrote the spec files, rendered, QA'd,
+and scheduled all 7. The "Built" labels below are now genuinely true as of
+2026-10-10.
+
 ## Batch of 2026-10-07 — new scripts (first batch with real post-level data)
 
 Scripts 1, 2, 4, 5, 6, 8, 9-29 are built. #7 (Kids) remains skipped — still
@@ -693,13 +711,12 @@ quiz ending (result: Quality Time).
 
 ### 32. Workaholic — "When a workaholic loves you" (invented)
 
-> When a workaholic loves you... they'll answer one more email at
-> midnight, then still make it to bed before you fall asleep. They're not
-> choosing work over you. They're trying to build something so you never
-> have to worry about money. They'll reschedule a call for your
-> appointment, then feel guilty about it for the rest of the day. They'll
-> fall asleep mid-sentence telling you about their day, because they gave
-> you what was left after giving everyone else everything first. If
+> When a workaholic loves you... they'll fall asleep mid-sentence, still
+> trying to finish telling you about their day. Not because you're boring
+> them — they gave you what was left after giving everyone else everything
+> first. They'll answer one more email at midnight, then still make it to
+> bed before you fall asleep. They'll reschedule a call for your
+> appointment, then feel guilty about it for the rest of the day. If
 > someone's tired, but still chooses the last twenty minutes of their day
 > for you... send this to them. But if "just this one project" becomes
 > every project, and you're always what's left over... that's not ambition
@@ -707,25 +724,37 @@ quiz ending (result: Quality Time).
 > exhausted, every single night... is telling you exactly where you rank,
 > even when they can't say it.
 
-Built (`pipeline/specs/workaholic.py`). Pre-build score 9.0 (9/9/8.5/9.5 —
-near-universal, the "last twenty minutes" detail is the comment-bait hook).
-→ Love Language quiz ending (result: Acts of Service).
+Built (`pipeline/specs/workaholic.py`). Pre-build score 8.6 (8.5/8.5/8.5/9)
+on the original draft, which opened on "answer one more email at
+midnight" — below the 9.0 bar: the sharpest, most specific beat ("fall
+asleep mid-sentence telling you about their day") was buried fourth
+instead of leading the hook. Rewritten before building to lead with that
+beat and move the midnight-email line to a supporting beat; re-scored 9.0
+(9/9/9/9) after the reorder — see the standing scoring rule's prescribed
+fix ("sharper hook in the first 2 seconds") in `PRODUCTION-LOG.md`. →
+Love Language quiz ending (result: Acts of Service).
 
 ### 33. The protector — "When a protector loves you" (invented)
 
-> When a protector loves you... they'll walk on the side closest to
-> traffic without even thinking about it. They'll text "let me know when
-> you're home" and actually stay awake until you do. They'll go quiet and
-> still when someone's rude to you in public, just watching to see if they
-> need to step in. They'll ask who's picking you up, not to control your
-> night, but because they'd rather be the one who knows. If someone needs
-> to know you got home safe before they can really relax... send this to
-> them. But if "who were you with" turns into questioning every plan you
-> make without them... that's not protection anymore, that's control.
-> Because real protection makes you feel safer, not smaller... and the
-> moment it shrinks you, it was never about you at all.
+> When a protector loves you... they'll ask who's picking you up tonight,
+> before you've even said you're going out. Not to control your night —
+> they'd just rather be the one who knows you got there safe. They'll walk
+> on the side closest to traffic without even thinking about it. They'll
+> text "let me know when you're home" and actually stay awake until you
+> do. If someone needs to know you got home safe before they can really
+> relax... send this to them. But if "who were you with" turns into
+> questioning every plan you make without them... that's not protection
+> anymore, that's control. Because real protection makes you feel safer,
+> not smaller... and the moment it shrinks you, it was never about you at
+> all.
 
-Built (`pipeline/specs/protector.py`). Pre-build score 8.9 (9/9/9/8.5).
+Built (`pipeline/specs/protector.py`). Pre-build score 8.875 (9/8.5/9/8.5)
+on the original draft, which opened on "walks on the side closest to
+traffic" — gentler and less debate-worthy than the "who's picking you up"
+beat buried third. Rewritten before building to lead with that beat (more
+inherent tension: it can initially read as controlling before the reframe
+lands) and dropped the "goes quiet when someone's rude in public" beat to
+keep the fixed 7-line format; re-scored 9.1 (9/9.5/9/9) after the reorder.
 Deliberately distinct from #30 (jealous): physical watchfulness and
 vigilance, not emotional insecurity — each gets its own
 protection-vs-control warning line so the two videos don't collide or blur

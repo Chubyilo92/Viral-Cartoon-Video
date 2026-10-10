@@ -43,6 +43,177 @@ ending used, Metricool post status.
 | 2026-10-04 | 27. Bad at compliments | Love Language quiz (Acts of Service) | Follow counter (3/1,000) | Scheduled Tue 20 Oct 2026 18:00 |
 | 2026-10-04 | 28. Hurt boy (gender-flip of #4, share line added pre-build — see SCRIPTS.md) | Love Language quiz (Physical Touch) | Follow counter (3/1,000) | Scheduled Wed 21 Oct 2026 10:00 |
 | 2026-10-04 | 29. Private partner | Love Language quiz (Quality Time) | Follow counter (3/1,000) | Scheduled Wed 21 Oct 2026 18:00 |
+| 2026-10-10 | 30. Jealous heart | Love Language quiz (Physical Touch) | Follow counter (3/1,000) | Scheduled Thu 22 Oct 2026 18:00 |
+| 2026-10-10 | 31. "We're fine" too fast | Love Language quiz (Quality Time) | Follow counter (3/1,000) | Scheduled Fri 23 Oct 2026 10:00 |
+| 2026-10-10 | 32. Workaholic (hook reordered pre-build — see SCRIPTS.md) | Love Language quiz (Acts of Service) | Follow counter (3/1,000) | Scheduled Sat 24 Oct 2026 10:00 |
+| 2026-10-10 | 33. The protector (hook reordered pre-build — see SCRIPTS.md) | Love Language quiz (Acts of Service) | Follow counter (3/1,000) | Scheduled Sat 24 Oct 2026 18:00 |
+| 2026-10-10 | 34. Nostalgic heart | Love Language quiz (Quality Time) | Follow counter (3/1,000) | Scheduled Sun 25 Oct 2026 10:00 |
+| 2026-10-10 | 35. Frugal partner | Love Language quiz (Acts of Service) | Follow counter (3/1,000) | Scheduled Sun 25 Oct 2026 18:00 |
+| 2026-10-10 | 36. Peacemaker | Love Language quiz (Words of Affirmation) | Follow counter (3/1,000) | Scheduled Mon 26 Oct 2026 10:00 |
+
+## Batch of 2026-10-10 — 10/10 scoring (downloads / engagement / conversion / relatability)
+
+**Doc-vs-reality correction first:** `docs/SCRIPTS.md` had a "Batch of
+2026-10-07" section claiming scripts #30-36 were "Built", but no
+`pipeline/specs/*.py` files existed for any of them, no `PRODUCTION-LOG.md`
+entry existed for 2026-10-07, and no videos existed in `JJCutecouple` —
+confirmed by checking all three before writing anything. Treated as
+drafted-but-unbuilt (same status #3-8 had originally) and actually built
+this run; see the correction note in `SCRIPTS.md`.
+
+Metricool analytics for brand 7128333 were pulled first
+(`getAnalyticsDataByMetrics`, TikTok evolution TKEV02/06/07/08 and
+TikTok Videos TKPO05/07-10, Instagram Reels IGRE03/09/11/23, 1-10 Oct
+2026). Real post-level data now exists (organic posts have been live since
+5 Oct) and clearly confirms the 2026-10-07 lesson's direction even though
+that batch's own numbers were unverifiable: **trust.py (#4, "hurt girl")
+and fidelity.py (#5, "loyal man") are still the standout performers** — IG
+reach 1753/1480 and 101/149 interactions vs. 150-360 reach and single-digit
+interactions for sweeter/quirkier scripts; TikTok 721/704 views vs.
+161-686 for others. Vulnerability + a specific, urgent share line
+continues to measurably outperform purely cute/quirky framing. This
+batch's hooks and re-scores used that bar, not just the 10/10 rubric.
+TikTok follower count checked via TKEV07 (9-10 Oct): still 3 — unchanged
+since 2026-09-30/2026-10-04, no movement yet from the follow-counter
+ending.
+
+**Pre-build scores:**
+
+| # | Script | Downloads | Engagement | Conversion | Relatability | Avg | Notes |
+|---|---|---|---|---|---|---|---|
+| 30 | Jealous heart | 9 | 9.5 | 9 | 9 | 9.1 | Strong comment-bait; the control-warning beat is load-bearing so the video never reads as excusing possessiveness |
+| 31 | "We're fine" too fast | 9 | 9 | 9 | 9.5 | 9.1 | Closest in register to #4 (trust), this batch's proven top performer — panic-not-dishonesty reframe |
+| 32 | Workaholic | 8.5 | 8.5 | 8.5 | 9 | 8.6 | **Weakest pre-build, below the 9.0 bar.** Original draft opened on "answer one more email at midnight" — the sharpest, most specific beat ("fall asleep mid-sentence telling you about their day") was buried fourth instead of leading the hook. Rewritten before building: reordered to lead with that beat, moved the midnight-email line to a supporting beat, kept the 7-line format. Re-scored 9/9/9/9 = 9.0 after rewrite; built from the rewritten version (see `pipeline/specs/workaholic.py` and `SCRIPTS.md`) |
+| 33 | The protector | 9 | 8.5 | 9 | 8.5 | 8.875 | **Also below the 9.0 bar pre-rewrite.** Original draft opened on "walks on the side closest to traffic" — gentler and less debate-worthy than "who's picking you up", buried third. Rewritten before building: reordered to lead with that beat (carries real initial tension before the loving reframe lands) and dropped the "goes quiet when someone's rude in public" beat to keep the 7-line format. Re-scored 9/9.5/9/9 = 9.1 after rewrite |
+| 34 | Nostalgic heart | 9 | 9 | 9 | 9 | 9.0 | Visual ticket-stub-in-the-wallet hook, specific and shareable |
+| 35 | Frugal partner | 9 | 9 | 9 | 9 | 9.0 | Cost-of-living-era relatability; "we don't need that / get it" is the comment-bait line |
+| 36 | Peacemaker | 9 | 9 | 9 | 9 | 9.0 | Completes the apology trio with #20/#21 without duplicating either |
+
+Two scripts (#32, #33) needed one rewrite each to clear the 9.0 bar, per
+the standing scoring rule — both fixed the same way: move the sharpest,
+most specific beat to the hook instead of leaving it buried mid-script.
+Both were previewed again after the rewrite (contact sheet checked for
+layout) before the full render.
+
+**Post-build scores (after render + full QA):** unchanged from the
+post-rewrite pre-build values for all 7 — every cut passed every
+mechanical check in `QA-CHECKLIST.md` on the first render (no second pass
+needed for any of the 7 scripts, including the two rewritten ones), and
+manual frame inspection (contact sheets + all 14 end-card frames) found no
+visual glitches, correct captions, correct platform-specific end cards (IG
+quiz card with the right result label; TikTok 3/1,000 follower counter)
+and expressions matching each line.
+
+| # | Script | Downloads | Engagement | Conversion | Relatability | Avg |
+|---|---|---|---|---|---|---|
+| 30 | Jealous heart | 9 | 9.5 | 9 | 9 | 9.1 |
+| 31 | "We're fine" too fast | 9 | 9 | 9 | 9.5 | 9.1 |
+| 32 | Workaholic | 9 | 9 | 9 | 9 | 9.0 |
+| 33 | The protector | 9 | 9.5 | 9 | 9 | 9.1 |
+| 34 | Nostalgic heart | 9 | 9 | 9 | 9 | 9.0 |
+| 35 | Frugal partner | 9 | 9 | 9 | 9 | 9.0 |
+| 36 | Peacemaker | 9 | 9 | 9 | 9 | 9.0 |
+
+**Batch average: 9.04** (Downloads 9.0, Engagement 9.1, Conversion 9.0,
+Relatability 9.1). Weakest named: **#32 Workaholic**, tied with #34/#35/#36
+at 9.0 post-rewrite but the only one that started below the bar pre-build
+by the widest margin (8.6) — fixed by leading with the "fall asleep
+mid-sentence" beat instead of the midnight-email beat (see above).
+
+All 7 passed every mechanical check on the first render: overlap gaps all
+exactly 0.55s on every one of the 14 cuts, durations 60.2-71.5s (comfortably
+within the 35-75s band; `workaholic` dropped from 71.5s pre-rewrite to
+67.6s and `protector` from 63.9s to 60.8s after their hook reorders, both
+still well within band), audio streams present and matched to video
+duration on every file, all 14 files 14.3-16.4MB (well under the 25MB cap,
+no re-encode needed), and IG vs TikTok cuts confirmed genuinely different
+files (distinct md5 hashes) on every one of the 7 scripts.
+
+**Hashtags.** `vidiq_instagram_tiktok_outlier_search` was checked via
+`vidiq_balance` first: 3 credits available (0 renewable, 3 add-on) against
+a 5-credit cost per call — skipped per the standing risk-averse rule, same
+as the 2026-10-04 batch. Shortlist built instead from: (1) this account's
+own real caption/hashtag history pulled fresh from Metricool for brand
+7128333 (TKPO05 descriptions and IGRE03 content, 1-10 Oct — tags already
+in rotation and performing: #relationshipadvice, #couplegoals, #cutedogs,
+#datingadvice, #cartooncouple, #relationships, #puppylove, #lovelanguages,
+#trustissues, #healing, #loyalty, #greenflags, #priority, #qualitytime,
+#privaterelationship, #actsofservice, #wordsofaffirmation, #overthinker),
+and (2) a WebSearch cross-check against a current (2026) Instagram
+banned-hashtag list, which confirmed none of the shortlist or the new
+exact-topic tags coined for this batch's scripts (#jealousheart,
+#conflictresolution, #workaholic, #protectivelove, #nostalgicheart,
+#frugallove, #peacemaker) appear on it (the list does flag plain #dating
+and #date, which this account doesn't use — #datingadvice is a different,
+already-validated tag). Never used: #fyp #foryou #viral #trending. No two
+videos share an identical 5-tag set on the same posting day (verified for
+both double-booked days, 24 and 25 Oct — sets overlap on 2-3 broad/mid
+tags but never all 5). IG and TikTok sets differ per video (the IG set
+always includes a "60-second test in bio" mention via the caption text,
+not a hashtag; TikTok captions carry no links).
+
+| # | Script | Platform | 5 tags | Score |
+|---|---|---|---|---|
+| 30 | Jealous heart | IG | #jealousheart #physicaltouch #trustissues #greenflags #relationshipadvice | 8.5 |
+| 30 | Jealous heart | TikTok | #jealousheart #cutedogs #datingadvice #relationships #couplegoals | 8.5 |
+| 31 | "We're fine" too fast | IG | #conflictresolution #qualitytime #relationshipadvice #couplegoals #cartooncouple | 8.0 |
+| 31 | "We're fine" too fast | TikTok | #conflictresolution #couplefights #cutedogs #datingadvice #relationships | 8.0 |
+| 32 | Workaholic | IG | #workaholic #actsofservice #priority #relationshipadvice #couplegoals | 8.0 |
+| 32 | Workaholic | TikTok | #workaholic #cutedogs #datingadvice #relationships #puppylove | 8.0 |
+| 33 | The protector | IG | #protectivelove #actsofservice #greenflags #relationshipadvice #cartooncouple | 8.0 |
+| 33 | The protector | TikTok | #protectivelove #cutedogs #datingadvice #couplegoals #relationships | 8.0 |
+| 34 | Nostalgic heart | IG | #nostalgicheart #qualitytime #relationshipadvice #couplegoals #puppylove | 8.0 |
+| 34 | Nostalgic heart | TikTok | #nostalgicheart #cutedogs #datingadvice #relationships #cartooncouple | 8.0 |
+| 35 | Frugal partner | IG | #frugallove #actsofservice #relationshipadvice #cartooncouple #priority | 7.5 |
+| 35 | Frugal partner | TikTok | #frugallove #cutedogs #datingadvice #couplegoals #relationships | 7.5 |
+| 36 | Peacemaker | IG | #peacemaker #wordsofaffirmation #relationshipadvice #couplegoals #healing | 8.5 |
+| 36 | Peacemaker | TikTok | #peacemaker #cutedogs #datingadvice #relationships #puppylove | 8.0 |
+
+**Average hashtag-set score: 8.04.** Lowest-scoring set (#35, 7.5) leans on
+a newly-coined exact-topic tag (`#frugallove`) with no prior performance
+history on this account, same tradeoff accepted on #27 last batch
+(`#awkwardlove`) — kept rather than swapped for a higher-volume but
+less-relevant tag, per the "1-2 exact-topic tags matching its specific
+script" rule. Highest-scoring sets (#30, #36, 8.5) pair a new exact-topic
+tag with two already-validated high performers (`#trustissues`/`#healing`,
+`#greenflags`, `#wordsofaffirmation`) from the #4/#28 rotation.
+
+## Scheduling
+
+Verified live via `getScheduledPosts`, probing from Thu 22 Oct 2026
+forward (the 2026-10-04 batch's claimed next-start pointer) in 2-day
+windows rather than trusting that pointer blindly — and it was right to
+check: the pointer itself was stale evidence of drift (a "private_partner"
+post originally logged as Wed 21 Oct 18:00 was found live at **Thu 22 Oct
+10:00**, and the "fightfix" ad originally logged as 6 Oct 20:00 was found
+live at **Fri 23 Oct 18:00** — both apparently moved by a reshuffle this
+repo's docs never recorded). Found: Thu 22 Oct 10:00 filled
+(private_partner, rescheduled), Thu 22 Oct 18:00 **empty** (first open
+slot), Fri 23 Oct 10:00 empty, Fri 23 Oct 18:00 filled (fightfix ad,
+rescheduled), Sat 24 – Mon 26 Oct all empty on both checked. Filled the
+first 7 empty slots in chronological order, no gaps, skipping the two
+already-filled ones:
+
+- Thu 22 Oct 2026, 18:00 — Jealous heart (#30)
+- Fri 23 Oct 2026, 10:00 — "We're fine" too fast (#31)
+- Sat 24 Oct 2026, 10:00 — Workaholic (#32)
+- Sat 24 Oct 2026, 18:00 — The protector (#33)
+- Sun 25 Oct 2026, 10:00 — Nostalgic heart (#34)
+- Sun 25 Oct 2026, 18:00 — Frugal partner (#35)
+- Mon 26 Oct 2026, 10:00 — Peacemaker (#36)
+
+All 14 posts (7 IG+FB Reel, 7 TikTok) created via `createScheduledPost`
+with `autoPublish:true`, `draft:false`; every IG+FB post includes the
+`instagram` provider (double-checked in each tool response, no FB-only
+posts). Media pushed to `JJCutecouple` as
+`videos/<date>-<slug>-{instagram,tiktok}.mp4` (date = the day it's
+scheduled) and all 14 raw.githubusercontent.com URLs verified HTTP 200
+before scheduling. UK clocks go back 25 Oct 2026, so 22-24 Oct posts used
+the `+01:00` (BST) offset and 25-26 Oct used `+00:00` (GMT) on the
+top-level `date` param; `publicationDate.timezone` was left as
+`Europe/London` throughout so Metricool handles the DST boundary itself.
+**Last scheduled organic JJ slot is now Mon 26 Oct 2026 10:00 — next batch
+starts Mon 26 Oct 2026 18:00 (verify live first).**
 
 ## Batch of 2026-10-04 — 10/10 scoring (downloads / engagement / conversion / relatability)
 
@@ -231,13 +402,14 @@ scripts existing only inside a single batch run.
   "🐾 [count] / 1,000". **Update `[count]` each batch to the real current
   TikTok follower count** (starting count: 4, set 2026-09-28 — check the real
   number each run via Metricool analytics rather than trusting this file,
-  since it goes stale). Still 3 as of the 2026-10-04 batch (checked via
-  TKEV07, 1-3 Oct — no JJ posts have published yet; the first organic slot,
-  5 Oct 10:00, was still pending when this batch ran).
+  since it goes stale). Still 3 as of the 2026-10-10 batch (checked via
+  TKEV07 — no JJ posts have gone live to move it yet, since even the
+  earliest organic slots were still pending on the TikTok side when this
+  batch ran; every TikTok end-card in this batch used count 3).
 - **Publish mode (updated 2026-09-29): auto-publish** (`autoPublish:true`, `draft:false`) on Metricool JJ brand 7128333, tz Europe/London. **2 videos/day at 10:00 and 18:00** (TikTok best slots). Each video = one IG+Facebook Reel post (IG cut) + one TikTok post (TikTok cut), same time. **First JJ post: Mon 5 Oct 2026; never schedule earlier.** Each batch starts the day after the last already-scheduled JJ post (check Metricool first — probe day by day, 1-3 days per `getScheduledPosts` call, to avoid oversized responses).
-- **Pipeline**: all builds use `pipeline/` (see `pipeline/README.md`). Built: scripts 1, 2, 4, 5, 6, 8 (batch of 2026-09-29, scheduled 5-7 Oct); scripts 9-15 (batch of 2026-09-30, scheduled 8-11 Oct); scripts 16-22 (batch of 2026-10-01, scheduled 11-14 Oct); scripts 23-29 (batch of 2026-10-04, scheduled 17-21 Oct). Still unbuilt: 7 (Kids, needs baby pup prop). Next batch pulls further topics from the "Scaling beyond these 29" list / invents new ones. Music = the 3 user-supplied sounds (rotated), not synthesized.
-- TikTok follower count on 2026-10-04: 3 (checked via Metricool analytics, metric TKEV07 — unchanged since 2026-09-30; no JJ posts have gone live yet to move it, since the first organic slot, 5 Oct 10:00, was still pending when this batch ran on 4 Oct).
-- **Last scheduled JJ day as of the 2026-10-04 batch: Wed 21 Oct 2026 (10:00 and 18:00 organic — both filled; 20:00 that day is the separate "kindness machine" ad, unaffected).** Next batch starts Thu 22 Oct 2026, 10:00 — verify live via `getScheduledPosts` first rather than trusting this line, since ad reshuffles have moved this pointer mid-week before (see the 2026-10-02 reshuffle notes below).
+- **Pipeline**: all builds use `pipeline/` (see `pipeline/README.md`). Built: scripts 1, 2, 4, 5, 6, 8 (batch of 2026-09-29, scheduled 5-7 Oct); scripts 9-15 (batch of 2026-09-30, scheduled 8-11 Oct); scripts 16-22 (batch of 2026-10-01, scheduled 11-14 Oct); scripts 23-29 (batch of 2026-10-04, scheduled 17-21 Oct); scripts 30-36 (batch of 2026-10-10 — jealous_heart, too_fast_fine, workaholic, protector, nostalgic_heart, frugal_partner, peacemaker — scheduled 22-26 Oct; see the doc-vs-reality correction note above `docs/SCRIPTS.md`'s "Batch of 2026-10-07" section: that section's scripts #30-36 had been marked "Built" with no spec files, videos, or Metricool posts actually existing — this batch is what genuinely built and shipped those slugs). Still unbuilt: 7 (Kids, needs baby pup prop). Next batch pulls further topics from the "Scaling beyond these 36" list / invents new ones. Music = the 3 user-supplied sounds (rotated), not synthesized.
+- TikTok follower count on 2026-10-10: 3 (checked via Metricool analytics, metric TKEV07 — unchanged since 2026-09-30; still no JJ posts live to move it).
+- **Last scheduled JJ day as of the 2026-10-10 batch: Mon 26 Oct 2026 (10:00 organic filled by this batch's 7th video, Peacemaker; 18:00 that day is open).** Next batch starts Mon 26 Oct 2026, 18:00 — verify live via `getScheduledPosts` first rather than trusting this line: this batch found the doc's claimed next-slot pointer (Wed 21 Oct 18:00) was stale — the real first empty slot was Thu 22 Oct 18:00, because a "private_partner" post occupied Thu 22 Oct 10:00 and a "fightfix" ad occupied Fri 23 Oct 18:00, neither reflected in the prior batch's log entry (see the 2026-10-10 batch's Scheduling section above for the full discrepancy).
 - **Media hosting**: finished MP4s are pushed to the public `JJCutecouple`
   repo and referenced by their `raw.githubusercontent.com` URL as Metricool's
   media source (Metricool's post tools require a public media URL — there's
