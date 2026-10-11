@@ -825,15 +825,210 @@ quiz ending (result: Words of Affirmation).
 
 ---
 
-## Scaling beyond these 36
+## Scaling beyond these 36 (superseded — see "Scaling beyond these 43" below)
 
-Every seed from the original list and both extensions is now used. The
+Every seed from the original list and both extensions was used. The
 real-data lesson from this batch (vulnerability and specificity beat purely
 sweet/quirky framing — see the 2026-10-07 batch note in PRODUCTION-LOG.md)
-should keep shaping topic choice going forward, not just the 10/10 rubric.
-Candidate seeds for next time: someone who struggles to celebrate their own
-wins, a partner recovering from a past breakup who's slow to fully let go,
-someone who shows love through unsolicited advice they're learning to hold
-back, a partner who's the "responsible one" in every friend group and
-never gets to fall apart, and further gender/relationship-stage swaps of
-any script above.
+continues to shape topic choice going forward, not just the 10/10 rubric.
+The four candidate seeds noted here (struggles to celebrate their own wins,
+slow to fully let go of a past relationship, unsolicited advice they're
+learning to hold back, the "responsible one" who never gets to fall apart)
+were all used by the batch below.
+
+## Batch of 2026-10-11 — new scripts (further invented topics)
+
+Scripts 1, 2, 4, 5, 6, 8, 9-36 are built. #7 (Kids) remains skipped — still
+needs the baby-pup prop. This batch pulls the four candidate seeds left at
+the bottom of the "Scaling beyond these 36" note above in full (struggles
+to celebrate their own wins, slow to fully let go of a past relationship,
+unsolicited advice they're learning to hold back, the "responsible one" who
+never gets to fall apart) and extends it with three more invented angles in
+the same vulnerability-over-cute register this series has been validating
+since the 2026-10-07 batch: someone who needs space to process before they
+can talk, someone who struggles to hear feedback without hearing an attack,
+and someone who's bad at goodbyes. Metricool analytics for brand 7128333
+were pulled first (TikTok evolution TKEV07, 1-11 Oct 2026) to set the bar
+from real past performance per the standing scoring rule — follower count
+unchanged at 3 since 2026-09-30 (no movement yet from the follow-counter
+ending), and the vulnerability-over-cute lesson from the 2026-10-07/10-10
+batches continued to shape this batch's hooks and re-scores. All 7 scripts
+were written to the established word-count budget (body ≤145 words, body +
+IG end-line ≤165) from the start.
+
+### 37. Downplays their wins — "When they downplay their wins" (invented)
+
+> When someone who downplays their wins loves you... they'll get the good
+> news and say "it's not a big deal" before you can even hug them. Not
+> because they don't care — admitting it matters has always felt like
+> bragging to them. They'll change the subject the second you start
+> bragging about them to someone else. They'll light up for a full minute
+> when you remember a win they'd already forgotten they told you about. If
+> you've learned to celebrate loud enough for both of you... send this to
+> them, right now. But if every win gets brushed off until it stops feeling
+> like one at all... that's worth naming, gently. Because someone who can't
+> celebrate themselves but keeps trying anyway... just needs you to believe
+> it first.
+
+Built (`pipeline/specs/downplays_wins.py`). Pre-build and post-build score
+9.0 (9/9/9/9 — no rewrite needed). → Love Language quiz ending (result:
+Words of Affirmation).
+
+### 38. Slow to let go — "When they're slow to let go" (invented)
+
+> When someone still healing from their last relationship loves you...
+> they'll flinch at a notification before they even look at the screen.
+> Not because they're comparing you — their body just remembers what came
+> before you did. They'll ask "are we okay?" after a totally normal quiet
+> moment, because quiet used to mean something was wrong. They'll move
+> slower with the big words, because they've learned what it costs to say
+> them too soon. If someone's letting you prove the past wrong, one patient
+> day at a time... send this to them. But if you use what scared them
+> before against them in a fight... you become the thing they were afraid
+> of. Because someone still healing who keeps choosing you anyway... isn't
+> holding onto the past, they're building proof it's over.
+
+Built (`pipeline/specs/slow_to_let_go.py`). Pre-build and post-build score
+9.1 (9/9.5/9/9 — no rewrite needed). Distinct from #15 (guarded heart,
+walls that predate the relationship) and #30 (jealous heart, fear of
+losing what's already here) — this one is specifically about healing from
+a named past relationship, not a lifelong trait. → Love Language quiz
+ending (result: Words of Affirmation).
+
+### 39. Advice-giver — "When the advice-giver loves you" (invented)
+
+> When the advice-giver in the relationship loves you... they'll catch
+> themselves mid-sentence, right before "well, what I'd do is..." comes
+> out. Not because they think you can't decide — caring and directing have
+> always felt like the same thing to them. They'll have an opinion on your
+> job, your friends, your whole life, ready before you even finish asking.
+> They'll ask "do you want advice, or do you just want me to listen?" and
+> actually wait for the answer. If someone's learning to just listen
+> first, after a lifetime of jumping to fix it... send this to them. But
+> if the opinions turn into decisions made for you, without you... that's
+> not love, that's control in a helpful voice. Because someone who used to
+> have all the answers and is learning to just ask the question... is
+> doing real work, for you.
+
+Built (`pipeline/specs/advice_giver.py`). **Weakest pre-build of this
+batch** (8.625 avg: 8.5/8.5/9/8.5 — the original draft opened on the
+generic "they'll have an opinion on your job... ready before you even
+finish asking" beat, which lacks a concrete visual image for the first 2
+seconds). Rewritten before building to lead with the sharper, more visual
+beat ("they'll catch themselves mid-sentence, right before 'well, what I'd
+do is...' comes out"), demoting the generic opinion line to a supporting
+beat; re-scored 9.0 (9/9/9/9) after the reorder. Distinct from #25 (the
+fixer, who solves problems) — this one is specifically about steering
+decisions, not fixing feelings. → Love Language quiz ending (result:
+Quality Time).
+
+### 40. The steady one — "When the steady one loves you" (invented)
+
+> When the responsible one loves you... they'll answer the 2am crisis
+> call, then still show up to your thing, exhausted. Not because they lack
+> limits — they just never learned it was allowed to say "not today."
+> They'll organize everyone else's chaos, then sit quietly in their own —
+> no one taught them how to ask back. They'll apologize for crying in
+> front of you, like needing you is an inconvenience instead of the point.
+> If someone holds everyone together and rarely falls apart except with
+> you... send this to them. But if "I'm fine, I'll handle it" becomes the
+> only thing they ever say... that's loneliness wearing a good attitude.
+> Because the responsible one who finally lets you catch them... is
+> trusting you with something they never show anyone else.
+
+Built (`pipeline/specs/steady_one.py`). Pre-build and post-build score 9.0
+(9/9/9/9 — no rewrite needed). One in-scene bug caught at the preview
+stage: scene 3 originally called the engine's `note()` helper intending
+sticky-note/memo shapes for the "organize everyone else's chaos" beat, but
+`note()` actually draws a musical eighth-note glyph (confirmed by reading
+`engine/puppy-engine.js`) — the preview contact sheet showed floating
+music notes around a sad pup, semantically wrong for a to-do/chaos
+narrative. Fixed by hand-drawing colored `blob(rectPts(...))` rectangles
+styled as sticky notes instead, re-previewed to confirm, then rendered. →
+Love Language quiz ending (result: Acts of Service).
+
+### 41. Needs space to heal — "When they need space to heal" (invented)
+
+> When someone who needs space to process loves you... they'll text "I
+> just need a bit of time, I'm not going anywhere" — before you've even
+> asked what's wrong. Not because they're shutting you out — they can't
+> find the right words until the hurt stops being so loud. They'll ask for
+> a night alone after something hurts, not a conversation right away.
+> They'll come back ready to actually talk, instead of saying something in
+> the moment they'd take back later. If someone's taught you that space
+> isn't rejection, it's just how they come back whole... send this to
+> them. But if the space turns into days of silence with nothing attached
+> to it... that's not processing, that's disappearing. Because someone who
+> asks for space and still comes back every time... isn't pulling away,
+> they're loving you the long way round.
+
+Built (`pipeline/specs/needs_space.py`). Pre-build score 8.75 avg
+(9/8.5/9/8.5 — the original draft opened on the abstract "they'll ask for
+a night alone after something hurts" beat instead of a concrete, quotable
+line). Rewritten before building to lead with the specific phoneMock text
+"I just need a bit of time, I'm not going anywhere" as the hook; re-scored
+9.0 (9/9/9/9) after the reorder. Distinct from #38 (slow to let go, a
+specific past relationship) and #11 (quiet after a fight, post-conflict) —
+this one is about needing time to process any kind of hurt, not tied to a
+single trigger. → Love Language quiz ending (result: Quality Time).
+
+### 42. Bad at feedback — "When they're bad at feedback" (invented)
+
+> When someone who struggles to hear feedback loves you... they'll walk
+> away from the conversation, then come back twenty minutes later having
+> thought about it. Not because they don't want to grow — every critique
+> used to feel like proof they weren't enough. They'll go quiet and hurt
+> the second you say "can we talk about something?" — an old reflex, not
+> today's truth. They'll bring it up again, days later, with "you were
+> right" — completely unprompted. If someone's learning to hear you
+> without hearing an attack... send this to them, and tell them you
+> noticed. But if the conversation never gets revisited, and every bit of
+> feedback just gets buried... that's not processing, that's avoidance.
+> Because someone who used to flinch at feedback and now circles back to
+> actually hear it... is choosing growth over their pride, for you.
+
+Built (`pipeline/specs/bad_at_feedback.py`). Pre-build score 8.625 avg
+(8.5/8.5/9/8.5 — the original draft opened on the generic "go quiet and
+hurt the second you say 'can we talk'" beat, same weak-hook pattern as
+#39/#41 this batch). Rewritten before building to lead with the more
+specific, redemptive beat ("they'll walk away from the conversation, then
+come back twenty minutes later having thought about it"), demoting the
+generic quiet-and-hurt line to a supporting beat; re-scored 9.0 (9/9/9/9)
+after the reorder. → Love Language quiz ending (result: Words of
+Affirmation).
+
+### 43. Bad at goodbyes — "When they're bad at goodbyes" (invented)
+
+> When someone bad at goodbyes loves you... they'll hug you one beat too
+> long at the door, like letting go first makes it more real. Not clingy —
+> just someone who's learned that "see you later" still needs a moment
+> before it's true. They'll text "landed safe?" before you've even left
+> the jet bridge, thinking about you the whole flight. They'll walk you to
+> the car in the cold, every single time, just to get three more minutes.
+> If someone makes every goodbye last a little longer than it needs to...
+> send this to them before you go. But if goodbyes turn into guilt trips
+> about leaving at all... that's not missing you, that's control dressed
+> up as missing you. Because someone who hates goodbyes but never once
+> asks you to stay... loves you enough to let you go anyway.
+
+Built (`pipeline/specs/bad_at_goodbyes.py`). Pre-build and post-build score
+9.1 (9/9.5/9/9 — no rewrite needed, strongest pre-build score in this
+batch; the too-long-hug-at-the-door hook was specific and visual from the
+first draft). → Love Language quiz ending (result: Physical Touch).
+
+---
+
+## Scaling beyond these 43
+
+Every seed from the "Scaling beyond these 36" list is now used. The
+vulnerability-over-cute lesson (see the 2026-10-07 batch note in
+PRODUCTION-LOG.md) continues to shape topic choice going forward, not just
+the 10/10 rubric. Candidate seeds for next time: a partner who struggles to
+sit still or relax without feeling guilty, someone who over-apologizes for
+things that were never their fault (distinct from #36 peacemaker, who
+apologizes specifically to end conflict rather than out of reflex), someone
+who shows love by remembering exactly how you take stress (distinct from
+#19/#34, which cover present-day detail and sentimental keepsakes), and
+further gender/relationship-stage swaps of any script above. Script #7
+(Kids) remains the one gap in the original 8 — still needs the baby-pup
+prop added to `engine/puppy-engine.js`.
