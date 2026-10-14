@@ -1018,17 +1018,189 @@ first draft). → Love Language quiz ending (result: Physical Touch).
 
 ---
 
-## Scaling beyond these 43
+### 44. Can't sit still — "When they can't sit still loves you" (invented)
 
-Every seed from the "Scaling beyond these 36" list is now used. The
-vulnerability-over-cute lesson (see the 2026-10-07 batch note in
-PRODUCTION-LOG.md) continues to shape topic choice going forward, not just
-the 10/10 rubric. Candidate seeds for next time: a partner who struggles to
-sit still or relax without feeling guilty, someone who over-apologizes for
-things that were never their fault (distinct from #36 peacemaker, who
-apologizes specifically to end conflict rather than out of reflex), someone
-who shows love by remembering exactly how you take stress (distinct from
-#19/#34, which cover present-day detail and sentimental keepsakes), and
-further gender/relationship-stage swaps of any script above. Script #7
-(Kids) remains the one gap in the original 8 — still needs the baby-pup
-prop added to `engine/puppy-engine.js`.
+> When someone who can't sit still loves you... they'll fold the laundry
+> mid-movie, because sitting still for too long makes their skin itch. Not
+> because they don't want to relax with you — rest has always felt like
+> something they have to earn first. They'll reorganize the pantry at
+> 11pm instead of just saying out loud that they're anxious. They'll
+> finally sit down next to you... and ask if there's anything else that
+> needs doing, like stillness itself is a waste. If someone's learning
+> that doing nothing with you is still doing something... send this to
+> them. But if the moving never stops long enough for you to even reach
+> them... that's not energy, that's avoidance wearing a to-do list.
+> Because someone who finally sits down and stays... is choosing you over
+> the next task, for once.
+
+Built (`pipeline/specs/cant_sit_still.py`). Pre-build and post-build score
+9.0 (9/9/9/9 — no rewrite needed). Per the 2026-10-11 growth-strategy
+update, this is a habit/quirk topic rather than a named-fear one, so it
+was scored and built but not leaned on as the batch's strongest pick. →
+Love Language quiz ending (result: Quality Time).
+
+### 45. Over-apologizer — "When they always say sorry loves you" (invented)
+
+> When the over-apologizer loves you... they'll say sorry for the
+> weather, for being thirty seconds late, for taking up space on the
+> couch. Not because they did something wrong — somewhere along the way,
+> "sorry" became how they ask "are we okay?" They'll apologize for
+> crying, then apologize for apologizing. They'll flinch and say sorry
+> before you've even finished your sentence, bracing for anger that was
+> never coming. If someone's learning that they don't need to apologize
+> for existing near you... send this to them. But if "sorry" replaces
+> ever actually fixing anything... that's not remorse, that's a reflex
+> standing in for change. Because someone who finally says "I was scared,
+> not sorry"... is learning the difference, for you.
+
+Built (`pipeline/specs/over_apologizer.py`). Pre-build and post-build
+score 9.1 (9/9.5/9/9 — no rewrite needed; the "sorry for the weather"
+hook was concrete and highly relatable from the first draft). Distinct
+from #36 (peacemaker, who apologizes specifically to end conflict) — this
+one is about a reflexive, anxious "sorry" untethered from any actual
+conflict. → Love Language quiz ending (result: Words of Affirmation).
+
+### 46. Stress order — "When they know your stress loves you" (invented)
+
+> When someone who remembers exactly how you take your stress loves
+> you... they'll put the kettle on the second your voice changes, before
+> you've said a word. Not because they're psychic — they've just
+> memorized you, the way some people memorize a map. They'll know you go
+> quiet first, then snappy, then apologize for the snappy part. They'll
+> hand you the blanket, not the solution, because they learned the hard
+> way which one you actually need. If someone knows your stress order
+> better than your coffee order... send this to them. But if "I know what
+> you need" turns into deciding for you instead of asking... that's not
+> care, that's control with a good memory. Because someone who studies
+> how you fall apart, just to catch you better... is loving you in the
+> details.
+
+Built (`pipeline/specs/stress_order.py`). Pre-build and post-build score
+9.1 (9/9/9/9.5 — no rewrite needed). A "how they show care in a specific
+situation" topic per the growth-strategy ranking, distinct from #19/#34
+(present-day detail, sentimental keepsakes) — this one is specifically
+about reading and responding to stress. → Love Language quiz ending
+(result: Acts of Service).
+
+### 47. Won't accept help — "When they can't accept help loves you" (invented)
+
+> When someone who can't accept help loves you... they'll wave you off
+> mid-struggle with the box, then drop it two steps later. Not because
+> they don't trust you — somewhere, needing help got filed away as proof
+> they'd finally used up someone's patience. They'll say "I've got it"
+> with their arms visibly shaking. They'll let you help exactly once,
+> then spend the next hour making sure you know they didn't need to. If
+> someone's learning that letting you carry half the box doesn't make
+> them less capable, and doesn't use up your patience either... send this
+> to them. But if "I've got it" means they never actually let you in, on
+> anything... that's not independence, that's a wall with good posture.
+> Because someone who finally hands you one end of the box... is trusting
+> you with more than furniture.
+
+Built (`pipeline/specs/wont_accept_help.py`). **Weakest pre-build of this
+batch**, tied with #50 (8.875 avg: 9/8.5/9/9 — the "not because" line read
+as generic burden-avoidance rather than a specific fear). Rewritten before
+building to sharpen that line to "proof they'd finally used up someone's
+patience" and to echo it back in the share line ("doesn't use up your
+patience either"); re-scored 9.0 (9/9/9/9) after the rewrite. A visual bug
+was also caught at the preview stage: the struggle-box prop originally sat
+directly over the pup's face in scene 1 — repositioned beside the pup
+before the full render (see BUILD-METHOD.md-style lesson below). Distinct
+from #24 (struggles to ask for help, the inverse) and #25 (the fixer, who
+solves others' problems) — this one is about refusing help even when it's
+already being offered. → Love Language quiz ending (result: Acts of
+Service).
+
+### 48. Quiet score — "When they keep quiet score loves you" (invented)
+
+> When someone who keeps quiet score loves you... they'll say "it's fine"
+> about the thing that clearly wasn't fine, three days ago. Not because
+> they're holding a grudge — they just never learned how to say "that
+> hurt" in the moment it happened. They'll bring up something small from
+> last month, out of nowhere, and not even know why it's surfacing now.
+> They'll apologize for "overreacting" right after finally saying the
+> thing they'd been sitting on for weeks. If someone's learning to say it
+> small, right when it happens, instead of saving it up... send this to
+> them. But if every fight becomes a greatest-hits list of everything
+> that's ever bothered them... that's not honesty, that's a bill coming
+> due all at once. Because someone who finally says "that hurt" in the
+> moment, instead of a month later... is choosing you over the score they
+> used to keep.
+
+Built (`pipeline/specs/quiet_score.py`). Pre-build and post-build score
+9.1 (9/9.5/9/9 — no rewrite needed). Deliberate inverse pairing with #21
+(forgives easily) — this one is about resentment that builds up silently
+instead of being released. → Love Language quiz ending (result: Words of
+Affirmation).
+
+### 49. Loyal woman — "When a loyal woman loves you" (gender-flip of #5, Fidelity)
+
+> When a loyal woman loves you... she'll put her phone face-down the
+> second someone else's name lights it up, without even thinking about
+> it. Not because she's hiding anything — loyalty, to her, means you
+> never have to wonder. She'll mention who she talked to today before you
+> even ask, like transparency is just how she breathes. She'll turn down
+> the attention that used to feel flattering, because it stopped meaning
+> anything the day she met you. A loyal woman never makes you feel like
+> an option. Send this to the one who deserves her. But if loyalty
+> becomes something you have to keep proving, over and over, to earn
+> basic trust... that's not love, that's an audit. Because a loyal woman
+> who never makes you ask twice... isn't just faithful, she's safe.
+
+Built (`pipeline/specs/loyal_woman.py`). Pre-build and post-build score
+9.1 (9.5/9/9/9 — no rewrite needed). Direct gender-flip of #5 (fidelity,
+"a loyal man"), the strongest-performing script by interaction rate in
+the 2026-10-11 real-data analysis in `GROWTH-STRATEGY.md` (named-fear
+topic: not being treated as replaceable) — picked specifically to lean
+into that finding rather than as a generic swap. → Love Language quiz
+ending (result: Physical Touch).
+
+### 50. Needs the plan — "When they need the plan loves you" (invented)
+
+> When someone who needs the plan loves you... they'll go quiet and pale
+> the second you say "actually, let's just wing it." Not because they're
+> controlling — somewhere, growing up, not knowing what was coming
+> usually meant something bad actually did. They'll ask "what time,
+> exactly" three times, not because they didn't hear you, because
+> certainty is how they breathe. They'll have a backup plan for the
+> backup plan, and still apologize for needing one. If someone's learning
+> that you winging it isn't the same as things falling apart... send this
+> to them. But if every unplanned moment turns into a full shutdown...
+> that's not preference, that's old fear still running the room. Because
+> someone who finally says "okay, let's just see what happens"... is
+> trusting you with the one thing that used to scare them most.
+
+Built (`pipeline/specs/needs_the_plan.py`). **Tied weakest pre-build**
+(8.875 avg: 9/8.5/9/9 — the original "not because they're controlling"
+line didn't name a specific root fear). Rewritten before building to tie
+the fear explicitly to childhood unpredictability ("not knowing what was
+coming usually meant something bad actually did") and to sharpen the
+payoff line to callback that fear directly; re-scored 9.0 (9/9/9/9) after
+the rewrite. Distinct from #22 (the planner, who organizes for others)
+— this one is about needing certainty to feel safe, not an organizing
+skill. → Love Language quiz ending (result: Quality Time).
+
+---
+
+## Scaling beyond these 50
+
+Every seed from the "Scaling beyond these 43" list is now used, including
+both suggested gender/relationship-stage swaps (#49 completes the
+fidelity/trust pairing — #4 was already swapped to #28). Per the
+2026-10-11 `GROWTH-STRATEGY.md` update, future batches should weight
+topic choice toward named-fear/reassurance topics (fidelity, trust,
+abandonment-coded) first, "shows care in a specific situation" topics
+next, and pure habit/quirk topics last unless the drafted list runs dry —
+this batch (44-50) was drafted before that weighting was confirmed, so it
+leans more habit/quirk-heavy (#44, #47, #50) than an ideal batch would;
+the next batch should correct toward more fidelity/trust/abandonment-coded
+picks. Candidate seeds for next time: someone who struggles to celebrate
+their own wins without deflecting (distinct from #37, downplays wins,
+which is about not taking credit — this is about discomfort being
+celebrated by their partner specifically), someone who shows love by
+never bringing up an old mistake once it's been addressed (a trust/
+reassurance topic, pairs with #48's inverse), and further gender/
+relationship-stage swaps of any script above (e.g. a gender-flip of #11,
+quiet after a fight, or #30, jealous heart). Script #7 (Kids) remains the
+one gap in the original 8 — still needs the baby-pup prop added to
+`engine/puppy-engine.js`.
