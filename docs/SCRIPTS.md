@@ -1,5 +1,7 @@
 # Script library
 
+> **18 Oct 2026: READ `docs/WINNERS-BLUEPRINT.md` FIRST.** It overrides the "invent freely" standing approval below. New scripts must be built around the videos that passed 1,000 views (big-audience hooks, named fear or life stage, concrete beats, plain lines, ≤110 words). No more personality-trait hooks.
+
 Scripts 1, 2, 4, 5, 6, 8, and 9-22 are built (see PRODUCTION-LOG; specs in
 `pipeline/specs/`). Originally two scripts were fully built (source in
 `/videos/`). The rest were drafted first, then (once the drafted list ran
