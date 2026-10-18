@@ -4,7 +4,7 @@ TITLE = "years together"
 BODY_LINES = [
 "Years together... and he still kisses your forehead when you fall asleep first.",
 "The fights get shorter. Not because you care less. Because you both know the way back now.",
-"Friday night is pyjamas and a takeaway... and you wouldn't swap it for anything.",
+"Friday night is pyjamas and a takeaway. You wouldn't swap it for the world.",
 "You can tell he's had a bad day just from the way he says hey.",
 "If it's been years and it still feels like this... send this to them.",
 "But if you're still together, and you haven't really talked in months... that's not love lasting. That's just time passing.",
@@ -45,8 +45,9 @@ SHARE,
   if(u>1.4)raincloudSmall(540,620,win(u,1.4,10)*.6);''',
 HUG,
 ]
-SCENES = spec(BODY_LINES, D, [{'first':'😴'},{'way back':'🤍'},{'anything':'🍕'},{'hey':'🥺'},{'them':'💌'},{'passing':'⏳'},{'gone':'🤍'}])
+SCENES = spec(BODY_LINES, D, [{'first':'😴'},{'way back':'🤍'},{'world':'🍕'},{'hey':'🥺'},{'them':'💌'},{'passing':'⏳'},{'gone':'🤍'}])
 IG_LINE = "The forehead kiss. The way back. Friday nights. Every couple loves in their own way... Want to know yours? There's a sixty second test in our bio. Take it together."
 IG_CAPS = C(IG_LINE, {'kiss':'😴','yours?':'🤍','bio':'🔗'})
 IG_RESULT = "Physical Touch"
 TT_LINE = TT_STD
+LINE_SPEED = {3: 0.8}

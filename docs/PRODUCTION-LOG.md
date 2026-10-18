@@ -64,6 +64,31 @@ ending used, Metricool post status.
 | 2026-10-14 | 48. Quiet score | Love Language quiz (Words of Affirmation) | Follow counter (3/1,000) | Scheduled Sun 1 Nov 2026 10:00 |
 | 2026-10-14 | 49. Loyal woman | Love Language quiz (Physical Touch) | Follow counter (3/1,000) | Scheduled Sun 1 Nov 2026 18:00 |
 | 2026-10-14 | 50. Needs the plan | Love Language quiz (Quality Time) | Follow counter (3/1,000) | Scheduled Mon 2 Nov 2026 10:00 |
+| 2026-10-18 | 51. A man who's sure about you | Love Language quiz (Quality Time) | Follow counter (3/1,000) | Scheduled Mon 19 Oct 10:00 (replaced "the fixer", drafted) |
+| 2026-10-18 | 52. A loyal woman (v2) | Love Language quiz (Quality Time) | Follow counter (3/1,000) | Scheduled Mon 19 Oct 18:00 (empty slot) |
+| 2026-10-18 | 53. The girl who stayed when you had nothing | Love Language quiz (Acts of Service) | Follow counter (3/1,000) | Scheduled Tue 20 Oct 10:00 (replaced "opposites balance", drafted) |
+| 2026-10-18 | 54. When she's been cheated on | Love Language quiz (Words of Affirmation) | Follow counter (3/1,000) | Scheduled Tue 20 Oct 18:00 (replaced "bad at compliments", drafted) |
+| 2026-10-18 | 55. Years together | Love Language quiz (Physical Touch) | Follow counter (3/1,000) | Scheduled Wed 21 Oct 18:00 (replaced kindness #ad that was still live despite the pause, drafted) |
+| 2026-10-18 | 56. When she's the one | Love Language quiz (Quality Time) | Follow counter (3/1,000) | Scheduled Thu 22 Oct 10:00 (replaced "private partner", drafted) |
+| 2026-10-18 | 57. A woman who's sure about you | Love Language quiz (Acts of Service) | Follow counter (3/1,000) | Scheduled Thu 22 Oct 18:00 (replaced "jealous heart", drafted) |
+
+## Batch of 2026-10-18 — QUALITY RESET (winners blueprint)
+
+Chuby paused the batch on 18 Oct (quality dropping, lines that didn't make sense) and asked for
+winners only, re-checked after creation for script sense and intonation. 7 scripts written to
+`docs/WINNERS-BLUEPRINT.md` (scores in SCRIPTS.md #51-57, avg 9.0; conversion 8.5 is the drag
+on all of them). Every line re-read cold; captions generated from the spoken words
+(`specs/_kit2.py`); preview contact sheets checked and 6 layout fixes made (clipped mum/friends,
+mug over a face, sunglasses floating, window clipped, tears misplaced, "other man" made
+distinct with shades). After render `voicecheck.py` flagged 4 lines (3 rushed at 3.7-3.8 w/s,
+1 statement ending on a rising pitch: "...you wouldn't swap it for anything"); fixed with
+per-spec `LINE_SPEED` (new in jjlib/make_video) and a reword ("for the world"), re-rendered,
+re-checked: 0 flags. All 14 cuts 48.5-55s, 13.8-15.4MB, overlap gaps 0.54-0.55s, audio OK.
+Old posts in the 7 slots were set to draft (not deleted). Media served from commit-pinned raw
+URLs (the branch raw URL was CDN-cached as 404 right after push). Hashtags reuse this brand's
+best performers (#relationshipadvice #couplegoals #cutedogs #trustissues #healing #loyalty
+#girlfriend #boyfriend) plus exact-topic tags (#situationship #loyalwoman #loyalgirlfriend
+#longtermrelationship #shestheone); hashtag-set average 8.2.
 
 ## Batch of 2026-10-14 — 10/10 scoring (downloads / engagement / conversion / relatability)
 

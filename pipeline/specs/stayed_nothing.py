@@ -47,3 +47,4 @@ IG_LINE = "One meal. Did you eat? You've got this. Every girl shows love her own
 IG_CAPS = C(IG_LINE, {'one meal':'🍜','hers?':'🤍','bio':'🔗'})
 IG_RESULT = "Acts of Service"
 TT_LINE = TT_STD
+LINE_SPEED = {5: 0.8}

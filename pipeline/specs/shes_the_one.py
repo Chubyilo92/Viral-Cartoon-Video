@@ -6,7 +6,7 @@ BODY_LINES = [
 "Something good happens... and she's the first person you want to tell.",
 "Her bad days start feeling like your problem too. And you don't mind one bit.",
 "Every future you picture... she's already in it.",
-"If she's the one for you... send this... to her.",
+"If she's the one for you... send this to her.",
 "But if you're still keeping your options open... she's not the one. And you already know it.",
 "Because when she's the one... nobody else even feels like an option.",
 ]
@@ -47,3 +47,4 @@ IG_LINE = "The first call. The bad days. The future. Everyone shows love their o
 IG_CAPS = C(IG_LINE, {'call':'📞','feels it?':'🤍','bio':'🔗'})
 IG_RESULT = "Quality Time"
 TT_LINE = TT_STD
+LINE_SPEED = {4: 0.74}

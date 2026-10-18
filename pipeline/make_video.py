@@ -16,8 +16,9 @@ OUT = f'{J.ROOT}/out'
 os.makedirs(OUT, exist_ok=True)
 
 
+J.LINE_SPEED = getattr(spec, 'LINE_SPEED', {})
 def cached_tts(lines, prefix):
-    key = hashlib.md5(json.dumps(lines).encode()).hexdigest()
+    key = hashlib.md5(json.dumps([lines, {str(k): v for k, v in J.LINE_SPEED.items()} if prefix == 'b' else {}], sort_keys=True).encode()).hexdigest()
     meta = f'{W}/{prefix}_meta.json'
     if os.path.exists(meta):
         m = json.load(open(meta))

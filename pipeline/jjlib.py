@@ -91,6 +91,7 @@ def build_html(slug, title, scenes, dur, cut_end_js, end_dur, prelude=''):
 
 
 _k = None
+LINE_SPEED = {}
 def tts_lines(lines, outdir, prefix):
     global _k
     from kokoro_onnx import Kokoro
@@ -99,7 +100,7 @@ def tts_lines(lines, outdir, prefix):
     os.makedirs(outdir, exist_ok=True)
     durs = []
     for i, t in enumerate(lines):
-        a, sr = _k.create(t, voice='am_michael', speed=0.9, lang='en-us')
+        a, sr = _k.create(t, voice='am_michael', speed=LINE_SPEED.get(i, 0.9) if prefix == 'b' else 0.9, lang='en-us')
         idx = np.where(np.abs(a) > 0.01)[0]
         a = a[max(0, idx[0] - 400):idx[-1] + 2400]
         sf.write(f'{outdir}/{prefix}{i}.wav', a, sr)
