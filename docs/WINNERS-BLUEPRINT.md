@@ -58,3 +58,15 @@ Score 1–10 on downloads, engagement, conversion, relatability, but **benchmark
 a 9 means "I'd bet this beats 1,000 IG views like #4/#5". If it isn't clearly as strong as a winner, it
 scores under 9 and gets rewritten or cut. The old batches scored everything 9.0–9.1 while getting
 ~120 views — that's the inflation to stop.
+
+## After building: re-read and listen-check (Chuby, 18 Oct 2026)
+
+1. Re-read every BODY_LINE cold, one at a time. If a line needs context, contradicts another, or
+   uses a riddle/therapy word, rewrite it before rendering.
+2. Use `specs/_kit2.py` (`spec()` / `C()`) so captions are generated from the spoken words;
+   never hand-write captions that differ from the voice.
+3. After `make_video.py`, run `python3 voicecheck.py <slug>` and fix every FLAG (pace outside
+   1.8-3.6 words/sec, a statement ending with rising pitch, missing pauses, low word match =
+   likely mispronunciation). Usual fix: add "..." for a pause or reword, then re-render.
+4. Look at the preview contact sheet AND the 6 sample frames: no clipped pups, no props over faces,
+   every prop must match what the line says.

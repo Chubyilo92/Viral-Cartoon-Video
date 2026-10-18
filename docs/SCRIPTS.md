@@ -1206,3 +1206,28 @@ relationship-stage swaps of any script above (e.g. a gender-flip of #11,
 quiet after a fight, or #30, jealous heart). Script #7 (Kids) remains the
 one gap in the original 8 — still needs the baby-pup prop added to
 `engine/puppy-engine.js`.
+
+---
+
+## Batch of 2026-10-18 — WINNERS-BLUEPRINT batch (replaces weak queued videos)
+
+First batch written under `docs/WINNERS-BLUEPRINT.md`: every hook names a big audience over a
+real fear or life stage; 94-106 words; captions are generated from the spoken line by
+`specs/_kit2.py` (so on-screen words always match the voice); every line was read cold on its
+own, and the rendered voice was checked with `voicecheck.py` (words recognised, pauses where the
+script breaks, statements end falling, pace 1.8-3.6 words/sec). Scored against the 1k+ winners
+table, not the old rubric. Conversion sits at 8.5 across the board: the love-language quiz
+link is indirect for all of them.
+
+| # | Slug | Hook | D | E | C | R | Avg | Twist / turn |
+|---|---|---|---|---|---|---|---|---|
+| 51 | sure_man | A man who's sure about you | 9 | 9.5 | 8.5 | 9.5 | 9.1 | "that's your answer" |
+| 52 | loyal_woman_v2 | A loyal woman (flip of #5) | 9 | 9 | 8.5 | 9.5 | 9.0 | "my boyfriend" in the first sentence |
+| 53 | stayed_nothing | The girl who stayed when you had nothing | 9.5 | 9.5 | 8.5 | 9 | 9.1 | "you didn't make it at all" |
+| 54 | cheated_on | When a girl who's been cheated on loves you | 9 | 9.5 | 8.5 | 9 | 9.0 | "You're him." |
+| 55 | years_together | Years together (stage-swap of #14) | 9 | 9 | 8.5 | 9.5 | 9.0 | "that's just time passing" |
+| 56 | shes_the_one | When she's the one | 9 | 9 | 8.5 | 9 | 8.9 | "she's not the one, and you already know it" |
+| 57 | sure_woman | A woman who's sure about you (flip of #51) | 9 | 9 | 8.5 | 9.5 | 9.0 | "that's her not being sure" |
+
+Full script text lives in each `pipeline/specs/<slug>.py` (`BODY_LINES`). The old #49 loyal_woman
+spec (queued 1 Nov) is superseded by #52 and should not post.
