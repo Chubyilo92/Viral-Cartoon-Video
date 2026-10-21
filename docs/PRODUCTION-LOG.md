@@ -881,3 +881,61 @@ as `videos/<date>-<slug>-{instagram,tiktok}.mp4` (date = the day it's
 scheduled) and all 14 raw.githubusercontent.com URLs verified HTTP 200
 before scheduling. **Last scheduled organic JJ slot is now Wed 21 Oct 2026
 18:00 — next batch starts Thu 22 Oct 2026 10:00 (verify live first).**
+
+## Batch of 2026-10-21 — scheduled run (7 new winners-format scripts)
+
+**Setup**: fresh session, pipeline set up per `pipeline/README.md` into `/home/claude/jj`
+(kokoro-onnx + model files, playwright chromium, librosa/pocketsphinx for `voicecheck.py`, 3 music
+beds converted to wav). Smoke test `python3 preview.py sure_man` and a direct Kokoro TTS call both
+came back clean before any building started.
+
+**#51-57 (18 Oct batch) performance check** via `getAnalyticsDataByMetrics` (IGRE02/03/23/12/21,
+TKPO02/05/07), brand 7128333, since brand join date. Only #51 sure_man, #52 loyal_woman_v2, #53
+stayed_nothing and #54 cheated_on have published so far (19-20 Oct); #55 years_together is live
+18:00 today, #56/#57 are queued 22 Oct. IG Reel views: 125-132 each — flat against the old
+personality-trait baseline (~115-190) and well under the 1,000-view bar, so **none crossed 1,000
+and nothing new was added to the winners table**. TikTok told a different story: 679-713 views per
+video, roughly 3x the old TikTok baseline (~220-250) and in the same range as the account's actual
+TikTok winners (loyal_man 725, hurt_girl_trust 706) — the winners-format switch is working on
+TikTok but hasn't moved IG yet. Flagging this for the next check-in rather than drawing conclusions
+this early (IG Reels typically need longer than 24-48h to climb).
+
+**Queue state verified** via `getScheduledPosts`, one day per call, 21-26 Oct: confirmed the 18 Oct
+mass-draft already covers every old personality-trait/ad slot 22 Oct onward (all draft:true, left
+untouched — none deleted or re-drafted, nothing needed re-drafting that wasn't already draft). Real
+(non-draft) winners-format posts occupy through Mon 22 Oct 18:00 (#56, #57), confirming the task's
+queue-state note. First empty slot: Fri 23 Oct 10:00.
+
+**Scripts #58-64 built** — see `SCRIPTS.md` batch of 2026-10-21 for full text, scoring, and the
+rewrite notes on #58/#59/#60/#61. Every line passed `voicecheck.py` with zero flags (pace 2.2-3.4
+w/s, no rising endings on statements, sufficient pauses, word-match 53-100%) on both the first and
+re-rendered passes. Contact sheets and sample frames checked for clipped pups, props over faces,
+and prop/line matches — all clean.
+
+**Hashtag sets** (5 tags each: 1-2 exact-topic, 2 mid-size community, ≤1 broad; no #fyp/#foryou/
+#viral/#trending; no duplicate sets same day):
+- girl_quiet_fight — IG: #conflictresolution #communicationtips #relationshipadvice #couplegoals #cutedogs (8/10). TT: #conflictresolution #communicationtips #datingadvice #relationships #cartooncouple (8/10)
+- engaged — IG: #engaged #weddingplanning #relationshipadvice #couplegoals #cutedogs (8/10). TT: #engaged #weddingplanning #datingadvice #relationships #puppylove (8/10)
+- married — IG: #marriedlife #husbandwife #relationshipadvice #couplegoals #cutedogs (8/10). TT: #marriedlife #husbandwife #datingadvice #relationships #cartooncouple (8/10)
+- new_parents — IG: #newparents #parenthood #relationshipadvice #couplegoals #cutedogs (8/10). TT: #newparents #parenthood #datingadvice #relationships #puppylove (8/10)
+- met_online — IG: #onlinedating #metonline #relationshipadvice #couplegoals #cutedogs (7/10 — "metonline" is a weaker/less-searched tag than the others). TT: #onlinedating #metonline #datingadvice #relationships #cartooncouple (7/10)
+- back_together — IG: #secondchances #backtogether #relationshipadvice #couplegoals #cutedogs (8/10). TT: #secondchances #backtogether #datingadvice #relationships #puppylove (8/10)
+- best_friends_first — IG: #friendstolovers #bestfriendsfirst #relationshipadvice #couplegoals #cutedogs (8/10 — friendstolovers is a genuinely large romance-trope community tag). TT: #friendstolovers #bestfriendsfirst #datingadvice #relationships #cartooncouple (8/10)
+
+**Media pushed** to `JJCutecouple` (sparse checkout, `videos/` only) at commit
+`33c4b5abcd09034bc93eb4e3ade675978d15979a`; all 14 commit-pinned raw.githubusercontent.com URLs
+verified HTTP 200 before scheduling. All 14 posts (7 IG+FB Reel, 7 TikTok) created via
+`createScheduledPost` with `autoPublish:true`, `draft:false`, `TT_COUNT=3` (live TikTok follower
+count, TKEV07) on the follow-counter end card; every IG+FB post includes the `instagram` provider;
+IG captions mention the 60-sec test in bio, TikTok captions carry no links:
+
+- Fri 23 Oct 2026, 10:00 — #58 girl_quiet_fight
+- Fri 23 Oct 2026, 18:00 — #59 engaged
+- Sat 24 Oct 2026, 10:00 — #61 married
+- Sat 24 Oct 2026, 18:00 — #60 new_parents
+- Sun 25 Oct 2026, 10:00 — #62 met_online
+- Sun 25 Oct 2026, 18:00 — #63 back_together
+- Mon 26 Oct 2026, 10:00 — #64 best_friends_first
+
+**Last scheduled organic JJ slot is now Mon 26 Oct 2026 10:00 — next batch starts Mon 26 Oct 2026
+18:00 (verify live first; from 25 Oct UK clocks are GMT/+00:00).**

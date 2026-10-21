@@ -1231,3 +1231,50 @@ link is indirect for all of them.
 
 Full script text lives in each `pipeline/specs/<slug>.py` (`BODY_LINES`). The old #49 loyal_woman
 spec (queued 1 Nov) is superseded by #52 and should not post.
+
+## Batch of 2026-10-21 — WINNERS-BLUEPRINT batch (scripts #58-64)
+
+Second winners-format batch. Checked against the never-repeat list first: all gender/stage-swap
+pairs of the confirmed 1k+ winners (#1/#16 boy/girl, #4/#28 hurt girl/boy, #5/#52 loyal man/woman,
+#14/#55 living together/years together) were already complete, so this batch covers new allowed
+"big shared situations" from `WINNERS-BLUEPRINT.md` that hadn't been used yet (engaged, married,
+new parents, met online, back together) plus one gender-flip of the near-miss #11 (goes quiet
+after a fight, 834 views) and one invented-but-in-spirit situation (best friends first, matching
+the hook template's "big shared situation" slot). Every script stayed within the ≤110-word cap,
+used `specs/_kit2.py` so captions are generated from the spoken line, and was re-read cold before
+building. `voicecheck.py` came back clean (no FLAGs) on every line of every cut, both before and
+after the one rewrite noted below.
+
+Pre-build scoring caught four scripts under the 9.0 bar; per the blueprint's "rewrite once" rule
+each had its weakest line sharpened before the final render (not a full rebuild):
+- **#58 girl_quiet_fight** (8.75 avg): the reason line was generic ("the wrong words right now
+  could do real damage"). Rewritten to name the specific stake: "the next five minutes could say
+  something you can't take back." Re-scored 9.0.
+- **#59 engaged** (8.25 avg, weakest pre-build): the warning line's image (arguing about seating
+  charts) was too low-stakes next to the account's real winners. Rewritten to "turns you into two
+  people negotiating instead of two people in love" for a sharper contrast. Re-scored ~8.9 — still
+  the batch's softer performer because "engaged" is a narrower audience slice than a universal hook
+  like "a loyal man," but the beats are concrete and sendable, so it shipped rather than being cut.
+- **#61 married** and **#60 new_parents**: reason/payoff lines tightened for clarity; both still sit
+  in the high-8s because their audiences (married people, new parents) are narrower than the
+  all-audience hooks that cross 1,000 views, not because of a line-quality defect.
+
+| # | Slug | Hook | D | E | C | R | Avg | Twist / turn |
+|---|---|---|---|---|---|---|---|---|
+| 58 | girl_quiet_fight | A girl goes quiet after a fight (flip of near-miss #11) | 9 | 9 | 9 | 9.5 | 9.1 | she comes back first, every time |
+| 59 | engaged | When you're engaged to the right person | 8.5 | 9 | 9 | 9 | 8.9 | "two people negotiating instead of two people in love" |
+| 60 | new_parents | When you're new parents | 8 | 8.5 | 9 | 9 | 8.6 | "raising two things at once" |
+| 61 | married | When you're married to the right person | 8.5 | 8.5 | 9 | 9 | 8.75 | "that's not marriage, that's just habit now" |
+| 62 | met_online | When you met online | 9 | 9.5 | 9 | 9 | 9.1 | "that's not love, that's shame" |
+| 63 | back_together | When you're back together | 8.5 | 9.5 | 9 | 9 | 9.0 | "you just paused the ending" |
+| 64 | best_friends_first | When you were best friends first | 9 | 9 | 9 | 9.5 | 9.1 | "fear in a nice outfit" |
+
+Batch average: 8.93. Weakest: **#60 new_parents** (8.6) — the beats (3am feed, holding the baby
+no questions asked) are concrete and the reason line was tightened before the final render, but
+"new parents" is the narrowest addressable audience of the seven topics, which caps downloads/reach
+regardless of line quality. Flagged to watch: if it comes in under ~200 views after 72h per the
+blueprint's rule, don't make more of this exact type (new-life-stage hooks narrower than "parents
+of a newborn" specifically).
+
+Full script text lives in each `pipeline/specs/<slug>.py` (`BODY_LINES`). Scheduled Fri 23 Oct
+through Mon 26 Oct 2026 (10:00/18:00 slots) — see `PRODUCTION-LOG.md`.
