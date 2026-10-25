@@ -15,6 +15,31 @@ don't make sense. From now on every organic script is built around the videos th
 | #16 When a girl loves you | 1,202 | 9 | 10 | 18:00 |
 | (near miss) #11 When he goes quiet after a fight | 834 | 7 | 13 | 10:00 |
 
+## New 1k+ winners added 25 Oct 2026 (first WINNERS-BLUEPRINT batch to actually cross 1,000 on IG)
+
+Checked via `getAnalyticsDataByMetrics` (IGRE02/23), brand 7128333, through 24 Oct 2026. Of the 18 Oct
+and 21 Oct winners-format batches (#51-64), four crossed 1,000 IG views for the first time since the
+blueprint started — all four use the exact hook template ("When you're X to the right person" / "When
+a girl goes quiet..." / "a woman who's sure about you") with a concrete warning-line twist:
+
+| Script | IG views | Saves | Shares | Slot |
+|---|---|---|---|---|
+| #57 sure_woman — "A woman who's sure about you" (flip of #51) | 1,286 | 15 | 10 | 22 Oct 18:00 |
+| #61 married — "When you're married to the right person" | 1,277 | 6 | 5 | 24 Oct 10:00 |
+| #59 engaged — "When you're engaged to the right person" | 1,225 | 6 | 17 | 23 Oct 18:00 |
+| #58 girl_quiet_fight — "A girl goes quiet after a fight" (flip of near-miss #11) | 1,266 | 12 | 14 | 23 Oct 10:00 |
+
+These four are now templates: the "engaged / married / right person" framing and the gender-flip of
+the #11 near-miss both work. Meanwhile #51 sure_man, #52 loyal_woman_v2, #53 stayed_nothing, #54
+cheated_on, #55 years_together, #56 shes_the_one and #60 new_parents are still flat at 115-223 IG
+views despite 3-6 days live — not a time-lag issue, genuinely not converting on IG the way the four
+above did, even though several (sure_man, cheated_on) use the same hook template. **#56 shes_the_one
+is at 115 views after 3 days — under the 200-after-72h cut line, so per the rule below: don't write
+more "static certainty declaration" hooks ("when she's the one", "you stop looking") — they read as
+a conclusion, not a scene, unlike "sure about you," which stays a live question until the twist line.**
+TikTok keeps climbing across the whole blueprint regardless of IG result: every #51-64 video is now
+3x the pre-blueprint TikTok baseline (220-250 → 680-725 once a video has 4+ days live).
+
 Everything else sat at 115–190 views with 0–1 saves: the planner, forgives easily, stubborn,
 introvert, competitive partner, tiny things, overthinker, bad texter, hangry, long distance, guarded
 heart, he says I'm fine. TikTok: nothing has passed 1k yet; the same two (#5 loyal man 725, #4 hurt
@@ -41,6 +66,18 @@ girl 706) lead there too, and everything else is stuck around 220–250.
 - **Hook template:** "When a boy / a girl / a man / a woman / [a big shared situation] ..." Allowed big
   situations: been hurt before, loyal, living together, after a fight, long-term (years in), engaged,
   married, new parents, met online, back together. NO personality-trait hooks.
+- **25 Oct 2026 update — the original situation list above is now fully used** (every item has a built,
+  scheduled script). The 25 Oct batch added seven more "big shared situation" hooks in the same spirit,
+  still no personality traits: meeting the parents, moving into a first home together, closing a
+  long-distance gap for good, staying together through tight money, loving a partner who already has a
+  kid, losing someone together (grief), and loving someone who serves (military deployment). Check
+  `docs/SCRIPTS.md`'s "Scaling beyond these 64" list before reusing any of these; the next batch should
+  branch further rather than repeat (ideas not yet used: buying a house/moving cities for love, meeting
+  each other's exes amicably, blending holidays between two families, surviving a long illness together,
+  becoming grandparents, retiring together, adopting a pet together).
+- **Scoring note (25 Oct):** per the new-winners section above, a hook that reads as a settled conclusion
+  ("she's the one", "you stop looking") underperforms one that stays a live question until the twist
+  line ("sure about you," "engaged/married to the right person"). Favor the latter shape going forward.
 - **Make gender pairs of what works first:** each 1k+ script gets its flipped version before anything new
   (#5 → loyal woman, #4 → hurt boy, #14 → "the first year married", #1/#16 already paired).
 - **4 beats max**, each one sentence of ≤14 words plus a ≤10-word "not because... it's because" reason.

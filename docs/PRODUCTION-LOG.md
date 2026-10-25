@@ -939,3 +939,55 @@ IG captions mention the 60-sec test in bio, TikTok captions carry no links:
 
 **Last scheduled organic JJ slot is now Mon 26 Oct 2026 10:00 — next batch starts Mon 26 Oct 2026
 18:00 (verify live first; from 25 Oct UK clocks are GMT/+00:00).**
+
+## Batch of 2026-10-25 — scheduled run (7 new winners-format scripts)
+
+**Setup**: same cloud workspace as the 21 Oct run (pipeline already at `/home/claude/jj` with Kokoro,
+Playwright Chromium, librosa/pocketsphinx and the 3 music beds converted to wav from a prior session;
+reinstalled/redownloaded cleanly where missing). Smoke test `python3 preview.py sure_man` and a direct
+Kokoro TTS call both came back clean before building.
+
+**#51-64 performance check** via `getAnalyticsDataByMetrics` (IGRE02/23, TKPO07), brand 7128333, through
+24 Oct 2026 — see `docs/WINNERS-BLUEPRINT.md`'s "New 1k+ winners added 25 Oct 2026" section for the full
+breakdown. Headline: #57 sure_woman (1,286), #61 married (1,277), #58 girl_quiet_fight (1,266) and #59
+engaged (1,225) crossed 1,000 IG views for the first time since the blueprint started on 18 Oct — these
+four are now added to the winners table and treated as templates. #51 sure_man, #52 loyal_woman_v2, #53
+stayed_nothing, #54 cheated_on, #55 years_together, #56 shes_the_one and #60 new_parents are still flat
+at 115-223 IG views despite 3-6 days live. #56 shes_the_one (115 views after 3 days) is under the
+blueprint's 200-after-72h cut line — flagged not to repeat that "settled conclusion" hook shape. TikTok
+continues to outperform the pre-blueprint baseline across the board: every #51-64 video with 4+ days
+live sits at 680-725 views (vs. ~220-250 before 18 Oct), matching the account's actual TikTok winners.
+
+**Queue state verified** via `getScheduledPosts`, one day per call, 23-29 Oct: the 21 Oct batch's seven
+posts (#58-64) occupy every real (non-draft) slot through Mon 26 Oct 10:00; Mon 26 Oct 18:00 is the
+first empty slot. No non-draft old-format or `#ad` post was found in any slot checked through Thu 29
+Oct 18:00 — the 18 Oct mass-draft already covers everything there, so nothing needed re-drafting this
+run, confirming the prior run's note.
+
+**Scripts #65-71 built** — see `SCRIPTS.md` batch of 2026-10-25 for full text, scoring, and the rewrite
+notes on #69/#70/#71. Every line passed `voicecheck.py` with zero flags on the final render (one line in
+`closes_distance` was flagged at 3.8 w/s on the first render, fixed with a per-line `LINE_SPEED` entry
+and re-rendered clean). Contact sheets and sample frames checked for clipped pups, props over faces, and
+prop/line matches on all 14 cuts — all clean.
+
+**Hashtag sets** (5 tags each: 1-2 exact-topic, 2 mid-size community, ≤1 broad; no #fyp/#foryou/#viral/
+#trending; no duplicate sets same day) — see `SCRIPTS.md` for the full list per video; hashtag-set
+average 7.9/10 (military_love's set scored 7/10 — "deployment" is a narrower/less-searched tag).
+
+**Media pushed** to `JJCutecouple` (sparse checkout, `videos/` only) at commit
+`67877d4dd94d981f895c1e9de5ab570f8fa41bb1`; all 14 commit-pinned raw.githubusercontent.com URLs verified
+HTTP 200 before scheduling. All 14 posts (7 IG+FB Reel, 7 TikTok) created via `createScheduledPost` with
+`autoPublish:true`, `draft:false`, `TT_COUNT=4` (live TikTok follower count, TKEV07) on the follow-counter
+end card; every IG+FB post includes the `instagram` provider; IG captions mention the 60-sec test in bio,
+TikTok captions carry no links:
+
+- Mon 26 Oct 2026, 18:00 — #65 meet_parents
+- Tue 27 Oct 2026, 10:00 — #66 first_home
+- Tue 27 Oct 2026, 18:00 — #67 money_tight
+- Wed 28 Oct 2026, 10:00 — #68 grief_together
+- Wed 28 Oct 2026, 18:00 — #69 closes_distance
+- Thu 29 Oct 2026, 10:00 — #70 stepkid_love
+- Thu 29 Oct 2026, 18:00 — #71 military_love
+
+**Last scheduled organic JJ slot is now Thu 29 Oct 2026 18:00 — next batch starts Fri 30 Oct 2026 10:00
+(verify live first; UK is GMT/+00:00 — this does not change again until clocks go forward in spring).**

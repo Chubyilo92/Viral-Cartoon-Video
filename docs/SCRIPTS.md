@@ -1278,3 +1278,80 @@ of a newborn" specifically).
 
 Full script text lives in each `pipeline/specs/<slug>.py` (`BODY_LINES`). Scheduled Fri 23 Oct
 through Mon 26 Oct 2026 (10:00/18:00 slots) — see `PRODUCTION-LOG.md`.
+
+## Batch of 2026-10-25 — WINNERS-BLUEPRINT batch (scripts #65-71)
+
+Third winners-format batch. Checked the queue first via `getScheduledPosts` (23-29 Oct, one day per
+call): the 21 Oct batch's seven posts (#58-64) occupy every real slot through Mon 26 Oct 10:00; Mon 26
+Oct 18:00 is the first empty slot, and no non-draft old-format/`#ad` post was sitting in it or any slot
+through Thu 29 Oct 18:00 (the 18 Oct mass-draft already covers everything past that — confirmed, nothing
+needed re-drafting this run). Checked the never-repeat list first: every "big shared situation" named in
+`WINNERS-BLUEPRINT.md` (been hurt before, loyal, living together, after a fight, years in, engaged,
+married, new parents, met online, back together) is now built, so this batch invents seven new situations
+in the same spirit, still zero personality-trait hooks: meeting the parents, moving into a first home,
+closing long distance for good, staying together through tight money, loving a partner who already has a
+kid, losing someone together, and loving someone who serves (deployment). Every script stayed within the
+≤110-word cap (98-110 words each), used `specs/_kit2.py` so captions are generated from the spoken line,
+and was re-read cold line by line before building — no riddles, no contradictions, no therapy words.
+`voicecheck.py` flagged one line on the first render (`closes_distance` line 4, 3.8 w/s); fixed with a
+per-line `LINE_SPEED` entry and re-rendered — 0 flags on every line of all 14 cuts after that (pace
+2.4-3.5 w/s, no rising endings on statements, gaps ≥0.55s, word-match 50-100%, audio muxed and under
+25MB on all 14 final exports). Preview contact sheets and sample frames checked for clipped pups, props
+over faces and prop/line matches — all clean (one cosmetic note: long titles like "when you move into
+your first place together" scroll as a marquee, which can look like overlapping text only when sampling
+non-adjacent frames side by side — confirmed fine in the actual video playback).
+
+Pre-build scoring caught three scripts under the 9.0 bar; per the blueprint's "rewrite once" rule each
+had its weakest line sharpened before building (not a full rebuild) — `closes_distance` (reworded the
+"someday" warning line to name a concrete calendar date, and the boarding-pass beat for specificity),
+`stepkid_love` (sharpened the warning line to "a rivalry" and trimmed the reason line), and
+`military_love` (tightened the "why you stopped" reason line). All three re-scored but stayed in the
+high-8s — each audience (long-distance couples closing the gap, blended families, military-connected
+relationships) is narrower than the universal "a loyal man"/"a loyal woman" hooks that cross 1,000 views,
+so the cap is addressable-audience size, not line quality, same call the 21 Oct batch made for `engaged`
+and `new_parents`.
+
+| # | Slug | Hook | D | E | C | R | Avg | Twist / turn |
+|---|---|---|---|---|---|---|---|---|
+| 65 | meet_parents | When he finally meets your parents | 9 | 9 | 8.5 | 9.5 | 9.0 | "that's not shyness, that's a preview" |
+| 66 | first_home | When you move into your first place together | 9 | 8.5 | 8.5 | 9.5 | 8.9 | "that's not moving in, that's just visiting longer" |
+| 67 | money_tight | When money's tight and you stay anyway | 9 | 9.5 | 8.5 | 9.5 | 9.1 | "that's not a partnership, that's a tab" |
+| 68 | grief_together | When you lose someone together | 8.5 | 9.5 | 8.5 | 9.5 | 9.0 | "that's not love, that's convenience" |
+| 69 | closes_distance | When you finally close the distance | 8.5 | 9 | 8.5 | 9 | 8.8 | "that's not distance, that's hesitation" |
+| 70 | stepkid_love | When you love someone who already has a kid | 8.5 | 9 | 8.5 | 9 | 8.8 | "that's not a relationship, that's a rivalry" |
+| 71 | military_love | When you love someone who serves | 8 | 8.5 | 8.5 | 9 | 8.5 | "that's not love, that's a leash" |
+
+Batch average: 8.87. Weakest: **#71 military_love** (8.5) — the beats (the countdown only one person
+asks about, the call before they grab their bag) are concrete and the reason line was tightened before
+the final render, but a military-connected audience is the narrowest of the seven topics this batch,
+which caps downloads/reach the way `new_parents` did in the 21 Oct batch. Flagged to watch: if it's
+under ~200 IG views after 72h per the blueprint's rule, don't make more of this exact type.
+
+**Hashtag sets** (5 tags each: 1-2 exact-topic, 2 mid-size community, ≤1 broad; no #fyp/#foryou/#viral/
+#trending; no duplicate sets same day): meet_parents — IG: #meetingtheparents #familyfirst
+#relationshipadvice #couplegoals #cutedogs (8/10). TT: #meetingtheparents #familyfirst #datingadvice
+#relationships #cartooncouple (8/10). first_home — IG: #firsthome #movingin #relationshipadvice
+#couplegoals #cutedogs (8/10). TT: #firsthome #movingin #datingadvice #relationships #puppylove (8/10).
+money_tight — IG: #brokebuttogether #moneytalks #relationshipadvice #couplegoals #cutedogs (8/10). TT:
+#brokebuttogether #moneytalks #datingadvice #relationships #puppylove (8/10). grief_together — IG:
+#grieftogether #healing #relationshipadvice #couplegoals #cutedogs (8/10). TT: #grieftogether #healing
+#datingadvice #relationships #puppylove (8/10). closes_distance — IG: #longdistance #closingthedistance
+#relationshipadvice #couplegoals #cutedogs (8/10). TT: #longdistance #closingthedistance #datingadvice
+#relationships #cartooncouple (8/10). stepkid_love — IG: #blendedfamily #steplove #relationshipadvice
+#couplegoals #cutedogs (8/10). TT: #blendedfamily #steplove #datingadvice #relationships #cartooncouple
+(8/10). military_love — IG: #militarylove #deployment #relationshipadvice #couplegoals #cutedogs (7/10 —
+"deployment" is a narrower/less-searched tag than the others). TT: #militarylove #deployment #datingadvice
+#relationships #cartooncouple (7/10). Hashtag-set average: 7.9/10.
+
+**#51-64 performance check** (via `getAnalyticsDataByMetrics`, IGRE02/23 + TKPO07, through 24 Oct 2026):
+see the "New 1k+ winners added 25 Oct 2026" section of `WINNERS-BLUEPRINT.md` for the full breakdown —
+four scripts (#57 sure_woman 1,286, #61 married 1,277, #58 girl_quiet_fight 1,266, #59 engaged 1,225)
+crossed 1,000 IG views for the first time since the blueprint started, while #51/#52/#53/#54/#55/#56/#60
+are still flat at 115-223 views despite several using the same hook template. TikTok is up across the
+board regardless of IG result: every #51-64 video with 4+ days live sits at 680-725 views, roughly 3x the
+pre-blueprint baseline (~220-250) and in the same range as the account's actual TikTok winners.
+
+Full script text lives in each `pipeline/specs/<slug>.py` (`BODY_LINES`). Media pushed to `JJCutecouple`
+at commit `67877d4dd94d981f895c1e9de5ab570f8fa41bb1`; all 14 commit-pinned raw.githubusercontent.com URLs
+verified HTTP 200 before scheduling. Scheduled Mon 26 Oct 18:00 through Thu 29 Oct 2026 18:00 (10:00/18:00
+slots) — see `PRODUCTION-LOG.md`.
