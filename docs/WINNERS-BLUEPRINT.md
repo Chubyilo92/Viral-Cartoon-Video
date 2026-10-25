@@ -1,5 +1,7 @@
 # Winners blueprint (organic narrated JJ videos) — read before writing ANY new script
 
+> **26 Oct 2026:** a share-first SHORT FORMAT test is running (`docs/SHORT-FORMAT.md`). Diagnosis: views are fine for the account size, followers are not (~0.3 follows per 1,000 views). Check that doc's verdict before choosing a format.
+
 Set 18 Oct 2026 on Chuby's instruction: quality had drifted down and recent scripts had lines that
 don't make sense. From now on every organic script is built around the videos that actually passed
 1,000 views, not the rubric. This file overrides the "invent freely" approval in SCRIPTS.md.

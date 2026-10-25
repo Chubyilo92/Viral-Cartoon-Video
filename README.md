@@ -8,6 +8,8 @@ prior conversation.
 
 **Making a marketing video with the puppies? Start with [`docs/DIALOGUE-AD-TEMPLATE.md`](docs/DIALOGUE-AD-TEMPLATE.md)** — the reusable template (what makes a 10, what flexes, how to adapt). Code: `pipeline/adkit.py` + `pipeline/specs/_template_ad.py`. Rule history: `docs/VIRAL-BLUEPRINT.md`.
 
+**26 Oct 2026 — SHORT FORMAT TEST running: read [`docs/SHORT-FORMAT.md`](docs/SHORT-FORMAT.md) before making any JJ organic video.** 18–22s, no narrator, persistent hook, twist, ends on the peak, follow line in the caption. If the test passes it replaces the long narrated format as the default.
+
 **Start here, in order:**
 
 1. [`docs/BUILD-METHOD.md`](docs/BUILD-METHOD.md) — how the renderer works,

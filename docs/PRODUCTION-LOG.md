@@ -991,3 +991,10 @@ TikTok captions carry no links:
 
 **Last scheduled organic JJ slot is now Thu 29 Oct 2026 18:00 — next batch starts Fri 30 Oct 2026 10:00
 (verify live first; UK is GMT/+00:00 — this does not change again until clocks go forward in spring).**
+
+## 26 Oct 2026 — SHORT FORMAT test batch (see docs/SHORT-FORMAT.md)
+- Built 3 videos with `pipeline/make_short.py`: `short_fries` (18.2s, 9/10), `short_ps` (19.4s, 9/10), `short_bed` (18.4s, 8.5/10). Media in JJCutecouple/videos/short-format.
+- Scheduled: Wed 28 Oct 10:05/10:14 short_fries, 18:05/18:14 short_ps; Sat 31 Oct 10:05/10:14 short_bed (IG+FB reel, TikTok separately).
+- Moved the Wed 28 Oct long-format posts (grief_together 10:05/10:14, closes_distance 18:05/18:14) to Fri 30 Oct, same times (end of the live queue). Sat 31 Oct had no live posts, so nothing moved; Sat 18:00 is still empty.
+- Captions use the follow positioning line only (no quiz CTA in post text).
+- Judge each post at +72h against the pass marks in SHORT-FORMAT.md; record results there.
