@@ -998,3 +998,18 @@ TikTok captions carry no links:
 - Moved the Wed 28 Oct long-format posts (grief_together 10:05/10:14, closes_distance 18:05/18:14) to Fri 30 Oct, same times (end of the live queue). Sat 31 Oct had no live posts, so nothing moved; Sat 18:00 is still empty.
 - Captions use the follow positioning line only (no quiz CTA in post text).
 - Judge each post at +72h against the pass marks in SHORT-FORMAT.md; record results there.
+
+## 27 Oct 2026 — 25 Oct batch (#65-71) pulled; JJ batch task PAUSED
+
+Chuby: "Your latest videos are horrible, they don't even make sense." He's right. #65 meet_parents went
+live 26 Oct and #66 first_home went live 27 Oct 10:00; the other five (#67 money_tight, #68
+grief_together, #69 closes_distance, #70 stepkid_love, #71 military_love) were set to DRAFT on 27 Oct
+before they published (never deleted). Twice-weekly JJ batch task (trig_01KdYSa2gQeioawvgArXdnBe)
+DISABLED until the writing method is fixed. Do not re-enable these drafts.
+
+What went wrong: every script was filled into the same slots — an abstract thesis line ("the nerves are
+the whole point"), "Not because X. Because Y.", beats that just describe instead of reframing, and a
+"that's not X, that's Y" warning. Filling that template produces lines that sound like they mean
+something but don't ("that's not moving in, that's just visiting longer"; "that's not love, that's
+convenience" said about someone who goes quiet at a funeral). The same model wrote, "re-read cold" and
+scored its own work (9.0), so the check never caught it. This is the second time (see 18 Oct).
