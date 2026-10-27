@@ -1355,3 +1355,57 @@ Full script text lives in each `pipeline/specs/<slug>.py` (`BODY_LINES`). Media 
 at commit `67877d4dd94d981f895c1e9de5ab570f8fa41bb1`; all 14 commit-pinned raw.githubusercontent.com URLs
 verified HTTP 200 before scheduling. Scheduled Mon 26 Oct 18:00 through Thu 29 Oct 2026 18:00 (10:00/18:00
 slots) — see `PRODUCTION-LOG.md`.
+
+---
+
+## Reviewed batch of 2026-10-27 (first batch through docs/REVIEWER.md)
+
+Seven drafts went to an independent reviewer subagent that hadn't written them. Its line fixes are
+applied word-for-word below. Scores are the reviewer's, not the writer's. Bar is ≥40% "beats 1,000 IG
+views" (docs/REVIEWER.md). Nothing scored 9+. The best are on par with the existing winners, not better.
+
+| Slug | Reach | Engage | Convert | Relate | P(>1k IG) | Status |
+|---|---|---|---|---|---|---|
+| boy_cries | 7 | 7 | 8 | 7 | 40% | APPROVED — build |
+| girl_argues | 7 | 7 | 7 | 8 | 40% | APPROVED — build |
+| girl_checks_location | 8 | 8 | 6 | 7 | 35% | HOLD — below bar, high variance, brand risk (reads as "tracking = love"); Chuby's call |
+| girl_jealous | 7 | 6 | 6 | 8 | 32% | HOLD — below bar |
+| girl_overthinks | 6 | 6 | 6 | 8 | 25% | CUT — trait hook (0 for ~20) |
+| asks_if_eaten | 5 | 5 | 6 | 7 | 22% | CUT — no surprise |
+| its_fine_go | 5 | 4 | 4 | 7 | 15% | CUT — same shape as the "I'm fine" flop (187) |
+
+### boy_cries (APPROVED)
+1. When a boy cries in front of you, he's not being weak.
+2. He held it in at work, with his friends, in front of his family. You're the first person he let it out with.
+3. He'll wipe his face fast and say sorry. Not because he's embarrassed. Because nobody ever told him it was okay.
+4. He'll go quiet afterwards. Just let him lean on you.
+5. If he's ever cried in front of you... send this to him.
+6. But if you ever bring it up in an argument... he'll never cry in front of you again.
+7. Because when a boy cries in front of you... it means he finally feels safe.
+
+### girl_argues (APPROVED)
+1. When a girl argues with you, she's not trying to win. She's trying to be understood.
+2. She'll explain the same thing three times. Not because she thinks you're stupid. Because she still believes you'll get it.
+3. She'll cry halfway through a sentence... and keep going anyway.
+4. She'll bring it up again the next morning. Because she'd rather fix it than pretend it didn't happen.
+5. If you still fight for him like this... send this to him.
+6. But the day she stops arguing and just says "okay"... she hasn't calmed down. She's given up.
+7. Because a girl who argues with you... still thinks you're worth the fight.
+
+### girl_checks_location (HOLD)
+1. When a girl checks your location, she's not spying on you.
+2. She checks it when you're driving home late. Because she can't sleep until the dot stops moving.
+3. She checks it when you don't reply. Not to catch you out. To make sure you're okay.
+4. She'll text "home yet?" even though she can see you are.
+5. If she worries about you like this... send this to the boy she waits up for.
+6. But if you suddenly turn your location off... she won't ask why. She'll already know.
+7. Because a girl who checks your location... just wants you home safe.
+
+### girl_jealous (HOLD)
+1. When a girl gets jealous, she's not being crazy.
+2. She goes quiet when another girl laughs at your jokes. Not because she doesn't trust you. Because making you laugh is her thing.
+3. She asks who that was... then says "never mind" before you can answer.
+4. She holds your hand a bit tighter when that girl walks past.
+5. If she gets jealous because she's scared of losing you... send this to the boy who never makes her feel silly for it.
+6. But if you enjoy making her jealous... you're not testing her love. You're teaching her to stop caring.
+7. Because a girl who gets jealous... still cares enough to be scared.
