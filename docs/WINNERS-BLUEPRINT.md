@@ -1,5 +1,11 @@
 # Winners blueprint (organic narrated JJ videos) — read before writing ANY new script
 
+> **27 Oct 2026 — READ `docs/REVIEWER.md` FIRST.** Every script must pass an independent reviewer
+> subagent before it is built; the writer never scores its own work. The 25 Oct batch (#65-71) shipped
+> nonsense lines and was pulled. Near-identical clones of winners have flopped (124 vs 1,754 views), so
+> scores are probabilities, never promises.
+
+
 > **26 Oct 2026:** a share-first SHORT FORMAT test is running (`docs/SHORT-FORMAT.md`). Diagnosis: views are fine for the account size, followers are not (~0.3 follows per 1,000 views). Check that doc's verdict before choosing a format.
 
 Set 18 Oct 2026 on Chuby's instruction: quality had drifted down and recent scripts had lines that
