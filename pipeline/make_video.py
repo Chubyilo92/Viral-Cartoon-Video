@@ -60,7 +60,8 @@ def render(html, mp4):
         return total
 
 
-MUSIC = J.ROOT + '/music/sound%d.wav' % (getattr(spec,'MUSIC_N',None) or (int(hashlib.md5(slug.encode()).hexdigest(),16) % 3 + 1))
+from original_music import ensure as _orig_music  # never the phone clips: they got muted (28 Oct)
+MUSIC = _orig_music(getattr(spec,'MUSIC_N',None) or (int(hashlib.md5(slug.encode()).hexdigest(),16) % 3 + 1))
 
 
 def make(cut):
@@ -88,6 +89,7 @@ def make(cut):
     final = f'{OUT}/{slug.replace("_","-")}-{name}.mp4'
     subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', silent, '-i', f'{W}/{cut}_mix.wav', '-map', '0:v', '-map', '1:a',
                     '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-shortest', '-movflags', '+faststart', final], check=True)
+    json.dump({'source': MUSIC}, open(os.path.splitext(final)[0] + '.music.json', 'w'))
     # QA
     qa = {'cut': cut, 'total_s': round(total, 1), 'render_s': round(time.time() - t0)}
     gaps = []

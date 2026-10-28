@@ -1,2 +1,5 @@
 __pycache__/
 *.pyc
+
+# generated on demand by pipeline/original_music.py
+pipeline/music/original*.wav

@@ -110,7 +110,8 @@ def render(html):
         f.stdin.close(); f.wait(); b.close()
         if errs: print('PAGE ERRORS', errs[:3])
     mn = getattr(spec, 'MUSIC_N', None) or (int(hashlib.md5(slug.encode()).hexdigest(), 16) % 3 + 1)
-    music = f'{J.ROOT}/music/sound{mn}.wav'
+    from original_music import ensure as _orig_music  # never the phone clips: they got muted (28 Oct)
+    music = _orig_music(mn)
     final = f'{OUT}/{slug.replace("_", "-")}.mp4'
     subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', silent, '-i', music, '-filter_complex',
                     f'[1:a]atrim=0:{total:.2f},asetpts=PTS-STARTPTS,afade=t=in:d=0.3,afade=t=out:st={total-1.2:.2f}:d=1.2,loudnorm=I=-14:TP=-1.5:LRA=8[a]',
@@ -121,6 +122,7 @@ def render(html):
           'size_mb': round(os.path.getsize(final) / 1e6, 1), 'music': mn}
     qa['duration_ok'] = 15 <= total <= 24
     qa['audio_ok'] = abs(qa['streams'].get('audio', 0) - qa['streams'].get('video', 0)) < 1
+    json.dump({'source': music}, open(os.path.splitext(final)[0] + '.music.json', 'w'))
     print(json.dumps(qa)); print(final)
 
 
