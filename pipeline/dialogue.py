@@ -245,7 +245,8 @@ if __name__ == '__main__':
     subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', f'{W}/vo_raw.wav', '-af',
                     'highpass=f=90,acompressor=threshold=-20dB:ratio=3:attack=5:release=120,aecho=0.8:0.4:30:0.08,loudnorm=I=-14:TP=-1.5:LRA=7',
                     '-ar', '44100', '-ac', '2', f'{W}/vo.wav'], check=True)
-    music = J.ROOT + '/music/sound%d.wav' % getattr(spec, 'MUSIC_N', 1)
+    from original_music import ensure as _orig_music  # phone clips deleted 28 Oct (muting)
+    music = _orig_music(getattr(spec, 'MUSIC_N', 1))
     subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', f'{W}/vo.wav', '-i', music, '-filter_complex',
                     f'[1:a]volume=0.4,aloop=loop=-1:size=2e9,atrim=0:{total:.2f},asetpts=PTS-STARTPTS,afade=t=in:d=1,afade=t=out:st={total-2:.2f}:d=2[m];[0:a][m]amix=inputs=2:duration=first:dropout_transition=0,loudnorm=I=-14:TP=-1.5:LRA=8[a]',
                     '-map', '[a]', '-ar', '44100', '-ac', '2', f'{W}/mix0.wav'], check=True)
@@ -270,3 +271,5 @@ if __name__ == '__main__':
     qa['audio_ok'] = 'audio' in qa['streams'] and abs(qa['streams']['audio'] - qa['streams']['video']) < 1.5
     qa['size_mb'] = round(os.path.getsize(final) / 1e6, 1); qa['size_ok'] = qa['size_mb'] < 25
     json.dump(qa, open(f'{W}/qa.json', 'w')); print(json.dumps(qa))
+    json.dump(qa, open(os.path.splitext(final)[0] + '.qa.json', 'w'))
+    json.dump({'source': music}, open(os.path.splitext(final)[0] + '.music.json', 'w'))

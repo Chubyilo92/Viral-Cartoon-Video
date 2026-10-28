@@ -1,5 +1,8 @@
 # JJ puppy dialogue ads — the reusable template
 
+> **28 Oct 2026: background/history only.** The binding rules are in `docs/RULES.md`. Where this file disagrees with RULES.md, RULES.md wins. (Known stale here: anything saying the music is the user's clips, that posts are drafts the owner approves, that the writer scores its own scripts, or that topics can be invented freely.)
+
+
 **This is the master template for every puppy video that markets CoupleIn.** It holds what makes a
 video a 10/10 (fixed), what changes every time (flexible), and how to read a new situation and adapt.
 Code: `pipeline/adkit.py` (builder) + `pipeline/specs/_template_ad.py` (fill-in spec, worked example).

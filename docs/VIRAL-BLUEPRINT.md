@@ -1,5 +1,8 @@
 # Viral blueprint — JJ puppy marketing videos
 
+> **28 Oct 2026: background/history only.** The binding rules are in `docs/RULES.md`. Where this file disagrees with RULES.md, RULES.md wins. (Known stale here: anything saying the music is the user's clips, that posts are drafts the owner approves, that the writer scores its own scripts, or that topics can be invented freely.)
+
+
 > **Superseded as the entry point by [`DIALOGUE-AD-TEMPLATE.md`](DIALOGUE-AD-TEMPLATE.md)** (the clean reusable template). This file is the history of how each rule was learned.
 
 **Status: the standard for every puppy video that markets CoupleIn.** Built from

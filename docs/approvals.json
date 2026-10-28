@@ -1,0 +1,116 @@
+{
+ "boy_cries": {
+  "sha256": "6d5462194f5e6d6b41da13bdd7f5cade3914d929ab92ee2220a364eaebbc76b6",
+  "status": "hold",
+  "reviewer_avg": 7.25,
+  "p_1k": 0.4,
+  "review_file": "docs/SCRIPTS.md#reviewed-batch-of-2026-10-27",
+  "date": "2026-10-27",
+  "note": "Reviewer SHIP-WITH-FIXES (fixes applied) but avg is below Chuby's 8.5 floor - not buildable unless he lowers the floor or a re-review scores higher.",
+  "text": [
+   "When a boy cries in front of you, he's not being weak.",
+   "He held it in at work, with his friends, in front of his family. You're the first person he let it out with.",
+   "He'll wipe his face fast and say sorry. Not because he's embarrassed. Because nobody ever told him it was okay.",
+   "He'll go quiet afterwards. Just let him lean on you.",
+   "If he's ever cried in front of you... send this to him.",
+   "But if you ever bring it up in an argument... he'll never cry in front of you again.",
+   "Because when a boy cries in front of you... it means he finally feels safe."
+  ]
+ },
+ "girl_argues": {
+  "sha256": "56edf3f34e46c7e154594a22afdbf25bcb298e05e0a5ccd66e563d2f81417440",
+  "status": "hold",
+  "reviewer_avg": 7.25,
+  "p_1k": 0.4,
+  "review_file": "docs/SCRIPTS.md#reviewed-batch-of-2026-10-27",
+  "date": "2026-10-27",
+  "note": "Reviewer SHIP-WITH-FIXES (fixes applied) but avg is below Chuby's 8.5 floor - not buildable unless he lowers the floor or a re-review scores higher.",
+  "text": [
+   "When a girl argues with you, she's not trying to win. She's trying to be understood.",
+   "She'll explain the same thing three times. Not because she thinks you're stupid. Because she still believes you'll get it.",
+   "She'll cry halfway through a sentence... and keep going anyway.",
+   "She'll bring it up again the next morning. Because she'd rather fix it than pretend it didn't happen.",
+   "If you still fight for him like this... send this to him.",
+   "But the day she stops arguing and just says \"okay\"... she hasn't calmed down. She's given up.",
+   "Because a girl who argues with you... still thinks you're worth the fight."
+  ]
+ },
+ "girl_checks_location": {
+  "sha256": "5038f57379da85adb488b57858869f37fb01ef6247b2f6bd9f0c1a758ef64a3d",
+  "status": "hold",
+  "reviewer_avg": 7.25,
+  "p_1k": 0.35,
+  "review_file": "docs/SCRIPTS.md#reviewed-batch-of-2026-10-27",
+  "date": "2026-10-27",
+  "note": "Reviewer SHIP-WITH-FIXES (fixes applied) but avg is below Chuby's 8.5 floor - not buildable unless he lowers the floor or a re-review scores higher.",
+  "text": [
+   "When a girl checks your location, she's not spying on you.",
+   "She checks it when you're driving home late. Because she can't sleep until the dot stops moving.",
+   "She checks it when you don't reply. Not to catch you out. To make sure you're okay.",
+   "She'll text \"home yet?\" even though she can see you are.",
+   "If she worries about you like this... send this to the boy she waits up for.",
+   "But if you suddenly turn your location off... she won't ask why. She'll already know.",
+   "Because a girl who checks your location... just wants you home safe."
+  ]
+ },
+ "girl_jealous": {
+  "sha256": "42095b0fb75fc56b318f7a22f66e0dbe4c784a50862280ecb5d7587feef57a30",
+  "status": "hold",
+  "reviewer_avg": 6.75,
+  "p_1k": 0.32,
+  "review_file": "docs/SCRIPTS.md#reviewed-batch-of-2026-10-27",
+  "date": "2026-10-27",
+  "note": "Below floor.",
+  "text": [
+   "When a girl gets jealous, she's not being crazy.",
+   "She goes quiet when another girl laughs at your jokes. Not because she doesn't trust you. Because making you laugh is her thing.",
+   "She asks who that was... then says \"never mind\" before you can answer.",
+   "She holds your hand a bit tighter when that girl walks past.",
+   "If she gets jealous because she's scared of losing you... send this to the boy who never makes her feel silly for it.",
+   "But if you enjoy making her jealous... you're not testing her love. You're teaching her to stop caring.",
+   "Because a girl who gets jealous... still cares enough to be scared."
+  ]
+ },
+ "girl_overthinks": {
+  "status": "cut",
+  "date": "2026-10-27",
+  "review_file": "docs/SCRIPTS.md#reviewed-batch-of-2026-10-27"
+ },
+ "asks_if_eaten": {
+  "status": "cut",
+  "date": "2026-10-27",
+  "review_file": "docs/SCRIPTS.md#reviewed-batch-of-2026-10-27"
+ },
+ "its_fine_go": {
+  "status": "cut",
+  "date": "2026-10-27",
+  "review_file": "docs/SCRIPTS.md#reviewed-batch-of-2026-10-27"
+ },
+ "short_fries": {
+  "sha256": "92504c3fd54ea40f78c13302ff112d86d8bd978d2b997d266f4edc5396108230",
+  "status": "published",
+  "reviewer_avg": 6.5,
+  "p_1k": 0.3,
+  "review_file": "reviews/2026-10-28-shorts.md",
+  "date": "2026-10-28",
+  "note": "Built and scheduled 26 Oct before the gates existed; self-scored 9. Published 28 Oct 10:05 MUTE (phone-clip music). Reviewer 6.5."
+ },
+ "short_ps": {
+  "sha256": "0d971317f97fecf4ed194d3d0d09929221adc75f49fa59f1f03adf5dff51a376",
+  "status": "hold",
+  "reviewer_avg": 7.0,
+  "p_1k": 0.35,
+  "review_file": "reviews/2026-10-28-shorts.md",
+  "date": "2026-10-28",
+  "note": "Scheduled 26 Oct before the gates existed. Reviewer 7.0 (below the 8.5 floor); left in its 28 Oct 18:05 slot pending Chuby's decision. Music replaced with original (v2)."
+ },
+ "short_bed": {
+  "sha256": "530e4bbbcd8d4f1bbbc1f861e0ddf576053c462f6fd948a260d61849aab335b1",
+  "status": "hold",
+  "reviewer_avg": 5.5,
+  "p_1k": 0.22,
+  "review_file": "reviews/2026-10-28-shorts.md",
+  "date": "2026-10-28",
+  "note": "Reviewer 5.5; attempt #1 unreadable from the frames. Post set to DRAFT 28 Oct."
+ }
+}

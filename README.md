@@ -1,5 +1,8 @@
 # Viral Cartoon Video — JJ puppy video pipeline
 
+> **28 Oct 2026: background/history only.** The binding rules are in `docs/RULES.md`. Where this file disagrees with RULES.md, RULES.md wins. (Known stale here: anything saying the music is the user's clips, that posts are drafts the owner approves, that the writer scores its own scripts, or that topics can be invented freely.)
+
+
 The complete, reproducible method for the JJ two-puppy narrated relationship
 video series: a hand-written canvas renderer (no AI video generation), a free
 local voice, and an original synthesized music bed. Built so a brand-new
@@ -10,7 +13,9 @@ prior conversation.
 
 **26 Oct 2026 — SHORT FORMAT TEST running: read [`docs/SHORT-FORMAT.md`](docs/SHORT-FORMAT.md) before making any JJ organic video.** 18–22s, no narrator, persistent hook, twist, ends on the peak, follow line in the caption. If the test passes it replaces the long narrated format as the default.
 
-**Start here, in order:**
+**Start here:** `docs/RULES.md` is the only binding rulebook (28 Oct 2026). Everything below is background.
+
+**Background docs:**
 
 1. [`docs/BUILD-METHOD.md`](docs/BUILD-METHOD.md) — how the renderer works,
    how to render a video, how the voice and music are generated, and a

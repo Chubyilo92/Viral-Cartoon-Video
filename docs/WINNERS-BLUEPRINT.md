@@ -1,5 +1,8 @@
 # Winners blueprint (organic narrated JJ videos) — read before writing ANY new script
 
+> **28 Oct 2026: background/history only.** The binding rules are in `docs/RULES.md`. Where this file disagrees with RULES.md, RULES.md wins. (Known stale here: anything saying the music is the user's clips, that posts are drafts the owner approves, that the writer scores its own scripts, or that topics can be invented freely.)
+
+
 > **27 Oct 2026 — READ `docs/REVIEWER.md` FIRST.** Every script must pass an independent reviewer
 > subagent before it is built; the writer never scores its own work. The 25 Oct batch (#65-71) shipped
 > nonsense lines and was pulled. Near-identical clones of winners have flopped (124 vs 1,754 views), so

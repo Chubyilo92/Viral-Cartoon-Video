@@ -73,3 +73,13 @@ for t, f in ((spec.IG_LINE, f'{W}/ig0.wav'), (spec.TT_LINE, f'{W}/tt0.wav')):
 json.dump(rows, open(f'{W}/voicecheck.json', 'w'), indent=1)
 for r in rows:
     print(('FLAG ' if r['flags'] else 'ok   ') + f"{r['dur']:>5}s {r['rate']:.1f}w/s end{r['end_trend_pct']}% match{r['word_match']}% | {r['text'][:70]}" + ('  <-- ' + '; '.join(r['flags']) if r['flags'] else ''))
+# 28 Oct 2026: a FLAG used to print and exit 0, so "fix every FLAG" depended on the model choosing to.
+# Now the result is written next to the videos (preflight.py requires it for long format) and any
+# FLAG exits 1.
+nflags = sum(1 for r in rows if r['flags'])
+json.dump({'slug': slug, 'flags_total': nflags, 'rows': rows},
+          open(f"/home/claude/jj/out/{slug.replace('_', '-')}.voicecheck.json", 'w'), indent=1)
+if nflags:
+    print(f'VOICECHECK FAILED: {nflags} flagged line(s). Fix them (LINE_SPEED / reword) and re-render.')
+    sys.exit(1)
+print('VOICECHECK PASSED')

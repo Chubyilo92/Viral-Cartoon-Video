@@ -11,8 +11,12 @@ Usage (one call per post):
       --caption-file work/x/caption_ig.txt [--url https://raw.githubusercontent.com/.../x-instagram.mp4]
   --platform: instagram | tiktok   (instagram covers the IG+FB post)
   --format:   long (narrated, 35-75 s) | short (music only, 15-25 s)
+  --slug:     the spec slug (e.g. boy_cries); its exact text must be approved in docs/approvals.json
   --url:      after pushing, pass the commit-pinned raw URL; the script downloads it and checks the
               sha256 matches the local file that passed. Run this second pass right before scheduling.
+Requires, next to the mp4: <base>.music.json and <base>.qa.json (written by the builders), and for
+long format <slug>.voicecheck.json with 0 flags (written by voicecheck.py). On a full pass it writes
+<file>.pass.json (sha256 + url). Never schedule a file without a .pass.json from a --url run.
 Prints one JSON line with every check. Exit 0 = all passed.
 """
 import argparse, hashlib, json, os, re, subprocess, sys, tempfile, urllib.request
@@ -40,6 +44,7 @@ def main():
     ap.add_argument('--format', required=True, choices=['long', 'short'])
     ap.add_argument('--caption-file', required=True)
     ap.add_argument('--url')
+    ap.add_argument('--slug', required=True)
     a = ap.parse_args()
     r, fails = {'file': a.file}, []
 
@@ -70,12 +75,48 @@ def main():
     if gaps: fails.append(f'{gaps} silent stretch(es) > 1.5 s')
 
     # music source: refuse the phone clips (copyright-muting risk)
-    side = os.path.splitext(a.file)[0] + '.music.json'
-    if os.path.exists(side):
+    base = os.path.splitext(a.file)[0]
+    side = base + '.music.json'
+    if not os.path.exists(side):
+        fails.append('no .music.json record next to the file (builders write it) - music source unknown')
+    else:
         src = json.load(open(side)).get('source', '')
         r['music_source'] = src
-        if 'sound' in os.path.basename(src) and 'original' not in src:
-            fails.append(f'music is a user-supplied clip ({src}); must be original_music.py')
+        if not os.path.basename(src).startswith('original'):
+            fails.append(f'music is not from original_music.py ({src}) - platforms mute matched songs')
+
+    # builder QA booleans must all be true
+    qf = base + '.qa.json'
+    if not os.path.exists(qf):
+        fails.append('no .qa.json next to the file (builders write it)')
+    else:
+        q = json.load(open(qf))
+        bad_q = [k for k, v in q.items() if k.endswith('_ok') and v is not True]
+        if bad_q: fails.append(f'builder QA failed: {bad_q}')
+
+    # platform must match the cut (long format renders separate IG/TikTok end cards)
+    if a.format == 'long' and not base.endswith('-' + a.platform):
+        fails.append(f'file name does not end in -{a.platform}.mp4: wrong cut for this platform')
+
+    # voice check (long format only: shorts have no narrator)
+    if a.format == 'long':
+        vf = os.path.join(os.path.dirname(os.path.abspath(a.file)), a.slug.replace('_', '-') + '.voicecheck.json')
+        if not os.path.exists(vf):
+            fails.append('no voicecheck result (run python3 voicecheck.py <slug>)')
+        elif json.load(open(vf)).get('flags_total', 1) != 0:
+            fails.append('voicecheck has unfixed FLAGs')
+
+    # script text must be the reviewer-approved text
+    try:
+        import importlib
+        here = os.path.dirname(os.path.abspath(__file__))
+        sys.path.insert(0, here); sys.path.insert(0, os.path.join(here, 'specs'))
+        import approval
+        r['approved_text_sha'] = approval.check(a.slug, importlib.import_module(a.slug))
+    except SystemExit as e:
+        fails.append(str(e))
+    except Exception as e:
+        fails.append(f'approval check error: {e}')
 
     # size
     mb = os.path.getsize(a.file) / 1e6
@@ -112,6 +153,10 @@ def main():
 
     r['fails'] = fails
     r['pass'] = not fails
+    if not fails:
+        json.dump({'sha256': r['sha256'], 'url': a.url, 'url_verified': bool(a.url), 'platform': a.platform,
+                   'caption_sha256': hashlib.sha256(cap.encode('utf-8')).hexdigest()},
+                  open(a.file + '.pass.json', 'w'))
     print(json.dumps(r, ensure_ascii=False))
     sys.exit(0 if not fails else 1)
 

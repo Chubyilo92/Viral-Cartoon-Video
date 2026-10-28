@@ -1,5 +1,8 @@
 # Build method: JJ puppy cartoon videos
 
+> **28 Oct 2026: background/history only.** The binding rules are in `docs/RULES.md`. Where this file disagrees with RULES.md, RULES.md wins. (Known stale here: anything saying the music is the user's clips, that posts are drafts the owner approves, that the writer scores its own scripts, or that topics can be invented freely.)
+
+
 How these are actually made, end to end, so a fresh Claude session (or a human) can
 pick this up with zero prior context. Nothing here is AI video generation — the
 whole thing is a hand-written HTML5 canvas renderer, driven frame-by-frame in
@@ -179,6 +182,13 @@ ffmpeg -i vo_raw.wav -af "highpass=f=70,acompressor=threshold=-20dB:ratio=3:atta
 ```
 
 ## 5. Music (free, original, no credits)
+
+> **28 Oct 2026 correction:** until today the pipeline code did NOT use this. `make_video.py` and
+> `make_short.py` used three phone-recorded clips (`music/sound1-3.m4a`, likely commercial songs) while
+> this doc said the music was original. A music-only short published MUTE on 28 Oct — almost certainly
+> the platforms matching the clip. The clips are deleted; both builders now call
+> `pipeline/original_music.py` (three synthesized beds) and `preflight.py` refuses any video without
+> a `.music.json` record pointing at an `original*.wav`. Never add user-supplied or downloaded music.
 
 See `/music/generate_music_bed.py`. A warm chord pad (Cmaj7–Am7–Fmaj7–Gadd9)
 plus a quiet music-box arpeggio, synthesized entirely from sine-wave

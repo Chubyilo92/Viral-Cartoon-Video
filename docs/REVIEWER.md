@@ -15,7 +15,9 @@ never allowed to grade its own scripts again.
    it writes the replacement. It scores each script and gives SHIP / SHIP WITH FIXES / CUT.
 4. The writer applies the reviewer's line fixes word-for-word (or cuts the script). The writer may NOT
    overrule a FAIL or a CUT, and may NOT raise the reviewer's score. Reported scores = reviewer's scores.
-5. Only scripts the reviewer marks SHIP / SHIP WITH FIXES and scores ≥40% "beats 1,000 IG views" get built.
+5. Only scripts the reviewer marks SHIP / SHIP WITH FIXES, with a reviewer average ≥ 8.5 (Chuby's floor)
+   AND ≥40% "beats 1,000 IG views", are recorded as approved in `docs/approvals.json`. The builders
+   refuse anything else (`pipeline/approval.py`). Save the reviewer's raw answer to `reviews/<date>.md`.
 
 ## Known-bad examples (always include in the reviewer prompt)
 
@@ -44,13 +46,44 @@ never allowed to grade its own scripts again.
 
 1. Line 1 names a big audience (a girl / a boy / a man / a woman) AND a specific behaviour people
    recognise from their own life, then flips it in the same or next sentence ("she'll ask the same
-   question twice. Not because she thinks you're lying. It's because the last one did.").
+   question twice. Not because she thinks you're lying. It's because the last one did."). A "not
+   because... because..." reason is ALLOWED when it states a real, concrete reason. It is never
+   required, and filling it mechanically is what produced the 25 Oct nonsense.
 2. Every beat is one picture you could draw, in plain words a 19-year-old reads once and gets.
 3. The warning line must be a real turn that follows from the beats, readable alone.
 4. No abstract thesis lines, no "that's not X, that's Y" fill-ins, no therapy words.
 5. After 72h: ≥1,000 IG views → make 2 more in that exact shape. <200 → don't repeat that shape.
 
-## Reviewer prompt
+## Reviewer prompt (template — fill the {braces}, send to a general-purpose subagent, model opus)
 
-See the 27 Oct 2026 entry in PRODUCTION-LOG.md for the exact prompt used on the first reviewed batch
-(copy it, update the winners/flops data with current numbers, point it at the new draft file).
+```
+You are an independent, harsh script reviewer. Judgment only: do not edit files. You did not write
+these scripts and you have no stake in them passing.
+
+CONTEXT: A small Instagram/TikTok account posts ~50-second cartoon videos of two puppies with a calm
+male narrator reading a short script (captions on screen). Format: name a big audience, take a
+behaviour that LOOKS bad and reframe it as love, 2-3 concrete beats, a "send this to..." line, a
+warning line with a turn, a closing line. Past failures to catch: lines that sound deep but mean
+nothing ({paste the known-bad examples from this file}). The writer used to score its own work 9/10;
+your scores replace the writer's.
+
+REAL PERFORMANCE DATA (Instagram views; the account is bimodal, ~1,200 or ~130):
+WINNERS: {paste 4-6 winning scripts with their full text and views, from fresh Metricool data}
+FLOPS: {paste 4-6 flops with views, including near-clones of winners that flopped}
+Measured difference: winners keep viewers {x-y} s and get {n} shares; flops {x-y} s and 0-1 shares.
+
+TASK: review the scripts in {draft file path}. For EACH:
+1. Line check: paraphrase every line in a few plain words. If a line is unclear, a riddle, a
+   contradiction, a fortune cookie, or needs context, mark it FAIL and write a replacement.
+2. Hook check: would line 1 stop the target viewer in 2 seconds? Recognisable? Real surprise?
+3. Send check: would someone send it to their partner? Why or why not?
+4. Twist check: is the warning line a real turn that follows from the beats?
+5. Risk check: anything that could read as endorsing controlling/toxic behaviour.
+6. Score 1-10: Reach, Engagement, Conversion, Relatability; plus P(beats 1,000 IG views) as a
+   percentage. Be realistic: near-identical clones flopped; a strong script is ~35-50%. Don't inflate.
+7. Verdict: SHIP / SHIP WITH FIXES (exact replacement lines) / CUT.
+Finish with a ranking, the weakest named, and whether any script is clearly better than the existing
+winners. Use a compact score table.
+```
+
+The first use of this template (27 Oct 2026) is in docs/SCRIPTS.md "Reviewed batch of 2026-10-27".

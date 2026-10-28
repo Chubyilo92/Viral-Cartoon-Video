@@ -1,5 +1,8 @@
 # Production log
 
+> **28 Oct 2026: background/history only.** The binding rules are in `docs/RULES.md`. Where this file disagrees with RULES.md, RULES.md wins. (Known stale here: anything saying the music is the user's clips, that posts are drafts the owner approves, that the writer scores its own scripts, or that topics can be invented freely.)
+
+
 Tracks what's been made and scheduled, so the weekly batch task knows what to
 build next without a human in the loop. Update this file at the end of every
 batch run — it's the only state a fresh session needs to avoid repeating a
@@ -1013,3 +1016,32 @@ the whole point"), "Not because X. Because Y.", beats that just describe instead
 something but don't ("that's not moving in, that's just visiting longer"; "that's not love, that's
 convenience" said about someone who goes quiet at a funeral). The same model wrote, "re-read cold" and
 scored its own work (9.0), so the check never caught it. This is the second time (see 18 Oct).
+
+## 28 Oct 2026: short_fries published MUTE; full audit; gates made enforceable
+
+- **What happened:** `short_fries` (IG/FB 10:05, TikTok 10:14) went out mute. The GitHub file has audio
+  (-18.9 dB). Its only audio was `music/sound1` (a phone-recorded clip, likely a commercial song) at full
+  volume with no narrator, which the platforms most likely matched and muted. Long videos used the same
+  clips under narration, so they carried the same risk. The docs claimed the music was original; the
+  code didn't use the original music.
+- **Fixed:** clips deleted; `pipeline/original_music.py` is now used by every builder (make_video, make_short,
+  build_ad, dialogue). short_ps and short_bed re-muxed with original music (JJCutecouple 78386ca,
+  `*-v2.mp4`). The short_ps 18:05/18:14 posts now point at v2; #fyp removed from both TikTok captions.
+  short_bed (31 Oct) set to DRAFT after the independent review (5.5; part of it doesn't make sense).
+- **Independent audit** (separate agent) found that every check either never failed the run or relied on
+  "remember to", and found contradictions across docs (music, drafts vs autoPublish, self-scoring,
+  invent-freely, clock-change date 29 vs 28 Mar). Fixes:
+  - `docs/RULES.md` is the single binding rulebook; every other doc has a background-only banner.
+  - `pipeline/preflight.py` gate (exit 1 on failure): music record, builder QA booleans, voicecheck,
+    loudness/silence, platform/filename, caption tags/links, approval hash, and a commit-pinned
+    URL sha256 match. It writes `.pass.json`.
+  - `voicecheck.py` exits 1 on any FLAG.
+  - `pipeline/approval.py` + `docs/approvals.json`: builders refuse text the reviewer didn't approve,
+    or text changed since review. The floor is reviewer avg ≥ 8.5 (Chuby's standing rule) and P(1k) ≥ 40%.
+  - `docs/QA-CHECKLIST.md` rewritten to match what the code enforces. `docs/REVIEWER.md` now holds the
+    full reviewer prompt template.
+- **Reviewed so far:** nothing currently meets the 8.5 floor. boy_cries 7.25, girl_argues 7.25,
+  location 7.25, jealous 6.75 (all hold); short_ps 7.0 (hold, left in its slot pending Chuby);
+  short_bed 5.5 (hold, drafted); short_fries 6.5 (published).
+- **Can't be checked from here:** the Metricool-hosted copy (static.metricool.com is blocked) and
+  platform muting after publish.

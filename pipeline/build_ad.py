@@ -60,7 +60,8 @@ def render(html_path, mp4):
         return total
 
 
-MUSIC = J.ROOT + '/music/sound%d.wav' % getattr(spec, 'MUSIC_N', 2)
+from original_music import ensure as _orig_music  # phone clips deleted 28 Oct (muting)
+MUSIC = _orig_music(getattr(spec, 'MUSIC_N', 2))
 
 silent = f'{W}/ad_silent.mp4'
 t0 = time.time()
@@ -102,6 +103,8 @@ json.dump(qa, open(f'{W}/ad_qa.json', 'w'))
 for name in ('instagram', 'tiktok'):
     dest = f'{OUT}/{slug.replace("_","-")}-{name}.mp4'
     subprocess.run(['cp', canonical, dest])
+    json.dump({'source': MUSIC}, open(os.path.splitext(dest)[0] + '.music.json', 'w'))
+    json.dump(qa, open(os.path.splitext(dest)[0] + '.qa.json', 'w'))
 
 # sample frames
 pts = [1.5, sum(all_durs[:2]) + 1.5, sum(all_durs[:len(all_durs) // 2]) + 1.5, sum(all_durs[:-2]) + 1.5, sum(all_durs[:-1]) + 1.2, total - 1.0]

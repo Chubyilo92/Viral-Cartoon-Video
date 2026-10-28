@@ -18,6 +18,9 @@ from _short import SHORT_PROPS
 slug = sys.argv[1]
 mode = sys.argv[2] if len(sys.argv) > 2 else 'render'
 spec = importlib.import_module(slug)
+import approval  # 28 Oct: refuse to build text the independent reviewer didn't approve
+if 'preview' not in sys.argv[2:]:
+    approval.check(slug, spec)
 W = f'{J.ROOT}/work/{slug}'; os.makedirs(W, exist_ok=True)
 OUT = f'{J.ROOT}/out'; os.makedirs(OUT, exist_ok=True)
 
@@ -123,6 +126,7 @@ def render(html):
     qa['duration_ok'] = 15 <= total <= 24
     qa['audio_ok'] = abs(qa['streams'].get('audio', 0) - qa['streams'].get('video', 0)) < 1
     json.dump({'source': music}, open(os.path.splitext(final)[0] + '.music.json', 'w'))
+    json.dump(qa, open(os.path.splitext(final)[0] + '.qa.json', 'w'))  # preflight reads this
     print(json.dumps(qa)); print(final)
 
 

@@ -1,5 +1,8 @@
 # Where this fits in the wider operation
 
+> **28 Oct 2026: background/history only.** The binding rules are in `docs/RULES.md`. Where this file disagrees with RULES.md, RULES.md wins. (Known stale here: anything saying the music is the user's clips, that posts are drafts the owner approves, that the writer scores its own scripts, or that topics can be invented freely.)
+
+
 This repo documents one content type (the JJ puppy cartoon videos) inside a
 three-brand social media operation. Quick map so a fresh session knows where
 else to look:

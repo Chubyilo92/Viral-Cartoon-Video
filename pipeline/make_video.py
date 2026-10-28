@@ -10,6 +10,9 @@ slug = sys.argv[1]
 which = sys.argv[2] if len(sys.argv) > 2 else 'both'
 sys.path.insert(0, J.ROOT + '/specs')
 spec = importlib.import_module(slug)
+import approval  # 28 Oct: refuse to build text the independent reviewer didn't approve
+if 'preview' not in sys.argv[2:]:
+    approval.check(slug, spec)
 W = f'{J.ROOT}/work/{slug}'
 os.makedirs(W, exist_ok=True)
 OUT = f'{J.ROOT}/out'
@@ -108,6 +111,7 @@ def make(cut):
     qa['size_mb'] = round(os.path.getsize(final) / 1e6, 1)
     qa['size_ok'] = qa['size_mb'] < 25
     json.dump(qa, open(f'{W}/{cut}_qa.json', 'w'))
+    json.dump(qa, open(os.path.splitext(final)[0] + '.qa.json', 'w'))  # preflight reads this
     # sample frames
     pts = [1.5, sum(durs[:2]) + 1.5, sum(durs[:len(durs) // 2]) + 1.5, sum(durs[:-2]) + 1.5, sum(durs[:-1]) + 1.2, total - 1.0]
     for k, ts in enumerate(pts):

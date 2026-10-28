@@ -1,5 +1,8 @@
 # SHORT FORMAT — JJ share-first test (set 26 Oct 2026)
 
+> **28 Oct 2026: background/history only.** The binding rules are in `docs/RULES.md`. Where this file disagrees with RULES.md, RULES.md wins. (Known stale here: anything saying the music is the user's clips, that posts are drafts the owner approves, that the writer scores its own scripts, or that topics can be invented freely.)
+
+
 **Status: TEST.** Three videos are scheduled. If the test passes (criteria below), this becomes the
 **default JJ organic format** and the long narrated format (WINNERS-BLUEPRINT.md) becomes the exception.
 Until the verdict, keep running the long format in every slot that isn't a test slot.
@@ -91,6 +94,13 @@ neither passes, go back to the long winners format and record why here.
 
 Whichever mechanism wins (comedy+green flag / love note / wordless rule) gets made in gender-flipped
 and situation variants first, before inventing new mechanisms — same rule as WINNERS-BLUEPRINT.md.
+
+## 28 Oct 2026: what went wrong with the test
+
+- The three videos were built and scheduled outside the scheduled task and self-scored 9 / 9 / 8.5. An independent review scored them 6.5 / 7.0 / 5.5 (`reviews/2026-10-28-shorts.md`).
+- `short_fries` published 28 Oct 10:05 **MUTE**. Its only audio was a phone-recorded clip (likely a commercial song), at full volume with no narrator. Platforms mute matched songs. All three files were re-muxed with original music (`*-v2.mp4`, JJCutecouple commit 78386ca). `short_ps` (28 Oct 18:05) now uses v2. `short_bed` was set to DRAFT (5.5; attempt #1 unreadable).
+- The TikTok captions carried #fyp (banned). Removed.
+- The test now has 2 valid data points at most (short_fries is unusable because it was mute). The verdict below needs at least one more clean short before it can be judged.
 
 ## Results
 (fill in after 31 Oct + 72h)

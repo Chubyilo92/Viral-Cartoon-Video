@@ -1,5 +1,8 @@
 # Script library
 
+> **28 Oct 2026: background/history only.** The binding rules are in `docs/RULES.md`. Where this file disagrees with RULES.md, RULES.md wins. (Known stale here: anything saying the music is the user's clips, that posts are drafts the owner approves, that the writer scores its own scripts, or that topics can be invented freely.)
+
+
 > **18 Oct 2026: READ `docs/WINNERS-BLUEPRINT.md` FIRST.** It overrides the "invent freely" standing approval below. New scripts must be built around the videos that passed 1,000 views (big-audience hooks, named fear or life stage, concrete beats, plain lines, ≤110 words). No more personality-trait hooks.
 
 Scripts 1, 2, 4, 5, 6, 8, and 9-22 are built (see PRODUCTION-LOG; specs in
