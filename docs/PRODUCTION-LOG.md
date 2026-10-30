@@ -1045,3 +1045,23 @@ scored its own work (9.0), so the check never caught it. This is the second time
   short_bed 5.5 (hold, drafted); short_fries 6.5 (published).
 - **Can't be checked from here:** the Metricool-hosted copy (static.metricool.com is blocked) and
   platform muting after publish.
+
+## 30 Oct 2026: channel back on (Chuby: "make an executive decision")
+
+Nothing had posted on 30 Oct. Decisions taken on Chuby's instruction:
+- **Narrated videos only.** He objected that the music-only shorts had no spoken words, and the no-narrator test had never been put to him. Shorts are stopped (RULES §2).
+- **Approval floor 7.0 reviewer average** (was 8.5, his earlier floor). Nothing an independent reviewer scored came above 7.75, so 8.5 meant an empty channel (RULES §4).
+- Scheduled task re-enabled, moved to **Sun/Wed 06:12 UK** so it can fill the same day's 10:00 slot.
+
+Scheduled (all passed approval → voicecheck → preflight → preflight --url; Metricool read-back matched):
+
+| Slot | Slug | Reviewer avg / P(1k) | File sha256 (IG / TT) | Frames looked at |
+|---|---|---|---|---|
+| Fri 30 Oct 18:05 IG+FB / 18:14 TT | boy_cries | 7.25 / 40% | 0a9c302eab0bf7a9 / 4c11784bace19306 | preview sheet (fixed girl's cheeky "open" mouth → pout), ig_f0-5, tt_f4-5 |
+| Sat 31 Oct 10:05 / 10:14 | girl_argues | 7.25 / 40% | 5c6e5aaf54b3f6c3 / 5e87ecdc4227d0a6 | preview sheet (fixed happy-looking face in scene 1; moved "okay." bubble off the rain cloud) |
+| Sat 31 Oct 18:05 / 18:14 | girl_steals_hoodie | 7.75 / 45% | a041a12c5c179fef / bf0ab6386bec00c4 | preview sheet (new hoodie prop; enlarged the folded hoodie), ig_f0-5, tt_f5 |
+
+Media: JJCutecouple commits bc043d7 (boy-cries, girl-argues) and 710fe62 (hoodie). TT_COUNT = 4 (TKEV07).
+Gate catches this run: voicecheck flagged boy_cries line 6 (pace 3.6 w/s) → LINE_SPEED {5: 0.82}, re-rendered, passed.
+Reviewed 30 Oct (reviews/2026-10-30.md): hoodie approved; man_who_listens 6.75, boy_waits_outside 6.5, girl_double_texts 6.0 held; woman_proud_of_you 5.25 cut.
+Next empty slot: Sun 1 Nov 10:00. The scheduled task runs Sun 06:12.

@@ -1,12 +1,12 @@
 {
  "boy_cries": {
   "sha256": "6d5462194f5e6d6b41da13bdd7f5cade3914d929ab92ee2220a364eaebbc76b6",
-  "status": "hold",
+  "status": "approved",
   "reviewer_avg": 7.25,
   "p_1k": 0.4,
   "review_file": "docs/SCRIPTS.md#reviewed-batch-of-2026-10-27",
   "date": "2026-10-27",
-  "note": "Reviewer SHIP-WITH-FIXES (fixes applied) but avg is below Chuby's 8.5 floor - not buildable unless he lowers the floor or a re-review scores higher.",
+  "note": "Reviewer SHIP WITH FIXES (fixes applied), avg 7.25, P(1k) 40%. Approved 30 Oct under the 7.0 floor.",
   "text": [
    "When a boy cries in front of you, he's not being weak.",
    "He held it in at work, with his friends, in front of his family. You're the first person he let it out with.",
@@ -19,12 +19,12 @@
  },
  "girl_argues": {
   "sha256": "56edf3f34e46c7e154594a22afdbf25bcb298e05e0a5ccd66e563d2f81417440",
-  "status": "hold",
+  "status": "approved",
   "reviewer_avg": 7.25,
   "p_1k": 0.4,
   "review_file": "docs/SCRIPTS.md#reviewed-batch-of-2026-10-27",
   "date": "2026-10-27",
-  "note": "Reviewer SHIP-WITH-FIXES (fixes applied) but avg is below Chuby's 8.5 floor - not buildable unless he lowers the floor or a re-review scores higher.",
+  "note": "Reviewer SHIP WITH FIXES (fixes applied), avg 7.25, P(1k) 40%. Approved 30 Oct under the 7.0 floor.",
   "text": [
    "When a girl argues with you, she's not trying to win. She's trying to be understood.",
    "She'll explain the same thing three times. Not because she thinks you're stupid. Because she still believes you'll get it.",
@@ -112,5 +112,55 @@
   "review_file": "reviews/2026-10-28-shorts.md",
   "date": "2026-10-28",
   "note": "Reviewer 5.5; attempt #1 unreadable from the frames. Post set to DRAFT 28 Oct."
+ },
+ "girl_steals_hoodie": {
+  "sha256": "65461cc58d1e8a9a3261e7850fcbf05e3e8d2e9f4c6edf07f8da1df1e8dbab92",
+  "status": "approved",
+  "reviewer_avg": 7.75,
+  "p_1k": 0.45,
+  "review_file": "reviews/2026-10-30.md",
+  "date": "2026-10-30",
+  "note": "Reviewer SHIP WITH FIXES; line 5 fix and optional line 7 trim applied word for word.",
+  "text": [
+   "When a girl steals your hoodie, she's not just cold.",
+   "She wears it when you're away. Because it still smells like you.",
+   "She'll swear she's giving it back... and you'll never see it again.",
+   "She wears it the night after a fight, even when she's still mad at you.",
+   "If your wardrobe is half his hoodies... send this to him.",
+   "But the day she gives it back washed and folded... she's not being tidy. She's saying goodbye.",
+   "Because a girl in your hoodie... is keeping you close."
+  ]
+ },
+ "man_who_listens": {
+  "status": "hold",
+  "reviewer_avg": 6.75,
+  "p_1k": 0.35,
+  "review_file": "reviews/2026-10-30.md",
+  "date": "2026-10-30",
+  "note": "Below the 7.0 floor."
+ },
+ "boy_waits_outside": {
+  "status": "hold",
+  "reviewer_avg": 6.5,
+  "p_1k": 0.3,
+  "review_file": "reviews/2026-10-30.md",
+  "date": "2026-10-30",
+  "note": "Below the 7.0 floor."
+ },
+ "girl_double_texts": {
+  "status": "hold",
+  "reviewer_avg": 6.0,
+  "p_1k": 0.25,
+  "review_file": "reviews/2026-10-30.md",
+  "date": "2026-10-30",
+  "note": "Below the 7.0 floor."
+ },
+ "woman_proud_of_you": {
+  "status": "cut",
+  "reviewer_avg": 5.25,
+  "p_1k": 0.2,
+  "review_file": "reviews/2026-10-30.md",
+  "date": "2026-10-30",
+  "note": "Below the 7.0 floor."
  }
 }

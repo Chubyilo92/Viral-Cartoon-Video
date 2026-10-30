@@ -18,7 +18,7 @@ CANDIDATES = [
     '/home/claude/viral-cartoon-video/docs/approvals.json',
     os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'docs', 'approvals.json'),
 ]
-MIN_AVG = 8.5    # Chuby's standing floor: ship nothing under 8.5 average (docs/RULES.md)
+MIN_AVG = 7.0    # 30 Oct 2026: Chuby told Claude to make the call; 8.5 left the channel empty (nothing reviewed scored above 7.25). See RULES.md §4.
 MIN_P1K = 0.40
 
 
