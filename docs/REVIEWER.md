@@ -15,8 +15,8 @@ never allowed to grade its own scripts again.
    it writes the replacement. It scores each script and gives SHIP / SHIP WITH FIXES / CUT.
 4. The writer applies the reviewer's line fixes word-for-word (or cuts the script). The writer may NOT
    overrule a FAIL or a CUT, and may NOT raise the reviewer's score. Reported scores = reviewer's scores.
-5. Only scripts the reviewer marks SHIP / SHIP WITH FIXES, with a reviewer average ≥ 8.5 (Chuby's floor)
-   AND ≥40% "beats 1,000 IG views", are recorded as approved in `docs/approvals.json`. The builders
+5. Only scripts the reviewer marks SHIP / SHIP WITH FIXES, with a reviewer average of Reach/Engagement/Relatability ≥ 7.0
+   AND ≥35% "beats 1,000 IG views" (RULES.md §4), are recorded as approved in `docs/approvals.json`. The builders
    refuse anything else (`pipeline/approval.py`). Save the reviewer's raw answer to `reviews/<date>.md`.
 
 ## Known-bad examples (always include in the reviewer prompt)
@@ -79,8 +79,8 @@ TASK: review the scripts in {draft file path}. For EACH:
 3. Send check: would someone send it to their partner? Why or why not?
 4. Twist check: is the warning line a real turn that follows from the beats?
 5. Risk check: anything that could read as endorsing controlling/toxic behaviour.
-6. Score 1-10: Reach, Engagement, Conversion, Relatability; plus P(beats 1,000 IG views) as a
-   percentage. Be realistic: near-identical clones flopped; a strong script is ~35-50%. Don't inflate.
+6. Score 1-10: Reach, Engagement, Relatability (the page is growing its audience; don't score
+   conversion); plus P(beats 1,000 IG views) as a percentage. Be realistic: near-identical clones flopped; a strong script is ~35-50%. Don't inflate.
 7. Verdict: SHIP / SHIP WITH FIXES (exact replacement lines) / CUT.
 Finish with a ranking, the weakest named, and whether any script is clearly better than the existing
 winners. Use a compact score table.

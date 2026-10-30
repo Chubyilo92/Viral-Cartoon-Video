@@ -19,7 +19,7 @@ CANDIDATES = [
     os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'docs', 'approvals.json'),
 ]
 MIN_AVG = 7.0    # 30 Oct 2026: Chuby told Claude to make the call; 8.5 left the channel empty (nothing reviewed scored above 7.25). See RULES.md §4.
-MIN_P1K = 0.40
+MIN_P1K = 0.35  # 30 Oct 2026: audience-growth focus; Conversion dropped from the average (RULES.md §4)
 
 
 def script_text(spec):

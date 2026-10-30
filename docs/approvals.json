@@ -2,7 +2,7 @@
  "boy_cries": {
   "sha256": "6d5462194f5e6d6b41da13bdd7f5cade3914d929ab92ee2220a364eaebbc76b6",
   "status": "approved",
-  "reviewer_avg": 7.25,
+  "reviewer_avg": 7.0,
   "p_1k": 0.4,
   "review_file": "docs/SCRIPTS.md#reviewed-batch-of-2026-10-27",
   "date": "2026-10-27",
@@ -15,12 +15,18 @@
    "If he's ever cried in front of you... send this to him.",
    "But if you ever bring it up in an argument... he'll never cry in front of you again.",
    "Because when a boy cries in front of you... it means he finally feels safe."
-  ]
+  ],
+  "scores": {
+   "reach": 7,
+   "engagement": 7,
+   "conversion_ignored": 8,
+   "relatability": 7
+  }
  },
  "girl_argues": {
   "sha256": "56edf3f34e46c7e154594a22afdbf25bcb298e05e0a5ccd66e563d2f81417440",
   "status": "approved",
-  "reviewer_avg": 7.25,
+  "reviewer_avg": 7.33,
   "p_1k": 0.4,
   "review_file": "docs/SCRIPTS.md#reviewed-batch-of-2026-10-27",
   "date": "2026-10-27",
@@ -33,16 +39,22 @@
    "If you still fight for him like this... send this to him.",
    "But the day she stops arguing and just says \"okay\"... she hasn't calmed down. She's given up.",
    "Because a girl who argues with you... still thinks you're worth the fight."
-  ]
+  ],
+  "scores": {
+   "reach": 7,
+   "engagement": 7,
+   "conversion_ignored": 7,
+   "relatability": 8
+  }
  },
  "girl_checks_location": {
   "sha256": "5038f57379da85adb488b57858869f37fb01ef6247b2f6bd9f0c1a758ef64a3d",
   "status": "hold",
-  "reviewer_avg": 7.25,
+  "reviewer_avg": 7.67,
   "p_1k": 0.35,
   "review_file": "docs/SCRIPTS.md#reviewed-batch-of-2026-10-27",
   "date": "2026-10-27",
-  "note": "Reviewer SHIP-WITH-FIXES (fixes applied) but avg is below Chuby's 8.5 floor - not buildable unless he lowers the floor or a re-review scores higher.",
+  "note": "Passes the numbers under growth scoring (7.67, 35%) but HELD on purpose: the reviewer flagged brand risk (\"tracking your partner = love\").",
   "text": [
    "When a girl checks your location, she's not spying on you.",
    "She checks it when you're driving home late. Because she can't sleep until the dot stops moving.",
@@ -51,12 +63,18 @@
    "If she worries about you like this... send this to the boy she waits up for.",
    "But if you suddenly turn your location off... she won't ask why. She'll already know.",
    "Because a girl who checks your location... just wants you home safe."
-  ]
+  ],
+  "scores": {
+   "reach": 8,
+   "engagement": 8,
+   "conversion_ignored": 6,
+   "relatability": 7
+  }
  },
  "girl_jealous": {
   "sha256": "42095b0fb75fc56b318f7a22f66e0dbe4c784a50862280ecb5d7587feef57a30",
   "status": "hold",
-  "reviewer_avg": 6.75,
+  "reviewer_avg": 7.0,
   "p_1k": 0.32,
   "review_file": "docs/SCRIPTS.md#reviewed-batch-of-2026-10-27",
   "date": "2026-10-27",
@@ -69,7 +87,13 @@
    "If she gets jealous because she's scared of losing you... send this to the boy who never makes her feel silly for it.",
    "But if you enjoy making her jealous... you're not testing her love. You're teaching her to stop caring.",
    "Because a girl who gets jealous... still cares enough to be scared."
-  ]
+  ],
+  "scores": {
+   "reach": 7,
+   "engagement": 6,
+   "conversion_ignored": 6,
+   "relatability": 8
+  }
  },
  "girl_overthinks": {
   "status": "cut",
@@ -89,11 +113,17 @@
  "short_fries": {
   "sha256": "92504c3fd54ea40f78c13302ff112d86d8bd978d2b997d266f4edc5396108230",
   "status": "published",
-  "reviewer_avg": 6.5,
+  "reviewer_avg": 6.67,
   "p_1k": 0.3,
   "review_file": "reviews/2026-10-28-shorts.md",
   "date": "2026-10-28",
-  "note": "Built and scheduled 26 Oct before the gates existed; self-scored 9. Published 28 Oct 10:05 MUTE (phone-clip music). Reviewer 6.5."
+  "note": "Built and scheduled 26 Oct before the gates existed; self-scored 9. Published 28 Oct 10:05 MUTE (phone-clip music). Reviewer 6.5.",
+  "scores": {
+   "reach": 6,
+   "engagement": 6,
+   "conversion_ignored": 5,
+   "relatability": 8
+  }
  },
  "short_ps": {
   "sha256": "0d971317f97fecf4ed194d3d0d09929221adc75f49fa59f1f03adf5dff51a376",
@@ -102,21 +132,33 @@
   "p_1k": 0.35,
   "review_file": "reviews/2026-10-28-shorts.md",
   "date": "2026-10-28",
-  "note": "Scheduled 26 Oct before the gates existed. Reviewer 7.0 (below the 8.5 floor); left in its 28 Oct 18:05 slot pending Chuby's decision. Music replaced with original (v2)."
+  "note": "Scheduled 26 Oct before the gates existed. Reviewer 7.0 (below the 8.5 floor); left in its 28 Oct 18:05 slot pending Chuby's decision. Music replaced with original (v2).",
+  "scores": {
+   "reach": 6,
+   "engagement": 7,
+   "conversion_ignored": 7,
+   "relatability": 8
+  }
  },
  "short_bed": {
   "sha256": "530e4bbbcd8d4f1bbbc1f861e0ddf576053c462f6fd948a260d61849aab335b1",
   "status": "hold",
-  "reviewer_avg": 5.5,
+  "reviewer_avg": 5.67,
   "p_1k": 0.22,
   "review_file": "reviews/2026-10-28-shorts.md",
   "date": "2026-10-28",
-  "note": "Reviewer 5.5; attempt #1 unreadable from the frames. Post set to DRAFT 28 Oct."
+  "note": "Reviewer 5.5; attempt #1 unreadable from the frames. Post set to DRAFT 28 Oct.",
+  "scores": {
+   "reach": 5,
+   "engagement": 5,
+   "conversion_ignored": 5,
+   "relatability": 7
+  }
  },
  "girl_steals_hoodie": {
   "sha256": "65461cc58d1e8a9a3261e7850fcbf05e3e8d2e9f4c6edf07f8da1df1e8dbab92",
   "status": "approved",
-  "reviewer_avg": 7.75,
+  "reviewer_avg": 8.0,
   "p_1k": 0.45,
   "review_file": "reviews/2026-10-30.md",
   "date": "2026-10-30",
@@ -129,38 +171,78 @@
    "If your wardrobe is half his hoodies... send this to him.",
    "But the day she gives it back washed and folded... she's not being tidy. She's saying goodbye.",
    "Because a girl in your hoodie... is keeping you close."
-  ]
+  ],
+  "scores": {
+   "reach": 7,
+   "engagement": 8,
+   "conversion_ignored": 7,
+   "relatability": 9
+  }
  },
  "man_who_listens": {
-  "status": "hold",
-  "reviewer_avg": 6.75,
+  "status": "approved",
+  "reviewer_avg": 7.0,
   "p_1k": 0.35,
   "review_file": "reviews/2026-10-30.md",
   "date": "2026-10-30",
-  "note": "Below the 7.0 floor."
+  "note": "Reviewer SHIP WITH FIXES (hook, beat 2 and closing line replaced word for word). Approved 30 Oct under the growth scoring (Reach/Engagement/Relatability avg 7.0) and P(1k) floor 35%. Spec not written yet: the next batch builds it first.",
+  "scores": {
+   "reach": 6,
+   "engagement": 7,
+   "conversion_ignored": 6,
+   "relatability": 8
+  },
+  "text": [
+   "A man who really listens remembers the name of the girl at work you can't stand.",
+   "He asks if she's still being weird with you, a week later.",
+   "He asks how the dentist went, three days later.",
+   "He puts his phone face down the second you start a story.",
+   "If he listens like this... send this to the girl who deserves it.",
+   "But if you have to tell every story twice... he's not tired. He's not interested.",
+   "Because a man who listens remembers things you forgot you told him."
+  ],
+  "sha256": "1cc8499054f761d6ab04203fafa046e4ed1c84e6c4bf5998f84e89a6bdef2010"
  },
  "boy_waits_outside": {
   "status": "hold",
-  "reviewer_avg": 6.5,
+  "reviewer_avg": 6.67,
   "p_1k": 0.3,
   "review_file": "reviews/2026-10-30.md",
   "date": "2026-10-30",
-  "note": "Below the 7.0 floor."
+  "note": "Below the 7.0 floor.",
+  "scores": {
+   "reach": 6,
+   "engagement": 6,
+   "conversion_ignored": 6,
+   "relatability": 8
+  }
  },
  "girl_double_texts": {
   "status": "hold",
-  "reviewer_avg": 6.0,
+  "reviewer_avg": 6.33,
   "p_1k": 0.25,
   "review_file": "reviews/2026-10-30.md",
   "date": "2026-10-30",
-  "note": "Below the 7.0 floor."
+  "note": "Below the 7.0 floor.",
+  "scores": {
+   "reach": 6,
+   "engagement": 6,
+   "conversion_ignored": 5,
+   "relatability": 7
+  }
  },
  "woman_proud_of_you": {
   "status": "cut",
-  "reviewer_avg": 5.25,
+  "reviewer_avg": 5.33,
   "p_1k": 0.2,
   "review_file": "reviews/2026-10-30.md",
   "date": "2026-10-30",
-  "note": "Below the 7.0 floor."
+  "note": "Below the 7.0 floor.",
+  "scores": {
+   "reach": 5,
+   "engagement": 5,
+   "conversion_ignored": 5,
+   "relatability": 6
+  }
  }
 }

@@ -25,7 +25,7 @@ edit a threshold, approval or record to make something pass.**
 - Posts are created with **autoPublish true, draft false**. There is NO manual approval step, so the
   gates below are the only protection.
 - Never delete posts. Never re-enable drafts, including the 25 Oct batch (#67-71) and the 18 Oct trait
-  videos. Ads are paused: no #ad videos. Never use paid vidIQ calls.
+  videos. Ads are paused: no #ad videos. Never use vidIQ at all (Chuby, 30 Oct: no connecting it, no credits).
 
 ## 2. Formats
 
@@ -53,11 +53,15 @@ Only `pipeline/original_music.py` beds (synthesized in code). The phone-recorded
 3. Apply its line fixes word for word. You may not overrule a FAIL or a CUT, or change its scores.
 4. Record every reviewed script in `docs/approvals.json` (`python3 approval.py hash <slug>` gives the
    sha256 once the spec exists). Use the REVIEWER's numbers. Status is "approved" only if the reviewer
-   said SHIP or SHIP WITH FIXES **and** its average of Reach/Engage/Convert/Relate is ≥ **7.0**
-   **and** P(beats 1,000 IG views) ≥ 40%. Otherwise "hold" or "cut". (30 Oct 2026: lowered from 8.5,
-   Chuby's earlier floor. Nothing an independent reviewer scored came above 7.25, so 8.5 meant an empty
-   channel, and he told Claude to make the call and get content out. Reviewer scores run much harsher
-   than the old self-scores: the 1,000+ view winners would likely score 7-8 under this reviewer.)
+   said SHIP or SHIP WITH FIXES **and** the average of **Reach, Engagement and Relatability** is ≥ **7.0**
+   **and** P(beats 1,000 IG views) ≥ **35%**. Otherwise "hold" or "cut".
+   - 30 Oct 2026, Chuby: the page's goal right now is **growing the audience, not converting**. So
+     Conversion is no longer scored or averaged. (It was usually the lowest score and was dragging
+     scripts under the bar.) The P(1k) floor went from 40% to 35% so the channel doesn't go silent.
+   - The floor went from Chuby's earlier 8.5 to 7.0 on 30 Oct. The independent reviewer marks far harder
+     than the old self-scores: nothing it has scored has reached 8.5, and the 1,000+ view winners would
+     likely score 7-8 under it.
+   - A script can be held for a stated non-score reason (e.g. brand risk), even if it passes the numbers.
 5. `make_video.py` and `make_short.py` refuse to build (exit) unless the spec's exact text matches an
    approved entry. Editing a line after review changes the hash, so it has to be reviewed again.
 6. Ship fewer videos rather than weaker ones. An empty slot is better than a bad post.
