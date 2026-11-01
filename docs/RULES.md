@@ -1,4 +1,4 @@
-# RULES — the only binding rulebook for JJ puppy videos (28 Oct 2026)
+# RULES — the only binding rulebook for JJ puppy videos (28 Oct 2026, updated 1 Nov 2026)
 
 **Precedence:** the scheduled task prompt → this file → everything else. Every other doc in this repo
 (BUILD-METHOD, GROWTH-STRATEGY, WINNERS-BLUEPRINT, SHORT-FORMAT, QA-CHECKLIST, PRODUCTION-LOG, SCRIPTS,
@@ -25,7 +25,10 @@ edit a threshold, approval or record to make something pass.**
 - Posts are created with **autoPublish true, draft false**. There is NO manual approval step, so the
   gates below are the only protection.
 - Never delete posts. Never re-enable drafts, including the 25 Oct batch (#67-71) and the 18 Oct trait
-  videos. Ads are paused: no #ad videos. Never use vidIQ at all (Chuby, 30 Oct: no connecting it, no credits).
+  videos. Ads are paused: no #ad videos.
+- **vidIQ (changed 1 Nov 2026, Chuby):** the 30 Oct ban is lifted. Use vidIQ for research (outliers in the
+  niche, what 10K-100K videos do) whenever it is connected. If it isn't connected, say so in the report and
+  carry on without it.
 
 ## 2. Formats
 
@@ -47,9 +50,9 @@ Only `pipeline/original_music.py` beds (synthesized in code). The phone-recorded
 
 ## 4. Scripts: written by one agent, judged by another
 
-1. Write drafts per docs/REVIEWER.md "Writing rules".
+1. Write ~10 BRAND-NEW drafts per docs/REVIEWER.md "Writing rules" and the lessons in §4a below.
 2. Spawn a separate reviewer subagent with the prompt template in docs/REVIEWER.md, filled with fresh
-   Metricool numbers. Save its full raw answer verbatim to `reviews/<YYYY-MM-DD>.md` and commit it.
+   Metricool numbers. Each round uses a FRESH reviewer that has not seen earlier rounds. Save its full raw answer verbatim to `reviews/<YYYY-MM-DD>.md` and commit it.
 3. Apply its line fixes word for word. You may not overrule a FAIL or a CUT, or change its scores.
 4. Record every reviewed script in `docs/approvals.json` (`python3 approval.py hash <slug>` gives the
    sha256 once the spec exists). Use the REVIEWER's numbers. Status is "approved" only if the reviewer
@@ -65,11 +68,34 @@ Only `pipeline/original_music.py` beds (synthesized in code). The phone-recorded
 5. `make_video.py` and `make_short.py` refuse to build (exit) unless the spec's exact text matches an
    approved entry. Editing a line after review changes the hash, so it has to be reviewed again.
 6. Ship fewer videos rather than weaker ones. An empty slot is better than a bad post.
+7. **Rounds (changed 1 Nov 2026, Chuby: "apply it automatically next time"):** if slots are still empty after
+   a round, write a new round of ~10 BRAND-NEW scripts (not resubmissions) and send them to a fresh reviewer.
+   Up to **3 rounds per run**. The floor never moves. On 1 Nov rounds 1-2 produced nothing (best 6.7) and
+   round 3, written to the lessons below, produced 5 approvals (7.3-8.3).
+
+### 4a. Script lessons (1 Nov 2026 — what separated round 3 from rounds 1-2)
+
+- The behaviour must LOOK bad first (annoying, needy, cold, messy-in-a-bad-way), then be reframed as love.
+  Sweet behaviours that already look good (fixing a chair, carrying a bag, keeping a ticket stub) flop and
+  the reviewer scores them 4-6.
+- Don't use one skeleton for every script. Vary the beats (not "She'll / She'll / She'll").
+- Line 6 must be a real turn, never a restatement ("turns the light off… she's stopped waiting up" = FAIL).
+  The strongest warnings turn on the VIEWER's behaviour ("if you keep saying 'I'm fine'…").
+- No two scripts with the same "the day she stops X… she's not Y, she's Z" twist within 7 days of each
+  other or of a published one. Schedule a later slot (beyond the 4-day window is fine) to keep them apart.
+- **Read-aloud check BEFORE review:** run every line through Kokoro's phonemizer
+  (`Kokoro(...).tokenizer.phonemize(line,'en-us')`). No emoji in BODY_LINES (Kokoro reads the emoji's name),
+  no distinctions that exist only in spelling ("ok" vs "okay" sound identical). If a reviewed line fails
+  this, send that line back to the same reviewer for a replacement and a re-score; never edit it yourself.
 
 ## 5. Build → gate → schedule (in this order, no skipping)
 
 1. Build. The builder writes `<file>.qa.json` and `<file>.music.json`.
 2. Long format: `python3 voicecheck.py <slug>` must exit 0. It writes `<slug>.voicecheck.json`.
+   Save a render: before the full build, TTS each BODY_LINE alone and run voicecheck's `check()` on it
+   (exec voicecheck.py up to `rows = [`). Set LINE_SPEED for any flagged line up front (1 Nov: 4 of 5
+   scripts had one flagged line; fixes were 0.8-1.05). IG_LINE/TT_LINE must not contain abbreviations with
+   full stops ("a.m."): the caption splitter breaks them into "the seven a" / "m".
 3. Look at the frames: `work/<slug>/sheet.png` for shorts, `work/<slug>/*_f0..5.png` for long. Check
    for clipped puppies, text over faces, and props that don't match the line. Code can't enforce this,
    so name the frames you looked at in the log entry.
