@@ -1065,3 +1065,55 @@ Media: JJCutecouple commits bc043d7 (boy-cries, girl-argues) and 710fe62 (hoodie
 Gate catches this run: voicecheck flagged boy_cries line 6 (pace 3.6 w/s) → LINE_SPEED {5: 0.82}, re-rendered, passed.
 Reviewed 30 Oct (reviews/2026-10-30.md): hoodie approved; man_who_listens 6.75, boy_waits_outside 6.5, girl_double_texts 6.0 held; woman_proud_of_you 5.25 cut.
 Next empty slot: Sun 1 Nov 10:00. The scheduled task runs Sun 06:12.
+
+## 1 Nov 2026: scheduled run — only 1 of 10 empty slots filled
+
+**Setup**: fresh cloud session. `pip install` kokoro-onnx/soundfile/numpy/playwright/pillow/librosa/pocketsphinx,
+Kokoro model to `/tmp/kk`, pipeline copied to `/home/claude/jj`, `python3 original_music.py` (3 original beds),
+smoke test `python3 preview.py boy_cries` clean. Missing connector this run: vidIQ (needs_reconnect) — not
+needed, per standing order it's never used anyway.
+
+**Fresh Metricool pull** (brand 7128333, all-time, IGRE02/03/23/24/21/12, TKPO02/05/07/10, TKEV07):
+TikTok follower count (TKEV07, latest point 31 Oct) = **6**. Real numbers for the last batch: girl_steals_hoodie
+(31 Oct 18:05) 1,247 IG views / 9.17s avg watch / 22 shares / 715 TikTok views; girl_argues (31 Oct 10:05) 136
+IG views / 7.05s / 0 shares / 510 TikTok views; boy_cries (30 Oct 18:05) 154 IG views / 7.30s / 3 shares / 541
+TikTok views (girl_argues and boy_cries are still under 48h old, too early to call flops). Confirmed winners
+≥1,000 views now include girl_steals_hoodie alongside the previously logged winners table.
+
+**Queue check** (getScheduledPosts, one day per call, Europe/London, UTC+00:00 confirmed via
+`zoneinfo.ZoneInfo('Europe/London')` for every date 1-5 Nov — BST does not return until 28 Mar 2027): every
+10:00/18:00 slot from Sun 1 Nov through Thu 5 Nov was **empty** (the 1-2 Nov 10:00 "posts" that exist are the
+18 Oct mass-draft, `draft:true`, which RULES.md §1 says don't count). That's 10 empty slots.
+
+**man_who_listens built and scheduled** (already "approved" 30 Oct, text unbuilt): spec written matching the
+approved text exactly (`approval.py check` → hash `1cc8499...dbdef2010` matched, no re-review needed).
+Preview frames checked (sheet of all 7 scenes: no clipped puppies, no text over faces, phone/dentist/story
+props match their lines). Built both cuts (TT_COUNT=6): IG 49.3s/13.6MB, TikTok 46.4s/13.7MB. voicecheck.py:
+9/9 lines "ok", 0 FLAGs, exit 0. preflight.py (both cuts): pass, 0 fails. Pushed to JJCutecouple
+(`2fa26da3ea180f9d24888bf186f9f5a144267216`). preflight.py --url re-run on the commit-pinned raw URLs:
+sha256 matched exactly for both cuts, `.pass.json` written. Scheduled via createScheduledPost and read back —
+caption, time, providers, draft:false and 1 media item all confirmed correct:
+
+| Slot | Slug | Reviewer avg / P(1k) | File sha256 (IG / TT) | Frames looked at |
+|---|---|---|---|---|
+| Sun 1 Nov 10:05 IG+FB / 10:14 TT | man_who_listens | 7.0 / 35% (reviewed 30 Oct) | 1874f88f.../a988f084... | sheet of pv_0..6 frames: no clipping, no text over faces, phone/dentist/gossip props match lines |
+
+**New batch: 0 of 2 rounds produced an approved script.** Per RULES.md §4 "ship fewer videos rather than
+weaker ones", wrote 10 fresh drafts, sent to a separate reviewer subagent (general-purpose, opus, filled with
+the fresh data above), saved verbatim to `reviews/2026-11-01.md`. Round 1: nothing cleared the floor; the
+reviewer's diagnosis was that the batch had dropped the "looks-bad-but-is-love" tension every real winner
+has, and all 10 shared one repetitive skeleton with a tautological warning line. Ran the one allowed second
+round, rewriting per the reviewer's exact fixes plus new scripts built around real tension. Best of both
+rounds: **boy_never_apologizes_first**, avg 6.7 (Reach 6/Engagement 7/Relatability 7), P(1k) 35% — met the
+P(1k) floor but not the 7.0 average floor. No script was approved. The floor was not lowered. All 20 reviewed
+scripts (10 + 10) recorded in `docs/approvals.json` as hold/cut with the reviewer's exact numbers; the
+strongest holds (boy_never_apologizes_first 6.7/35%, girl_sleeps_on_your_side 6.3/30%, boy_defends_you_quietly
+6.0/30%) are the best candidates for a future batch if the account's numbers move, but none were built.
+
+**9 of 10 slots left empty**: Sun 1 Nov 18:00, Mon 2 Nov 10:00 & 18:00, Tue 3 Nov 10:00 & 18:00, Wed 4 Nov
+10:00 & 18:00, Thu 5 Nov 10:00 & 18:00. Nothing scheduled, nothing drafted, nothing deleted in these slots.
+
+**Can't be checked from here:** the Metricool-hosted copy (static.metricool.com blocked) and platform muting
+after publish (original music is the only protection, as before).
+
+Next empty slot: Sun 1 Nov 18:00. The scheduled task runs Wed 06:12.

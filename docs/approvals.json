@@ -244,5 +244,342 @@
    "conversion_ignored": 5,
    "relatability": 6
   }
+ },
+ "girl_leaves_light_on": {
+  "status": "hold",
+  "reviewer_avg": 5.3,
+  "p_1k": 0.3,
+  "review_file": "reviews/2026-11-01.md",
+  "date": "2026-11-01",
+  "note": "Round 1. SHIP WITH FIXES (lines 1,6 applied). Below 7.0 floor.",
+  "scores": {
+   "reach": 5,
+   "engagement": 5,
+   "relatability": 6
+  },
+  "text": [
+   "If she stays up until you're home, she's not checking on you. She just can't sleep until she knows you're safe.",
+   "She'll text \"drive safe\" and then stay awake until you reply you're home.",
+   "She'll leave the chain off the door, even after a fight, just in case you still come back.",
+   "She'll turn the TV down low so she can hear your key in the lock.",
+   "If she waits up like this... send this to the one who makes it home to her.",
+   "But the night you pull up and the porch is dark... count how many nights she waited and you never texted back.",
+   "Because a girl who leaves the light on... wants you home more than she wants sleep."
+  ]
+ },
+ "boy_fixes_things": {
+  "status": "hold",
+  "reviewer_avg": 4.7,
+  "p_1k": 0.15,
+  "review_file": "reviews/2026-11-01.md",
+  "date": "2026-11-01",
+  "note": "Round 1. Below floor; reworked as boy_fixes_things_quiet in round 2 (use that version).",
+  "scores": {
+   "reach": 4,
+   "engagement": 5,
+   "relatability": 5
+  }
+ },
+ "girl_saves_your_voicemails": {
+  "status": "cut",
+  "reviewer_avg": 4.0,
+  "p_1k": 0.12,
+  "review_file": "reviews/2026-11-01.md",
+  "date": "2026-11-01",
+  "note": "Round 1. Reviewer: SHIP WITH FIXES only with all 4 replacements, otherwise CUT (ambiguous) -- cut. Rewritten as girl_saves_your_voice_notes in round 2.",
+  "scores": {
+   "reach": 4,
+   "engagement": 4,
+   "relatability": 4
+  }
+ },
+ "boy_walks_the_long_way": {
+  "status": "hold",
+  "reviewer_avg": 5.7,
+  "p_1k": 0.25,
+  "review_file": "reviews/2026-11-01.md",
+  "date": "2026-11-01",
+  "note": "Round 1. SHIP WITH FIXES, below floor; superseded by boy_takes_the_long_way (round 2, fixes applied, clean SHIP).",
+  "scores": {
+   "reach": 5,
+   "engagement": 6,
+   "relatability": 6
+  }
+ },
+ "girl_keeps_your_side_of_bed": {
+  "status": "cut",
+  "reviewer_avg": 3.3,
+  "p_1k": 0.08,
+  "review_file": "reviews/2026-11-01.md",
+  "date": "2026-11-01",
+  "note": "Round 1 CUT -- concept backwards (keeping side empty is not relatable). Reviewer's suggested reversed concept rebuilt as girl_sleeps_on_your_side in round 2.",
+  "scores": {
+   "reach": 4,
+   "engagement": 3,
+   "relatability": 3
+  }
+ },
+ "girl_keeps_the_ticket_stub": {
+  "status": "cut",
+  "reviewer_avg": 4.0,
+  "p_1k": 0.12,
+  "review_file": "reviews/2026-11-01.md",
+  "date": "2026-11-01",
+  "note": "Round 1 CUT. Weaker clone of the 1,180-view 'first message saved' winner.",
+  "scores": {
+   "reach": 4,
+   "engagement": 4,
+   "relatability": 4
+  }
+ },
+ "boy_carries_the_heavy_bag": {
+  "status": "cut",
+  "reviewer_avg": 4.3,
+  "p_1k": 0.1,
+  "review_file": "reviews/2026-11-01.md",
+  "date": "2026-11-01",
+  "note": "Round 1 CUT. Gender-roles brand risk flagged by reviewer even with line fixes.",
+  "scores": {
+   "reach": 4,
+   "engagement": 4,
+   "relatability": 5
+  }
+ },
+ "girl_texts_landed_safe": {
+  "status": "cut",
+  "reviewer_avg": 3.7,
+  "p_1k": 0.1,
+  "review_file": "reviews/2026-11-01.md",
+  "date": "2026-11-01",
+  "note": "Round 1 CUT. Niche audience (long-distance/frequent flyers only) for a page trying to grow reach.",
+  "scores": {
+   "reach": 3,
+   "engagement": 4,
+   "relatability": 4
+  }
+ },
+ "girl_laughs_at_your_old_jokes": {
+  "status": "hold",
+  "reviewer_avg": 5.7,
+  "p_1k": 0.25,
+  "review_file": "reviews/2026-11-01.md",
+  "date": "2026-11-01",
+  "note": "Round 1. SHIP WITH FIXES, below floor; superseded by girl_old_jokes (round 2, fixes applied, clean SHIP).",
+  "scores": {
+   "reach": 5,
+   "engagement": 6,
+   "relatability": 6
+  }
+ },
+ "boy_never_apologizes_first": {
+  "status": "hold",
+  "reviewer_avg": 6.7,
+  "p_1k": 0.35,
+  "review_file": "reviews/2026-11-01.md",
+  "date": "2026-11-01",
+  "note": "Round 2 (final round). Reviewer's top pick overall -- closest to the floor (P(1k) meets 35%) but average 6.7 < 7.0 floor. NOT approved; floor not lowered.",
+  "scores": {
+   "reach": 6,
+   "engagement": 7,
+   "relatability": 7
+  },
+  "text": [
+   "A boy who never says sorry first isn't too proud to lose an argument.",
+   "He'll go quiet for an hour, then show up with your favourite coffee instead of the words.",
+   "He'll quietly fix the actual thing you were fighting about, before you even bring it up again.",
+   "He'll let you have the last word every single time, because winning matters less to him than you being okay.",
+   "If he fixes it like this instead of fighting for the last word... send this to the girl who's stopped keeping score.",
+   "But if the coffee keeps showing up and the actual problem never gets fixed... that's not pride. That's avoidance.",
+   "Because a boy who never says sorry first... is still trying to make it right. Just not with words."
+  ]
+ },
+ "girl_sleeps_on_your_side": {
+  "status": "hold",
+  "reviewer_avg": 6.3,
+  "p_1k": 0.3,
+  "review_file": "reviews/2026-11-01.md",
+  "date": "2026-11-01",
+  "note": "Round 2 (final round). Rebuild of the reversed girl_keeps_your_side_of_bed concept. Below 7.0 floor.",
+  "scores": {
+   "reach": 6,
+   "engagement": 6,
+   "relatability": 7
+  },
+  "text": [
+   "If she sleeps on your side of the bed when you're away, she's not stealing your spot. It just smells like you.",
+   "She'll wear your old t-shirt to bed the whole week you're gone.",
+   "She'll hug your pillow instead of hers, then deny it when you call in the morning.",
+   "She'll move back to her own side the second you're home, like she was never there.",
+   "If she takes over your side like this... send this to the one whose side she keeps stealing.",
+   "But if you're gone a whole week and she never once moves to your side... she's not missing you the way she used to.",
+   "Because a girl who steals your side of the bed... just wants to feel closer to you."
+  ]
+ },
+ "boy_defends_you_quietly": {
+  "status": "hold",
+  "reviewer_avg": 6.0,
+  "p_1k": 0.3,
+  "review_file": "reviews/2026-11-01.md",
+  "date": "2026-11-01",
+  "note": "Round 2 (final round). Below 7.0 floor.",
+  "scores": {
+   "reach": 6,
+   "engagement": 6,
+   "relatability": 6
+  },
+  "text": [
+   "A boy who stops laughing when his friends joke about you isn't being too sensitive.",
+   "He'll go quiet and serious the second someone makes a joke that's actually about you.",
+   "He'll bring it up to them later, alone, so you never have to see him do it.",
+   "He'll never tell you what they said, because you don't need to carry that.",
+   "If he gets protective like this without making a scene... send this to the girl who never has to defend herself.",
+   "But the day he laughs along with the joke instead... he's not being chill. He's picked a side, and it isn't yours.",
+   "Because a boy who shuts that down... is on your side even when you're not in the room."
+  ]
+ },
+ "boy_fixes_things_quiet": {
+  "status": "hold",
+  "reviewer_avg": 5.7,
+  "p_1k": 0.25,
+  "review_file": "reviews/2026-11-01.md",
+  "date": "2026-11-01",
+  "note": "Round 2 (final round). Canonical version of boy_fixes_things. Below floor.",
+  "scores": {
+   "reach": 5,
+   "engagement": 6,
+   "relatability": 6
+  },
+  "text": [
+   "If he goes quiet and starts fixing something the second you've had a bad day, he's not ignoring you.",
+   "He'll tighten the wobbly chair you complained about once, three weeks ago, without a word.",
+   "He'll fix the thing that's been bugging you all week instead of asking what's wrong.",
+   "He'll check every lock in the house twice before he finally sits back down next to you.",
+   "If he shows up like this instead of talking it out... send this to the girl who's learned to read it.",
+   "But if the tap's been dripping for a month and he walks right past it... don't wait for him to fix it. Ask him what's wrong.",
+   "Because a boy who fixes things when you're upset... is trying to take care of you the only way he knows how."
+  ]
+ },
+ "boy_takes_the_long_way": {
+  "status": "hold",
+  "reviewer_avg": 5.7,
+  "p_1k": 0.25,
+  "review_file": "reviews/2026-11-01.md",
+  "date": "2026-11-01",
+  "note": "Round 2 (final round). Clean SHIP, no further fixes needed, but below 7.0 floor.",
+  "scores": {
+   "reach": 5,
+   "engagement": 6,
+   "relatability": 6
+  },
+  "text": [
+   "If he takes the long way home with you, he's not lost.",
+   "He'll add fifteen minutes to the route just so the conversation doesn't end yet.",
+   "He'll slow down at the corner where you usually say goodnight, every single time.",
+   "He'll say \"okay, goodnight\" three times at your door and still not leave.",
+   "If he stretches the walk home like this... send this to the one who's never in a rush to leave you.",
+   "But the night he takes the shortcut and spends the whole walk on his phone... he's not walking you home anymore. He's dropping you off.",
+   "Because a boy who takes the long way home... just wants a few more minutes with you."
+  ]
+ },
+ "girl_old_jokes": {
+  "status": "hold",
+  "reviewer_avg": 5.7,
+  "p_1k": 0.25,
+  "review_file": "reviews/2026-11-01.md",
+  "date": "2026-11-01",
+  "note": "Round 2 (final round). Clean SHIP, no further fixes needed, but below 7.0 floor.",
+  "scores": {
+   "reach": 5,
+   "engagement": 6,
+   "relatability": 6
+  },
+  "text": [
+   "If she still laughs at your worst joke after two years, she's not just being nice.",
+   "She'll laugh at the one about the goldfish for the hundredth time, like it's the first.",
+   "She'll mouth the punchline along with you, and still laugh when you say it.",
+   "She'll make you tell it again every time her friends come over.",
+   "If she still laughs like this... send this to the one with the worst jokes she's ever loved.",
+   "But the day you tell it and she doesn't even look up from her phone... she didn't just stop laughing. She stopped listening.",
+   "Because a girl who still laughs at your old jokes... still loves the guy telling them."
+  ]
+ },
+ "girl_saves_your_voice_notes": {
+  "status": "hold",
+  "reviewer_avg": 5.3,
+  "p_1k": 0.2,
+  "review_file": "reviews/2026-11-01.md",
+  "date": "2026-11-01",
+  "note": "Round 2 (final round). Rewrite of girl_saves_your_voicemails. Below floor.",
+  "scores": {
+   "reach": 5,
+   "engagement": 5,
+   "relatability": 6
+  },
+  "text": [
+   "If she replays your voice notes after you've already said goodnight, she's not being clingy.",
+   "She'll keep the three-second \"call me back\" long after you've already called.",
+   "She'll play it on the nights you're away, just to fall asleep to your voice instead of the silence.",
+   "She'll never delete it, even when she's clearing out everything else on an old phone.",
+   "If she keeps your voice like this... send this to the one she misses before he's even left.",
+   "But the night your voice note sits there unplayed until morning... ask yourself when she stopped wanting to hear you.",
+   "Because a girl who saves your voice notes... wants to hear you even when you're not there."
+  ]
+ },
+ "girl_last_bite": {
+  "status": "hold",
+  "reviewer_avg": 5.3,
+  "p_1k": 0.2,
+  "review_file": "reviews/2026-11-01.md",
+  "date": "2026-11-01",
+  "note": "Round 2 (final round). Below floor.",
+  "scores": {
+   "reach": 5,
+   "engagement": 5,
+   "relatability": 6
+  },
+  "text": [
+   "A girl who always leaves you the last bite isn't full.",
+   "She'll leave the last bite of fries every single time, like clockwork.",
+   "She'll slide the plate an inch closer to you before you've even asked.",
+   "She'll order extra \"just in case\", and it's never actually for her.",
+   "If she saves the last bite like this... send this to the one who's never had to ask for it.",
+   "But if she's saved you the last bite for months and you've never once saved her one... start.",
+   "Because a girl who leaves you the last bite... is saving the best part for you, every time."
+  ]
+ },
+ "boy_remembers_your_order": {
+  "status": "hold",
+  "reviewer_avg": 5.3,
+  "p_1k": 0.2,
+  "review_file": "reviews/2026-11-01.md",
+  "date": "2026-11-01",
+  "note": "Round 2 (final round) canonical version. Below floor.",
+  "scores": {
+   "reach": 5,
+   "engagement": 5,
+   "relatability": 6
+  },
+  "text": [
+   "A boy who remembers your coffee order after one date isn't just being polite.",
+   "He'll order it for you before you even sit down, three dates later.",
+   "He'll remember the oat milk, the extra shot, and that you hate it too hot.",
+   "He'll hear it's a bad day in how you say hi, and order it black before you even ask.",
+   "If he pays attention like this... send this to the girl who's never had to repeat herself.",
+   "But the day he has to ask how you take your coffee again... he stopped paying attention a while ago.",
+   "Because a boy who remembers your order... remembers you."
+  ]
+ },
+ "girl_nervous_introducing_you": {
+  "status": "cut",
+  "reviewer_avg": 4.0,
+  "p_1k": 0.12,
+  "review_file": "reviews/2026-11-01.md",
+  "date": "2026-11-01",
+  "note": "Round 2 (final round) CUT. Same topic as a flop (137 views); shames healthy comfort in a long relationship.",
+  "scores": {
+   "reach": 4,
+   "engagement": 4,
+   "relatability": 4
+  }
  }
 }
