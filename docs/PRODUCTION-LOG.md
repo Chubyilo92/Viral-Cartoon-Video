@@ -1117,3 +1117,54 @@ strongest holds (boy_never_apologizes_first 6.7/35%, girl_sleeps_on_your_side 6.
 after publish (original music is the only protection, as before).
 
 Next empty slot: Sun 1 Nov 18:00. The scheduled task runs Wed 06:12.
+
+## 1 Nov 2026 (later): round 3 authorised live by Chuby — 5 more videos scheduled
+
+After the run above, Chuby asked in the session for brand-new scripts. That is a third review round, beyond
+RULES.md §4's "second round once", taken on his explicit instruction. The floor was NOT changed (avg ≥ 7.0 AND
+P(1k) ≥ 35%). Ten new scripts were written to the pattern both earlier reviews said the winners share: a
+behaviour that LOOKS bad, reframed as love, with varied structure and no tautological warning line. They went
+to a FRESH reviewer subagent (opus) that had seen neither the earlier rounds nor the writer's notes. Raw
+answer verbatim in `reviews/2026-11-01.md#round-3`.
+
+**Approved 5 of 10** (fixes applied word for word): girl_are_you_mad 8.3/45%, girl_sends_you_tiktoks 8.0/40%,
+boy_quiet_when_you_cry 7.7/40%, girl_cold_feet 7.7/38%, girl_no_makeup 7.3/35%. Held: boy_text_me_when_home
+6.7/30%, girl_screenshots_your_texts 6.7/28%, boy_teases_you 6.3/27%, girl_makes_you_watch_her_show 6.3/25%.
+Cut: girl_hair_ties_everywhere 6.0/25%.
+
+**Gate catches this round:**
+- girl_are_you_mad line 2 ("ok" vs "okay 😊"): Kokoro read it as "okay instead of okay smiling face with
+  smiling eyes". Sent back to the same reviewer, who supplied a read-aloud replacement and re-scored it
+  (8.7/47% → 8.3/45%).
+- voicecheck: girl_are_you_mad L2 rising ending (+13%) → LINE_SPEED {1: 1.05}; boy_quiet_when_you_cry L2
+  pace 3.7 w/s → {1: 0.8}; girl_cold_feet L7 pace 3.7 → {6: 0.8}; girl_sends_you_tiktoks L7 low word match
+  ("DMs") → {6: 0.85}. All re-rendered, 0 FLAGs.
+- preflight refused girl_are_you_mad until voicecheck was clean.
+- Frame checks fixed: phone overlapping the title (are_you_mad); caption clipped at the left edge and phone
+  text overflowing (tiktoks); water glass over the boy's cheek, boy covering her face, search text broken
+  mid-word (quiet_cry); title running off both edges, ear clipped, mug over the boy's face, bubble off the
+  edge (no_makeup).
+- End-card caption split "a.m." into "the seven a" / "m" (no_makeup, tiktoks): IG_LINE reworded (not part
+  of the reviewed text) and the IG cut rebuilt.
+
+**Scheduled** (approval → preview + frames → build TT_COUNT=6 → voicecheck 0 FLAGs → preflight → push
+JJCutecouple `0bfc83870bf8fe81081cc9158057982e5e16c689` → preflight --url sha256 match → createScheduledPost →
+read-back: caption, time, providers, draft:false and 1 media item all correct):
+
+| Slot | Slug | Reviewer avg / P(1k) | File sha256 (IG / TT) | Frames looked at |
+|---|---|---|---|---|
+| Sun 1 Nov 18:05 IG+FB / 18:14 TT | girl_are_you_mad | 8.3 / 45% | 49e68162c8d94ef2 / 5dfab32a4e5dd9c2 | preview pv_0..6 (twice, after fixes), ig_f0-5, tt_f0-5 |
+| Mon 2 Nov 10:05 / 10:14 | boy_quiet_when_you_cry | 7.7 / 40% | 9a40b762ce6d2195 / e1468b2bbdb1569c | preview pv_0..6 (twice), ig_f0-5, tt_f0-5 |
+| Mon 2 Nov 18:05 / 18:14 | girl_no_makeup | 7.3 / 35% | b3ff0400ba393c9e / a188354ee543d840 | preview pv_0..6 (twice), ig_f0-5, tt_f0-5 |
+| Tue 3 Nov 18:05 / 18:14 | girl_cold_feet | 7.7 / 38% | a75152f7f5de4c65 / 6a25c9c7a6219f46 | preview pv_0..6, ig_f0-5, tt_f0-5 |
+| Sat 7 Nov 18:05 / 18:14 | girl_sends_you_tiktoks | 8.0 / 40% | 2d9abdb440aa835a / 360d53d3b4d13cf5 | preview pv_0..6 (twice), ig_f0-5, tt_f0-5 |
+
+girl_sends_you_tiktoks is on Sat 7 Nov rather than earlier because of the reviewer's batch note: no more than
+two "the day she stops X… she's not Y" twists within a week (the hoodie video went out 31 Oct; cold_feet goes
+out 3 Nov). man_who_listens (10:05/10:14 today) has already PUBLISHED on IG, FB and TikTok.
+
+**Still empty:** Tue 3 Nov 10:00, Wed 4 Nov 10:00 & 18:00, Thu 5 Nov 10:00 & 18:00 (plus Fri 6 and Sat 7
+10:00). The Wed 06:12 run fills from Wed 10:00. Held scripts are recorded with their reviewer fixes if a future
+batch wants them.
+
+Next empty slot: Tue 3 Nov 10:00 (the next scheduled run starts at Wed 4 Nov 10:00).

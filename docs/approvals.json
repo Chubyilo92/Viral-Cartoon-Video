@@ -581,5 +581,185 @@
    "engagement": 4,
    "relatability": 4
   }
+ },
+ "girl_are_you_mad": {
+  "sha256": "fc32ea1894e5da65596c0be75a4483d2dd73ba1f5119075c9886061fb773574b",
+  "status": "approved",
+  "reviewer_avg": 8.33,
+  "p_1k": 0.45,
+  "review_file": "reviews/2026-11-01.md#round-3",
+  "date": "2026-11-01",
+  "note": "Round 3, authorised live by Chuby on 1 Nov after rounds 1-2 produced nothing (floor unchanged). Reviewer SHIP WITH FIXES: line 5 fix applied word for word; line 2 replaced by the reviewer for read-aloud (TTS read 'ok'/'okay' identically and spoke the emoji name). Reviewer re-scored after the line-2 change: 8.3 / 45% (was 8.7 / 47%).",
+  "scores": {
+   "reach": 8,
+   "engagement": 8,
+   "relatability": 9
+  },
+  "text": [
+   "When a girl asks \"are you mad at me?\" for the third time, she's not being annoying.",
+   "You replied with one word instead of your usual paragraph, and she noticed.",
+   "She's already gone back through your last ten messages looking for what she did.",
+   "She'll say sorry for something she's not even sure happened.",
+   "If you're the girl who asks... send this to the one you keep asking.",
+   "But if you keep saying \"I'm fine\" when you're not... you're not protecting her. You're making her guess.",
+   "Because a girl who asks if you're mad... just wants to fix it before it gets bigger."
+  ]
+ },
+ "girl_sends_you_tiktoks": {
+  "sha256": "cfb86858270dfcc7786c3b657a6e72d58ea0257da4fb66019d28966bb84c1938",
+  "status": "approved",
+  "reviewer_avg": 8.0,
+  "p_1k": 0.4,
+  "review_file": "reviews/2026-11-01.md#round-3",
+  "date": "2026-11-01",
+  "note": "Round 3, authorised live by Chuby on 1 Nov after rounds 1-2 produced nothing (floor unchanged). Reviewer SHIP WITH FIXES: line 6 replaced word for word.",
+  "scores": {
+   "reach": 7,
+   "engagement": 8,
+   "relatability": 9
+  },
+  "text": [
+   "When a girl sends you fifteen TikToks a day, she's not spamming you.",
+   "Every single one is a little \"this is literally us.\"",
+   "She sends the funny ones at 2am, knowing you're asleep, so they're the first thing you see.",
+   "And she checks if you've watched them. Every time.",
+   "If your DMs are full of her videos... send her this one back.",
+   "But the day she stops sending them... she didn't run out of videos. She just stopped seeing you in them.",
+   "Because a girl who floods your DMs... sees you in everything."
+  ]
+ },
+ "boy_quiet_when_you_cry": {
+  "sha256": "0a46979e09e80730c5c90e48f4da58570fdd0e0c85f489641da0a4232bb34f3a",
+  "status": "approved",
+  "reviewer_avg": 7.67,
+  "p_1k": 0.4,
+  "review_file": "reviews/2026-11-01.md#round-3",
+  "date": "2026-11-01",
+  "note": "Round 3, authorised live by Chuby on 1 Nov after rounds 1-2 produced nothing (floor unchanged). Reviewer SHIP, no changes.",
+  "scores": {
+   "reach": 7,
+   "engagement": 8,
+   "relatability": 8
+  },
+  "text": [
+   "When a boy goes quiet while you cry, he's not being cold.",
+   "He doesn't know what to say, so he gets you a glass of water.",
+   "He sits close enough that his shoulder touches yours, and stays there.",
+   "Later, when you're not looking, he googles \"how to help when she's sad.\"",
+   "If he tries like this... send this to the boy who doesn't always get it right.",
+   "But if he ever tells you to stop crying... he's thinking about himself, not you.",
+   "Because a boy who goes quiet when you cry... is trying so hard not to say the wrong thing."
+  ]
+ },
+ "girl_cold_feet": {
+  "sha256": "ff720c18d13ff5049b25b60715308253ec15337a96333a751fa2039d326035e9",
+  "status": "approved",
+  "reviewer_avg": 7.67,
+  "p_1k": 0.38,
+  "review_file": "reviews/2026-11-01.md#round-3",
+  "date": "2026-11-01",
+  "note": "Round 3, authorised live by Chuby on 1 Nov after rounds 1-2 produced nothing (floor unchanged). Reviewer SHIP WITH FIXES: line 6 (reviewer's simpler option) and line 7 replaced word for word.",
+  "scores": {
+   "reach": 7,
+   "engagement": 7,
+   "relatability": 9
+  },
+  "text": [
+   "When a girl puts her freezing feet on you in bed, she's not trying to annoy you.",
+   "She waits until you're almost asleep. Then she does it.",
+   "She'll swear her feet aren't that cold... while you jump out of your skin.",
+   "And she'll do it every single night until spring.",
+   "If you've been her hot water bottle all winter... send this to her.",
+   "But the night she keeps her socks on and stays on her own side... it's not her feet that went cold.",
+   "Because a girl who puts her cold feet on you... just wants to be as close to you as she can get."
+  ]
+ },
+ "girl_no_makeup": {
+  "sha256": "8b7bf8320a8bd9f6cf90dc0bf4b9d6e7c262bb446f4df50e670c420528ecef69",
+  "status": "approved",
+  "reviewer_avg": 7.33,
+  "p_1k": 0.35,
+  "review_file": "reviews/2026-11-01.md#round-3",
+  "date": "2026-11-01",
+  "note": "Round 3, authorised live by Chuby on 1 Nov after rounds 1-2 produced nothing (floor unchanged). Reviewer SHIP, no changes.",
+  "scores": {
+   "reach": 7,
+   "engagement": 7,
+   "relatability": 8
+  },
+  "text": [
+   "When a girl stops wearing makeup around you, she hasn't stopped trying.",
+   "She used to fix her hair before she opened the door. Now she answers it in pyjamas with spot cream on her chin.",
+   "She lets you see her at 7am, before coffee, before anything.",
+   "She falls asleep next to you with a face mask still on.",
+   "If she's stopped hiding anything from you... send this to her.",
+   "But if you ever make a joke about how she looks without it... watch how fast the makeup goes back on.",
+   "Because a girl who stops dressing up for you... feels at home with you."
+  ]
+ },
+ "boy_text_me_when_home": {
+  "status": "hold",
+  "reviewer_avg": 6.67,
+  "p_1k": 0.3,
+  "review_file": "reviews/2026-11-01.md#round-3",
+  "date": "2026-11-01",
+  "note": "Round 3, authorised live by Chuby on 1 Nov after rounds 1-2 produced nothing (floor unchanged). SHIP WITH FIXES (lines 5, 6) but below the 7.0 floor.",
+  "scores": {
+   "reach": 6,
+   "engagement": 7,
+   "relatability": 7
+  }
+ },
+ "girl_screenshots_your_texts": {
+  "status": "hold",
+  "reviewer_avg": 6.67,
+  "p_1k": 0.28,
+  "review_file": "reviews/2026-11-01.md#round-3",
+  "date": "2026-11-01",
+  "note": "Round 3, authorised live by Chuby on 1 Nov after rounds 1-2 produced nothing (floor unchanged). SHIP WITH FIXES (line 7) but below floor; clone risk of the 'first message saved' winner.",
+  "scores": {
+   "reach": 6,
+   "engagement": 6,
+   "relatability": 8
+  }
+ },
+ "boy_teases_you": {
+  "status": "hold",
+  "reviewer_avg": 6.33,
+  "p_1k": 0.27,
+  "review_file": "reviews/2026-11-01.md#round-3",
+  "date": "2026-11-01",
+  "note": "Round 3, authorised live by Chuby on 1 Nov after rounds 1-2 produced nothing (floor unchanged). SHIP WITH FIXES (line 1), low priority, below floor; 'mean because he likes you' trope risk.",
+  "scores": {
+   "reach": 6,
+   "engagement": 6,
+   "relatability": 7
+  }
+ },
+ "girl_makes_you_watch_her_show": {
+  "status": "hold",
+  "reviewer_avg": 6.33,
+  "p_1k": 0.25,
+  "review_file": "reviews/2026-11-01.md#round-3",
+  "date": "2026-11-01",
+  "note": "Round 3, authorised live by Chuby on 1 Nov after rounds 1-2 produced nothing (floor unchanged). SHIP WITH FIXES (line 6), backup only, below floor.",
+  "scores": {
+   "reach": 5,
+   "engagement": 6,
+   "relatability": 8
+  }
+ },
+ "girl_hair_ties_everywhere": {
+  "status": "cut",
+  "reviewer_avg": 6.0,
+  "p_1k": 0.25,
+  "review_file": "reviews/2026-11-01.md#round-3",
+  "date": "2026-11-01",
+  "note": "Round 3, authorised live by Chuby on 1 Nov after rounds 1-2 produced nothing (floor unchanged). CUT: 'messy' barely looks bad; twist clones the hoodie video.",
+  "scores": {
+   "reach": 5,
+   "engagement": 6,
+   "relatability": 7
+  }
  }
 }
