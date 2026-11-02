@@ -26,9 +26,15 @@ edit a threshold, approval or record to make something pass.**
   gates below are the only protection.
 - Never delete posts. Never re-enable drafts, including the 25 Oct batch (#67-71) and the 18 Oct trait
   videos. Ads are paused: no #ad videos.
-- **vidIQ (changed 1 Nov 2026, Chuby):** the 30 Oct ban is lifted. Use vidIQ for research (outliers in the
-  niche, what 10K-100K videos do) whenever it is connected. If it isn't connected, say so in the report and
-  carry on without it.
+- **vidIQ (2 Nov 2026, Chuby: "you can use it for inspiration for what works, but you must pass it by me
+  first"):** vidIQ may be used for inspiration and research only (niche outliers, what 10K-100K videos do).
+  **Every use needs Chuby's OK first**: say which call you want to make, why, and what it costs in
+  credits, then wait for his yes. Never call vidIQ without that approval, including "free" or
+  balance-check calls.
+  - **Scheduled/unattended runs never call vidIQ**, because nobody is there to approve it. If vidIQ data
+    would help, put the proposed call(s), the reason and the credit cost in the run's push notification
+    for Chuby to approve next time he's in a session.
+  - This replaces the 30 Oct total ban and the 1 Nov "use whenever connected" wording.
 
 ## 2. Formats
 
