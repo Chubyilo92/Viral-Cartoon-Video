@@ -763,6 +763,7 @@
   }
  },
  "girl_steals_bites_off_your_plate": {
+  "sha256": "59aeba00be6946aedbdc65c7af096bc051952b639482499181237c5aace33758",
   "status": "approved",
   "reviewer_avg": 7.33,
   "p_1k": 0.4,
@@ -785,6 +786,7 @@
   ]
  },
  "boy_falls_asleep_on_you": {
+  "sha256": "ea9b8dd42b13abd59c0091dc4d451bc8f31e9ce4f01d243b9deecfab82bc1a85",
   "status": "approved",
   "reviewer_avg": 7.0,
   "p_1k": 0.35,
@@ -871,6 +873,7 @@
   "note": "Round 1 CUT. Anxious-trait hook in the same lane as flops (are_you_mad 133, quiet_when_you_cry 118); romanticises compulsive apologising (brand-tone risk)."
  },
  "girl_overpacks_for_trips": {
+  "sha256": "cce288b4b77dec8c50833fc798e3d3658596849e1baab6ac81cefe5b37e8ad5a",
   "status": "approved",
   "reviewer_avg": 7.0,
   "p_1k": 0.4,
@@ -893,6 +896,7 @@
   ]
  },
  "girl_leaves_cupboard_doors_open": {
+  "sha256": "77daf430bda7cf290999e4b6d27b1defb6e1b0a0347b568a2ca08345179bee77",
   "status": "approved",
   "reviewer_avg": 7.0,
   "p_1k": 0.38,
@@ -979,6 +983,7 @@
   "note": "Round 2 CUT. Invented unverifiable psychology; romanticises anxiety/not-feeling-safe, same lane as 118/133-view flops."
  },
  "girl_calls_for_no_reason": {
+  "sha256": "b624b334f7a309b26758c7cb422a78f1867db76cb416dc01bff3f820f89734cf",
   "status": "approved",
   "reviewer_avg": 7.33,
   "p_1k": 0.38,
