@@ -761,5 +761,315 @@
    "engagement": 6,
    "relatability": 7
   }
+ },
+ "girl_steals_bites_off_your_plate": {
+  "status": "approved",
+  "reviewer_avg": 7.33,
+  "p_1k": 0.4,
+  "review_file": "reviews/2026-11-04.md",
+  "date": "2026-11-04",
+  "note": "Round 1 (scheduled run). Reviewer SHIP WITH FIXES: lines 1,2,5,6,7 replaced word for word. Reviewer: 'publish this one first.'",
+  "scores": {
+   "reach": 7,
+   "engagement": 7,
+   "relatability": 8
+  },
+  "text": [
+   "When a girl says she's \"not hungry\" and then eats half your chips, she's not stealing your food.",
+   "She'd never touch her friends' food. Only yours.",
+   "She \"just wants a bite,\" and the bite turns into a third of the meal.",
+   "She still insists she wasn't that hungry, with your fork in her hand.",
+   "If you've started ordering extra chips just for her... send this to her.",
+   "But the day she orders her own and doesn't touch yours... she's not finally full. She's keeping her distance.",
+   "Because a girl who eats off your plate... feels close enough to you to stop pretending she's not hungry."
+  ]
+ },
+ "boy_falls_asleep_on_you": {
+  "status": "approved",
+  "reviewer_avg": 7.0,
+  "p_1k": 0.35,
+  "review_file": "reviews/2026-11-04.md",
+  "date": "2026-11-04",
+  "note": "Round 1 (scheduled run). Reviewer SHIP WITH FIXES: lines 3,4,5,6 replaced word for word. Approved exactly at the 7.0/35% floor.",
+  "scores": {
+   "reach": 7,
+   "engagement": 6,
+   "relatability": 8
+  },
+  "text": [
+   "When a boy falls asleep on the sofa with you, he's not being boring.",
+   "He fights it for ten minutes, eyes closing mid-sentence, still trying to listen.",
+   "He's slept five hours a night all week, and this is the first time he's sat still.",
+   "He wakes up saying \"I'm watching, I'm watching\" with his eyes still shut.",
+   "If he's never once made it to the end of a film with you... send this to him.",
+   "But the night he sits at the other end of the sofa, wide awake on his phone... he's not less tired. He just can't switch off around you anymore.",
+   "Because a boy who falls asleep on you... finally feels safe enough to stop holding it together."
+  ]
+ },
+ "girl_baby_voices_the_dog": {
+  "status": "hold",
+  "reviewer_avg": 6.33,
+  "p_1k": 0.3,
+  "review_file": "reviews/2026-11-04.md",
+  "date": "2026-11-04",
+  "note": "Round 1. SHIP WITH FIXES (lines 1,3,4,5,7) but below the 7.0 floor."
+ },
+ "boy_always_loses_his_keys": {
+  "status": "hold",
+  "reviewer_avg": 6.33,
+  "p_1k": 0.28,
+  "review_file": "reviews/2026-11-04.md",
+  "date": "2026-11-04",
+  "note": "Round 1. SHIP WITH FIXES (lines 1,2,6) but below the 7.0 floor."
+ },
+ "girl_finishes_your_sentences": {
+  "status": "hold",
+  "reviewer_avg": 5.33,
+  "p_1k": 0.2,
+  "review_file": "reviews/2026-11-04.md",
+  "date": "2026-11-04",
+  "note": "Round 1. SHIP WITH FIXES (lines 2,4,6) but below the 7.0 floor."
+ },
+ "boy_hums_off_key": {
+  "status": "hold",
+  "reviewer_avg": 4.33,
+  "p_1k": 0.15,
+  "review_file": "reviews/2026-11-04.md",
+  "date": "2026-11-04",
+  "note": "Round 1. SHIP WITH FIXES (lines 1,2,6,7) but reviewer called it filler-tier; well below floor."
+ },
+ "girl_talks_with_her_hands": {
+  "status": "cut",
+  "reviewer_avg": 4.33,
+  "p_1k": 0.12,
+  "review_file": "reviews/2026-11-04.md",
+  "date": "2026-11-04",
+  "note": "Round 1 CUT. Borderline personality-trait hook (trait hooks score 0 for ~20 scripts); twist borrowed from the makeup winner."
+ },
+ "girl_always_the_designated_driver": {
+  "status": "cut",
+  "reviewer_avg": 3.33,
+  "p_1k": 0.08,
+  "review_file": "reviews/2026-11-04.md",
+  "date": "2026-11-04",
+  "note": "Round 1 CUT. No 'looks bad' to reframe (pure trait hook); drink-driving adjacency is a distribution/brand risk."
+ },
+ "boy_always_20_minutes_late": {
+  "status": "cut",
+  "reviewer_avg": 3.33,
+  "p_1k": 0.07,
+  "review_file": "reviews/2026-11-04.md",
+  "date": "2026-11-04",
+  "note": "Round 1 CUT. Beats read as fantasy/invented; line 6 excuses disrespect of partner's time (brand risk)."
+ },
+ "boy_always_says_sorry_for_things_that_arent_his_fault": {
+  "status": "cut",
+  "reviewer_avg": 3.0,
+  "p_1k": 0.05,
+  "review_file": "reviews/2026-11-04.md",
+  "date": "2026-11-04",
+  "note": "Round 1 CUT. Anxious-trait hook in the same lane as flops (are_you_mad 133, quiet_when_you_cry 118); romanticises compulsive apologising (brand-tone risk)."
+ },
+ "girl_overpacks_for_trips": {
+  "status": "approved",
+  "reviewer_avg": 7.0,
+  "p_1k": 0.4,
+  "review_file": "reviews/2026-11-04.md#round-2",
+  "date": "2026-11-04",
+  "note": "Round 2 (fresh reviewer, separate from round 1). SHIP WITH FIXES: lines 2,5,6,7 replaced word for word. Reviewer: 'ship this one first.'",
+  "scores": {
+   "reach": 7,
+   "engagement": 7,
+   "relatability": 7
+  },
+  "text": [
+   "When a girl packs five \"just in case\" outfits for a two-day trip, she's not being extra.",
+   "Half that suitcase is your charger, your paracetamol and the socks you forgot.",
+   "She packs a tiny first-aid kit that's bailed you out more times than either of you can count.",
+   "She still swears she \"barely packed anything\" while the zipper strains to close.",
+   "If she's the reason you've never once been without a charger on holiday... send this to her.",
+   "But the trip she packs light and there's nothing of yours in her bag... she's not travelling lighter. She's stopped planning for you.",
+   "Because a girl who overpacks for every trip... is packing for two."
+  ]
+ },
+ "girl_leaves_cupboard_doors_open": {
+  "status": "approved",
+  "reviewer_avg": 7.0,
+  "p_1k": 0.38,
+  "review_file": "reviews/2026-11-04.md#round-2",
+  "date": "2026-11-04",
+  "note": "Round 2 (fresh reviewer, separate from round 1). SHIP WITH FIXES: lines 6,7 replaced word for word.",
+  "scores": {
+   "reach": 7,
+   "engagement": 7,
+   "relatability": 7
+  },
+  "text": [
+   "When a girl leaves every cupboard door open behind her, she's not being careless.",
+   "She grabs what she needs and moves straight on to the next thing, door still swinging.",
+   "You're the one who closes them, every time, without her ever noticing.",
+   "She never once does it at her mum's house, where everything still has to look perfect.",
+   "If you've become the designated door-closer in your own home... send this to her.",
+   "But the day you walk in and every single door is shut... she's not finally being tidy. She's started acting like a guest again.",
+   "Because a girl who leaves every door open around you... has stopped acting like a guest in your home."
+  ]
+ },
+ "boy_spoils_his_own_favourite_films": {
+  "status": "hold",
+  "reviewer_avg": 6.0,
+  "p_1k": 0.28,
+  "review_file": "reviews/2026-11-04.md#round-2",
+  "date": "2026-11-04",
+  "note": "Round 2. SHIP WITH FIXES (lines 3,6,7) but below the 7.0 floor."
+ },
+ "girl_laughs_at_her_own_jokes_first": {
+  "status": "hold",
+  "reviewer_avg": 5.7,
+  "p_1k": 0.22,
+  "review_file": "reviews/2026-11-04.md#round-2",
+  "date": "2026-11-04",
+  "note": "Round 2. SHIP WITH FIXES (lines 4,7) but below the 7.0 floor."
+ },
+ "boy_takes_forever_to_get_ready": {
+  "status": "hold",
+  "reviewer_avg": 4.7,
+  "p_1k": 0.18,
+  "review_file": "reviews/2026-11-04.md#round-2",
+  "date": "2026-11-04",
+  "note": "Round 2. SHIP WITH FIXES (lines 3,4,5,6,7) but well below the floor; narrow recognisable audience."
+ },
+ "girl_photographs_the_boring_moments": {
+  "status": "hold",
+  "reviewer_avg": 4.3,
+  "p_1k": 0.15,
+  "review_file": "reviews/2026-11-04.md#round-2",
+  "date": "2026-11-04",
+  "note": "Round 2. SHIP WITH FIXES (lines 2,4,6,7) but below floor; breaks the 'looks bad first' rule."
+ },
+ "boy_forgets_to_put_the_seat_down": {
+  "status": "cut",
+  "reviewer_avg": 5.3,
+  "p_1k": 0.15,
+  "review_file": "reviews/2026-11-04.md#round-2",
+  "date": "2026-11-04",
+  "note": "Round 2 CUT as written: line 6 treats a partner improving as evidence of guilt (brand risk/suspicion-advice); line 2 reads as not washing hands."
+ },
+ "girl_narrates_everything_she_does": {
+  "status": "cut",
+  "reviewer_avg": 3.7,
+  "p_1k": 0.12,
+  "review_file": "reviews/2026-11-04.md#round-2",
+  "date": "2026-11-04",
+  "note": "Round 2 CUT. Behaviour is never about the partner, so the love reframe has nothing to stand on; close to a trait hook."
+ },
+ "boy_impulse_buys_weird_gadgets": {
+  "status": "cut",
+  "reviewer_avg": 2.7,
+  "p_1k": 0.06,
+  "review_file": "reviews/2026-11-04.md#round-2",
+  "date": "2026-11-04",
+  "note": "Round 2 CUT. Beats self-contradict (buys only for her vs. impulse-buys for himself; uses in secret vs. hopes she notices); romanticises impulsive spending."
+ },
+ "girl_rearranges_the_cushions": {
+  "status": "cut",
+  "reviewer_avg": 2.7,
+  "p_1k": 0.05,
+  "review_file": "reviews/2026-11-04.md#round-2",
+  "date": "2026-11-04",
+  "note": "Round 2 CUT. Invented unverifiable psychology; romanticises anxiety/not-feeling-safe, same lane as 118/133-view flops."
+ },
+ "girl_calls_for_no_reason": {
+  "status": "approved",
+  "reviewer_avg": 7.33,
+  "p_1k": 0.38,
+  "review_file": "reviews/2026-11-04.md#round-3",
+  "date": "2026-11-04",
+  "note": "Round 3 (final allowed round; fresh reviewer, separate from rounds 1-2). SHIP WITH FIXES: lines 2,5 replaced word for word.",
+  "scores": {
+   "reach": 7,
+   "engagement": 7,
+   "relatability": 8
+  },
+  "text": [
+   "When a girl calls you in the middle of the afternoon for no reason at all, she's not checking up on you.",
+   "She just wants to tell you about a dog she saw on the walk home.",
+   "She stays on the call in silence while she does the washing up, just so the kitchen isn't quiet.",
+   "She hangs up the second you sound busy, before you've even said that you are.",
+   "If you've heard about more random dogs on the phone than you've ever met in real life... send this to her.",
+   "But the week she stops calling for no reason at all... she's not finally respecting your time. She's stopped wanting to share the small stuff with you.",
+   "Because a girl who calls you for nothing... just wants you there for everything, even the boring parts."
+  ]
+ },
+ "boy_tells_the_same_stories": {
+  "status": "hold",
+  "reviewer_avg": 6.67,
+  "p_1k": 0.32,
+  "review_file": "reviews/2026-11-04.md#round-3",
+  "date": "2026-11-04",
+  "note": "Round 3. SHIP WITH FIXES (lines 6,7) but below floor; closest hold across all 3 rounds, best candidate for a future batch."
+ },
+ "boy_orders_dessert_to_share": {
+  "status": "hold",
+  "reviewer_avg": 6.33,
+  "p_1k": 0.27,
+  "review_file": "reviews/2026-11-04.md#round-3",
+  "date": "2026-11-04",
+  "note": "Round 3. SHIP WITH FIXES (lines 1,3,5,6,7) but below floor; flagged as a near-clone lane of girl_steals_bites_off_your_plate (approved round 1) — space apart if ever built."
+ },
+ "boy_snores": {
+  "status": "hold",
+  "reviewer_avg": 6.0,
+  "p_1k": 0.25,
+  "review_file": "reviews/2026-11-04.md#round-3",
+  "date": "2026-11-04",
+  "note": "Round 3. SHIP WITH FIXES (lines 4,6,7) but below floor."
+ },
+ "girl_checks_the_weather_for_you": {
+  "status": "hold",
+  "reviewer_avg": 5.67,
+  "p_1k": 0.22,
+  "review_file": "reviews/2026-11-04.md#round-3",
+  "date": "2026-11-04",
+  "note": "Round 3. SHIP WITH FIXES (line 7, which as drafted framed control as love) but below floor."
+ },
+ "boy_steals_the_aux_cord": {
+  "status": "hold",
+  "reviewer_avg": 5.67,
+  "p_1k": 0.2,
+  "review_file": "reviews/2026-11-04.md#round-3",
+  "date": "2026-11-04",
+  "note": "Round 3. SHIP WITH FIXES (lines 3,5,6) but below floor; low priority."
+ },
+ "boy_wears_the_same_five_shirts": {
+  "status": "cut",
+  "reviewer_avg": 5.0,
+  "p_1k": 0.12,
+  "review_file": "reviews/2026-11-04.md#round-3",
+  "date": "2026-11-04",
+  "note": "Round 3 CUT. Fantasy-boyfriend beats; line 6 teaches 'a new shirt is a red flag' (paranoia/control brand risk)."
+ },
+ "boy_leaves_wet_towel_on_the_bed": {
+  "status": "cut",
+  "reviewer_avg": 4.67,
+  "p_1k": 0.1,
+  "review_file": "reviews/2026-11-04.md#round-3",
+  "date": "2026-11-04",
+  "note": "Round 3 CUT. Excuses unequal domestic chore load as the love story (brand risk); invented psychology; weaponised-incompetence beat."
+ },
+ "girl_takes_long_showers": {
+  "status": "cut",
+  "reviewer_avg": 4.0,
+  "p_1k": 0.08,
+  "review_file": "reviews/2026-11-04.md#round-3",
+  "date": "2026-11-04",
+  "note": "Round 3 CUT. Not a love reframe — a self-care thesis that explicitly excludes the partner; romanticises burnout."
+ },
+ "boy_stops_for_street_performers": {
+  "status": "cut",
+  "reviewer_avg": 3.0,
+  "p_1k": 0.05,
+  "review_file": "reviews/2026-11-04.md#round-3",
+  "date": "2026-11-04",
+  "note": "Round 3 CUT. Personality-trait hook (trait hooks score 0 for ~20 scripts); love connection bolted on at the last two words; money-strain and mental-health-decline undertones."
  }
 }
