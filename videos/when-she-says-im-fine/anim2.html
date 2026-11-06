@@ -313,7 +313,7 @@ function caption(txt,k,alpha){
   ctx.save();ctx.globalAlpha=alpha;ctx.translate(540,1520);const sc=.78+.22*back(k);ctx.scale(sc,sc);
   const[tx,em]=splitEmoji(txt);ctx.font='bold 82px Poppins';ctx.textBaseline='middle';
   const tw=ctx.measureText(tx).width;ctx.font='74px "Noto Color Emoji"';const ew=em?ctx.measureText(em).width+18:0;
-  const x0=-(tw+ew)/2;ctx.font='bold 82px Poppins';ctx.textAlign='left';
+  const x0=-(tw+ew)/2;{const fit=Math.min(1,960/(tw+ew+18));if(fit<1)ctx.scale(fit,fit);}ctx.font='bold 82px Poppins';ctx.textAlign='left';
   ctx.lineJoin='round';ctx.strokeStyle='#2c1d13';ctx.lineWidth=18;ctx.strokeText(tx,x0,0);ctx.fillStyle='#fffaf0';ctx.fillText(tx,x0,0);
   if(em){ctx.font='74px "Noto Color Emoji"';ctx.fillText(em,x0+tw+18,4);}
   ctx.restore();}

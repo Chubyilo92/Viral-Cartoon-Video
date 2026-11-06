@@ -1256,3 +1256,37 @@ that would otherwise have filled some of these were deliberately deferred to wee
 (see above). Held scripts above are recorded with their reviewer fixes if a future batch wants them.
 
 Next empty slot: Wed 4 Nov 18:00 (the next scheduled run starts Sun 8 Nov 06:12).
+
+## 6 Nov 2026: gap investigation, re-check of the 4 deferred videos, new gates (manual session with Chuby)
+
+**Why days were empty:** the 4 Nov run approved 5 of 30 scripts; all 5 shared the "the day she stops X"
+twist, so the 7-day spacing rule pushed 4 of them to 14/21/28 Nov and 5 Dec. Combined with runs that only
+filled 4 days ahead twice a week and no backlog, 3-8 Nov had 7+ empty slots (incl. Fri 6 Nov both).
+
+**Re-check of the 4 deferred videos (final files):** scripts re-read cold — all four make sense
+(setup → real line-6 turn → payoff). Speech recognition on the final mix: every line 62-100% words matched
+(floor 45%). Frames at full size:
+- girl_steals_bites_off_your_plate: PASS → moved to **Fri 6 Nov 18:05/18:14** (same Metricool media).
+- girl_overpacks_for_trips: FAIL ("barely packed anything" label off the left edge; boy clipped right).
+- girl_leaves_cupboard_doors_open: FAIL (boy cut off at the right edge in the twist scene).
+- girl_calls_for_no_reason: FAIL (blue block over the girl's mouth on "the washing up" read as a face mask;
+  no sink). Also found: long caption chunks ("she's not being careless", "the designated door-closer")
+  ran off the frame edges.
+
+**Fixes:** scene code only (BODY_LINES unchanged, approval.py check still "approved"): label moved on-screen,
+pups repositioned, a real sink with soap bubbles drawn for the washing-up scene; caption() in both anim
+html files now auto-shrinks any chunk wider than 960 px. Rebuilt (TT_COUNT=7), voicecheck 0 FLAGs,
+new watchcheck.py PASS on all 6 cuts, structure review of watch sheets PASS, preflight + --url sha256 PASS.
+JJCutecouple commit 3cfd6dab06208fcbe5248b01c3ff0a94b81a9b20. Old 21/28 Nov, 5 Dec files left in place.
+
+| Slot | Slug | File sha256 (IG / TT) |
+|---|---|---|
+| Fri 6 Nov 18:05 / 18:14 | girl_steals_bites_off_your_plate | unchanged (bec731de9a9c2fe3 / 76beefe5edf7b338) |
+| Sun 8 Nov 18:05 / 18:14 | girl_overpacks_for_trips (v2) | adef20e0e08792c7 / d59af1dddea01333 |
+| Tue 10 Nov 18:05 / 18:14 | girl_leaves_cupboard_doors_open (v2) | 62a8f19fe5793068 / 09c6a8ee97a81908 |
+| Thu 12 Nov 18:05 / 18:14 | girl_calls_for_no_reason (v2) | 7828ed0d3a7fa4b4 / 06ace9bfcb397c7b |
+
+All read back: captions identical, times right, draft false, one media item each.
+Same-twist videos now sit ≥ 48 h apart except steals_bites (Fri 18:00) → tiktoks (Sat 18:00), 24 h, accepted
+to fill tonight. **System changes:** RULES.md §4a twist families + 48 h spacing, §5 steps 3a/3b
+(watchcheck + structure reviewer), §5b daily gap-filling; scheduled task now daily, 7 days ahead.

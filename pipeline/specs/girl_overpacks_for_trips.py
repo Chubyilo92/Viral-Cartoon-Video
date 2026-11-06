@@ -21,9 +21,9 @@ BODY_LINES = [
 ]
 D = [
 '''  room('#cfe3ec','#98b6c2');
-  ''' + SUITCASE.replace('x,y', '620,G+10') + '''
-  pup({kind:'girl',x:340,y:G+10,s:1.25,look:[.4,-.2],eyes:'open',mouth:'flat',tilt:-.04});
-  pup({kind:'boy',x:850,y:G+10,s:1.15,flip:-1,look:[-.4,-.2],eyes:'wide',mouth:'o'});''',
+  ''' + SUITCASE.replace('x,y', '575,G+10') + '''
+  pup({kind:'girl',x:300,y:G+10,s:1.25,look:[.4,-.2],eyes:'open',mouth:'flat',tilt:-.04});
+  pup({kind:'boy',x:820,y:G+10,s:1.1,flip:-1,look:[-.4,-.2],eyes:'wide',mouth:'o'});''',
 '''  room('#e8d8c8','#c2a98f');
   ''' + SUITCASE.replace('x,y', '560,G+10') + '''
   pup({kind:'girl',x:340,y:G+10,s:1.25,look:[.5,-.3],eyes:'squint',mouth:'open',blush:.3});
@@ -39,7 +39,7 @@ D = [
   ctx.save();ctx.strokeStyle='#fff';ctx.globalAlpha=.5+Math.sin(u*14)*.3;ctx.lineWidth=3;
   for(let i=0;i<3;i++){ctx.beginPath();ctx.moveTo(560-40+i*40,G-220);ctx.lineTo(560-20+i*40,G-250);ctx.stroke();}ctx.restore();
   pup({kind:'girl',x:730,y:G+10,s:1.2,look:[-.3,-.4],eyes:'squint',mouth:'o',blush:.3});
-  if(u>.5){ctx.save();ctx.globalAlpha=win(u,.5,9);bubbleText(260,610,"barely packed anything 😇",1,.72);ctx.restore();}''',
+  if(u>.5){ctx.save();ctx.globalAlpha=win(u,.5,9);bubbleText(470,610,"barely packed anything 😇",1,.72);ctx.restore();}''',
 SHARE,
 '''  room('#6f6a78','#5a5562','rgba(255,255,255,.05)');
   ''' + SUITCASE.replace('x,y', '560,G+10') + '''

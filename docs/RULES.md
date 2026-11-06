@@ -1,4 +1,4 @@
-# RULES — the only binding rulebook for JJ puppy videos (28 Oct 2026, updated 1 Nov 2026)
+# RULES — the only binding rulebook for JJ puppy videos (28 Oct 2026, updated 1 Nov and 6 Nov 2026)
 
 **Precedence:** the scheduled task prompt → this file → everything else. Every other doc in this repo
 (BUILD-METHOD, GROWTH-STRATEGY, WINNERS-BLUEPRINT, SHORT-FORMAT, QA-CHECKLIST, PRODUCTION-LOG, SCRIPTS,
@@ -16,7 +16,7 @@ edit a threshold, approval or record to make something pass.**
 
 - Metricool brand **7128333** ("JJ - Cute puppies"): Instagram @jj_lovemonkey + Facebook (one post),
   TikTok @jjthelovemonkey (separate post). Timezone Europe/London.
-- Slots: **10:00 and 18:00 UK daily**. IG+FB post at :05, TikTok at :14.
+- Slots: **10:00 and 18:00 UK daily**. IG+FB post at :05, TikTok at :14. Filled up to 7 days ahead (§5b).
 - A slot is FILLED if any non-draft JJ post that isn't an #ad post exists within ±30 minutes of 10:00
   or 18:00. Drafts don't count. Never stack a post into a filled slot. Probe getScheduledPosts one day
   per call.
@@ -87,8 +87,19 @@ Only `pipeline/original_music.py` beds (synthesized in code). The phone-recorded
 - Don't use one skeleton for every script. Vary the beats (not "She'll / She'll / She'll").
 - Line 6 must be a real turn, never a restatement ("turns the light off… she's stopped waiting up" = FAIL).
   The strongest warnings turn on the VIEWER's behaviour ("if you keep saying 'I'm fine'…").
-- No two scripts with the same "the day she stops X… she's not Y, she's Z" twist within 7 days of each
-  other or of a published one. Schedule a later slot (beyond the 4-day window is fine) to keep them apart.
+- **Twist variety (changed 6 Nov 2026, Chuby).** The old 7-day spacing pushed 4 approved videos weeks
+  out (14 Nov-5 Dec) and left the week of 3-8 Nov with 7 empty slots, because all 5 approvals of 4 Nov
+  shared one twist. New rule, enforced at WRITING time, not scheduling time:
+  - Every round of ~10 drafts spans **at least 4 twist families, max 3 drafts per family**. Families:
+    (a) withdrawal warning — "the day she stops X… she's not Y, she's Z";
+    (b) only-with-you — she does it with you and never with anyone else, and why;
+    (c) hidden reason — the annoying thing is secretly protecting/helping you;
+    (d) viewer-turn — line 6 flips onto the viewer ("if you keep saying 'I'm fine'…");
+    (e) mirror — he/she has quietly started doing it too, and what that means.
+    Label each draft's family in the reviewer submission and in approvals.json (`"twist": "a"`).
+  - Scheduling: same family **max once per calendar day and at least 48 h apart**. Never push an approved
+    video more than 7 days out for spacing; if it can't fit within 7 days, it goes in the backlog
+    (approved, unscheduled) for the next run to use first.
 - **Read-aloud check BEFORE review:** run every line through Kokoro's phonemizer
   (`Kokoro(...).tokenizer.phonemize(line,'en-us')`). No emoji in BODY_LINES (Kokoro reads the emoji's name),
   no distinctions that exist only in spelling ("ok" vs "okay" sound identical). If a reviewed line fails
@@ -105,6 +116,20 @@ Only `pipeline/original_music.py` beds (synthesized in code). The phone-recorded
 3. Look at the frames: `work/<slug>/sheet.png` for shorts, `work/<slug>/*_f0..5.png` for long. Check
    for clipped puppies, text over faces, and props that don't match the line. Code can't enforce this,
    so name the frames you looked at in the log entry.
+3a. **Final-file gate (6 Nov 2026):** `python3 watchcheck.py <slug> out/<file>.mp4` for EACH cut must
+   exit 0. It runs speech recognition on the finished mix (every line ≥ 45% words recognised: catches a
+   line drowned by music or garbled) and fails if caption/label text touches the frame edge. Added after
+   three of the 4 Nov videos shipped with a label off the left edge, a puppy cut off at the right edge, and a
+   blue block over the girl's face that read as a face mask — all passed every earlier gate.
+3b. **Structure review (6 Nov 2026):** send `work/<slug>/watch_sheet.png` (one frame per line, in order)
+   plus the BODY_LINES to a FRESH reviewer subagent that has not seen the script before. It must answer
+   PASS/FAIL to each: (1) watched in order with sound, does the story make sense without the script?
+   (2) does every scene's picture match its line (props make sense: a sink for washing up, not a block
+   on the face)? (3) is anything over a face or cut off? (4) does line 6 land as a turn and line 7 pay it
+   off? (5) does the narration sound natural (from voicecheck.json: no rising statement endings, pace
+   1.8-3.6 w/s)? Any FAIL → fix the scene code (layout/props never need re-approval) and rebuild, or, if
+   the TEXT is the problem, send the line back to a reviewer. Save its answer to reviews/<date>.md.
+   Captions now auto-shrink to fit (caption() in the anim html), so long chunks can't run off the edge.
 4. `python3 preflight.py --file <mp4> --platform instagram|tiktok --format long|short --slug <slug>
    --caption-file <txt>` must exit 0. Run it once per post.
 5. Push the mp4 to JJCutecouple. Run preflight again with `--url <commit-pinned raw URL>`. That run
@@ -118,6 +143,19 @@ Only `pipeline/original_music.py` beds (synthesized in code). The phone-recorded
 
 Anything made outside the scheduled task (tests, one-offs, manual fixes) goes through the same steps
 1-8. No exceptions.
+
+## 5b. Gap filling — the channel must not go silent (6 Nov 2026, Chuby)
+
+- The batch task runs **every day at 06:12 UK** and looks **7 days ahead** (today's 10:00 included).
+  If every slot in that window is filled, it stops after the check (cheap). Otherwise it fills them.
+- Order of supply: (1) approved-but-unscheduled backlog, (2) new rounds of ~10 drafts, up to 3 rounds.
+- **If a video fails any gate** (voicecheck, watchcheck, structure review, preflight) and can't be fixed
+  in the run, it is NOT scheduled, and its slot counts as still empty: the run immediately writes a
+  replacement in the next round. Whatever is still empty after the run is retried by the next day's
+  run, so a gap gets at least one new attempt every day.
+- Approved scripts that don't fit the 7-day window go to the backlog (status "approved", unscheduled),
+  so the next run starts with stock instead of from zero.
+- Never fill a gap by lowering a floor, skipping a gate or re-using a script that failed.
 
 ## 6. What can't be checked from here (say so, don't pretend)
 

@@ -48,10 +48,10 @@ D = [
   pup({kind:'girl',x:420,y:G+10,s:1.25,look:[.4,0],eyes:'squint',mouth:'smile',blush:.3,tilt:.06});''',
 SHARE,
 '''  room('#4a4350','#3a3340','rgba(255,255,255,.05)');
-  ''' + cab(640, 0) + '''
-  pup({kind:'boy',x:900,y:G+10,s:1.15,flip:-1,look:[-.4,-.1],eyes:'wide',mouth:'flat'});
-  pup({kind:'girl',x:300,y:G+10,s:1.2,look:[.3,-.1],eyes:'open',mouth:'flat'});
-  if(u>1.2)raincloudSmall(300,G-440,win(u,1.2,9)*.6);''',
+  ''' + cab(560, 0) + '''
+  pup({kind:'boy',x:830,y:G+10,s:1.05,flip:-1,look:[-.4,-.1],eyes:'wide',mouth:'flat'});
+  pup({kind:'girl',x:250,y:G+10,s:1.15,look:[.3,-.1],eyes:'open',mouth:'flat'});
+  if(u>1.2)raincloudSmall(250,G-440,win(u,1.2,9)*.6);''',
 HUG,
 ]
 SCENES = spec(BODY_LINES, D, [{'careless':'🚪'},{'swinging':'👋'},{'noticing':'🙈'},{'perfect':'🏠'},{'home':'💌'},{'again':'💔'},{'home':'🤍'}])
