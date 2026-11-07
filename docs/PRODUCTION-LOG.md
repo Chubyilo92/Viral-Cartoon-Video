@@ -1354,10 +1354,42 @@ pass → push to JJCutecouple → preflight --url sha256 match → createSchedul
 | Slot | Slug | Reviewer avg/P(1k) | Twist | File sha256 (IG / TT) | JJCutecouple commit |
 |---|---|---|---|---|---|
 | Sat 7 Nov 10:05/10:14 (today) | boy_plays_his_own_music_in_the_car | 7.3/40% | a | 319e7e758c26d9de / 0fd6555fa966ee2f | f4eec399839e366a |
+| Sun 8 Nov 10:05/10:14 | boy_argues_with_the_tv_only_during_her_shows | 7.0/35% | b | 553a4f2d871d4461 / e3e2cd02a061c66a | 365f8a5ccd62b714 |
 
-(Remaining 6 scripts above are approved and queued to build next in this same run; this entry will be
-appended to, not replaced, as each finishes — see the next PRODUCTION-LOG section if this run ends
-before all 7 are scheduled.)
+Sun 8 Nov 18:00 was already filled (girl_overpacks_for_every_trip, scheduled 6 Nov). Sun 8 Nov 10:00 is
+now filled by the above.
 
-Today's 18:00 slot was already filled (girl_sends_you_tiktoks, scheduled 1 Nov). Today's 10:00 is now
-filled by the above.
+**boy_argues_with_the_tv_only_during_her_shows — additional bugs found and fixed this video (on top of
+the engine-level fixes above), across 3 build/gate cycles and 3 fresh structure-review rounds:**
+- Round 1 (watchcheck edge-clip FAIL): two `bubbleText` speech bubbles ("dramas are so boring" in
+  scene 2, "Brenda's motives are SO unclear" in scene 3) were positioned too close to the left canvas
+  edge once the scene's 1.2x zoom-and-pan transform is applied. Repositioned (scene2 bubble x:280→480;
+  scene3 bubble x:300→540, scale .62→.52).
+- Round 2 (structure-review FAIL): the local `TV` prop (defined in this script, not a shared constant)
+  clipped off the right canvas edge in scenes 1, 3 and 6 — local x=740 put its right edge at screen
+  x≈1116, past the 1080px canvas. Moved to x=640. Scene 4's `chatTxt(...,mine=true)` right-aligned the
+  "fan theory" phone text past `bigPhone`'s own internal ±112px clip region, cutting it to "ry" —
+  fixed to `mine=false` with a repositioned x. Also made a non-text polish to scene 6's boy expression
+  (knowing squint+smile) addressing part of the reviewer's note that the line 6 "he already knows the
+  twist" beat wasn't reading from his face.
+- Round 2 follow-up (same reviewer round): the just-repositioned scene2 bubble now sat on top of the
+  phone prop beneath it, covering part of its chat-bubble graphic. Moved higher (y:650→480) to clear
+  the phone entirely.
+- Round 3 (structure-review FAIL, confirmed by direct pixel-level zoom after an earlier manual check
+  wrongly dismissed it as a false positive): in scenes 1, 3 and 6, the girl puppy's ear was overlapping
+  and hiding the boy puppy's near-side eye — the two puppies' hand-placed x-positions in this script
+  (not the shared SHARE/HUG constants) were too close together (200-220px gap against ~280px combined
+  head width at s≈1.2). Spread them apart (scene1/3: boy 620→660, girl 420→340; scene6: boy 640→680,
+  girl 420→340). Verified via a tight pixel-level crop on all three scenes post-fix: both of the boy's
+  eyes fully visible, no ear overlap, TV and bubbles still clear of the edges. Third fresh reviewer: SHIP.
+- Noted but NOT changed (debatable, not incoherent, and the text is reviewer-approved): two separate
+  fresh reviewers independently flagged that line 7 ("he just loves watching it with you") sits in
+  tension with line 6 ("he's watched ahead without you... he already knows the twist"). Read both ways
+  by the third reviewer and judged a defensible dramatic turn (he can't help getting hooked alone, but
+  still shows up to watch it again with her — sharing it with her is the actual point), not nonsense.
+  Per RULES.md, a visual reviewer can't overrule the text reviewer's approved wording on a debatable
+  reading; flagging here since it came up twice independently, for Chuby's awareness, not as a blocker.
+
+(Remaining 5 scripts — restaurant, double_texting, blanket, expensive, phone_sign_off — are approved
+and queued to build next in this same run; this entry will be appended to, not replaced, as each
+finishes — see the next PRODUCTION-LOG section if this run ends before all 7 are scheduled.)
