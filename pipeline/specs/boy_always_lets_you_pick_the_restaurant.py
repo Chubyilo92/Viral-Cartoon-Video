@@ -5,8 +5,9 @@ TITLE = "when a boy says wherever you want"
 PRELUDE = R3_PROPS
 LINE_SPEED = {}
 TOAST = '''  ctx.save();ctx.translate(x,y);
-  blob(rectPts(-40,-70,80,70,10),'#e8b97a');
-  blob(rectPts(-34,-62,68,54,8),'#f3d6a0',{stroke:false});
+  blob(rectPts(-40,-72,80,72,22),'#c98f4e');
+  blob(rectPts(-32,-62,64,56,16),'#f3d6a0',{stroke:false});
+  ctx.fillStyle='#e8b97a';for(const bx of[-14,10]){ctx.beginPath();ctx.ellipse(bx,-36,6,5,0,0,7);ctx.fill();}
   ctx.restore();'''
 BODY_LINES = [
 "Ask him where he wants to eat. You already know the answer: \"wherever you want.\"",
@@ -23,10 +24,10 @@ D = [
   pup({kind:'boy',x:760,y:G+10,s:1.22,flip:-1,eyes:'squint',mouth:'smile',look:[-.3,0]});
   if(u>.5){ctx.save();ctx.globalAlpha=win(u,.5,9);bubbleText(760,650,"wherever you want 🤷",1,.78);ctx.restore();}''',
 '''  room('#f1d5b0','#caa070');
-  pup({kind:'boy',x:540,y:G+10,s:1.3,mouth:'open',eyes:'wide',look:[0,-.1]});
+  pup({kind:'boy',x:540,y:G+10,s:1.3,mouth:'open',eyes:'squint',brows:true,look:[0,-.1]});
   if(u>.5){ctx.save();ctx.globalAlpha=win(u,.5,9);bubbleText(540,650,"worst burger of my life",1,.78);ctx.restore();}''',
 '''  room('#cfe3ec','#98b6c2');
-  pup({kind:'girl',x:330,y:G+10,s:1.25,eyes:'open',mouth:'open',look:[.4,-.1]});
+  pup({kind:'girl',x:330,y:G+10,s:1.25,eyes:'squint',mouth:'pout',brows:'sad',look:[.4,-.1]});
   pup({kind:'boy',x:760,y:G+10,s:1.2,flip:-1,eyes:'squint',mouth:'flat'});
   if(u>.5){ctx.save();ctx.globalAlpha=win(u,.5,9);bubbleText(330,650,"just pick something!!",1,.78);ctx.restore();}''',
 '''  room('#e8d8c8','#c2a98f');
@@ -35,8 +36,8 @@ D = [
   if(u>.9){ctx.save();ctx.globalAlpha=win(u,.9,9);bubbleText(280,650,"wherever you want",1,.72);ctx.restore();}''',
 SHARE,
 '''  room('#e9ceb8','#c39a76',1180,'rgba(255,255,255,.1)');
-  ''' + TOAST.replace('x,y', '460,G+10') + '''
-  ''' + TOAST.replace('x,y', '620,G+10') + '''
+  ''' + TOAST.replace('x,y', '500,G+10') + '''
+  ''' + TOAST.replace('x,y', '650,G+10') + '''
   pup({kind:'girl',x:330,y:G+10,s:1.2,eyes:'squint',mouth:'flat',look:[.3,0]});
   pup({kind:'boy',x:820,y:G+10,s:1.15,flip:-1,eyes:'squint',mouth:'flat',look:[-.3,0]});''',
 HUG,

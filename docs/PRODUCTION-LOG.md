@@ -1355,9 +1355,30 @@ pass → push to JJCutecouple → preflight --url sha256 match → createSchedul
 |---|---|---|---|---|---|
 | Sat 7 Nov 10:05/10:14 (today) | boy_plays_his_own_music_in_the_car | 7.3/40% | a | 319e7e758c26d9de / 0fd6555fa966ee2f | f4eec399839e366a |
 | Sun 8 Nov 10:05/10:14 | boy_argues_with_the_tv_only_during_her_shows | 7.0/35% | b | 553a4f2d871d4461 / e3e2cd02a061c66a | 365f8a5ccd62b714 |
+| Mon 9 Nov 10:05/10:14 | boy_always_lets_you_pick_the_restaurant | 7.7/40% | d | 7f817324f96dc3b1 / 816405d5b5273791 | 6c16dd88f3c818a4 |
 
 Sun 8 Nov 18:00 was already filled (girl_overpacks_for_every_trip, scheduled 6 Nov). Sun 8 Nov 10:00 is
-now filled by the above.
+now filled by the above. Mon 9 Nov was fully empty (both 10:00 and 18:00); 10:00 now filled by
+boy_always_lets_you_pick_the_restaurant (family d); 18:00 is reserved for boy_starts_double_texting_too
+(family e, next in this run).
+
+**boy_always_lets_you_pick_the_restaurant — bugs found and fixed, across 3 structure-review rounds:**
+- Round 1: panel 3's girl was drawn with the same cheerful "open eyes, open smile" expression reused
+  from panel 1, which didn't match her "just pick something!!" exasperated bubble — fixed to squint
+  eyes + pout mouth + sad brows for a pleading/frustrated look. The two `TOAST` props in panel 6 were
+  plain beige rectangles (one partly hidden behind the girl's body) that didn't clearly read as toast —
+  redrawn with rounded corners, a browned crust border and two bubble dots, and both repositioned
+  clear of both puppies' bodies.
+- Round 2: panel 2's boy had the same cheerful "wide eyes, open happy mouth" expression used for
+  genuinely happy reactions elsewhere, which undercut "worst burger of my life" — changed to squint
+  eyes + furrowed brows (keeping the open talking mouth), for a more animated/indignant rant look.
+  A suggested cosmetic nudge to panel 4's speech bubble (to clear the phone bezel) was tried but
+  pushed the bubble into a left-edge clip instead — reverted to its original, already watchcheck-
+  verified position rather than risk a new edge-clip bug for a cosmetic fix.
+- Round 3 (fresh reviewer): SHIP, with a minor non-blocking note that panel 2's new expression reads
+  as "animated/half-laughing" rather than fully "indignant" (mouth shape still shows a smile/tongue)
+  — logged as a note for a future script's more varied boy expressions, not a blocker; the bubble text
+  and narration already carry the "ranting" meaning on their own.
 
 **boy_argues_with_the_tv_only_during_her_shows — additional bugs found and fixed this video (on top of
 the engine-level fixes above), across 3 build/gate cycles and 3 fresh structure-review rounds:**
