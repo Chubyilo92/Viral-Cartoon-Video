@@ -1,10 +1,10 @@
 import json
 def S(cap, body):
     return '{cap:%s,draw(u){\n%s\n}}' % (json.dumps(cap, ensure_ascii=False), body)
-HUG = '''  room('#f1d5b0','#caa070');plant(970,G+6,.9);
+HUG = '''  room('#f1d5b0','#caa070');plant(850,G+6,.9);
   const hug=P(u,.4,1.4);
-  pup({kind:'girl',x:lerp(560,500,hug),y:G+10,s:1.34,flip:-1,look:[-.3,.2],eyes:'happy',mouth:'smile',tilt:-.1,blush:.5,paw:{x:70,y:-190,k:hug}});
-  pup({kind:'boy',x:lerp(380,440,hug),y:G+10,s:1.34,look:[.4,.1],eyes:'happy',mouth:'smile',tilt:.08,blush:.4,earLift:.1});
+  pup({kind:'girl',x:lerp(660,620,hug),y:G+10,s:1.34,flip:-1,look:[-.3,.2],eyes:'happy',mouth:'smile',tilt:-.1,blush:.5,paw:{x:70,y:-190,k:hug}});
+  pup({kind:'boy',x:lerp(280,320,hug),y:G+10,s:1.34,look:[.4,.1],eyes:'happy',mouth:'smile',tilt:.08,blush:.4,earLift:.1});
   if(u>1.6)floatHearts(470,800,1.6,u,5,140);'''
 SHARE = '''  room('#e9ceb8','#c39a76',1180,'rgba(255,255,255,.2)');
   ell(540,G+16,300,30,'#00000010',{stroke:false});

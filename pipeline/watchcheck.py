@@ -58,7 +58,24 @@ for t in np.arange(0.3, dur - 0.2, 0.5):
 if edge_hits: fails.append('text touching frame edge at ' + ', '.join(edge_hits[:8]))
 
 n = len(spec.BODY_LINES)
-ts = [dur * (i + .5) / (n + 1.2) for i in range(n)] + [dur - 1.5]
+# Use REAL per-scene boundaries (from the cached TTS durations make_video.py wrote), not a
+# uniform-duration guess: lines vary a lot in length (4.2s-8.1s here), so a uniform split drifts
+# out of alignment with the actual scene it's meant to sample as it goes (discovered 7 Nov 2026:
+# a uniform-split sheet showed line 5's frame under line 4's position and so on).
+PAD = 0.75
+cut = 'ig' if 'instagram' in os.path.basename(mp4) else 'tt'
+b_meta = json.load(open(f'{W}/b_meta.json'))
+body_dur = [round(d + PAD, 2) for d in b_meta['durs']]
+end_meta = json.load(open(f'{W}/{cut}_meta.json'))
+end_pad = PAD + (0.6 if cut == 'ig' else 0.9)
+end_dur = round(end_meta['durs'][0] + end_pad, 2)
+all_dur = body_dur + [end_dur]
+if abs(sum(all_dur) - dur) > 1.0:
+    # fallback to the old uniform guess if the cached durations don't match this mp4's actual length
+    ts = [dur * (i + .5) / (n + 1.2) for i in range(n)] + [dur - 1.5]
+else:
+    starts = np.cumsum([0] + all_dur[:-1])
+    ts = [round(starts[i] + all_dur[i] / 2, 2) for i in range(n)] + [round(starts[n] + all_dur[n] / 2, 2)]
 ims = [frame(t).resize((270, 480)) for t in ts]
 sheet = Image.new('RGB', (270 * len(ims), 480), 'white')
 for k, im in enumerate(ims): sheet.paste(im, (270 * k, 0))

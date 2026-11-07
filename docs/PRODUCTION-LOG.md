@@ -1290,3 +1290,74 @@ All read back: captions identical, times right, draft false, one media item each
 Same-twist videos now sit ≥ 48 h apart except steals_bites (Fri 18:00) → tiktoks (Sat 18:00), 24 h, accepted
 to fill tonight. **System changes:** RULES.md §4a twist families + 48 h spacing, §5 steps 3a/3b
 (watchcheck + structure reviewer), §5b daily gap-filling; scheduled task now daily, 7 days ahead.
+
+## 7 Nov 2026: daily scheduled run (06:12 UK fire)
+
+Step 0 gap check: 12 of 16 slots (today 10:00 through 7 Nov+7 days ahead) empty; no approved-unscheduled
+backlog (cross-checked approvals.json against this file). Continued past the cheap-stop.
+
+**Round 1-3 scripts:** 30 brand-new drafts across 3 rounds (≥4 twist families/round, max 3/family),
+reviewed by 3 genuinely fresh opus subagents per docs/REVIEWER.md, fresh Metricool data each round.
+7 of 30 cleared the 7.0/35% floor (round 1: 2/10, round 2: 2/10, round 3: 3/10). Full raw reviews in
+reviews/2026-11-07.md. Floor never lowered.
+
+**Engine bugs found and fixed before any build** (scene code only — BODY_LINES untouched, no
+re-review needed, confirmed via `approval.py check` on all 7 after each fix):
+- `title()` has no max-width clamp (`ctx.measureText(t).width+140`, no wrap/shrink): titles ≥40 chars
+  overflow the 1080px canvas on both edges. Shortened 4 titles: "when a boy says wherever you want" (was
+  "...always says wherever you want", 40→33 chars), "when a boy argues with the tv" (was "...only argues
+  with the tv during her show", 50→30), "when a boy downplays the price" (was "...says it wasn't that
+  expensive", 41→31), "when a boy copies her goodbye" (was "...picks up her weird phone sign-off", 46→30).
+  Not part of reviewed BODY_LINES text, so no re-review needed. Titles ≤37 chars confirmed safe.
+- `boy_starts_double_texting_too` scenes 4 & 6: `pup()` and `bigPhone()` shared an x-coordinate,
+  rendering the phone stacked on the puppy's head. Separated the x-coordinates.
+- `boy_always_says_it_wasnt_that_expensive` scene 6: `doorFrame(900)` extended to x=1130, off the
+  1080px canvas. Changed to `doorFrame(800)` (extends to 1030).
+- `boy_plays_his_own_music_in_the_car`: first structure-review FAILED — no car/stereo imagery
+  grounded "car playlist" (only a generic music-note icon). Added a local `RADIO` console prop
+  (skip/play/repeat/volume/power-off icons matching each line) to scenes 1-4 and 6.
+- **`watchcheck.py`'s frame-sampler was wrong for every video, not just this run's**: `ts = [dur*(i+.5)/
+  (n+1.2) ...]` assumes uniform per-line duration, but lines vary a lot (4.2s-8.1s here), so sampled
+  frames drift out of alignment with their intended scene as the video progresses — one structure
+  reviewer was shown line 5's frame under line 4's position and flagged a phantom missing prop. Fixed
+  to read the real per-scene boundaries from `b_meta.json`/`<cut>_meta.json` (same durations
+  make_video.py actually used), falling back to the old uniform guess only if they don't match the
+  file's real length. This fixes every future watchcheck run, not just today's.
+- **Shared `HUG` constant (specs/_kit.py, reused in line 7 of every long-format script) hid one
+  puppy's face behind the other's for its entire ~5-8s duration**: final hug position put the two
+  puppies only 60px apart center-to-center against a combined head radius of ~300px, and draw order
+  put the boy on top, burying the girl's face for nearly the whole scene — not just one sampled frame.
+  Its `plant(970,...)` also clipped off the right edge once the scene's 1.2x zoom-and-pan transform is
+  applied (970 → off-canvas at ~1150px). Caught by a structure-review FAIL, confirmed by rendering the
+  actual HUG code directly across its full u-range outside the video pipeline. Calibrated the fix
+  empirically (rendered 10+ gap values in a standalone harness) before landing on lerp(660,620)/
+  lerp(280,320) (final gap ~300px) and moving the plant to x=850. Re-verified both faces stay fully
+  visible across the whole animated range. **This almost certainly affects every other video already
+  shipped or scheduled that ends on HUG — flagging for Chuby since those aren't being touched this run
+  (never edit already-scheduled posts).**
+
+**Script-text fixes (reviewer-mandated, all re-scored by the same reviewer, hashes updated in
+approvals.json):** see reviews/2026-11-07.md for the word-for-word line replacements per script.
+
+**Slot assignment** (twist-family spacing: same family max once/day, ≥48h apart, backlog if it can't
+fit in 7 days):
+music_in_car(a)→7 Nov, tv_argues(b)→8 Nov, restaurant(d)→9 Nov 10:00, double_texting(e)→9 Nov 18:00,
+blanket(a)→10 Nov (72h after music_in_car), expensive(d)→11 Nov 10:00 (48h after restaurant),
+phone_sign_off(e)→11 Nov 18:00 (48h after double_texting).
+
+**Built and scheduled so far this run** (per script: approval.py check → per-line Kokoro TTS +
+check() with LINE_SPEED fixes → preview.py + contact-sheet inspection → `TT_COUNT=7
+python3 make_video.py <slug> both` → voicecheck.py 0 FLAGs → watchcheck.py PASS both cuts → fresh
+structure-review subagent SHIP → final frame inspection (ig_f0-5/tt_f0-5) → preflight.py both cuts
+pass → push to JJCutecouple → preflight --url sha256 match → createScheduledPost → read-back verified):
+
+| Slot | Slug | Reviewer avg/P(1k) | Twist | File sha256 (IG / TT) | JJCutecouple commit |
+|---|---|---|---|---|---|
+| Sat 7 Nov 10:05/10:14 (today) | boy_plays_his_own_music_in_the_car | 7.3/40% | a | 319e7e758c26d9de / 0fd6555fa966ee2f | f4eec399839e366a |
+
+(Remaining 6 scripts above are approved and queued to build next in this same run; this entry will be
+appended to, not replaced, as each finishes — see the next PRODUCTION-LOG section if this run ends
+before all 7 are scheduled.)
+
+Today's 18:00 slot was already filled (girl_sends_you_tiktoks, scheduled 1 Nov). Today's 10:00 is now
+filled by the above.

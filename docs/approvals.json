@@ -1084,7 +1084,8 @@
   "twist": "a",
   "review_file": "reviews/2026-11-07.md#2-boy_plays_his_own_music_in_the_car-family-a",
   "date": "2026-11-07",
-  "note": "Round 1. SHIP WITH FIXES (lines 1,4). Fixed avg 7.3/40%."
+  "note": "Round 1. SHIP WITH FIXES (lines 1,4). Fixed avg 7.3/40%.",
+  "sha256": "1dd6e90d8740a1ca63bff1eaeab0d8cf2aeab800a0cb682dda724f6d74432172"
  },
  "boy_starts_double_texting_too": {
   "status": "approved",
@@ -1093,7 +1094,8 @@
   "twist": "e",
   "review_file": "reviews/2026-11-07.md#9-boy_starts_double_texting_too-family-e",
   "date": "2026-11-07",
-  "note": "Round 1. SHIP WITH FIXES (lines 1,6,7). Fixed avg 7.7/40%."
+  "note": "Round 1. SHIP WITH FIXES (lines 1,6,7). Fixed avg 7.7/40%.",
+  "sha256": "8b6f46ffe7e06af24986ed3b278018aa313e5e1630eae624706bfc7fd73f1228"
  },
  "girl_always_asks_whats_wrong": {
   "status": "hold",
@@ -1174,7 +1176,8 @@
   "twist": "d",
   "review_file": "reviews/2026-11-07.md#round-2",
   "date": "2026-11-07",
-  "note": "Round 2. SHIP WITH FIXES (lines 1,2,3,6,7; 4&5 unchanged). Fixed avg 7.7/40%."
+  "note": "Round 2. SHIP WITH FIXES (lines 1,2,3,6,7; 4&5 unchanged). Fixed avg 7.7/40%.",
+  "sha256": "893d0f4332473bba4dbb9252b8a243453813e22928242aa841bed08d701cfc27"
  },
  "boy_steals_the_blanket_at_3am": {
   "status": "approved",
@@ -1183,7 +1186,8 @@
   "twist": "a",
   "review_file": "reviews/2026-11-07.md#round-2",
   "date": "2026-11-07",
-  "note": "Round 2. SHIP WITH FIXES (all 7 lines replaced). Fixed avg 7.7/38%."
+  "note": "Round 2. SHIP WITH FIXES (all 7 lines replaced). Fixed avg 7.7/38%.",
+  "sha256": "31ad8ac9d870ceca61517212d123a0386e163aa916948e41c9f7feda226d2f3e"
  },
  "girl_critiques_your_parking_every_time": {
   "status": "hold",
@@ -1264,7 +1268,8 @@
   "twist": "b",
   "review_file": "reviews/2026-11-07.md#round-3",
   "date": "2026-11-07",
-  "note": "Round 3. SHIP WITH FIXES (lines 4,5,6,7; 1-3 unchanged). Fixed avg 7.0/35%."
+  "note": "Round 3. SHIP WITH FIXES (lines 4,5,6,7; 1-3 unchanged). Fixed avg 7.0/35%.",
+  "sha256": "f7bfa19bbf54befd920ae0880e9a1acf42aaeca333eba01d92a02c4e0137c8ef"
  },
  "boy_always_says_it_wasnt_that_expensive": {
   "status": "approved",
@@ -1273,7 +1278,8 @@
   "twist": "d",
   "review_file": "reviews/2026-11-07.md#round-3",
   "date": "2026-11-07",
-  "note": "Round 3. SHIP WITH FIXES (lines 1,2,3,5; 4,6,7 unchanged). Fixed avg 7.0/38%."
+  "note": "Round 3. SHIP WITH FIXES (lines 1,2,3,5; 4,6,7 unchanged). Fixed avg 7.0/38%.",
+  "sha256": "525ca5b33c9c512d49a8fae1aad533477d5c75b3d094d39c188da341cd93db4a"
  },
  "boy_starts_saying_her_weird_phone_sign_off": {
   "status": "approved",
@@ -1282,7 +1288,8 @@
   "twist": "e",
   "review_file": "reviews/2026-11-07.md#round-3",
   "date": "2026-11-07",
-  "note": "Round 3. SHIP WITH FIXES (lines 2,4,5,6; 1,3,7 unchanged). Fixed avg 7.3/40%."
+  "note": "Round 3. SHIP WITH FIXES (lines 2,4,5,6; 1,3,7 unchanged). Fixed avg 7.3/40%.",
+  "sha256": "550900d0b63cf0fe8a77819d10b64b037f1b287e27c728937a32e30e228debb4"
  },
  "boy_never_remembers_who_that_character_is": {
   "status": "hold",
