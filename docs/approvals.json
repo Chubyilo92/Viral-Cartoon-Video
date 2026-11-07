@@ -1076,5 +1076,275 @@
   "review_file": "reviews/2026-11-04.md#round-3",
   "date": "2026-11-04",
   "note": "Round 3 CUT. Personality-trait hook (trait hooks score 0 for ~20 scripts); love connection bolted on at the last two words; money-strain and mental-health-decline undertones."
+ },
+ "boy_plays_his_own_music_in_the_car": {
+  "status": "approved",
+  "reviewer_avg": 7.3,
+  "p_1k": 0.4,
+  "twist": "a",
+  "review_file": "reviews/2026-11-07.md#2-boy_plays_his_own_music_in_the_car-family-a",
+  "date": "2026-11-07",
+  "note": "Round 1. SHIP WITH FIXES (lines 1,4). Fixed avg 7.3/40%."
+ },
+ "boy_starts_double_texting_too": {
+  "status": "approved",
+  "reviewer_avg": 7.7,
+  "p_1k": 0.4,
+  "twist": "e",
+  "review_file": "reviews/2026-11-07.md#9-boy_starts_double_texting_too-family-e",
+  "date": "2026-11-07",
+  "note": "Round 1. SHIP WITH FIXES (lines 1,6,7). Fixed avg 7.7/40%."
+ },
+ "girl_always_asks_whats_wrong": {
+  "status": "hold",
+  "reviewer_avg": 7.0,
+  "p_1k": 0.32,
+  "twist": "d",
+  "review_file": "reviews/2026-11-07.md#7-girl_always_asks_whats_wrong-family-d",
+  "date": "2026-11-07",
+  "note": "Round 1. SHIP WITH FIXES (line 4) but below P(1k) floor even fixed (32%<35%). Best of the held/cut scripts; bench for a week with no emotional-reassurance posts around it."
+ },
+ "girl_heating_too_high": {
+  "status": "hold",
+  "reviewer_avg": 6.3,
+  "p_1k": 0.28,
+  "twist": "a",
+  "review_file": "reviews/2026-11-07.md#1-girl_heating_too_high-family-a",
+  "date": "2026-11-07",
+  "note": "Round 1. SHIP WITH FIXES (lines 1,3,4,6,7) but below floor; also too close to girl_cold_feet, space apart if ever built."
+ },
+ "boy_checks_your_tyres_before_every_trip": {
+  "status": "hold",
+  "reviewer_avg": 6.0,
+  "p_1k": 0.22,
+  "twist": "c",
+  "review_file": "reviews/2026-11-07.md#6-boy_checks_your_tyres_before_every_trip-family-c",
+  "date": "2026-11-07",
+  "note": "Round 1. SHIP WITH FIXES (line 7) but below floor."
+ },
+ "girl_hides_the_good_snacks": {
+  "status": "cut",
+  "reviewer_avg": 5.0,
+  "p_1k": 0.12,
+  "twist": "c",
+  "review_file": "reviews/2026-11-07.md#5-girl_hides_the_good_snacks-family-c",
+  "date": "2026-11-07",
+  "note": "Round 1 CUT. Internal contradiction (hides snacks from viewer AND saves them for viewer) collapses the script's logic; needs a full rewrite, not line fixes. Also food-themed so close after the plate flop."
+ },
+ "girl_folds_your_laundry_her_way": {
+  "status": "cut",
+  "reviewer_avg": 5.0,
+  "p_1k": 0.12,
+  "twist": "b",
+  "review_file": "reviews/2026-11-07.md#3-girl_folds_your_laundry_her_way-family-b",
+  "date": "2026-11-07",
+  "note": "Round 1 CUT. Moderate brand risk: frames unpaid domestic labour/self-neglect as romantic (tradwife reading); redoing his folding also reads as mildly controlling."
+ },
+ "girl_leaves_her_phone_facedown_too": {
+  "status": "cut",
+  "reviewer_avg": 5.0,
+  "p_1k": 0.1,
+  "twist": "e",
+  "review_file": "reviews/2026-11-07.md#10-girl_leaves_her_phone_facedown_too-family-e",
+  "date": "2026-11-07",
+  "note": "Round 1 CUT, high risk. Face-down-phone framing reads as a 'cheating sign' narrative and invites phone-snooping comments; don't rework this theme."
+ },
+ "girl_leaves_the_porch_light_on": {
+  "status": "cut",
+  "reviewer_avg": 4.3,
+  "p_1k": 0.1,
+  "twist": "d",
+  "review_file": "reviews/2026-11-07.md#8-girl_leaves_the_porch_light_on-family-d",
+  "date": "2026-11-07",
+  "note": "Round 1 CUT. Weak/unrelatable hook (porch light reads as parent behaviour); warning line is a guilt trip about lateness."
+ },
+ "boy_overwaters_your_desk_plant": {
+  "status": "cut",
+  "reviewer_avg": 4.0,
+  "p_1k": 0.08,
+  "twist": "b",
+  "review_file": "reviews/2026-11-07.md#4-boy_overwaters_your_desk_plant-family-b",
+  "date": "2026-11-07",
+  "note": "Round 1 CUT, weakest of the round. Slug contradicts the script (no overwatering in the text), niche hook, circular warning line."
+ },
+ "boy_always_lets_you_pick_the_restaurant": {
+  "status": "approved",
+  "reviewer_avg": 7.7,
+  "p_1k": 0.4,
+  "twist": "d",
+  "review_file": "reviews/2026-11-07.md#round-2",
+  "date": "2026-11-07",
+  "note": "Round 2. SHIP WITH FIXES (lines 1,2,3,6,7; 4&5 unchanged). Fixed avg 7.7/40%."
+ },
+ "boy_steals_the_blanket_at_3am": {
+  "status": "approved",
+  "reviewer_avg": 7.7,
+  "p_1k": 0.38,
+  "twist": "a",
+  "review_file": "reviews/2026-11-07.md#round-2",
+  "date": "2026-11-07",
+  "note": "Round 2. SHIP WITH FIXES (all 7 lines replaced). Fixed avg 7.7/38%."
+ },
+ "girl_critiques_your_parking_every_time": {
+  "status": "hold",
+  "reviewer_avg": 7.0,
+  "p_1k": 0.32,
+  "twist": "b",
+  "review_file": "reviews/2026-11-07.md#round-2",
+  "date": "2026-11-07",
+  "note": "Round 2. SHIP WITH FIXES (lines 1,3,6,7) but below P(1k) floor even fixed (32%<35%). Good reserve."
+ },
+ "boy_narrates_the_football_only_to_you": {
+  "status": "hold",
+  "reviewer_avg": 6.0,
+  "p_1k": 0.22,
+  "twist": "b",
+  "review_file": "reviews/2026-11-07.md#round-2",
+  "date": "2026-11-07",
+  "note": "Round 2. SHIP WITH FIXES (lines 1,2,3,6) but below floor."
+ },
+ "girl_starts_saying_his_dumb_catchphrase": {
+  "status": "hold",
+  "reviewer_avg": 5.7,
+  "p_1k": 0.18,
+  "twist": "e",
+  "review_file": "reviews/2026-11-07.md#round-2",
+  "date": "2026-11-07",
+  "note": "Round 2. SHIP WITH FIXES (lines 1,2,6,7) but below floor even fixed (~6.7/28%)."
+ },
+ "girl_keeps_your_painkillers_in_her_bag": {
+  "status": "cut",
+  "reviewer_avg": 5.3,
+  "p_1k": 0.15,
+  "twist": "c",
+  "review_file": "reviews/2026-11-07.md#round-2",
+  "date": "2026-11-07",
+  "note": "Round 2 CUT. Nothing looks bad so there's no reframe; rework as 'her bag, half of it is for you' with a funny inventory if revisited."
+ },
+ "boy_always_answers_how_are_you_with_im_tired": {
+  "status": "cut",
+  "reviewer_avg": 4.7,
+  "p_1k": 0.1,
+  "twist": "d",
+  "review_file": "reviews/2026-11-07.md#round-2",
+  "date": "2026-11-07",
+  "note": "Round 2 CUT. Warning line blames the viewer and contradicts the rest of the script; heavy/withholding territory matches past flops."
+ },
+ "girl_rewrites_the_grocery_list": {
+  "status": "cut",
+  "reviewer_avg": 4.3,
+  "p_1k": 0.1,
+  "twist": "a",
+  "review_file": "reviews/2026-11-07.md#round-2",
+  "date": "2026-11-07",
+  "note": "Round 2 CUT, brand risk. Romanticises unpaid household admin and frames overriding a partner's choices as care."
+ },
+ "boy_starts_leaving_her_side_of_the_bed_made": {
+  "status": "cut",
+  "reviewer_avg": 3.7,
+  "p_1k": 0.07,
+  "twist": "e",
+  "review_file": "reviews/2026-11-07.md#round-2",
+  "date": "2026-11-07",
+  "note": "Round 2 CUT, brand risk. Premise is unpaid domestic labour by the woman, romanticised; muddled POV."
+ },
+ "boy_always_takes_the_aisle_seat": {
+  "status": "cut",
+  "reviewer_avg": 3.3,
+  "p_1k": 0.06,
+  "twist": "c",
+  "review_file": "reviews/2026-11-07.md#round-2",
+  "date": "2026-11-07",
+  "note": "Round 2 CUT, weakest of round. Hidden reason doesn't make logical sense (aisle seat doesn't protect from turbulence); internal contradictions."
+ },
+ "boy_argues_with_the_tv_only_during_her_shows": {
+  "status": "approved",
+  "reviewer_avg": 7.0,
+  "p_1k": 0.35,
+  "twist": "b",
+  "review_file": "reviews/2026-11-07.md#round-3",
+  "date": "2026-11-07",
+  "note": "Round 3. SHIP WITH FIXES (lines 4,5,6,7; 1-3 unchanged). Fixed avg 7.0/35%."
+ },
+ "boy_always_says_it_wasnt_that_expensive": {
+  "status": "approved",
+  "reviewer_avg": 7.0,
+  "p_1k": 0.38,
+  "twist": "d",
+  "review_file": "reviews/2026-11-07.md#round-3",
+  "date": "2026-11-07",
+  "note": "Round 3. SHIP WITH FIXES (lines 1,2,3,5; 4,6,7 unchanged). Fixed avg 7.0/38%."
+ },
+ "boy_starts_saying_her_weird_phone_sign_off": {
+  "status": "approved",
+  "reviewer_avg": 7.3,
+  "p_1k": 0.4,
+  "twist": "e",
+  "review_file": "reviews/2026-11-07.md#round-3",
+  "date": "2026-11-07",
+  "note": "Round 3. SHIP WITH FIXES (lines 2,4,5,6; 1,3,7 unchanged). Fixed avg 7.3/40%."
+ },
+ "boy_never_remembers_who_that_character_is": {
+  "status": "hold",
+  "reviewer_avg": 6.3,
+  "p_1k": 0.25,
+  "twist": "d",
+  "review_file": "reviews/2026-11-07.md#round-3",
+  "date": "2026-11-07",
+  "note": "Round 3. SHIP WITH FIXES (lines 3,4,6,7) but below floor even fixed (~33%); same-batch clone lane of boy_argues_with_the_tv_only_during_her_shows, space apart if ever built."
+ },
+ "boy_still_sends_you_a_bad_pun_every_day": {
+  "status": "cut",
+  "reviewer_avg": 5.3,
+  "p_1k": 0.18,
+  "twist": "b",
+  "review_file": "reviews/2026-11-07.md#round-3",
+  "date": "2026-11-07",
+  "note": "Round 3 CUT. Niche habit, weak warning line, below floor even with fixes."
+ },
+ "boy_eats_the_crusts_off_your_sandwich": {
+  "status": "cut",
+  "reviewer_avg": 4.3,
+  "p_1k": 0.08,
+  "twist": "a",
+  "review_file": "reviews/2026-11-07.md#round-3",
+  "date": "2026-11-07",
+  "note": "Round 3 CUT. Food-themed (food has flopped twice); warning line is withdrawal-monitoring with no real stakes."
+ },
+ "boy_always_grabs_extra_napkins_he_never_uses": {
+  "status": "cut",
+  "reviewer_avg": 4.3,
+  "p_1k": 0.1,
+  "twist": "c",
+  "review_file": "reviews/2026-11-07.md#round-3",
+  "date": "2026-11-07",
+  "note": "Round 3 CUT. Nothing about the behaviour looks bad, so there's no reframe."
+ },
+ "girl_starts_doing_his_weird_bedtime_stretch": {
+  "status": "cut",
+  "reviewer_avg": 4.7,
+  "p_1k": 0.1,
+  "twist": "e",
+  "review_file": "reviews/2026-11-07.md#round-3",
+  "date": "2026-11-07",
+  "note": "Round 3 CUT. Near-duplicate template of the phone sign-off mirror script; weak/unpicturable hook."
+ },
+ "girl_sets_five_backup_alarms_for_you": {
+  "status": "cut",
+  "reviewer_avg": 4.0,
+  "p_1k": 0.07,
+  "twist": "a",
+  "review_file": "reviews/2026-11-07.md#round-3",
+  "date": "2026-11-07",
+  "note": "Round 3 CUT, flagged as the most dangerous script of the run: warning line tells viewers to be suspicious when a partner shows trust."
+ },
+ "girl_owns_four_umbrellas_and_never_has_one": {
+  "status": "cut",
+  "reviewer_avg": 3.7,
+  "p_1k": 0.06,
+  "twist": "c",
+  "review_file": "reviews/2026-11-07.md#round-3",
+  "date": "2026-11-07",
+  "note": "Round 3 CUT, weakest of the round. No behaviour that looks bad; internal contradictions; withdrawal-monitoring warning line."
  }
 }
