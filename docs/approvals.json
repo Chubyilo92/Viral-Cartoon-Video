@@ -1019,7 +1019,7 @@
   "p_1k": 0.27,
   "review_file": "reviews/2026-11-04.md#round-3",
   "date": "2026-11-04",
-  "note": "Round 3. SHIP WITH FIXES (lines 1,3,5,6,7) but below floor; flagged as a near-clone lane of girl_steals_bites_off_your_plate (approved round 1) — space apart if ever built."
+  "note": "Round 3. SHIP WITH FIXES (lines 1,3,5,6,7) but below floor; flagged as a near-clone lane of girl_steals_bites_off_your_plate (approved round 1) \u2014 space apart if ever built."
  },
  "boy_snores": {
   "status": "hold",
@@ -1067,7 +1067,7 @@
   "p_1k": 0.08,
   "review_file": "reviews/2026-11-04.md#round-3",
   "date": "2026-11-04",
-  "note": "Round 3 CUT. Not a love reframe — a self-care thesis that explicitly excludes the partner; romanticises burnout."
+  "note": "Round 3 CUT. Not a love reframe \u2014 a self-care thesis that explicitly excludes the partner; romanticises burnout."
  },
  "boy_stops_for_street_performers": {
   "status": "cut",
@@ -1092,10 +1092,10 @@
   "reviewer_avg": 7.7,
   "p_1k": 0.4,
   "twist": "e",
-  "review_file": "reviews/2026-11-07.md#9-boy_starts_double_texting_too-family-e",
-  "date": "2026-11-07",
-  "note": "Round 1. SHIP WITH FIXES (lines 1,6,7). Fixed avg 7.7/40%.",
-  "sha256": "8b6f46ffe7e06af24986ed3b278018aa313e5e1630eae624706bfc7fd73f1228"
+  "review_file": "reviews/2026-11-08.md#boy_starts_double_texting_too-pronoun-fix",
+  "date": "2026-11-08",
+  "note": "Round 1 approval (7 Nov) + 8 Nov text fix: line 3 she->you for POV consistency (flagged by structure review). Re-reviewed fresh, unchanged avg 7.7/40%.",
+  "sha256": "f3ba047f62d0e238dfc26eabdfad5b37393cb88faf04b33e2697d47dd2c98bc3"
  },
  "girl_always_asks_whats_wrong": {
   "status": "hold",

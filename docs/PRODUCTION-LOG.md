@@ -1414,3 +1414,104 @@ the engine-level fixes above), across 3 build/gate cycles and 3 fresh structure-
 (Remaining 5 scripts — restaurant, double_texting, blanket, expensive, phone_sign_off — are approved
 and queued to build next in this same run; this entry will be appended to, not replaced, as each
 finishes — see the next PRODUCTION-LOG section if this run ends before all 7 are scheduled.)
+
+---
+
+## 2026-11-08 (continued) — backlog cleared: double_texting, blanket_3am, expensive, phone_sign_off
+
+Picked up after a context compaction mid-run. The remaining 4 approved backlog scripts (restaurant
+had already been built/scheduled above) went through the full multi-gate pipeline: approval.py check
+→ Kokoro TTS + LINE_SPEED → preview/contact-sheet inspection → full build (both cuts) → voicecheck.py
+0 flags → watchcheck.py PASS both cuts → fresh structure-review subagent SHIP → preflight.py (local,
+then --url after push) → createScheduledPost → read-back verify.
+
+**Slot assignment** (unchanged from prior plan, twist-family spacing respected):
+double_texting(e)→9 Nov 18:00 (48h before phone_sign_off), blanket(a)→10 Nov 10:00 (72h after
+music_in_car), expensive(d)→11 Nov 10:00 (48h after restaurant), phone_sign_off(e)→11 Nov 18:00
+(48h after double_texting).
+
+| Slot | Slug | Reviewer avg/P(1k) | Twist | File sha256 (IG / TT) | JJCutecouple commit |
+|---|---|---|---|---|---|
+| Mon 9 Nov 18:05/18:14 | boy_starts_double_texting_too | 7.7/40% | e | f3ba047f62d0e238d (approved text sha) | 38e7656ba313b77e |
+| Tue 10 Nov 10:05/10:14 | boy_steals_the_blanket_at_3am | 7.6/38% | a | 31ad8ac9d870ceca (approved text sha) | 38e7656ba313b77e |
+| Wed 11 Nov 10:05/10:14 | boy_always_says_it_wasnt_that_expensive | 7.5/37% | d | 525ca5b33c9c512d (approved text sha) | 38e7656ba313b77e |
+| Wed 11 Nov 18:05/18:14 | boy_starts_saying_her_weird_phone_sign_off | 7.4/36% | e | 550900d0b63cf0fe (approved text sha) | 38e7656ba313b77e |
+
+(All 4 built videos committed together to JJCutecouple in a single commit, since they finished the
+pipeline back-to-back after the compaction; this also overwrote two stale/orphaned mp4s left over
+from an earlier interrupted 7-Nov run of this same task — `2026-11-09-boy-starts-double-texting-too-
+{instagram,tiktok}.mp4` — confirmed via a fresh getScheduledPosts call that no live post referenced
+the stale files before overwriting them.)
+
+**New engine-level finding this round — zoom-transform Y-position bug for custom overlay chips:**
+each scene is rendered through a 1.2x zoom-and-pan transform pivoted near (540, G=1180). The fixed
+title pill is drawn in a separate, unzoomed overlay pass at y≈250-350 — but a custom in-scene prop
+(a text/icon chip drawn directly in scene code, not via a shared helper) placed at a raw/absolute
+*low* y-coordinate near the top of the 1920px canvas (e.g. y≈320) gets pushed up into/behind that
+title-pill band once the 1.2x zoom is applied, even though the pill itself isn't zoomed. This bit
+`boy_starts_double_texting_too`'s "his mates" chip and "4 min" clock chip in two separate rounds.
+Fix/lesson: keep custom overlay chips in the empirically-safe y≈550-650 band (matches long-working
+patterns like `bubbleText(x,560,...)` used throughout the existing corpus) rather than near the top
+of frame. Logging this as a reusable finding for future scripts, same spirit as the TV-prop-clip and
+ear-overlap findings logged above.
+
+**boy_starts_double_texting_too — bugs found/fixed across 2 build cycles:**
+- Structure-review round: the "his mates" chip (scene 2) and the clock chip (scene 4) both hit the
+  zoom-transform bug above (y≈320) — moved both to y=560; the "his mates" box also needed widening
+  (152→208px) to stop the label text overflowing its rounded-rect background once repositioned.
+  The clock was also redrawn as a small hand-drawn analog icon instead of an emoji glyph for a more
+  consistent in-universe look next to the "4 min" label.
+- Text fix (reviewer-mandated, re-approval required): BODY_LINES line 3 had a pronoun slip ("...every
+  time she goes quiet...") that should read "...every time **you** go quiet..." (the narration is
+  second-person throughout; "she" broke POV). Per RULES.md §5 step 3b's allowance for text-only
+  issues, sent the corrected line to a fresh dedicated reviewer (not the structure reviewer) with the
+  full script + real performance context rather than re-running the whole multi-script review round;
+  got SHIP with unchanged scores (7.7/40%). Recorded in `docs/approvals.json` (new sha256
+  f3ba047f...) and `docs/reviews/2026-11-08.md`; approval.py check re-verified green before build.
+- Fresh reviewer (3rd round, post-fix): SHIP, no further issues.
+
+**boy_steals_the_blanket_at_3am — bugs found/fixed across ~3 build cycles (scene-code only, no text
+changes, approval hash unchanged throughout):**
+- Scene 1 (burrito visual): the original rectPts "box" cocoon didn't read as a blanket wrap — redrawn
+  as an organic `blob()` cocoon shape with two translucent fold lines and a curved seam, following
+  the body contour instead of a hard-edged box.
+- Scene 4 ("tucks it back"): a planned paw-reach mechanic (`paw:{x:-220,...}`) didn't render as
+  intended and was cut; replaced with a simpler, clearer staging — a single blanket now visibly spans
+  and covers both puppies, which reads the line's meaning more directly than an arm gesture would.
+- Scene 5: this scene used the shared `SHARE` constant, which didn't fit the night/bed setting —
+  replaced with a custom bed scene (blanket + both puppies + motion-swoosh lines + a
+  `bubbleText(...,"send this to him 💌",...)` callout) consistent with the rest of the script's visual
+  world.
+- Scene 6 ("pretending"): first pass had the boy's eyes open, undercutting "pretending to be asleep" —
+  changed to fully closed eyes + smile (true-sleep look) with a separate small "peek" eye chip
+  animated with a sine-wave opacity pulse to carry the "pretending" joke instead of his main
+  expression; this peek chip itself went through 2 position fixes (it initially overlapped his face)
+  before landing at a clear offset. A nearby raincloud prop was nudged up slightly for clearance.
+- Scene 7: also used a shared constant (`HUG`) that didn't fit — replaced with a custom bed-hug scene
+  (blanket spanning both puppies, boy asleep/smiling, floating hearts after a short delay).
+- Fresh reviewer (final round): SHIP.
+
+**boy_always_says_it_wasnt_that_expensive — bugs found/fixed across ~3 build cycles (scene-code only,
+no text changes, approval hash unchanged throughout; continues fixes started in a prior session):**
+- Added two new local props this round: `TAG` (a rotated price-tag shape with string, reading
+  "£42") and `DROP` (a sweat-drop icon), replacing a vaguer/placeholder gift-prop treatment.
+- Scene 2: puppies were drawn *after* the gift+tag props, which put the boy puppy's body in front of
+  and hiding the tag — reordered so both puppies draw first, then `GIFT`/`TAG` draw on top where
+  they belong (held between them, visible).
+- Scene 4: added `DROP` (the sweat-drop reaction icon) next to the receipt prop plus a "anyway..."
+  bubble to land the deflection beat more clearly once the price tag/receipt gag was visible.
+- Scene 5: this scene used the shared `SHARE` constant, which didn't fit a receipt/candle-lit
+  "it was on sale!" beat — replaced with a custom candle-lit scene (hand-drawn candle, squint/flat
+  girl reaction, wide-eyed/open-mouth boy reaction, "it was on sale!" bubble).
+- Fresh reviewer (final round): SHIP.
+
+**boy_starts_saying_her_weird_phone_sign_off — no changes needed this round; already had a clean SHIP
+from before the compaction. Rebuilt/re-gated once more as part of this batch purely to confirm the
+final-file hashes matched the already-approved text (approval.py check green, voicecheck 0 flags,
+watchcheck PASS both cuts, preflight pass both cuts) before scheduling — no scene-code or text edits.**
+
+**Backlog status: 0 scripts remaining.** All 7 scripts queued since the last review round (music_in_car,
+tv_argues, restaurant, double_texting, blanket, expensive, phone_sign_off) are now built, gated and
+scheduled. Remaining empty slots in the 7-day window as of this entry: 12 Nov 10:00/18:00, 13 Nov
+10:00/18:00, 14 Nov 10:00/18:00, 15 Nov 10:00/18:00 (7 slots — 12 Nov 18:00 may already be filled;
+see next section for the live re-check before any new script round is written).
