@@ -1,1509 +1,1669 @@
 {
- "boy_cries": {
-  "sha256": "6d5462194f5e6d6b41da13bdd7f5cade3914d929ab92ee2220a364eaebbc76b6",
-  "status": "approved",
-  "reviewer_avg": 7.0,
-  "p_1k": 0.4,
-  "review_file": "docs/SCRIPTS.md#reviewed-batch-of-2026-10-27",
-  "date": "2026-10-27",
-  "note": "Reviewer SHIP WITH FIXES (fixes applied), avg 7.25, P(1k) 40%. Approved 30 Oct under the 7.0 floor.",
-  "text": [
-   "When a boy cries in front of you, he's not being weak.",
-   "He held it in at work, with his friends, in front of his family. You're the first person he let it out with.",
-   "He'll wipe his face fast and say sorry. Not because he's embarrassed. Because nobody ever told him it was okay.",
-   "He'll go quiet afterwards. Just let him lean on you.",
-   "If he's ever cried in front of you... send this to him.",
-   "But if you ever bring it up in an argument... he'll never cry in front of you again.",
-   "Because when a boy cries in front of you... it means he finally feels safe."
-  ],
-  "scores": {
-   "reach": 7,
-   "engagement": 7,
-   "conversion_ignored": 8,
-   "relatability": 7
-  }
- },
- "girl_argues": {
-  "sha256": "56edf3f34e46c7e154594a22afdbf25bcb298e05e0a5ccd66e563d2f81417440",
-  "status": "approved",
-  "reviewer_avg": 7.33,
-  "p_1k": 0.4,
-  "review_file": "docs/SCRIPTS.md#reviewed-batch-of-2026-10-27",
-  "date": "2026-10-27",
-  "note": "Reviewer SHIP WITH FIXES (fixes applied), avg 7.25, P(1k) 40%. Approved 30 Oct under the 7.0 floor.",
-  "text": [
-   "When a girl argues with you, she's not trying to win. She's trying to be understood.",
-   "She'll explain the same thing three times. Not because she thinks you're stupid. Because she still believes you'll get it.",
-   "She'll cry halfway through a sentence... and keep going anyway.",
-   "She'll bring it up again the next morning. Because she'd rather fix it than pretend it didn't happen.",
-   "If you still fight for him like this... send this to him.",
-   "But the day she stops arguing and just says \"okay\"... she hasn't calmed down. She's given up.",
-   "Because a girl who argues with you... still thinks you're worth the fight."
-  ],
-  "scores": {
-   "reach": 7,
-   "engagement": 7,
-   "conversion_ignored": 7,
-   "relatability": 8
-  }
- },
- "girl_checks_location": {
-  "sha256": "5038f57379da85adb488b57858869f37fb01ef6247b2f6bd9f0c1a758ef64a3d",
-  "status": "hold",
-  "reviewer_avg": 7.67,
-  "p_1k": 0.35,
-  "review_file": "docs/SCRIPTS.md#reviewed-batch-of-2026-10-27",
-  "date": "2026-10-27",
-  "note": "Passes the numbers under growth scoring (7.67, 35%) but HELD on purpose: the reviewer flagged brand risk (\"tracking your partner = love\").",
-  "text": [
-   "When a girl checks your location, she's not spying on you.",
-   "She checks it when you're driving home late. Because she can't sleep until the dot stops moving.",
-   "She checks it when you don't reply. Not to catch you out. To make sure you're okay.",
-   "She'll text \"home yet?\" even though she can see you are.",
-   "If she worries about you like this... send this to the boy she waits up for.",
-   "But if you suddenly turn your location off... she won't ask why. She'll already know.",
-   "Because a girl who checks your location... just wants you home safe."
-  ],
-  "scores": {
-   "reach": 8,
-   "engagement": 8,
-   "conversion_ignored": 6,
-   "relatability": 7
-  }
- },
- "girl_jealous": {
-  "sha256": "42095b0fb75fc56b318f7a22f66e0dbe4c784a50862280ecb5d7587feef57a30",
-  "status": "hold",
-  "reviewer_avg": 7.0,
-  "p_1k": 0.32,
-  "review_file": "docs/SCRIPTS.md#reviewed-batch-of-2026-10-27",
-  "date": "2026-10-27",
-  "note": "Below floor.",
-  "text": [
-   "When a girl gets jealous, she's not being crazy.",
-   "She goes quiet when another girl laughs at your jokes. Not because she doesn't trust you. Because making you laugh is her thing.",
-   "She asks who that was... then says \"never mind\" before you can answer.",
-   "She holds your hand a bit tighter when that girl walks past.",
-   "If she gets jealous because she's scared of losing you... send this to the boy who never makes her feel silly for it.",
-   "But if you enjoy making her jealous... you're not testing her love. You're teaching her to stop caring.",
-   "Because a girl who gets jealous... still cares enough to be scared."
-  ],
-  "scores": {
-   "reach": 7,
-   "engagement": 6,
-   "conversion_ignored": 6,
-   "relatability": 8
-  }
- },
- "girl_overthinks": {
-  "status": "cut",
-  "date": "2026-10-27",
-  "review_file": "docs/SCRIPTS.md#reviewed-batch-of-2026-10-27"
- },
- "asks_if_eaten": {
-  "status": "cut",
-  "date": "2026-10-27",
-  "review_file": "docs/SCRIPTS.md#reviewed-batch-of-2026-10-27"
- },
- "its_fine_go": {
-  "status": "cut",
-  "date": "2026-10-27",
-  "review_file": "docs/SCRIPTS.md#reviewed-batch-of-2026-10-27"
- },
- "short_fries": {
-  "sha256": "92504c3fd54ea40f78c13302ff112d86d8bd978d2b997d266f4edc5396108230",
-  "status": "published",
-  "reviewer_avg": 6.67,
-  "p_1k": 0.3,
-  "review_file": "reviews/2026-10-28-shorts.md",
-  "date": "2026-10-28",
-  "note": "Built and scheduled 26 Oct before the gates existed; self-scored 9. Published 28 Oct 10:05 MUTE (phone-clip music). Reviewer 6.5.",
-  "scores": {
-   "reach": 6,
-   "engagement": 6,
-   "conversion_ignored": 5,
-   "relatability": 8
-  }
- },
- "short_ps": {
-  "sha256": "0d971317f97fecf4ed194d3d0d09929221adc75f49fa59f1f03adf5dff51a376",
-  "status": "hold",
-  "reviewer_avg": 7.0,
-  "p_1k": 0.35,
-  "review_file": "reviews/2026-10-28-shorts.md",
-  "date": "2026-10-28",
-  "note": "Scheduled 26 Oct before the gates existed. Reviewer 7.0 (below the 8.5 floor); left in its 28 Oct 18:05 slot pending Chuby's decision. Music replaced with original (v2).",
-  "scores": {
-   "reach": 6,
-   "engagement": 7,
-   "conversion_ignored": 7,
-   "relatability": 8
-  }
- },
- "short_bed": {
-  "sha256": "530e4bbbcd8d4f1bbbc1f861e0ddf576053c462f6fd948a260d61849aab335b1",
-  "status": "hold",
-  "reviewer_avg": 5.67,
-  "p_1k": 0.22,
-  "review_file": "reviews/2026-10-28-shorts.md",
-  "date": "2026-10-28",
-  "note": "Reviewer 5.5; attempt #1 unreadable from the frames. Post set to DRAFT 28 Oct.",
-  "scores": {
-   "reach": 5,
-   "engagement": 5,
-   "conversion_ignored": 5,
-   "relatability": 7
-  }
- },
- "girl_steals_hoodie": {
-  "sha256": "65461cc58d1e8a9a3261e7850fcbf05e3e8d2e9f4c6edf07f8da1df1e8dbab92",
-  "status": "approved",
-  "reviewer_avg": 8.0,
-  "p_1k": 0.45,
-  "review_file": "reviews/2026-10-30.md",
-  "date": "2026-10-30",
-  "note": "Reviewer SHIP WITH FIXES; line 5 fix and optional line 7 trim applied word for word.",
-  "text": [
-   "When a girl steals your hoodie, she's not just cold.",
-   "She wears it when you're away. Because it still smells like you.",
-   "She'll swear she's giving it back... and you'll never see it again.",
-   "She wears it the night after a fight, even when she's still mad at you.",
-   "If your wardrobe is half his hoodies... send this to him.",
-   "But the day she gives it back washed and folded... she's not being tidy. She's saying goodbye.",
-   "Because a girl in your hoodie... is keeping you close."
-  ],
-  "scores": {
-   "reach": 7,
-   "engagement": 8,
-   "conversion_ignored": 7,
-   "relatability": 9
-  }
- },
- "man_who_listens": {
-  "status": "approved",
-  "reviewer_avg": 7.0,
-  "p_1k": 0.35,
-  "review_file": "reviews/2026-10-30.md",
-  "date": "2026-10-30",
-  "note": "Reviewer SHIP WITH FIXES (hook, beat 2 and closing line replaced word for word). Approved 30 Oct under the growth scoring (Reach/Engagement/Relatability avg 7.0) and P(1k) floor 35%. Spec not written yet: the next batch builds it first.",
-  "scores": {
-   "reach": 6,
-   "engagement": 7,
-   "conversion_ignored": 6,
-   "relatability": 8
+  "boy_cries": {
+    "sha256": "6d5462194f5e6d6b41da13bdd7f5cade3914d929ab92ee2220a364eaebbc76b6",
+    "status": "approved",
+    "reviewer_avg": 7.0,
+    "p_1k": 0.4,
+    "review_file": "docs/SCRIPTS.md#reviewed-batch-of-2026-10-27",
+    "date": "2026-10-27",
+    "note": "Reviewer SHIP WITH FIXES (fixes applied), avg 7.25, P(1k) 40%. Approved 30 Oct under the 7.0 floor.",
+    "text": [
+      "When a boy cries in front of you, he's not being weak.",
+      "He held it in at work, with his friends, in front of his family. You're the first person he let it out with.",
+      "He'll wipe his face fast and say sorry. Not because he's embarrassed. Because nobody ever told him it was okay.",
+      "He'll go quiet afterwards. Just let him lean on you.",
+      "If he's ever cried in front of you... send this to him.",
+      "But if you ever bring it up in an argument... he'll never cry in front of you again.",
+      "Because when a boy cries in front of you... it means he finally feels safe."
+    ],
+    "scores": {
+      "reach": 7,
+      "engagement": 7,
+      "conversion_ignored": 8,
+      "relatability": 7
+    }
   },
-  "text": [
-   "A man who really listens remembers the name of the girl at work you can't stand.",
-   "He asks if she's still being weird with you, a week later.",
-   "He asks how the dentist went, three days later.",
-   "He puts his phone face down the second you start a story.",
-   "If he listens like this... send this to the girl who deserves it.",
-   "But if you have to tell every story twice... he's not tired. He's not interested.",
-   "Because a man who listens remembers things you forgot you told him."
-  ],
-  "sha256": "1cc8499054f761d6ab04203fafa046e4ed1c84e6c4bf5998f84e89a6bdef2010"
- },
- "boy_waits_outside": {
-  "status": "hold",
-  "reviewer_avg": 6.67,
-  "p_1k": 0.3,
-  "review_file": "reviews/2026-10-30.md",
-  "date": "2026-10-30",
-  "note": "Below the 7.0 floor.",
-  "scores": {
-   "reach": 6,
-   "engagement": 6,
-   "conversion_ignored": 6,
-   "relatability": 8
+  "girl_argues": {
+    "sha256": "56edf3f34e46c7e154594a22afdbf25bcb298e05e0a5ccd66e563d2f81417440",
+    "status": "approved",
+    "reviewer_avg": 7.33,
+    "p_1k": 0.4,
+    "review_file": "docs/SCRIPTS.md#reviewed-batch-of-2026-10-27",
+    "date": "2026-10-27",
+    "note": "Reviewer SHIP WITH FIXES (fixes applied), avg 7.25, P(1k) 40%. Approved 30 Oct under the 7.0 floor.",
+    "text": [
+      "When a girl argues with you, she's not trying to win. She's trying to be understood.",
+      "She'll explain the same thing three times. Not because she thinks you're stupid. Because she still believes you'll get it.",
+      "She'll cry halfway through a sentence... and keep going anyway.",
+      "She'll bring it up again the next morning. Because she'd rather fix it than pretend it didn't happen.",
+      "If you still fight for him like this... send this to him.",
+      "But the day she stops arguing and just says \"okay\"... she hasn't calmed down. She's given up.",
+      "Because a girl who argues with you... still thinks you're worth the fight."
+    ],
+    "scores": {
+      "reach": 7,
+      "engagement": 7,
+      "conversion_ignored": 7,
+      "relatability": 8
+    }
+  },
+  "girl_checks_location": {
+    "sha256": "5038f57379da85adb488b57858869f37fb01ef6247b2f6bd9f0c1a758ef64a3d",
+    "status": "hold",
+    "reviewer_avg": 7.67,
+    "p_1k": 0.35,
+    "review_file": "docs/SCRIPTS.md#reviewed-batch-of-2026-10-27",
+    "date": "2026-10-27",
+    "note": "Passes the numbers under growth scoring (7.67, 35%) but HELD on purpose: the reviewer flagged brand risk (\"tracking your partner = love\").",
+    "text": [
+      "When a girl checks your location, she's not spying on you.",
+      "She checks it when you're driving home late. Because she can't sleep until the dot stops moving.",
+      "She checks it when you don't reply. Not to catch you out. To make sure you're okay.",
+      "She'll text \"home yet?\" even though she can see you are.",
+      "If she worries about you like this... send this to the boy she waits up for.",
+      "But if you suddenly turn your location off... she won't ask why. She'll already know.",
+      "Because a girl who checks your location... just wants you home safe."
+    ],
+    "scores": {
+      "reach": 8,
+      "engagement": 8,
+      "conversion_ignored": 6,
+      "relatability": 7
+    }
+  },
+  "girl_jealous": {
+    "sha256": "42095b0fb75fc56b318f7a22f66e0dbe4c784a50862280ecb5d7587feef57a30",
+    "status": "hold",
+    "reviewer_avg": 7.0,
+    "p_1k": 0.32,
+    "review_file": "docs/SCRIPTS.md#reviewed-batch-of-2026-10-27",
+    "date": "2026-10-27",
+    "note": "Below floor.",
+    "text": [
+      "When a girl gets jealous, she's not being crazy.",
+      "She goes quiet when another girl laughs at your jokes. Not because she doesn't trust you. Because making you laugh is her thing.",
+      "She asks who that was... then says \"never mind\" before you can answer.",
+      "She holds your hand a bit tighter when that girl walks past.",
+      "If she gets jealous because she's scared of losing you... send this to the boy who never makes her feel silly for it.",
+      "But if you enjoy making her jealous... you're not testing her love. You're teaching her to stop caring.",
+      "Because a girl who gets jealous... still cares enough to be scared."
+    ],
+    "scores": {
+      "reach": 7,
+      "engagement": 6,
+      "conversion_ignored": 6,
+      "relatability": 8
+    }
+  },
+  "girl_overthinks": {
+    "status": "cut",
+    "date": "2026-10-27",
+    "review_file": "docs/SCRIPTS.md#reviewed-batch-of-2026-10-27"
+  },
+  "asks_if_eaten": {
+    "status": "cut",
+    "date": "2026-10-27",
+    "review_file": "docs/SCRIPTS.md#reviewed-batch-of-2026-10-27"
+  },
+  "its_fine_go": {
+    "status": "cut",
+    "date": "2026-10-27",
+    "review_file": "docs/SCRIPTS.md#reviewed-batch-of-2026-10-27"
+  },
+  "short_fries": {
+    "sha256": "92504c3fd54ea40f78c13302ff112d86d8bd978d2b997d266f4edc5396108230",
+    "status": "published",
+    "reviewer_avg": 6.67,
+    "p_1k": 0.3,
+    "review_file": "reviews/2026-10-28-shorts.md",
+    "date": "2026-10-28",
+    "note": "Built and scheduled 26 Oct before the gates existed; self-scored 9. Published 28 Oct 10:05 MUTE (phone-clip music). Reviewer 6.5.",
+    "scores": {
+      "reach": 6,
+      "engagement": 6,
+      "conversion_ignored": 5,
+      "relatability": 8
+    }
+  },
+  "short_ps": {
+    "sha256": "0d971317f97fecf4ed194d3d0d09929221adc75f49fa59f1f03adf5dff51a376",
+    "status": "hold",
+    "reviewer_avg": 7.0,
+    "p_1k": 0.35,
+    "review_file": "reviews/2026-10-28-shorts.md",
+    "date": "2026-10-28",
+    "note": "Scheduled 26 Oct before the gates existed. Reviewer 7.0 (below the 8.5 floor); left in its 28 Oct 18:05 slot pending Chuby's decision. Music replaced with original (v2).",
+    "scores": {
+      "reach": 6,
+      "engagement": 7,
+      "conversion_ignored": 7,
+      "relatability": 8
+    }
+  },
+  "short_bed": {
+    "sha256": "530e4bbbcd8d4f1bbbc1f861e0ddf576053c462f6fd948a260d61849aab335b1",
+    "status": "hold",
+    "reviewer_avg": 5.67,
+    "p_1k": 0.22,
+    "review_file": "reviews/2026-10-28-shorts.md",
+    "date": "2026-10-28",
+    "note": "Reviewer 5.5; attempt #1 unreadable from the frames. Post set to DRAFT 28 Oct.",
+    "scores": {
+      "reach": 5,
+      "engagement": 5,
+      "conversion_ignored": 5,
+      "relatability": 7
+    }
+  },
+  "girl_steals_hoodie": {
+    "sha256": "65461cc58d1e8a9a3261e7850fcbf05e3e8d2e9f4c6edf07f8da1df1e8dbab92",
+    "status": "approved",
+    "reviewer_avg": 8.0,
+    "p_1k": 0.45,
+    "review_file": "reviews/2026-10-30.md",
+    "date": "2026-10-30",
+    "note": "Reviewer SHIP WITH FIXES; line 5 fix and optional line 7 trim applied word for word.",
+    "text": [
+      "When a girl steals your hoodie, she's not just cold.",
+      "She wears it when you're away. Because it still smells like you.",
+      "She'll swear she's giving it back... and you'll never see it again.",
+      "She wears it the night after a fight, even when she's still mad at you.",
+      "If your wardrobe is half his hoodies... send this to him.",
+      "But the day she gives it back washed and folded... she's not being tidy. She's saying goodbye.",
+      "Because a girl in your hoodie... is keeping you close."
+    ],
+    "scores": {
+      "reach": 7,
+      "engagement": 8,
+      "conversion_ignored": 7,
+      "relatability": 9
+    }
+  },
+  "man_who_listens": {
+    "status": "approved",
+    "reviewer_avg": 7.0,
+    "p_1k": 0.35,
+    "review_file": "reviews/2026-10-30.md",
+    "date": "2026-10-30",
+    "note": "Reviewer SHIP WITH FIXES (hook, beat 2 and closing line replaced word for word). Approved 30 Oct under the growth scoring (Reach/Engagement/Relatability avg 7.0) and P(1k) floor 35%. Spec not written yet: the next batch builds it first.",
+    "scores": {
+      "reach": 6,
+      "engagement": 7,
+      "conversion_ignored": 6,
+      "relatability": 8
+    },
+    "text": [
+      "A man who really listens remembers the name of the girl at work you can't stand.",
+      "He asks if she's still being weird with you, a week later.",
+      "He asks how the dentist went, three days later.",
+      "He puts his phone face down the second you start a story.",
+      "If he listens like this... send this to the girl who deserves it.",
+      "But if you have to tell every story twice... he's not tired. He's not interested.",
+      "Because a man who listens remembers things you forgot you told him."
+    ],
+    "sha256": "1cc8499054f761d6ab04203fafa046e4ed1c84e6c4bf5998f84e89a6bdef2010"
+  },
+  "boy_waits_outside": {
+    "status": "hold",
+    "reviewer_avg": 6.67,
+    "p_1k": 0.3,
+    "review_file": "reviews/2026-10-30.md",
+    "date": "2026-10-30",
+    "note": "Below the 7.0 floor.",
+    "scores": {
+      "reach": 6,
+      "engagement": 6,
+      "conversion_ignored": 6,
+      "relatability": 8
+    }
+  },
+  "girl_double_texts": {
+    "status": "hold",
+    "reviewer_avg": 6.33,
+    "p_1k": 0.25,
+    "review_file": "reviews/2026-10-30.md",
+    "date": "2026-10-30",
+    "note": "Below the 7.0 floor.",
+    "scores": {
+      "reach": 6,
+      "engagement": 6,
+      "conversion_ignored": 5,
+      "relatability": 7
+    }
+  },
+  "woman_proud_of_you": {
+    "status": "cut",
+    "reviewer_avg": 5.33,
+    "p_1k": 0.2,
+    "review_file": "reviews/2026-10-30.md",
+    "date": "2026-10-30",
+    "note": "Below the 7.0 floor.",
+    "scores": {
+      "reach": 5,
+      "engagement": 5,
+      "conversion_ignored": 5,
+      "relatability": 6
+    }
+  },
+  "girl_leaves_light_on": {
+    "status": "hold",
+    "reviewer_avg": 5.3,
+    "p_1k": 0.3,
+    "review_file": "reviews/2026-11-01.md",
+    "date": "2026-11-01",
+    "note": "Round 1. SHIP WITH FIXES (lines 1,6 applied). Below 7.0 floor.",
+    "scores": {
+      "reach": 5,
+      "engagement": 5,
+      "relatability": 6
+    },
+    "text": [
+      "If she stays up until you're home, she's not checking on you. She just can't sleep until she knows you're safe.",
+      "She'll text \"drive safe\" and then stay awake until you reply you're home.",
+      "She'll leave the chain off the door, even after a fight, just in case you still come back.",
+      "She'll turn the TV down low so she can hear your key in the lock.",
+      "If she waits up like this... send this to the one who makes it home to her.",
+      "But the night you pull up and the porch is dark... count how many nights she waited and you never texted back.",
+      "Because a girl who leaves the light on... wants you home more than she wants sleep."
+    ]
+  },
+  "boy_fixes_things": {
+    "status": "hold",
+    "reviewer_avg": 4.7,
+    "p_1k": 0.15,
+    "review_file": "reviews/2026-11-01.md",
+    "date": "2026-11-01",
+    "note": "Round 1. Below floor; reworked as boy_fixes_things_quiet in round 2 (use that version).",
+    "scores": {
+      "reach": 4,
+      "engagement": 5,
+      "relatability": 5
+    }
+  },
+  "girl_saves_your_voicemails": {
+    "status": "cut",
+    "reviewer_avg": 4.0,
+    "p_1k": 0.12,
+    "review_file": "reviews/2026-11-01.md",
+    "date": "2026-11-01",
+    "note": "Round 1. Reviewer: SHIP WITH FIXES only with all 4 replacements, otherwise CUT (ambiguous) -- cut. Rewritten as girl_saves_your_voice_notes in round 2.",
+    "scores": {
+      "reach": 4,
+      "engagement": 4,
+      "relatability": 4
+    }
+  },
+  "boy_walks_the_long_way": {
+    "status": "hold",
+    "reviewer_avg": 5.7,
+    "p_1k": 0.25,
+    "review_file": "reviews/2026-11-01.md",
+    "date": "2026-11-01",
+    "note": "Round 1. SHIP WITH FIXES, below floor; superseded by boy_takes_the_long_way (round 2, fixes applied, clean SHIP).",
+    "scores": {
+      "reach": 5,
+      "engagement": 6,
+      "relatability": 6
+    }
+  },
+  "girl_keeps_your_side_of_bed": {
+    "status": "cut",
+    "reviewer_avg": 3.3,
+    "p_1k": 0.08,
+    "review_file": "reviews/2026-11-01.md",
+    "date": "2026-11-01",
+    "note": "Round 1 CUT -- concept backwards (keeping side empty is not relatable). Reviewer's suggested reversed concept rebuilt as girl_sleeps_on_your_side in round 2.",
+    "scores": {
+      "reach": 4,
+      "engagement": 3,
+      "relatability": 3
+    }
+  },
+  "girl_keeps_the_ticket_stub": {
+    "status": "cut",
+    "reviewer_avg": 4.0,
+    "p_1k": 0.12,
+    "review_file": "reviews/2026-11-01.md",
+    "date": "2026-11-01",
+    "note": "Round 1 CUT. Weaker clone of the 1,180-view 'first message saved' winner.",
+    "scores": {
+      "reach": 4,
+      "engagement": 4,
+      "relatability": 4
+    }
+  },
+  "boy_carries_the_heavy_bag": {
+    "status": "cut",
+    "reviewer_avg": 4.3,
+    "p_1k": 0.1,
+    "review_file": "reviews/2026-11-01.md",
+    "date": "2026-11-01",
+    "note": "Round 1 CUT. Gender-roles brand risk flagged by reviewer even with line fixes.",
+    "scores": {
+      "reach": 4,
+      "engagement": 4,
+      "relatability": 5
+    }
+  },
+  "girl_texts_landed_safe": {
+    "status": "cut",
+    "reviewer_avg": 3.7,
+    "p_1k": 0.1,
+    "review_file": "reviews/2026-11-01.md",
+    "date": "2026-11-01",
+    "note": "Round 1 CUT. Niche audience (long-distance/frequent flyers only) for a page trying to grow reach.",
+    "scores": {
+      "reach": 3,
+      "engagement": 4,
+      "relatability": 4
+    }
+  },
+  "girl_laughs_at_your_old_jokes": {
+    "status": "hold",
+    "reviewer_avg": 5.7,
+    "p_1k": 0.25,
+    "review_file": "reviews/2026-11-01.md",
+    "date": "2026-11-01",
+    "note": "Round 1. SHIP WITH FIXES, below floor; superseded by girl_old_jokes (round 2, fixes applied, clean SHIP).",
+    "scores": {
+      "reach": 5,
+      "engagement": 6,
+      "relatability": 6
+    }
+  },
+  "boy_never_apologizes_first": {
+    "status": "hold",
+    "reviewer_avg": 6.7,
+    "p_1k": 0.35,
+    "review_file": "reviews/2026-11-01.md",
+    "date": "2026-11-01",
+    "note": "Round 2 (final round). Reviewer's top pick overall -- closest to the floor (P(1k) meets 35%) but average 6.7 < 7.0 floor. NOT approved; floor not lowered.",
+    "scores": {
+      "reach": 6,
+      "engagement": 7,
+      "relatability": 7
+    },
+    "text": [
+      "A boy who never says sorry first isn't too proud to lose an argument.",
+      "He'll go quiet for an hour, then show up with your favourite coffee instead of the words.",
+      "He'll quietly fix the actual thing you were fighting about, before you even bring it up again.",
+      "He'll let you have the last word every single time, because winning matters less to him than you being okay.",
+      "If he fixes it like this instead of fighting for the last word... send this to the girl who's stopped keeping score.",
+      "But if the coffee keeps showing up and the actual problem never gets fixed... that's not pride. That's avoidance.",
+      "Because a boy who never says sorry first... is still trying to make it right. Just not with words."
+    ]
+  },
+  "girl_sleeps_on_your_side": {
+    "status": "hold",
+    "reviewer_avg": 6.3,
+    "p_1k": 0.3,
+    "review_file": "reviews/2026-11-01.md",
+    "date": "2026-11-01",
+    "note": "Round 2 (final round). Rebuild of the reversed girl_keeps_your_side_of_bed concept. Below 7.0 floor.",
+    "scores": {
+      "reach": 6,
+      "engagement": 6,
+      "relatability": 7
+    },
+    "text": [
+      "If she sleeps on your side of the bed when you're away, she's not stealing your spot. It just smells like you.",
+      "She'll wear your old t-shirt to bed the whole week you're gone.",
+      "She'll hug your pillow instead of hers, then deny it when you call in the morning.",
+      "She'll move back to her own side the second you're home, like she was never there.",
+      "If she takes over your side like this... send this to the one whose side she keeps stealing.",
+      "But if you're gone a whole week and she never once moves to your side... she's not missing you the way she used to.",
+      "Because a girl who steals your side of the bed... just wants to feel closer to you."
+    ]
+  },
+  "boy_defends_you_quietly": {
+    "status": "hold",
+    "reviewer_avg": 6.0,
+    "p_1k": 0.3,
+    "review_file": "reviews/2026-11-01.md",
+    "date": "2026-11-01",
+    "note": "Round 2 (final round). Below 7.0 floor.",
+    "scores": {
+      "reach": 6,
+      "engagement": 6,
+      "relatability": 6
+    },
+    "text": [
+      "A boy who stops laughing when his friends joke about you isn't being too sensitive.",
+      "He'll go quiet and serious the second someone makes a joke that's actually about you.",
+      "He'll bring it up to them later, alone, so you never have to see him do it.",
+      "He'll never tell you what they said, because you don't need to carry that.",
+      "If he gets protective like this without making a scene... send this to the girl who never has to defend herself.",
+      "But the day he laughs along with the joke instead... he's not being chill. He's picked a side, and it isn't yours.",
+      "Because a boy who shuts that down... is on your side even when you're not in the room."
+    ]
+  },
+  "boy_fixes_things_quiet": {
+    "status": "hold",
+    "reviewer_avg": 5.7,
+    "p_1k": 0.25,
+    "review_file": "reviews/2026-11-01.md",
+    "date": "2026-11-01",
+    "note": "Round 2 (final round). Canonical version of boy_fixes_things. Below floor.",
+    "scores": {
+      "reach": 5,
+      "engagement": 6,
+      "relatability": 6
+    },
+    "text": [
+      "If he goes quiet and starts fixing something the second you've had a bad day, he's not ignoring you.",
+      "He'll tighten the wobbly chair you complained about once, three weeks ago, without a word.",
+      "He'll fix the thing that's been bugging you all week instead of asking what's wrong.",
+      "He'll check every lock in the house twice before he finally sits back down next to you.",
+      "If he shows up like this instead of talking it out... send this to the girl who's learned to read it.",
+      "But if the tap's been dripping for a month and he walks right past it... don't wait for him to fix it. Ask him what's wrong.",
+      "Because a boy who fixes things when you're upset... is trying to take care of you the only way he knows how."
+    ]
+  },
+  "boy_takes_the_long_way": {
+    "status": "hold",
+    "reviewer_avg": 5.7,
+    "p_1k": 0.25,
+    "review_file": "reviews/2026-11-01.md",
+    "date": "2026-11-01",
+    "note": "Round 2 (final round). Clean SHIP, no further fixes needed, but below 7.0 floor.",
+    "scores": {
+      "reach": 5,
+      "engagement": 6,
+      "relatability": 6
+    },
+    "text": [
+      "If he takes the long way home with you, he's not lost.",
+      "He'll add fifteen minutes to the route just so the conversation doesn't end yet.",
+      "He'll slow down at the corner where you usually say goodnight, every single time.",
+      "He'll say \"okay, goodnight\" three times at your door and still not leave.",
+      "If he stretches the walk home like this... send this to the one who's never in a rush to leave you.",
+      "But the night he takes the shortcut and spends the whole walk on his phone... he's not walking you home anymore. He's dropping you off.",
+      "Because a boy who takes the long way home... just wants a few more minutes with you."
+    ]
+  },
+  "girl_old_jokes": {
+    "status": "hold",
+    "reviewer_avg": 5.7,
+    "p_1k": 0.25,
+    "review_file": "reviews/2026-11-01.md",
+    "date": "2026-11-01",
+    "note": "Round 2 (final round). Clean SHIP, no further fixes needed, but below 7.0 floor.",
+    "scores": {
+      "reach": 5,
+      "engagement": 6,
+      "relatability": 6
+    },
+    "text": [
+      "If she still laughs at your worst joke after two years, she's not just being nice.",
+      "She'll laugh at the one about the goldfish for the hundredth time, like it's the first.",
+      "She'll mouth the punchline along with you, and still laugh when you say it.",
+      "She'll make you tell it again every time her friends come over.",
+      "If she still laughs like this... send this to the one with the worst jokes she's ever loved.",
+      "But the day you tell it and she doesn't even look up from her phone... she didn't just stop laughing. She stopped listening.",
+      "Because a girl who still laughs at your old jokes... still loves the guy telling them."
+    ]
+  },
+  "girl_saves_your_voice_notes": {
+    "status": "hold",
+    "reviewer_avg": 5.3,
+    "p_1k": 0.2,
+    "review_file": "reviews/2026-11-01.md",
+    "date": "2026-11-01",
+    "note": "Round 2 (final round). Rewrite of girl_saves_your_voicemails. Below floor.",
+    "scores": {
+      "reach": 5,
+      "engagement": 5,
+      "relatability": 6
+    },
+    "text": [
+      "If she replays your voice notes after you've already said goodnight, she's not being clingy.",
+      "She'll keep the three-second \"call me back\" long after you've already called.",
+      "She'll play it on the nights you're away, just to fall asleep to your voice instead of the silence.",
+      "She'll never delete it, even when she's clearing out everything else on an old phone.",
+      "If she keeps your voice like this... send this to the one she misses before he's even left.",
+      "But the night your voice note sits there unplayed until morning... ask yourself when she stopped wanting to hear you.",
+      "Because a girl who saves your voice notes... wants to hear you even when you're not there."
+    ]
+  },
+  "girl_last_bite": {
+    "status": "hold",
+    "reviewer_avg": 5.3,
+    "p_1k": 0.2,
+    "review_file": "reviews/2026-11-01.md",
+    "date": "2026-11-01",
+    "note": "Round 2 (final round). Below floor.",
+    "scores": {
+      "reach": 5,
+      "engagement": 5,
+      "relatability": 6
+    },
+    "text": [
+      "A girl who always leaves you the last bite isn't full.",
+      "She'll leave the last bite of fries every single time, like clockwork.",
+      "She'll slide the plate an inch closer to you before you've even asked.",
+      "She'll order extra \"just in case\", and it's never actually for her.",
+      "If she saves the last bite like this... send this to the one who's never had to ask for it.",
+      "But if she's saved you the last bite for months and you've never once saved her one... start.",
+      "Because a girl who leaves you the last bite... is saving the best part for you, every time."
+    ]
+  },
+  "boy_remembers_your_order": {
+    "status": "hold",
+    "reviewer_avg": 5.3,
+    "p_1k": 0.2,
+    "review_file": "reviews/2026-11-01.md",
+    "date": "2026-11-01",
+    "note": "Round 2 (final round) canonical version. Below floor.",
+    "scores": {
+      "reach": 5,
+      "engagement": 5,
+      "relatability": 6
+    },
+    "text": [
+      "A boy who remembers your coffee order after one date isn't just being polite.",
+      "He'll order it for you before you even sit down, three dates later.",
+      "He'll remember the oat milk, the extra shot, and that you hate it too hot.",
+      "He'll hear it's a bad day in how you say hi, and order it black before you even ask.",
+      "If he pays attention like this... send this to the girl who's never had to repeat herself.",
+      "But the day he has to ask how you take your coffee again... he stopped paying attention a while ago.",
+      "Because a boy who remembers your order... remembers you."
+    ]
+  },
+  "girl_nervous_introducing_you": {
+    "status": "cut",
+    "reviewer_avg": 4.0,
+    "p_1k": 0.12,
+    "review_file": "reviews/2026-11-01.md",
+    "date": "2026-11-01",
+    "note": "Round 2 (final round) CUT. Same topic as a flop (137 views); shames healthy comfort in a long relationship.",
+    "scores": {
+      "reach": 4,
+      "engagement": 4,
+      "relatability": 4
+    }
+  },
+  "girl_are_you_mad": {
+    "sha256": "fc32ea1894e5da65596c0be75a4483d2dd73ba1f5119075c9886061fb773574b",
+    "status": "approved",
+    "reviewer_avg": 8.33,
+    "p_1k": 0.45,
+    "review_file": "reviews/2026-11-01.md#round-3",
+    "date": "2026-11-01",
+    "note": "Round 3, authorised live by Chuby on 1 Nov after rounds 1-2 produced nothing (floor unchanged). Reviewer SHIP WITH FIXES: line 5 fix applied word for word; line 2 replaced by the reviewer for read-aloud (TTS read 'ok'/'okay' identically and spoke the emoji name). Reviewer re-scored after the line-2 change: 8.3 / 45% (was 8.7 / 47%).",
+    "scores": {
+      "reach": 8,
+      "engagement": 8,
+      "relatability": 9
+    },
+    "text": [
+      "When a girl asks \"are you mad at me?\" for the third time, she's not being annoying.",
+      "You replied with one word instead of your usual paragraph, and she noticed.",
+      "She's already gone back through your last ten messages looking for what she did.",
+      "She'll say sorry for something she's not even sure happened.",
+      "If you're the girl who asks... send this to the one you keep asking.",
+      "But if you keep saying \"I'm fine\" when you're not... you're not protecting her. You're making her guess.",
+      "Because a girl who asks if you're mad... just wants to fix it before it gets bigger."
+    ]
+  },
+  "girl_sends_you_tiktoks": {
+    "sha256": "cfb86858270dfcc7786c3b657a6e72d58ea0257da4fb66019d28966bb84c1938",
+    "status": "approved",
+    "reviewer_avg": 8.0,
+    "p_1k": 0.4,
+    "review_file": "reviews/2026-11-01.md#round-3",
+    "date": "2026-11-01",
+    "note": "Round 3, authorised live by Chuby on 1 Nov after rounds 1-2 produced nothing (floor unchanged). Reviewer SHIP WITH FIXES: line 6 replaced word for word.",
+    "scores": {
+      "reach": 7,
+      "engagement": 8,
+      "relatability": 9
+    },
+    "text": [
+      "When a girl sends you fifteen TikToks a day, she's not spamming you.",
+      "Every single one is a little \"this is literally us.\"",
+      "She sends the funny ones at 2am, knowing you're asleep, so they're the first thing you see.",
+      "And she checks if you've watched them. Every time.",
+      "If your DMs are full of her videos... send her this one back.",
+      "But the day she stops sending them... she didn't run out of videos. She just stopped seeing you in them.",
+      "Because a girl who floods your DMs... sees you in everything."
+    ]
+  },
+  "boy_quiet_when_you_cry": {
+    "sha256": "0a46979e09e80730c5c90e48f4da58570fdd0e0c85f489641da0a4232bb34f3a",
+    "status": "approved",
+    "reviewer_avg": 7.67,
+    "p_1k": 0.4,
+    "review_file": "reviews/2026-11-01.md#round-3",
+    "date": "2026-11-01",
+    "note": "Round 3, authorised live by Chuby on 1 Nov after rounds 1-2 produced nothing (floor unchanged). Reviewer SHIP, no changes.",
+    "scores": {
+      "reach": 7,
+      "engagement": 8,
+      "relatability": 8
+    },
+    "text": [
+      "When a boy goes quiet while you cry, he's not being cold.",
+      "He doesn't know what to say, so he gets you a glass of water.",
+      "He sits close enough that his shoulder touches yours, and stays there.",
+      "Later, when you're not looking, he googles \"how to help when she's sad.\"",
+      "If he tries like this... send this to the boy who doesn't always get it right.",
+      "But if he ever tells you to stop crying... he's thinking about himself, not you.",
+      "Because a boy who goes quiet when you cry... is trying so hard not to say the wrong thing."
+    ]
+  },
+  "girl_cold_feet": {
+    "sha256": "ff720c18d13ff5049b25b60715308253ec15337a96333a751fa2039d326035e9",
+    "status": "approved",
+    "reviewer_avg": 7.67,
+    "p_1k": 0.38,
+    "review_file": "reviews/2026-11-01.md#round-3",
+    "date": "2026-11-01",
+    "note": "Round 3, authorised live by Chuby on 1 Nov after rounds 1-2 produced nothing (floor unchanged). Reviewer SHIP WITH FIXES: line 6 (reviewer's simpler option) and line 7 replaced word for word.",
+    "scores": {
+      "reach": 7,
+      "engagement": 7,
+      "relatability": 9
+    },
+    "text": [
+      "When a girl puts her freezing feet on you in bed, she's not trying to annoy you.",
+      "She waits until you're almost asleep. Then she does it.",
+      "She'll swear her feet aren't that cold... while you jump out of your skin.",
+      "And she'll do it every single night until spring.",
+      "If you've been her hot water bottle all winter... send this to her.",
+      "But the night she keeps her socks on and stays on her own side... it's not her feet that went cold.",
+      "Because a girl who puts her cold feet on you... just wants to be as close to you as she can get."
+    ]
+  },
+  "girl_no_makeup": {
+    "sha256": "8b7bf8320a8bd9f6cf90dc0bf4b9d6e7c262bb446f4df50e670c420528ecef69",
+    "status": "approved",
+    "reviewer_avg": 7.33,
+    "p_1k": 0.35,
+    "review_file": "reviews/2026-11-01.md#round-3",
+    "date": "2026-11-01",
+    "note": "Round 3, authorised live by Chuby on 1 Nov after rounds 1-2 produced nothing (floor unchanged). Reviewer SHIP, no changes.",
+    "scores": {
+      "reach": 7,
+      "engagement": 7,
+      "relatability": 8
+    },
+    "text": [
+      "When a girl stops wearing makeup around you, she hasn't stopped trying.",
+      "She used to fix her hair before she opened the door. Now she answers it in pyjamas with spot cream on her chin.",
+      "She lets you see her at 7am, before coffee, before anything.",
+      "She falls asleep next to you with a face mask still on.",
+      "If she's stopped hiding anything from you... send this to her.",
+      "But if you ever make a joke about how she looks without it... watch how fast the makeup goes back on.",
+      "Because a girl who stops dressing up for you... feels at home with you."
+    ]
+  },
+  "boy_text_me_when_home": {
+    "status": "hold",
+    "reviewer_avg": 6.67,
+    "p_1k": 0.3,
+    "review_file": "reviews/2026-11-01.md#round-3",
+    "date": "2026-11-01",
+    "note": "Round 3, authorised live by Chuby on 1 Nov after rounds 1-2 produced nothing (floor unchanged). SHIP WITH FIXES (lines 5, 6) but below the 7.0 floor.",
+    "scores": {
+      "reach": 6,
+      "engagement": 7,
+      "relatability": 7
+    }
+  },
+  "girl_screenshots_your_texts": {
+    "status": "hold",
+    "reviewer_avg": 6.67,
+    "p_1k": 0.28,
+    "review_file": "reviews/2026-11-01.md#round-3",
+    "date": "2026-11-01",
+    "note": "Round 3, authorised live by Chuby on 1 Nov after rounds 1-2 produced nothing (floor unchanged). SHIP WITH FIXES (line 7) but below floor; clone risk of the 'first message saved' winner.",
+    "scores": {
+      "reach": 6,
+      "engagement": 6,
+      "relatability": 8
+    }
+  },
+  "boy_teases_you": {
+    "status": "hold",
+    "reviewer_avg": 6.33,
+    "p_1k": 0.27,
+    "review_file": "reviews/2026-11-01.md#round-3",
+    "date": "2026-11-01",
+    "note": "Round 3, authorised live by Chuby on 1 Nov after rounds 1-2 produced nothing (floor unchanged). SHIP WITH FIXES (line 1), low priority, below floor; 'mean because he likes you' trope risk.",
+    "scores": {
+      "reach": 6,
+      "engagement": 6,
+      "relatability": 7
+    }
+  },
+  "girl_makes_you_watch_her_show": {
+    "status": "hold",
+    "reviewer_avg": 6.33,
+    "p_1k": 0.25,
+    "review_file": "reviews/2026-11-01.md#round-3",
+    "date": "2026-11-01",
+    "note": "Round 3, authorised live by Chuby on 1 Nov after rounds 1-2 produced nothing (floor unchanged). SHIP WITH FIXES (line 6), backup only, below floor.",
+    "scores": {
+      "reach": 5,
+      "engagement": 6,
+      "relatability": 8
+    }
+  },
+  "girl_hair_ties_everywhere": {
+    "status": "cut",
+    "reviewer_avg": 6.0,
+    "p_1k": 0.25,
+    "review_file": "reviews/2026-11-01.md#round-3",
+    "date": "2026-11-01",
+    "note": "Round 3, authorised live by Chuby on 1 Nov after rounds 1-2 produced nothing (floor unchanged). CUT: 'messy' barely looks bad; twist clones the hoodie video.",
+    "scores": {
+      "reach": 5,
+      "engagement": 6,
+      "relatability": 7
+    }
+  },
+  "girl_steals_bites_off_your_plate": {
+    "sha256": "59aeba00be6946aedbdc65c7af096bc051952b639482499181237c5aace33758",
+    "status": "approved",
+    "reviewer_avg": 7.33,
+    "p_1k": 0.4,
+    "review_file": "reviews/2026-11-04.md",
+    "date": "2026-11-04",
+    "note": "Round 1 (scheduled run). Reviewer SHIP WITH FIXES: lines 1,2,5,6,7 replaced word for word. Reviewer: 'publish this one first.'",
+    "scores": {
+      "reach": 7,
+      "engagement": 7,
+      "relatability": 8
+    },
+    "text": [
+      "When a girl says she's \"not hungry\" and then eats half your chips, she's not stealing your food.",
+      "She'd never touch her friends' food. Only yours.",
+      "She \"just wants a bite,\" and the bite turns into a third of the meal.",
+      "She still insists she wasn't that hungry, with your fork in her hand.",
+      "If you've started ordering extra chips just for her... send this to her.",
+      "But the day she orders her own and doesn't touch yours... she's not finally full. She's keeping her distance.",
+      "Because a girl who eats off your plate... feels close enough to you to stop pretending she's not hungry."
+    ]
+  },
+  "boy_falls_asleep_on_you": {
+    "sha256": "ea9b8dd42b13abd59c0091dc4d451bc8f31e9ce4f01d243b9deecfab82bc1a85",
+    "status": "approved",
+    "reviewer_avg": 7.0,
+    "p_1k": 0.35,
+    "review_file": "reviews/2026-11-04.md",
+    "date": "2026-11-04",
+    "note": "Round 1 (scheduled run). Reviewer SHIP WITH FIXES: lines 3,4,5,6 replaced word for word. Approved exactly at the 7.0/35% floor.",
+    "scores": {
+      "reach": 7,
+      "engagement": 6,
+      "relatability": 8
+    },
+    "text": [
+      "When a boy falls asleep on the sofa with you, he's not being boring.",
+      "He fights it for ten minutes, eyes closing mid-sentence, still trying to listen.",
+      "He's slept five hours a night all week, and this is the first time he's sat still.",
+      "He wakes up saying \"I'm watching, I'm watching\" with his eyes still shut.",
+      "If he's never once made it to the end of a film with you... send this to him.",
+      "But the night he sits at the other end of the sofa, wide awake on his phone... he's not less tired. He just can't switch off around you anymore.",
+      "Because a boy who falls asleep on you... finally feels safe enough to stop holding it together."
+    ]
+  },
+  "girl_baby_voices_the_dog": {
+    "status": "hold",
+    "reviewer_avg": 6.33,
+    "p_1k": 0.3,
+    "review_file": "reviews/2026-11-04.md",
+    "date": "2026-11-04",
+    "note": "Round 1. SHIP WITH FIXES (lines 1,3,4,5,7) but below the 7.0 floor."
+  },
+  "boy_always_loses_his_keys": {
+    "status": "hold",
+    "reviewer_avg": 6.33,
+    "p_1k": 0.28,
+    "review_file": "reviews/2026-11-04.md",
+    "date": "2026-11-04",
+    "note": "Round 1. SHIP WITH FIXES (lines 1,2,6) but below the 7.0 floor."
+  },
+  "girl_finishes_your_sentences": {
+    "status": "hold",
+    "reviewer_avg": 5.33,
+    "p_1k": 0.2,
+    "review_file": "reviews/2026-11-04.md",
+    "date": "2026-11-04",
+    "note": "Round 1. SHIP WITH FIXES (lines 2,4,6) but below the 7.0 floor."
+  },
+  "boy_hums_off_key": {
+    "status": "hold",
+    "reviewer_avg": 4.33,
+    "p_1k": 0.15,
+    "review_file": "reviews/2026-11-04.md",
+    "date": "2026-11-04",
+    "note": "Round 1. SHIP WITH FIXES (lines 1,2,6,7) but reviewer called it filler-tier; well below floor."
+  },
+  "girl_talks_with_her_hands": {
+    "status": "cut",
+    "reviewer_avg": 4.33,
+    "p_1k": 0.12,
+    "review_file": "reviews/2026-11-04.md",
+    "date": "2026-11-04",
+    "note": "Round 1 CUT. Borderline personality-trait hook (trait hooks score 0 for ~20 scripts); twist borrowed from the makeup winner."
+  },
+  "girl_always_the_designated_driver": {
+    "status": "cut",
+    "reviewer_avg": 3.33,
+    "p_1k": 0.08,
+    "review_file": "reviews/2026-11-04.md",
+    "date": "2026-11-04",
+    "note": "Round 1 CUT. No 'looks bad' to reframe (pure trait hook); drink-driving adjacency is a distribution/brand risk."
+  },
+  "boy_always_20_minutes_late": {
+    "status": "cut",
+    "reviewer_avg": 3.33,
+    "p_1k": 0.07,
+    "review_file": "reviews/2026-11-04.md",
+    "date": "2026-11-04",
+    "note": "Round 1 CUT. Beats read as fantasy/invented; line 6 excuses disrespect of partner's time (brand risk)."
+  },
+  "boy_always_says_sorry_for_things_that_arent_his_fault": {
+    "status": "cut",
+    "reviewer_avg": 3.0,
+    "p_1k": 0.05,
+    "review_file": "reviews/2026-11-04.md",
+    "date": "2026-11-04",
+    "note": "Round 1 CUT. Anxious-trait hook in the same lane as flops (are_you_mad 133, quiet_when_you_cry 118); romanticises compulsive apologising (brand-tone risk)."
+  },
+  "girl_overpacks_for_trips": {
+    "sha256": "cce288b4b77dec8c50833fc798e3d3658596849e1baab6ac81cefe5b37e8ad5a",
+    "status": "approved",
+    "reviewer_avg": 7.0,
+    "p_1k": 0.4,
+    "review_file": "reviews/2026-11-04.md#round-2",
+    "date": "2026-11-04",
+    "note": "Round 2 (fresh reviewer, separate from round 1). SHIP WITH FIXES: lines 2,5,6,7 replaced word for word. Reviewer: 'ship this one first.'",
+    "scores": {
+      "reach": 7,
+      "engagement": 7,
+      "relatability": 7
+    },
+    "text": [
+      "When a girl packs five \"just in case\" outfits for a two-day trip, she's not being extra.",
+      "Half that suitcase is your charger, your paracetamol and the socks you forgot.",
+      "She packs a tiny first-aid kit that's bailed you out more times than either of you can count.",
+      "She still swears she \"barely packed anything\" while the zipper strains to close.",
+      "If she's the reason you've never once been without a charger on holiday... send this to her.",
+      "But the trip she packs light and there's nothing of yours in her bag... she's not travelling lighter. She's stopped planning for you.",
+      "Because a girl who overpacks for every trip... is packing for two."
+    ]
+  },
+  "girl_leaves_cupboard_doors_open": {
+    "sha256": "77daf430bda7cf290999e4b6d27b1defb6e1b0a0347b568a2ca08345179bee77",
+    "status": "approved",
+    "reviewer_avg": 7.0,
+    "p_1k": 0.38,
+    "review_file": "reviews/2026-11-04.md#round-2",
+    "date": "2026-11-04",
+    "note": "Round 2 (fresh reviewer, separate from round 1). SHIP WITH FIXES: lines 6,7 replaced word for word.",
+    "scores": {
+      "reach": 7,
+      "engagement": 7,
+      "relatability": 7
+    },
+    "text": [
+      "When a girl leaves every cupboard door open behind her, she's not being careless.",
+      "She grabs what she needs and moves straight on to the next thing, door still swinging.",
+      "You're the one who closes them, every time, without her ever noticing.",
+      "She never once does it at her mum's house, where everything still has to look perfect.",
+      "If you've become the designated door-closer in your own home... send this to her.",
+      "But the day you walk in and every single door is shut... she's not finally being tidy. She's started acting like a guest again.",
+      "Because a girl who leaves every door open around you... has stopped acting like a guest in your home."
+    ]
+  },
+  "boy_spoils_his_own_favourite_films": {
+    "status": "hold",
+    "reviewer_avg": 6.0,
+    "p_1k": 0.28,
+    "review_file": "reviews/2026-11-04.md#round-2",
+    "date": "2026-11-04",
+    "note": "Round 2. SHIP WITH FIXES (lines 3,6,7) but below the 7.0 floor."
+  },
+  "girl_laughs_at_her_own_jokes_first": {
+    "status": "hold",
+    "reviewer_avg": 5.7,
+    "p_1k": 0.22,
+    "review_file": "reviews/2026-11-04.md#round-2",
+    "date": "2026-11-04",
+    "note": "Round 2. SHIP WITH FIXES (lines 4,7) but below the 7.0 floor."
+  },
+  "boy_takes_forever_to_get_ready": {
+    "status": "hold",
+    "reviewer_avg": 4.7,
+    "p_1k": 0.18,
+    "review_file": "reviews/2026-11-04.md#round-2",
+    "date": "2026-11-04",
+    "note": "Round 2. SHIP WITH FIXES (lines 3,4,5,6,7) but well below the floor; narrow recognisable audience."
+  },
+  "girl_photographs_the_boring_moments": {
+    "status": "hold",
+    "reviewer_avg": 4.3,
+    "p_1k": 0.15,
+    "review_file": "reviews/2026-11-04.md#round-2",
+    "date": "2026-11-04",
+    "note": "Round 2. SHIP WITH FIXES (lines 2,4,6,7) but below floor; breaks the 'looks bad first' rule."
+  },
+  "boy_forgets_to_put_the_seat_down": {
+    "status": "cut",
+    "reviewer_avg": 5.3,
+    "p_1k": 0.15,
+    "review_file": "reviews/2026-11-04.md#round-2",
+    "date": "2026-11-04",
+    "note": "Round 2 CUT as written: line 6 treats a partner improving as evidence of guilt (brand risk/suspicion-advice); line 2 reads as not washing hands."
+  },
+  "girl_narrates_everything_she_does": {
+    "status": "cut",
+    "reviewer_avg": 3.7,
+    "p_1k": 0.12,
+    "review_file": "reviews/2026-11-04.md#round-2",
+    "date": "2026-11-04",
+    "note": "Round 2 CUT. Behaviour is never about the partner, so the love reframe has nothing to stand on; close to a trait hook."
+  },
+  "boy_impulse_buys_weird_gadgets": {
+    "status": "cut",
+    "reviewer_avg": 2.7,
+    "p_1k": 0.06,
+    "review_file": "reviews/2026-11-04.md#round-2",
+    "date": "2026-11-04",
+    "note": "Round 2 CUT. Beats self-contradict (buys only for her vs. impulse-buys for himself; uses in secret vs. hopes she notices); romanticises impulsive spending."
+  },
+  "girl_rearranges_the_cushions": {
+    "status": "cut",
+    "reviewer_avg": 2.7,
+    "p_1k": 0.05,
+    "review_file": "reviews/2026-11-04.md#round-2",
+    "date": "2026-11-04",
+    "note": "Round 2 CUT. Invented unverifiable psychology; romanticises anxiety/not-feeling-safe, same lane as 118/133-view flops."
+  },
+  "girl_calls_for_no_reason": {
+    "sha256": "b624b334f7a309b26758c7cb422a78f1867db76cb416dc01bff3f820f89734cf",
+    "status": "approved",
+    "reviewer_avg": 7.33,
+    "p_1k": 0.38,
+    "review_file": "reviews/2026-11-04.md#round-3",
+    "date": "2026-11-04",
+    "note": "Round 3 (final allowed round; fresh reviewer, separate from rounds 1-2). SHIP WITH FIXES: lines 2,5 replaced word for word.",
+    "scores": {
+      "reach": 7,
+      "engagement": 7,
+      "relatability": 8
+    },
+    "text": [
+      "When a girl calls you in the middle of the afternoon for no reason at all, she's not checking up on you.",
+      "She just wants to tell you about a dog she saw on the walk home.",
+      "She stays on the call in silence while she does the washing up, just so the kitchen isn't quiet.",
+      "She hangs up the second you sound busy, before you've even said that you are.",
+      "If you've heard about more random dogs on the phone than you've ever met in real life... send this to her.",
+      "But the week she stops calling for no reason at all... she's not finally respecting your time. She's stopped wanting to share the small stuff with you.",
+      "Because a girl who calls you for nothing... just wants you there for everything, even the boring parts."
+    ]
+  },
+  "boy_tells_the_same_stories": {
+    "status": "hold",
+    "reviewer_avg": 6.67,
+    "p_1k": 0.32,
+    "review_file": "reviews/2026-11-04.md#round-3",
+    "date": "2026-11-04",
+    "note": "Round 3. SHIP WITH FIXES (lines 6,7) but below floor; closest hold across all 3 rounds, best candidate for a future batch."
+  },
+  "boy_orders_dessert_to_share": {
+    "status": "hold",
+    "reviewer_avg": 6.33,
+    "p_1k": 0.27,
+    "review_file": "reviews/2026-11-04.md#round-3",
+    "date": "2026-11-04",
+    "note": "Round 3. SHIP WITH FIXES (lines 1,3,5,6,7) but below floor; flagged as a near-clone lane of girl_steals_bites_off_your_plate (approved round 1) \u2014 space apart if ever built."
+  },
+  "boy_snores": {
+    "status": "hold",
+    "reviewer_avg": 6.0,
+    "p_1k": 0.25,
+    "review_file": "reviews/2026-11-04.md#round-3",
+    "date": "2026-11-04",
+    "note": "Round 3. SHIP WITH FIXES (lines 4,6,7) but below floor."
+  },
+  "girl_checks_the_weather_for_you": {
+    "status": "hold",
+    "reviewer_avg": 5.67,
+    "p_1k": 0.22,
+    "review_file": "reviews/2026-11-04.md#round-3",
+    "date": "2026-11-04",
+    "note": "Round 3. SHIP WITH FIXES (line 7, which as drafted framed control as love) but below floor."
+  },
+  "boy_steals_the_aux_cord": {
+    "status": "hold",
+    "reviewer_avg": 5.67,
+    "p_1k": 0.2,
+    "review_file": "reviews/2026-11-04.md#round-3",
+    "date": "2026-11-04",
+    "note": "Round 3. SHIP WITH FIXES (lines 3,5,6) but below floor; low priority."
+  },
+  "boy_wears_the_same_five_shirts": {
+    "status": "cut",
+    "reviewer_avg": 5.0,
+    "p_1k": 0.12,
+    "review_file": "reviews/2026-11-04.md#round-3",
+    "date": "2026-11-04",
+    "note": "Round 3 CUT. Fantasy-boyfriend beats; line 6 teaches 'a new shirt is a red flag' (paranoia/control brand risk)."
+  },
+  "boy_leaves_wet_towel_on_the_bed": {
+    "status": "cut",
+    "reviewer_avg": 4.67,
+    "p_1k": 0.1,
+    "review_file": "reviews/2026-11-04.md#round-3",
+    "date": "2026-11-04",
+    "note": "Round 3 CUT. Excuses unequal domestic chore load as the love story (brand risk); invented psychology; weaponised-incompetence beat."
+  },
+  "girl_takes_long_showers": {
+    "status": "cut",
+    "reviewer_avg": 4.0,
+    "p_1k": 0.08,
+    "review_file": "reviews/2026-11-04.md#round-3",
+    "date": "2026-11-04",
+    "note": "Round 3 CUT. Not a love reframe \u2014 a self-care thesis that explicitly excludes the partner; romanticises burnout."
+  },
+  "boy_stops_for_street_performers": {
+    "status": "cut",
+    "reviewer_avg": 3.0,
+    "p_1k": 0.05,
+    "review_file": "reviews/2026-11-04.md#round-3",
+    "date": "2026-11-04",
+    "note": "Round 3 CUT. Personality-trait hook (trait hooks score 0 for ~20 scripts); love connection bolted on at the last two words; money-strain and mental-health-decline undertones."
+  },
+  "boy_plays_his_own_music_in_the_car": {
+    "status": "approved",
+    "reviewer_avg": 7.3,
+    "p_1k": 0.4,
+    "twist": "a",
+    "review_file": "reviews/2026-11-07.md#2-boy_plays_his_own_music_in_the_car-family-a",
+    "date": "2026-11-07",
+    "note": "Round 1. SHIP WITH FIXES (lines 1,4). Fixed avg 7.3/40%.",
+    "sha256": "1dd6e90d8740a1ca63bff1eaeab0d8cf2aeab800a0cb682dda724f6d74432172"
+  },
+  "boy_starts_double_texting_too": {
+    "status": "approved",
+    "reviewer_avg": 7.7,
+    "p_1k": 0.4,
+    "twist": "e",
+    "review_file": "reviews/2026-11-08.md#boy_starts_double_texting_too-pronoun-fix",
+    "date": "2026-11-08",
+    "note": "Round 1 approval (7 Nov) + 8 Nov text fix: line 3 she->you for POV consistency (flagged by structure review). Re-reviewed fresh, unchanged avg 7.7/40%.",
+    "sha256": "f3ba047f62d0e238dfc26eabdfad5b37393cb88faf04b33e2697d47dd2c98bc3"
+  },
+  "girl_always_asks_whats_wrong": {
+    "status": "hold",
+    "reviewer_avg": 7.0,
+    "p_1k": 0.32,
+    "twist": "d",
+    "review_file": "reviews/2026-11-07.md#7-girl_always_asks_whats_wrong-family-d",
+    "date": "2026-11-07",
+    "note": "Round 1. SHIP WITH FIXES (line 4) but below P(1k) floor even fixed (32%<35%). Best of the held/cut scripts; bench for a week with no emotional-reassurance posts around it."
+  },
+  "girl_heating_too_high": {
+    "status": "hold",
+    "reviewer_avg": 6.3,
+    "p_1k": 0.28,
+    "twist": "a",
+    "review_file": "reviews/2026-11-07.md#1-girl_heating_too_high-family-a",
+    "date": "2026-11-07",
+    "note": "Round 1. SHIP WITH FIXES (lines 1,3,4,6,7) but below floor; also too close to girl_cold_feet, space apart if ever built."
+  },
+  "boy_checks_your_tyres_before_every_trip": {
+    "status": "hold",
+    "reviewer_avg": 6.0,
+    "p_1k": 0.22,
+    "twist": "c",
+    "review_file": "reviews/2026-11-07.md#6-boy_checks_your_tyres_before_every_trip-family-c",
+    "date": "2026-11-07",
+    "note": "Round 1. SHIP WITH FIXES (line 7) but below floor."
+  },
+  "girl_hides_the_good_snacks": {
+    "status": "cut",
+    "reviewer_avg": 5.0,
+    "p_1k": 0.12,
+    "twist": "c",
+    "review_file": "reviews/2026-11-07.md#5-girl_hides_the_good_snacks-family-c",
+    "date": "2026-11-07",
+    "note": "Round 1 CUT. Internal contradiction (hides snacks from viewer AND saves them for viewer) collapses the script's logic; needs a full rewrite, not line fixes. Also food-themed so close after the plate flop."
+  },
+  "girl_folds_your_laundry_her_way": {
+    "status": "cut",
+    "reviewer_avg": 5.0,
+    "p_1k": 0.12,
+    "twist": "b",
+    "review_file": "reviews/2026-11-07.md#3-girl_folds_your_laundry_her_way-family-b",
+    "date": "2026-11-07",
+    "note": "Round 1 CUT. Moderate brand risk: frames unpaid domestic labour/self-neglect as romantic (tradwife reading); redoing his folding also reads as mildly controlling."
+  },
+  "girl_leaves_her_phone_facedown_too": {
+    "status": "cut",
+    "reviewer_avg": 5.0,
+    "p_1k": 0.1,
+    "twist": "e",
+    "review_file": "reviews/2026-11-07.md#10-girl_leaves_her_phone_facedown_too-family-e",
+    "date": "2026-11-07",
+    "note": "Round 1 CUT, high risk. Face-down-phone framing reads as a 'cheating sign' narrative and invites phone-snooping comments; don't rework this theme."
+  },
+  "girl_leaves_the_porch_light_on": {
+    "status": "cut",
+    "reviewer_avg": 4.3,
+    "p_1k": 0.1,
+    "twist": "d",
+    "review_file": "reviews/2026-11-07.md#8-girl_leaves_the_porch_light_on-family-d",
+    "date": "2026-11-07",
+    "note": "Round 1 CUT. Weak/unrelatable hook (porch light reads as parent behaviour); warning line is a guilt trip about lateness."
+  },
+  "boy_overwaters_your_desk_plant": {
+    "status": "cut",
+    "reviewer_avg": 4.0,
+    "p_1k": 0.08,
+    "twist": "b",
+    "review_file": "reviews/2026-11-07.md#4-boy_overwaters_your_desk_plant-family-b",
+    "date": "2026-11-07",
+    "note": "Round 1 CUT, weakest of the round. Slug contradicts the script (no overwatering in the text), niche hook, circular warning line."
+  },
+  "boy_always_lets_you_pick_the_restaurant": {
+    "status": "approved",
+    "reviewer_avg": 7.7,
+    "p_1k": 0.4,
+    "twist": "d",
+    "review_file": "reviews/2026-11-07.md#round-2",
+    "date": "2026-11-07",
+    "note": "Round 2. SHIP WITH FIXES (lines 1,2,3,6,7; 4&5 unchanged). Fixed avg 7.7/40%.",
+    "sha256": "893d0f4332473bba4dbb9252b8a243453813e22928242aa841bed08d701cfc27"
+  },
+  "boy_steals_the_blanket_at_3am": {
+    "status": "approved",
+    "reviewer_avg": 7.7,
+    "p_1k": 0.38,
+    "twist": "a",
+    "review_file": "reviews/2026-11-07.md#round-2",
+    "date": "2026-11-07",
+    "note": "Round 2. SHIP WITH FIXES (all 7 lines replaced). Fixed avg 7.7/38%.",
+    "sha256": "31ad8ac9d870ceca61517212d123a0386e163aa916948e41c9f7feda226d2f3e"
+  },
+  "girl_critiques_your_parking_every_time": {
+    "status": "hold",
+    "reviewer_avg": 7.0,
+    "p_1k": 0.32,
+    "twist": "b",
+    "review_file": "reviews/2026-11-07.md#round-2",
+    "date": "2026-11-07",
+    "note": "Round 2. SHIP WITH FIXES (lines 1,3,6,7) but below P(1k) floor even fixed (32%<35%). Good reserve."
+  },
+  "boy_narrates_the_football_only_to_you": {
+    "status": "hold",
+    "reviewer_avg": 6.0,
+    "p_1k": 0.22,
+    "twist": "b",
+    "review_file": "reviews/2026-11-07.md#round-2",
+    "date": "2026-11-07",
+    "note": "Round 2. SHIP WITH FIXES (lines 1,2,3,6) but below floor."
+  },
+  "girl_starts_saying_his_dumb_catchphrase": {
+    "status": "hold",
+    "reviewer_avg": 5.7,
+    "p_1k": 0.18,
+    "twist": "e",
+    "review_file": "reviews/2026-11-07.md#round-2",
+    "date": "2026-11-07",
+    "note": "Round 2. SHIP WITH FIXES (lines 1,2,6,7) but below floor even fixed (~6.7/28%)."
+  },
+  "girl_keeps_your_painkillers_in_her_bag": {
+    "status": "cut",
+    "reviewer_avg": 5.3,
+    "p_1k": 0.15,
+    "twist": "c",
+    "review_file": "reviews/2026-11-07.md#round-2",
+    "date": "2026-11-07",
+    "note": "Round 2 CUT. Nothing looks bad so there's no reframe; rework as 'her bag, half of it is for you' with a funny inventory if revisited."
+  },
+  "boy_always_answers_how_are_you_with_im_tired": {
+    "status": "cut",
+    "reviewer_avg": 4.7,
+    "p_1k": 0.1,
+    "twist": "d",
+    "review_file": "reviews/2026-11-07.md#round-2",
+    "date": "2026-11-07",
+    "note": "Round 2 CUT. Warning line blames the viewer and contradicts the rest of the script; heavy/withholding territory matches past flops."
+  },
+  "girl_rewrites_the_grocery_list": {
+    "status": "cut",
+    "reviewer_avg": 4.3,
+    "p_1k": 0.1,
+    "twist": "a",
+    "review_file": "reviews/2026-11-07.md#round-2",
+    "date": "2026-11-07",
+    "note": "Round 2 CUT, brand risk. Romanticises unpaid household admin and frames overriding a partner's choices as care."
+  },
+  "boy_starts_leaving_her_side_of_the_bed_made": {
+    "status": "cut",
+    "reviewer_avg": 3.7,
+    "p_1k": 0.07,
+    "twist": "e",
+    "review_file": "reviews/2026-11-07.md#round-2",
+    "date": "2026-11-07",
+    "note": "Round 2 CUT, brand risk. Premise is unpaid domestic labour by the woman, romanticised; muddled POV."
+  },
+  "boy_always_takes_the_aisle_seat": {
+    "status": "cut",
+    "reviewer_avg": 3.3,
+    "p_1k": 0.06,
+    "twist": "c",
+    "review_file": "reviews/2026-11-07.md#round-2",
+    "date": "2026-11-07",
+    "note": "Round 2 CUT, weakest of round. Hidden reason doesn't make logical sense (aisle seat doesn't protect from turbulence); internal contradictions."
+  },
+  "boy_argues_with_the_tv_only_during_her_shows": {
+    "status": "approved",
+    "reviewer_avg": 7.0,
+    "p_1k": 0.35,
+    "twist": "b",
+    "review_file": "reviews/2026-11-07.md#round-3",
+    "date": "2026-11-07",
+    "note": "Round 3. SHIP WITH FIXES (lines 4,5,6,7; 1-3 unchanged). Fixed avg 7.0/35%.",
+    "sha256": "f7bfa19bbf54befd920ae0880e9a1acf42aaeca333eba01d92a02c4e0137c8ef"
+  },
+  "boy_always_says_it_wasnt_that_expensive": {
+    "status": "approved",
+    "reviewer_avg": 7.0,
+    "p_1k": 0.38,
+    "twist": "d",
+    "review_file": "reviews/2026-11-07.md#round-3",
+    "date": "2026-11-07",
+    "note": "Round 3. SHIP WITH FIXES (lines 1,2,3,5; 4,6,7 unchanged). Fixed avg 7.0/38%.",
+    "sha256": "525ca5b33c9c512d49a8fae1aad533477d5c75b3d094d39c188da341cd93db4a"
+  },
+  "boy_starts_saying_her_weird_phone_sign_off": {
+    "status": "approved",
+    "reviewer_avg": 7.3,
+    "p_1k": 0.4,
+    "twist": "e",
+    "review_file": "reviews/2026-11-07.md#round-3",
+    "date": "2026-11-07",
+    "note": "Round 3. SHIP WITH FIXES (lines 2,4,5,6; 1,3,7 unchanged). Fixed avg 7.3/40%.",
+    "sha256": "550900d0b63cf0fe8a77819d10b64b037f1b287e27c728937a32e30e228debb4"
+  },
+  "boy_never_remembers_who_that_character_is": {
+    "status": "hold",
+    "reviewer_avg": 6.3,
+    "p_1k": 0.25,
+    "twist": "d",
+    "review_file": "reviews/2026-11-07.md#round-3",
+    "date": "2026-11-07",
+    "note": "Round 3. SHIP WITH FIXES (lines 3,4,6,7) but below floor even fixed (~33%); same-batch clone lane of boy_argues_with_the_tv_only_during_her_shows, space apart if ever built."
+  },
+  "boy_still_sends_you_a_bad_pun_every_day": {
+    "status": "cut",
+    "reviewer_avg": 5.3,
+    "p_1k": 0.18,
+    "twist": "b",
+    "review_file": "reviews/2026-11-07.md#round-3",
+    "date": "2026-11-07",
+    "note": "Round 3 CUT. Niche habit, weak warning line, below floor even with fixes."
+  },
+  "boy_eats_the_crusts_off_your_sandwich": {
+    "status": "cut",
+    "reviewer_avg": 4.3,
+    "p_1k": 0.08,
+    "twist": "a",
+    "review_file": "reviews/2026-11-07.md#round-3",
+    "date": "2026-11-07",
+    "note": "Round 3 CUT. Food-themed (food has flopped twice); warning line is withdrawal-monitoring with no real stakes."
+  },
+  "boy_always_grabs_extra_napkins_he_never_uses": {
+    "status": "cut",
+    "reviewer_avg": 4.3,
+    "p_1k": 0.1,
+    "twist": "c",
+    "review_file": "reviews/2026-11-07.md#round-3",
+    "date": "2026-11-07",
+    "note": "Round 3 CUT. Nothing about the behaviour looks bad, so there's no reframe."
+  },
+  "girl_starts_doing_his_weird_bedtime_stretch": {
+    "status": "cut",
+    "reviewer_avg": 4.7,
+    "p_1k": 0.1,
+    "twist": "e",
+    "review_file": "reviews/2026-11-07.md#round-3",
+    "date": "2026-11-07",
+    "note": "Round 3 CUT. Near-duplicate template of the phone sign-off mirror script; weak/unpicturable hook."
+  },
+  "girl_sets_five_backup_alarms_for_you": {
+    "status": "cut",
+    "reviewer_avg": 4.0,
+    "p_1k": 0.07,
+    "twist": "a",
+    "review_file": "reviews/2026-11-07.md#round-3",
+    "date": "2026-11-07",
+    "note": "Round 3 CUT, flagged as the most dangerous script of the run: warning line tells viewers to be suspicious when a partner shows trust."
+  },
+  "girl_owns_four_umbrellas_and_never_has_one": {
+    "status": "cut",
+    "reviewer_avg": 3.7,
+    "p_1k": 0.06,
+    "twist": "c",
+    "review_file": "reviews/2026-11-07.md#round-3",
+    "date": "2026-11-07",
+    "note": "Round 3 CUT, weakest of the round. No behaviour that looks bad; internal contradictions; withdrawal-monitoring warning line."
+  },
+  "girl_always_checks_he_got_home_safe": {
+    "sha256": "f1d3d193bed2a7f3f924a559f67e688123eec4b1be83d03a79c4e242470b1e72",
+    "status": "approved",
+    "reviewer_avg": 7.7,
+    "p_1k": 0.4,
+    "twist": "d",
+    "review_file": "reviews/2026-11-08.md#gap-fill-round-1-10-brand-new-drafts-12-15-nov-slots",
+    "date": "2026-11-08",
+    "note": "Round 1 gap-fill. SHIP WITH FIXES on lines 3-7, mandatory for risk (original wording tipped into guilt-tripping around \"text me when home\"). Best share mechanic of the batch."
+  },
+  "girl_starts_narrating_the_tv_show_like_he_does": {
+    "sha256": "ccae04a80f68428776c6f7d3992756e6b0e0b544ea2cad9ded9436654d4d331b",
+    "status": "approved",
+    "reviewer_avg": 7.0,
+    "p_1k": 0.35,
+    "twist": "e",
+    "review_file": "reviews/2026-11-08.md#gap-fill-round-1-10-brand-new-drafts-12-15-nov-slots",
+    "date": "2026-11-08",
+    "note": "Round 1 gap-fill. SHIP WITH FIXES on line 6 (restated the beat instead of turning). At the P(1k) floor exactly (35%)."
+  },
+  "girl_hums_off_key_in_the_kitchen": {
+    "sha256": "7346efcf5aa57b3a1007d4fee7e09d24639206a300a85fd5b57b33cd2b24cd31",
+    "status": "hold",
+    "reviewer_avg": 6.3,
+    "p_1k": 0.33,
+    "twist": "a",
+    "review_file": "reviews/2026-11-08.md#gap-fill-round-1-10-brand-new-drafts-12-15-nov-slots",
+    "date": "2026-11-08",
+    "text": [
+      "She hums completely off-key every time she cooks, and has no idea she's doing it.",
+      "You used to turn the TV up to drown it out.",
+      "Now you turn the TV down instead, so you can actually hear her.",
+      "You've started listening for it from the other room, just to know she's having a good day.",
+      "Send this to the worst singer you love.",
+      "The day she's cooking in total silence, she's not concentrating. Something's on her mind. That's your cue to ask.",
+      "A terrible, tuneless, happy noise coming from your kitchen is one of the best sounds a house can make."
+    ],
+    "note": "SHIP WITH FIXES per reviewer but below the avg/P(1k) floor (6.3/33%). Kept on hold with its fixed text for a future round."
+  },
+  "boy_checks_the_front_door_twice_before_bed": {
+    "sha256": "774be4b68be999e40147d701f2b25817fcb7f8e7f597abbf85eff188d450ea85",
+    "status": "hold",
+    "reviewer_avg": 5.7,
+    "p_1k": 0.25,
+    "twist": "c",
+    "review_file": "reviews/2026-11-08.md#gap-fill-round-1-10-brand-new-drafts-12-15-nov-slots",
+    "date": "2026-11-08",
+    "text": [
+      "He checks the front door is locked, then checks it again two minutes later.",
+      "You've called him paranoid for it more than once.",
+      "It's so you don't have to lie there wondering and go check it yourself.",
+      "He'd rather look a little ridiculous than let you lie awake over a door.",
+      "Send this to the one who checks the door twice.",
+      "And if you're the one who used to get up and check? Notice you stopped. That's him.",
+      "Let the ridiculous habit be ridiculous. It's doing its job."
+    ],
+    "note": "SHIP WITH FIXES per reviewer but below the floor (5.7/25%). Shares the \"annoying habit is secretly protective\" skeleton with boy_leaves_the_hallway_light_on \u2014 reviewer said not to post both in the same week even if both are later approved."
+  },
+  "girl_only_laughs_at_his_bad_puns": {
+    "sha256": "3c73e7c5fc65e941150f9451bfc8fb664b4928bff9ab208ffe02726d145a932c",
+    "status": "hold",
+    "reviewer_avg": 5.7,
+    "p_1k": 0.25,
+    "twist": "b",
+    "review_file": "reviews/2026-11-08.md#gap-fill-round-1-10-brand-new-drafts-12-15-nov-slots",
+    "date": "2026-11-08",
+    "text": [
+      "She groans at every pun on earth. Except yours.",
+      "Yours are objectively just as bad.",
+      "She still laughs at every one of them, like it's the first time she's heard it.",
+      "Even the one about the printer she's heard eleven times.",
+      "If you've got a joke that only ever works on one specific person, send this to them.",
+      "And the day she stops laughing at the printer one, don't get a new joke. Ask her what's wrong.",
+      "Keep the bad jokes coming. She's been laughing at the printer one for two years."
+    ],
+    "note": "SHIP WITH FIXES per reviewer but below the floor (5.7/25%)."
+  },
+  "boy_remembers_how_you_take_your_coffee_everywhere": {
+    "sha256": "709daeaa16dccf0a4c2e779aea47fb76763953750cfa6ff460e856a3632e5062",
+    "status": "hold",
+    "reviewer_avg": 5.3,
+    "p_1k": 0.28,
+    "twist": "d",
+    "review_file": "reviews/2026-11-08.md#gap-fill-round-1-10-brand-new-drafts-12-15-nov-slots",
+    "date": "2026-11-08",
+    "text": [
+      "He knows your coffee order at every cafe you've ever been to together.",
+      "You never once sat him down and told him. He just picked it up.",
+      "He even knows which cafe's oat milk you don't trust.",
+      "He's still collecting it anyway, one small detail at a time, without being asked.",
+      "If someone remembers the tiny details you never thought mattered enough to mention, send this to them.",
+      "So if you've switched to decaf and haven't told him, tell him. He's been ordering the old one with total confidence.",
+      "Let him order for you. He's been practising."
+    ],
+    "note": "SHIP WITH FIXES per reviewer but below the floor (5.3/28%)."
+  },
+  "girl_always_takes_the_aisle_seat": {
+    "sha256": "380c9df71773fb6ecfbee2f5d71236d284fb62706ae02c48004c5bf8d942fe01",
+    "status": "hold",
+    "reviewer_avg": 5.0,
+    "p_1k": 0.2,
+    "twist": "c",
+    "review_file": "reviews/2026-11-08.md#gap-fill-round-1-10-brand-new-drafts-12-15-nov-slots",
+    "date": "2026-11-08",
+    "text": [
+      "Every flight, every train, she takes the aisle seat. No discussion.",
+      "You used to think she just liked being in control of the exit.",
+      "It's so you get the window, because you're the one who actually looks out of it.",
+      "And so she can get up without waking you, when you inevitably fall asleep on her shoulder by minute twenty.",
+      "If someone's always quietly taken the worse seat so you could have the better one, send this to them.",
+      "And the one flight she takes the window? She's not tired. She wants your shoulder this time.",
+      "Next trip, let her have the window. Just once."
+    ],
+    "note": "SHIP WITH FIXES per reviewer but below the floor (5.0/20%), lowest priority per reviewer."
+  },
+  "boy_leaves_the_hallway_light_on": {
+    "sha256": "d3fc960e0ac59ff9ec8dbcef1739fa4bc8f954945fb56c376e0ae1a46a9bb225",
+    "status": "hold",
+    "reviewer_avg": 6.7,
+    "p_1k": 0.35,
+    "twist": "c",
+    "review_file": "reviews/2026-11-08.md#gap-fill-round-1-10-brand-new-drafts-12-15-nov-slots",
+    "date": "2026-11-08",
+    "text": [
+      "He leaves the hallway light on every single night, no matter how many times you ask.",
+      "You've called it lazy. You've called it wasteful.",
+      "It's on so you don't stub your toe walking to the bathroom at three in the morning.",
+      "He worked that out after the first week you lived together, and never once mentioned it.",
+      "Send this to whoever keeps leaving the light on.",
+      "And the first night you finally win and it's off, you'll be the one getting up to switch it back on.",
+      "Some bad habits are just love wearing a lazy disguise."
+    ],
+    "note": "SHIP WITH FIXES per reviewer; P(1k) clears the floor (35%) but avg (6.7) does not."
+  },
+  "boy_always_has_a_joke_ready": {
+    "status": "cut",
+    "reviewer_avg": 4.3,
+    "p_1k": 0.12,
+    "twist": "a",
+    "review_file": "reviews/2026-11-08.md#gap-fill-round-1-10-brand-new-drafts-12-15-nov-slots",
+    "date": "2026-11-08",
+    "note": "Round 1 gap-fill CUT. Deflecting-pain coping romanticised as a trait, no reframe as love for the partner; close to the \"held it in\" flop family."
+  },
+  "boy_only_lets_his_guard_down_on_the_drive_home": {
+    "status": "cut",
+    "reviewer_avg": 4.3,
+    "p_1k": 0.12,
+    "twist": "b",
+    "review_file": "reviews/2026-11-08.md#gap-fill-round-1-10-brand-new-drafts-12-15-nov-slots",
+    "date": "2026-11-08",
+    "note": "Round 1 gap-fill CUT. Pure reassurance, no real twist, close to a clone of the \"held it in\" flop (156 views, 7.6s watch)."
+  },
+  "girl_always_doodles_hearts_on_the_shopping_list": {
+    "sha256": "141b1f39af03f0318e1b6d1326aaba42d4581f8466892bffcc89573aa13917ea",
+    "status": "hold",
+    "reviewer_avg": 4.67,
+    "p_1k": 0.18,
+    "twist": "a",
+    "review_file": "reviews/2026-11-08.md#gap-fill-round-2-10-brand-new-drafts-12-15-nov-slots",
+    "date": "2026-11-08",
+    "note": "Round 2 gap-fill. SHIP WITH FIXES (L6 wording, new L7 replacing a fortune-cookie closer). Below floor: thin hook (paper shopping lists are niche), no real bad-behaviour reframe.",
+    "text": [
+      "She doodles tiny hearts in the margin of every shopping list she writes, every single time.",
+      "You used to tease her for wasting the paper.",
+      "Now you check the margin before you even read the list.",
+      "It's become your favourite two seconds of grocery shopping.",
+      "Send this to whoever doodles on your shopping lists.",
+      "The day the list comes back with no doodle, she's not just in a rush. Something's weighing on her.",
+      "Keep the next one. It's a love note pretending to be a shopping list."
+    ]
+  },
+  "boy_always_taps_the_steering_wheel_to_every_song": {
+    "sha256": "cb3803eee372a1872f9451825c7a8b0b7faf05be7d9c2f132625af610bdbfe56",
+    "status": "hold",
+    "reviewer_avg": 5.0,
+    "p_1k": 0.18,
+    "twist": "a",
+    "review_file": "reviews/2026-11-08.md#gap-fill-round-2-10-brand-new-drafts-12-15-nov-slots",
+    "date": "2026-11-08",
+    "note": "Round 2 gap-fill. SHIP WITH FIXES (new L6 \u2014 original used the banned \"that's not X, that's Y\" slot and just restated L3). Below floor: the reframe is a mood tell, not a love tell.",
+    "text": [
+      "He taps the steering wheel to literally every song that comes on, good or bad.",
+      "You used to turn the radio down just to make him stop.",
+      "Now you turn it up, because the tapping means the day's been fine.",
+      "Even at red lights, his fingers keep going.",
+      "Send this to whoever can't sit still in the car.",
+      "The day he drives home with both hands dead still, turn the radio off and ask how his day really went.",
+      "A tapping steering wheel is the most relaxing sound in that car."
+    ]
+  },
+  "girl_only_dances_in_the_kitchen_with_him": {
+    "sha256": "4b9d064ee3c095c89763fa48d0951110f6052216533e054633d0dccac9fbda66",
+    "status": "hold",
+    "reviewer_avg": 6.0,
+    "p_1k": 0.25,
+    "twist": "b",
+    "review_file": "reviews/2026-11-08.md#gap-fill-round-2-10-brand-new-drafts-12-15-nov-slots",
+    "date": "2026-11-08",
+    "note": "Round 2 gap-fill. SHIP WITH FIXES (L1 trimmed, L2 reworded off a dangling modifier, new L6 replacing a mechanically-filled \"not X, that's Y\" line). Below floor: nothing about the premise looks bad, so there is no real reframe.",
+    "text": [
+      "She does a full, ridiculous dance at the stove, but only when he's cooking next to her.",
+      "When she cooks alone? Completely normal. No dancing, no spinning.",
+      "Her sister's seen her cook a hundred times and has never once seen the dance.",
+      "The second he picks up a spatula, the dance starts.",
+      "Send this to the one person you can't help being silly around.",
+      "Laugh with her, never at her. Laugh at it once and that dance stops for good.",
+      "Whatever that dance looks like, you're the only audience she's ever had for it."
+    ]
+  },
+  "girl_always_orders_extra_napkins": {
+    "sha256": "eb787be44cbc765ca84d4be806f63e11bb72f7b2b68368d6b3e88cdbf45f55ff",
+    "status": "hold",
+    "reviewer_avg": 6.67,
+    "p_1k": 0.33,
+    "twist": "c",
+    "review_file": "reviews/2026-11-08.md#gap-fill-round-2-10-brand-new-drafts-12-15-nov-slots",
+    "date": "2026-11-08",
+    "note": "Round 2 gap-fill. SHIP WITH FIXES (L5 shortened/direct, new L6 turn, new L7 replacing a fortune-cookie closer). Strongest hold of the batch (6.67, 33%) \u2014 just under the 7.0/35% floor.",
+    "text": [
+      "She asks for extra napkins at literally every restaurant, before the food's even arrived.",
+      "You used to find it a little embarrassing, honestly.",
+      "It's because you spill something at almost every meal you've ever eaten together.",
+      "She started doing it so you'd never have to ask the waiter yourself.",
+      "Send this to whoever always asks for extra napkins.",
+      "And the one meal she forgets to ask? That's when you find out how much you really spill.",
+      "Pile of napkins on her side of the table? None of them are for her."
+    ]
+  },
+  "girl_saves_you_the_last_fry_every_time": {
+    "sha256": "e36e6a023e9ac2c5068f7185f5f054d6a909d96fb889352e4fec98f45119d230",
+    "status": "hold",
+    "reviewer_avg": 6.0,
+    "p_1k": 0.25,
+    "twist": "d",
+    "review_file": "reviews/2026-11-08.md#gap-fill-round-2-10-brand-new-drafts-12-15-nov-slots",
+    "date": "2026-11-08",
+    "note": "Round 2 gap-fill. SHIP WITH FIXES (L4, L5, L6, L7 all replaced \u2014 original L5/L6 were guilt-tripping, L7 a fortune cookie). Below floor and sits close to the existing \"fries/lied\" winner \u2014 clone risk, space well apart if ever scheduled.",
+    "text": [
+      "She always leaves exactly one fry on her plate and insists she's too full to finish it.",
+      "You believed her for about the first year.",
+      "She's never once actually been full. She just likes watching you eat the last one.",
+      "She'll even push the plate an inch closer to you, then look out the window.",
+      "Send this to whoever always leaves you the last fry.",
+      "Try leaving it there one time. Watch how fast she suddenly isn't full.",
+      "Eat the fry. That's the whole point of the fry."
+    ]
+  },
+  "boy_always_gives_you_the_dry_half_of_the_umbrella": {
+    "sha256": "b11ba78c17b0d3c1317bcde9e1f906bda2ec6cf9ad784577c2a498c77b8b9c5b",
+    "status": "approved",
+    "reviewer_avg": 7.0,
+    "p_1k": 0.38,
+    "twist": "d",
+    "review_file": "reviews/2026-11-08.md#gap-fill-round-2-10-brand-new-drafts-12-15-nov-slots",
+    "date": "2026-11-08",
+    "note": "Round 2 gap-fill. SHIP WITH FIXES on L6 only (original was a guilt-trip line \u2014 \"if you've never once offered to swap sides... worth noticing too\"; replaced with a lighter, funnier turn). Clears the floor (avg 7.0, P(1k) 38%). Best of the batch: a tangible physical tell (wet sleeve) and a small fib reframed as love, same shape as the top winners.",
+    "text": [
+      "He always angles the umbrella so your shoulder stays dry and his gets soaked.",
+      "You've pointed it out a dozen times and he still does it.",
+      "By the time you get where you're going, one of his sleeves is always wet through.",
+      "He says he didn't notice. He notices every time.",
+      "Send this to whoever's shoulder is always the dry one.",
+      "Try to swap sides and he'll just switch hands and do it again.",
+      "Next time it rains, take the wet side. Just once."
+    ]
+  },
+  "boy_starts_doing_her_weird_stretch_before_bed": {
+    "sha256": "417349745f7aa5baf70d6f4359199bfa7e51f150342e27cede4b527be083959f",
+    "status": "hold",
+    "reviewer_avg": 5.67,
+    "p_1k": 0.22,
+    "twist": "e",
+    "review_file": "reviews/2026-11-08.md#gap-fill-round-2-10-brand-new-drafts-12-15-nov-slots",
+    "date": "2026-11-08",
+    "note": "Round 2 gap-fill. SHIP WITH FIXES (L3 fixed a pronoun-swap error \u2014 \"you\" meant different people line to line; new L6 replacing a fortune-cookie closer with an escalation of the beat). Below floor.",
+    "text": [
+      "She does the same strange full-body stretch every night before bed, arms up, one weird twist at the end.",
+      "He used to laugh at her for it, every single night.",
+      "Last week she caught him doing the exact same twist, mid-stretch, without noticing.",
+      "He stopped the second he realised and pretended it was a yawn.",
+      "Send this to whoever's picked up your weirdest bedtime habit.",
+      "Now he can't fall asleep until he's done it. Twist and all.",
+      "Let him have the twist. He earned it."
+    ]
+  },
+  "boy_only_takes_his_shoes_off_at_her_place": {
+    "status": "cut",
+    "reviewer_avg": 4.33,
+    "p_1k": 0.13,
+    "twist": "b",
+    "review_file": "reviews/2026-11-08.md#gap-fill-round-2-10-brand-new-drafts-12-15-nov-slots",
+    "date": "2026-11-08",
+    "note": "Round 2 gap-fill CUT (writer may use heavy fixes only if slots are desperately short \u2014 reviewer's preferred verdict is cut). L5 told the viewer to send the video to a place, not a person; L6/L7 were riddles restating L4 using the banned slot."
+  },
+  "boy_always_walks_on_the_street_side": {
+    "status": "cut",
+    "reviewer_avg": 5.33,
+    "p_1k": 0.15,
+    "twist": "c",
+    "review_file": "reviews/2026-11-08.md#gap-fill-round-2-10-brand-new-drafts-12-15-nov-slots",
+    "date": "2026-11-08",
+    "note": "Round 2 gap-fill CUT. Overused trope with no surprise and no reframe (nothing here looks bad); L6 a flat restatement, L7 factually wrong (\"habit from before cars had seatbelts\" \u2014 unrelated and ahistorical, risks comment-section correction)."
+  },
+  "girl_starts_saving_receipts_like_he_does": {
+    "status": "cut",
+    "reviewer_avg": 3.33,
+    "p_1k": 0.08,
+    "twist": "e",
+    "review_file": "reviews/2026-11-08.md#gap-fill-round-2-10-brand-new-drafts-12-15-nov-slots",
+    "date": "2026-11-08",
+    "note": "Round 2 gap-fill CUT. Four of seven lines FAIL: L2/L3 swap who \"you\" refers to mid-script; L6 uses the banned \"not X, that's Y\" slot with a 28-word abstract Y never earned by the script; L7 (\"recognise the handwriting\") is nonsense since receipts are printed, not handwritten."
   }
- },
- "girl_double_texts": {
-  "status": "hold",
-  "reviewer_avg": 6.33,
-  "p_1k": 0.25,
-  "review_file": "reviews/2026-10-30.md",
-  "date": "2026-10-30",
-  "note": "Below the 7.0 floor.",
-  "scores": {
-   "reach": 6,
-   "engagement": 6,
-   "conversion_ignored": 5,
-   "relatability": 7
-  }
- },
- "woman_proud_of_you": {
-  "status": "cut",
-  "reviewer_avg": 5.33,
-  "p_1k": 0.2,
-  "review_file": "reviews/2026-10-30.md",
-  "date": "2026-10-30",
-  "note": "Below the 7.0 floor.",
-  "scores": {
-   "reach": 5,
-   "engagement": 5,
-   "conversion_ignored": 5,
-   "relatability": 6
-  }
- },
- "girl_leaves_light_on": {
-  "status": "hold",
-  "reviewer_avg": 5.3,
-  "p_1k": 0.3,
-  "review_file": "reviews/2026-11-01.md",
-  "date": "2026-11-01",
-  "note": "Round 1. SHIP WITH FIXES (lines 1,6 applied). Below 7.0 floor.",
-  "scores": {
-   "reach": 5,
-   "engagement": 5,
-   "relatability": 6
-  },
-  "text": [
-   "If she stays up until you're home, she's not checking on you. She just can't sleep until she knows you're safe.",
-   "She'll text \"drive safe\" and then stay awake until you reply you're home.",
-   "She'll leave the chain off the door, even after a fight, just in case you still come back.",
-   "She'll turn the TV down low so she can hear your key in the lock.",
-   "If she waits up like this... send this to the one who makes it home to her.",
-   "But the night you pull up and the porch is dark... count how many nights she waited and you never texted back.",
-   "Because a girl who leaves the light on... wants you home more than she wants sleep."
-  ]
- },
- "boy_fixes_things": {
-  "status": "hold",
-  "reviewer_avg": 4.7,
-  "p_1k": 0.15,
-  "review_file": "reviews/2026-11-01.md",
-  "date": "2026-11-01",
-  "note": "Round 1. Below floor; reworked as boy_fixes_things_quiet in round 2 (use that version).",
-  "scores": {
-   "reach": 4,
-   "engagement": 5,
-   "relatability": 5
-  }
- },
- "girl_saves_your_voicemails": {
-  "status": "cut",
-  "reviewer_avg": 4.0,
-  "p_1k": 0.12,
-  "review_file": "reviews/2026-11-01.md",
-  "date": "2026-11-01",
-  "note": "Round 1. Reviewer: SHIP WITH FIXES only with all 4 replacements, otherwise CUT (ambiguous) -- cut. Rewritten as girl_saves_your_voice_notes in round 2.",
-  "scores": {
-   "reach": 4,
-   "engagement": 4,
-   "relatability": 4
-  }
- },
- "boy_walks_the_long_way": {
-  "status": "hold",
-  "reviewer_avg": 5.7,
-  "p_1k": 0.25,
-  "review_file": "reviews/2026-11-01.md",
-  "date": "2026-11-01",
-  "note": "Round 1. SHIP WITH FIXES, below floor; superseded by boy_takes_the_long_way (round 2, fixes applied, clean SHIP).",
-  "scores": {
-   "reach": 5,
-   "engagement": 6,
-   "relatability": 6
-  }
- },
- "girl_keeps_your_side_of_bed": {
-  "status": "cut",
-  "reviewer_avg": 3.3,
-  "p_1k": 0.08,
-  "review_file": "reviews/2026-11-01.md",
-  "date": "2026-11-01",
-  "note": "Round 1 CUT -- concept backwards (keeping side empty is not relatable). Reviewer's suggested reversed concept rebuilt as girl_sleeps_on_your_side in round 2.",
-  "scores": {
-   "reach": 4,
-   "engagement": 3,
-   "relatability": 3
-  }
- },
- "girl_keeps_the_ticket_stub": {
-  "status": "cut",
-  "reviewer_avg": 4.0,
-  "p_1k": 0.12,
-  "review_file": "reviews/2026-11-01.md",
-  "date": "2026-11-01",
-  "note": "Round 1 CUT. Weaker clone of the 1,180-view 'first message saved' winner.",
-  "scores": {
-   "reach": 4,
-   "engagement": 4,
-   "relatability": 4
-  }
- },
- "boy_carries_the_heavy_bag": {
-  "status": "cut",
-  "reviewer_avg": 4.3,
-  "p_1k": 0.1,
-  "review_file": "reviews/2026-11-01.md",
-  "date": "2026-11-01",
-  "note": "Round 1 CUT. Gender-roles brand risk flagged by reviewer even with line fixes.",
-  "scores": {
-   "reach": 4,
-   "engagement": 4,
-   "relatability": 5
-  }
- },
- "girl_texts_landed_safe": {
-  "status": "cut",
-  "reviewer_avg": 3.7,
-  "p_1k": 0.1,
-  "review_file": "reviews/2026-11-01.md",
-  "date": "2026-11-01",
-  "note": "Round 1 CUT. Niche audience (long-distance/frequent flyers only) for a page trying to grow reach.",
-  "scores": {
-   "reach": 3,
-   "engagement": 4,
-   "relatability": 4
-  }
- },
- "girl_laughs_at_your_old_jokes": {
-  "status": "hold",
-  "reviewer_avg": 5.7,
-  "p_1k": 0.25,
-  "review_file": "reviews/2026-11-01.md",
-  "date": "2026-11-01",
-  "note": "Round 1. SHIP WITH FIXES, below floor; superseded by girl_old_jokes (round 2, fixes applied, clean SHIP).",
-  "scores": {
-   "reach": 5,
-   "engagement": 6,
-   "relatability": 6
-  }
- },
- "boy_never_apologizes_first": {
-  "status": "hold",
-  "reviewer_avg": 6.7,
-  "p_1k": 0.35,
-  "review_file": "reviews/2026-11-01.md",
-  "date": "2026-11-01",
-  "note": "Round 2 (final round). Reviewer's top pick overall -- closest to the floor (P(1k) meets 35%) but average 6.7 < 7.0 floor. NOT approved; floor not lowered.",
-  "scores": {
-   "reach": 6,
-   "engagement": 7,
-   "relatability": 7
-  },
-  "text": [
-   "A boy who never says sorry first isn't too proud to lose an argument.",
-   "He'll go quiet for an hour, then show up with your favourite coffee instead of the words.",
-   "He'll quietly fix the actual thing you were fighting about, before you even bring it up again.",
-   "He'll let you have the last word every single time, because winning matters less to him than you being okay.",
-   "If he fixes it like this instead of fighting for the last word... send this to the girl who's stopped keeping score.",
-   "But if the coffee keeps showing up and the actual problem never gets fixed... that's not pride. That's avoidance.",
-   "Because a boy who never says sorry first... is still trying to make it right. Just not with words."
-  ]
- },
- "girl_sleeps_on_your_side": {
-  "status": "hold",
-  "reviewer_avg": 6.3,
-  "p_1k": 0.3,
-  "review_file": "reviews/2026-11-01.md",
-  "date": "2026-11-01",
-  "note": "Round 2 (final round). Rebuild of the reversed girl_keeps_your_side_of_bed concept. Below 7.0 floor.",
-  "scores": {
-   "reach": 6,
-   "engagement": 6,
-   "relatability": 7
-  },
-  "text": [
-   "If she sleeps on your side of the bed when you're away, she's not stealing your spot. It just smells like you.",
-   "She'll wear your old t-shirt to bed the whole week you're gone.",
-   "She'll hug your pillow instead of hers, then deny it when you call in the morning.",
-   "She'll move back to her own side the second you're home, like she was never there.",
-   "If she takes over your side like this... send this to the one whose side she keeps stealing.",
-   "But if you're gone a whole week and she never once moves to your side... she's not missing you the way she used to.",
-   "Because a girl who steals your side of the bed... just wants to feel closer to you."
-  ]
- },
- "boy_defends_you_quietly": {
-  "status": "hold",
-  "reviewer_avg": 6.0,
-  "p_1k": 0.3,
-  "review_file": "reviews/2026-11-01.md",
-  "date": "2026-11-01",
-  "note": "Round 2 (final round). Below 7.0 floor.",
-  "scores": {
-   "reach": 6,
-   "engagement": 6,
-   "relatability": 6
-  },
-  "text": [
-   "A boy who stops laughing when his friends joke about you isn't being too sensitive.",
-   "He'll go quiet and serious the second someone makes a joke that's actually about you.",
-   "He'll bring it up to them later, alone, so you never have to see him do it.",
-   "He'll never tell you what they said, because you don't need to carry that.",
-   "If he gets protective like this without making a scene... send this to the girl who never has to defend herself.",
-   "But the day he laughs along with the joke instead... he's not being chill. He's picked a side, and it isn't yours.",
-   "Because a boy who shuts that down... is on your side even when you're not in the room."
-  ]
- },
- "boy_fixes_things_quiet": {
-  "status": "hold",
-  "reviewer_avg": 5.7,
-  "p_1k": 0.25,
-  "review_file": "reviews/2026-11-01.md",
-  "date": "2026-11-01",
-  "note": "Round 2 (final round). Canonical version of boy_fixes_things. Below floor.",
-  "scores": {
-   "reach": 5,
-   "engagement": 6,
-   "relatability": 6
-  },
-  "text": [
-   "If he goes quiet and starts fixing something the second you've had a bad day, he's not ignoring you.",
-   "He'll tighten the wobbly chair you complained about once, three weeks ago, without a word.",
-   "He'll fix the thing that's been bugging you all week instead of asking what's wrong.",
-   "He'll check every lock in the house twice before he finally sits back down next to you.",
-   "If he shows up like this instead of talking it out... send this to the girl who's learned to read it.",
-   "But if the tap's been dripping for a month and he walks right past it... don't wait for him to fix it. Ask him what's wrong.",
-   "Because a boy who fixes things when you're upset... is trying to take care of you the only way he knows how."
-  ]
- },
- "boy_takes_the_long_way": {
-  "status": "hold",
-  "reviewer_avg": 5.7,
-  "p_1k": 0.25,
-  "review_file": "reviews/2026-11-01.md",
-  "date": "2026-11-01",
-  "note": "Round 2 (final round). Clean SHIP, no further fixes needed, but below 7.0 floor.",
-  "scores": {
-   "reach": 5,
-   "engagement": 6,
-   "relatability": 6
-  },
-  "text": [
-   "If he takes the long way home with you, he's not lost.",
-   "He'll add fifteen minutes to the route just so the conversation doesn't end yet.",
-   "He'll slow down at the corner where you usually say goodnight, every single time.",
-   "He'll say \"okay, goodnight\" three times at your door and still not leave.",
-   "If he stretches the walk home like this... send this to the one who's never in a rush to leave you.",
-   "But the night he takes the shortcut and spends the whole walk on his phone... he's not walking you home anymore. He's dropping you off.",
-   "Because a boy who takes the long way home... just wants a few more minutes with you."
-  ]
- },
- "girl_old_jokes": {
-  "status": "hold",
-  "reviewer_avg": 5.7,
-  "p_1k": 0.25,
-  "review_file": "reviews/2026-11-01.md",
-  "date": "2026-11-01",
-  "note": "Round 2 (final round). Clean SHIP, no further fixes needed, but below 7.0 floor.",
-  "scores": {
-   "reach": 5,
-   "engagement": 6,
-   "relatability": 6
-  },
-  "text": [
-   "If she still laughs at your worst joke after two years, she's not just being nice.",
-   "She'll laugh at the one about the goldfish for the hundredth time, like it's the first.",
-   "She'll mouth the punchline along with you, and still laugh when you say it.",
-   "She'll make you tell it again every time her friends come over.",
-   "If she still laughs like this... send this to the one with the worst jokes she's ever loved.",
-   "But the day you tell it and she doesn't even look up from her phone... she didn't just stop laughing. She stopped listening.",
-   "Because a girl who still laughs at your old jokes... still loves the guy telling them."
-  ]
- },
- "girl_saves_your_voice_notes": {
-  "status": "hold",
-  "reviewer_avg": 5.3,
-  "p_1k": 0.2,
-  "review_file": "reviews/2026-11-01.md",
-  "date": "2026-11-01",
-  "note": "Round 2 (final round). Rewrite of girl_saves_your_voicemails. Below floor.",
-  "scores": {
-   "reach": 5,
-   "engagement": 5,
-   "relatability": 6
-  },
-  "text": [
-   "If she replays your voice notes after you've already said goodnight, she's not being clingy.",
-   "She'll keep the three-second \"call me back\" long after you've already called.",
-   "She'll play it on the nights you're away, just to fall asleep to your voice instead of the silence.",
-   "She'll never delete it, even when she's clearing out everything else on an old phone.",
-   "If she keeps your voice like this... send this to the one she misses before he's even left.",
-   "But the night your voice note sits there unplayed until morning... ask yourself when she stopped wanting to hear you.",
-   "Because a girl who saves your voice notes... wants to hear you even when you're not there."
-  ]
- },
- "girl_last_bite": {
-  "status": "hold",
-  "reviewer_avg": 5.3,
-  "p_1k": 0.2,
-  "review_file": "reviews/2026-11-01.md",
-  "date": "2026-11-01",
-  "note": "Round 2 (final round). Below floor.",
-  "scores": {
-   "reach": 5,
-   "engagement": 5,
-   "relatability": 6
-  },
-  "text": [
-   "A girl who always leaves you the last bite isn't full.",
-   "She'll leave the last bite of fries every single time, like clockwork.",
-   "She'll slide the plate an inch closer to you before you've even asked.",
-   "She'll order extra \"just in case\", and it's never actually for her.",
-   "If she saves the last bite like this... send this to the one who's never had to ask for it.",
-   "But if she's saved you the last bite for months and you've never once saved her one... start.",
-   "Because a girl who leaves you the last bite... is saving the best part for you, every time."
-  ]
- },
- "boy_remembers_your_order": {
-  "status": "hold",
-  "reviewer_avg": 5.3,
-  "p_1k": 0.2,
-  "review_file": "reviews/2026-11-01.md",
-  "date": "2026-11-01",
-  "note": "Round 2 (final round) canonical version. Below floor.",
-  "scores": {
-   "reach": 5,
-   "engagement": 5,
-   "relatability": 6
-  },
-  "text": [
-   "A boy who remembers your coffee order after one date isn't just being polite.",
-   "He'll order it for you before you even sit down, three dates later.",
-   "He'll remember the oat milk, the extra shot, and that you hate it too hot.",
-   "He'll hear it's a bad day in how you say hi, and order it black before you even ask.",
-   "If he pays attention like this... send this to the girl who's never had to repeat herself.",
-   "But the day he has to ask how you take your coffee again... he stopped paying attention a while ago.",
-   "Because a boy who remembers your order... remembers you."
-  ]
- },
- "girl_nervous_introducing_you": {
-  "status": "cut",
-  "reviewer_avg": 4.0,
-  "p_1k": 0.12,
-  "review_file": "reviews/2026-11-01.md",
-  "date": "2026-11-01",
-  "note": "Round 2 (final round) CUT. Same topic as a flop (137 views); shames healthy comfort in a long relationship.",
-  "scores": {
-   "reach": 4,
-   "engagement": 4,
-   "relatability": 4
-  }
- },
- "girl_are_you_mad": {
-  "sha256": "fc32ea1894e5da65596c0be75a4483d2dd73ba1f5119075c9886061fb773574b",
-  "status": "approved",
-  "reviewer_avg": 8.33,
-  "p_1k": 0.45,
-  "review_file": "reviews/2026-11-01.md#round-3",
-  "date": "2026-11-01",
-  "note": "Round 3, authorised live by Chuby on 1 Nov after rounds 1-2 produced nothing (floor unchanged). Reviewer SHIP WITH FIXES: line 5 fix applied word for word; line 2 replaced by the reviewer for read-aloud (TTS read 'ok'/'okay' identically and spoke the emoji name). Reviewer re-scored after the line-2 change: 8.3 / 45% (was 8.7 / 47%).",
-  "scores": {
-   "reach": 8,
-   "engagement": 8,
-   "relatability": 9
-  },
-  "text": [
-   "When a girl asks \"are you mad at me?\" for the third time, she's not being annoying.",
-   "You replied with one word instead of your usual paragraph, and she noticed.",
-   "She's already gone back through your last ten messages looking for what she did.",
-   "She'll say sorry for something she's not even sure happened.",
-   "If you're the girl who asks... send this to the one you keep asking.",
-   "But if you keep saying \"I'm fine\" when you're not... you're not protecting her. You're making her guess.",
-   "Because a girl who asks if you're mad... just wants to fix it before it gets bigger."
-  ]
- },
- "girl_sends_you_tiktoks": {
-  "sha256": "cfb86858270dfcc7786c3b657a6e72d58ea0257da4fb66019d28966bb84c1938",
-  "status": "approved",
-  "reviewer_avg": 8.0,
-  "p_1k": 0.4,
-  "review_file": "reviews/2026-11-01.md#round-3",
-  "date": "2026-11-01",
-  "note": "Round 3, authorised live by Chuby on 1 Nov after rounds 1-2 produced nothing (floor unchanged). Reviewer SHIP WITH FIXES: line 6 replaced word for word.",
-  "scores": {
-   "reach": 7,
-   "engagement": 8,
-   "relatability": 9
-  },
-  "text": [
-   "When a girl sends you fifteen TikToks a day, she's not spamming you.",
-   "Every single one is a little \"this is literally us.\"",
-   "She sends the funny ones at 2am, knowing you're asleep, so they're the first thing you see.",
-   "And she checks if you've watched them. Every time.",
-   "If your DMs are full of her videos... send her this one back.",
-   "But the day she stops sending them... she didn't run out of videos. She just stopped seeing you in them.",
-   "Because a girl who floods your DMs... sees you in everything."
-  ]
- },
- "boy_quiet_when_you_cry": {
-  "sha256": "0a46979e09e80730c5c90e48f4da58570fdd0e0c85f489641da0a4232bb34f3a",
-  "status": "approved",
-  "reviewer_avg": 7.67,
-  "p_1k": 0.4,
-  "review_file": "reviews/2026-11-01.md#round-3",
-  "date": "2026-11-01",
-  "note": "Round 3, authorised live by Chuby on 1 Nov after rounds 1-2 produced nothing (floor unchanged). Reviewer SHIP, no changes.",
-  "scores": {
-   "reach": 7,
-   "engagement": 8,
-   "relatability": 8
-  },
-  "text": [
-   "When a boy goes quiet while you cry, he's not being cold.",
-   "He doesn't know what to say, so he gets you a glass of water.",
-   "He sits close enough that his shoulder touches yours, and stays there.",
-   "Later, when you're not looking, he googles \"how to help when she's sad.\"",
-   "If he tries like this... send this to the boy who doesn't always get it right.",
-   "But if he ever tells you to stop crying... he's thinking about himself, not you.",
-   "Because a boy who goes quiet when you cry... is trying so hard not to say the wrong thing."
-  ]
- },
- "girl_cold_feet": {
-  "sha256": "ff720c18d13ff5049b25b60715308253ec15337a96333a751fa2039d326035e9",
-  "status": "approved",
-  "reviewer_avg": 7.67,
-  "p_1k": 0.38,
-  "review_file": "reviews/2026-11-01.md#round-3",
-  "date": "2026-11-01",
-  "note": "Round 3, authorised live by Chuby on 1 Nov after rounds 1-2 produced nothing (floor unchanged). Reviewer SHIP WITH FIXES: line 6 (reviewer's simpler option) and line 7 replaced word for word.",
-  "scores": {
-   "reach": 7,
-   "engagement": 7,
-   "relatability": 9
-  },
-  "text": [
-   "When a girl puts her freezing feet on you in bed, she's not trying to annoy you.",
-   "She waits until you're almost asleep. Then she does it.",
-   "She'll swear her feet aren't that cold... while you jump out of your skin.",
-   "And she'll do it every single night until spring.",
-   "If you've been her hot water bottle all winter... send this to her.",
-   "But the night she keeps her socks on and stays on her own side... it's not her feet that went cold.",
-   "Because a girl who puts her cold feet on you... just wants to be as close to you as she can get."
-  ]
- },
- "girl_no_makeup": {
-  "sha256": "8b7bf8320a8bd9f6cf90dc0bf4b9d6e7c262bb446f4df50e670c420528ecef69",
-  "status": "approved",
-  "reviewer_avg": 7.33,
-  "p_1k": 0.35,
-  "review_file": "reviews/2026-11-01.md#round-3",
-  "date": "2026-11-01",
-  "note": "Round 3, authorised live by Chuby on 1 Nov after rounds 1-2 produced nothing (floor unchanged). Reviewer SHIP, no changes.",
-  "scores": {
-   "reach": 7,
-   "engagement": 7,
-   "relatability": 8
-  },
-  "text": [
-   "When a girl stops wearing makeup around you, she hasn't stopped trying.",
-   "She used to fix her hair before she opened the door. Now she answers it in pyjamas with spot cream on her chin.",
-   "She lets you see her at 7am, before coffee, before anything.",
-   "She falls asleep next to you with a face mask still on.",
-   "If she's stopped hiding anything from you... send this to her.",
-   "But if you ever make a joke about how she looks without it... watch how fast the makeup goes back on.",
-   "Because a girl who stops dressing up for you... feels at home with you."
-  ]
- },
- "boy_text_me_when_home": {
-  "status": "hold",
-  "reviewer_avg": 6.67,
-  "p_1k": 0.3,
-  "review_file": "reviews/2026-11-01.md#round-3",
-  "date": "2026-11-01",
-  "note": "Round 3, authorised live by Chuby on 1 Nov after rounds 1-2 produced nothing (floor unchanged). SHIP WITH FIXES (lines 5, 6) but below the 7.0 floor.",
-  "scores": {
-   "reach": 6,
-   "engagement": 7,
-   "relatability": 7
-  }
- },
- "girl_screenshots_your_texts": {
-  "status": "hold",
-  "reviewer_avg": 6.67,
-  "p_1k": 0.28,
-  "review_file": "reviews/2026-11-01.md#round-3",
-  "date": "2026-11-01",
-  "note": "Round 3, authorised live by Chuby on 1 Nov after rounds 1-2 produced nothing (floor unchanged). SHIP WITH FIXES (line 7) but below floor; clone risk of the 'first message saved' winner.",
-  "scores": {
-   "reach": 6,
-   "engagement": 6,
-   "relatability": 8
-  }
- },
- "boy_teases_you": {
-  "status": "hold",
-  "reviewer_avg": 6.33,
-  "p_1k": 0.27,
-  "review_file": "reviews/2026-11-01.md#round-3",
-  "date": "2026-11-01",
-  "note": "Round 3, authorised live by Chuby on 1 Nov after rounds 1-2 produced nothing (floor unchanged). SHIP WITH FIXES (line 1), low priority, below floor; 'mean because he likes you' trope risk.",
-  "scores": {
-   "reach": 6,
-   "engagement": 6,
-   "relatability": 7
-  }
- },
- "girl_makes_you_watch_her_show": {
-  "status": "hold",
-  "reviewer_avg": 6.33,
-  "p_1k": 0.25,
-  "review_file": "reviews/2026-11-01.md#round-3",
-  "date": "2026-11-01",
-  "note": "Round 3, authorised live by Chuby on 1 Nov after rounds 1-2 produced nothing (floor unchanged). SHIP WITH FIXES (line 6), backup only, below floor.",
-  "scores": {
-   "reach": 5,
-   "engagement": 6,
-   "relatability": 8
-  }
- },
- "girl_hair_ties_everywhere": {
-  "status": "cut",
-  "reviewer_avg": 6.0,
-  "p_1k": 0.25,
-  "review_file": "reviews/2026-11-01.md#round-3",
-  "date": "2026-11-01",
-  "note": "Round 3, authorised live by Chuby on 1 Nov after rounds 1-2 produced nothing (floor unchanged). CUT: 'messy' barely looks bad; twist clones the hoodie video.",
-  "scores": {
-   "reach": 5,
-   "engagement": 6,
-   "relatability": 7
-  }
- },
- "girl_steals_bites_off_your_plate": {
-  "sha256": "59aeba00be6946aedbdc65c7af096bc051952b639482499181237c5aace33758",
-  "status": "approved",
-  "reviewer_avg": 7.33,
-  "p_1k": 0.4,
-  "review_file": "reviews/2026-11-04.md",
-  "date": "2026-11-04",
-  "note": "Round 1 (scheduled run). Reviewer SHIP WITH FIXES: lines 1,2,5,6,7 replaced word for word. Reviewer: 'publish this one first.'",
-  "scores": {
-   "reach": 7,
-   "engagement": 7,
-   "relatability": 8
-  },
-  "text": [
-   "When a girl says she's \"not hungry\" and then eats half your chips, she's not stealing your food.",
-   "She'd never touch her friends' food. Only yours.",
-   "She \"just wants a bite,\" and the bite turns into a third of the meal.",
-   "She still insists she wasn't that hungry, with your fork in her hand.",
-   "If you've started ordering extra chips just for her... send this to her.",
-   "But the day she orders her own and doesn't touch yours... she's not finally full. She's keeping her distance.",
-   "Because a girl who eats off your plate... feels close enough to you to stop pretending she's not hungry."
-  ]
- },
- "boy_falls_asleep_on_you": {
-  "sha256": "ea9b8dd42b13abd59c0091dc4d451bc8f31e9ce4f01d243b9deecfab82bc1a85",
-  "status": "approved",
-  "reviewer_avg": 7.0,
-  "p_1k": 0.35,
-  "review_file": "reviews/2026-11-04.md",
-  "date": "2026-11-04",
-  "note": "Round 1 (scheduled run). Reviewer SHIP WITH FIXES: lines 3,4,5,6 replaced word for word. Approved exactly at the 7.0/35% floor.",
-  "scores": {
-   "reach": 7,
-   "engagement": 6,
-   "relatability": 8
-  },
-  "text": [
-   "When a boy falls asleep on the sofa with you, he's not being boring.",
-   "He fights it for ten minutes, eyes closing mid-sentence, still trying to listen.",
-   "He's slept five hours a night all week, and this is the first time he's sat still.",
-   "He wakes up saying \"I'm watching, I'm watching\" with his eyes still shut.",
-   "If he's never once made it to the end of a film with you... send this to him.",
-   "But the night he sits at the other end of the sofa, wide awake on his phone... he's not less tired. He just can't switch off around you anymore.",
-   "Because a boy who falls asleep on you... finally feels safe enough to stop holding it together."
-  ]
- },
- "girl_baby_voices_the_dog": {
-  "status": "hold",
-  "reviewer_avg": 6.33,
-  "p_1k": 0.3,
-  "review_file": "reviews/2026-11-04.md",
-  "date": "2026-11-04",
-  "note": "Round 1. SHIP WITH FIXES (lines 1,3,4,5,7) but below the 7.0 floor."
- },
- "boy_always_loses_his_keys": {
-  "status": "hold",
-  "reviewer_avg": 6.33,
-  "p_1k": 0.28,
-  "review_file": "reviews/2026-11-04.md",
-  "date": "2026-11-04",
-  "note": "Round 1. SHIP WITH FIXES (lines 1,2,6) but below the 7.0 floor."
- },
- "girl_finishes_your_sentences": {
-  "status": "hold",
-  "reviewer_avg": 5.33,
-  "p_1k": 0.2,
-  "review_file": "reviews/2026-11-04.md",
-  "date": "2026-11-04",
-  "note": "Round 1. SHIP WITH FIXES (lines 2,4,6) but below the 7.0 floor."
- },
- "boy_hums_off_key": {
-  "status": "hold",
-  "reviewer_avg": 4.33,
-  "p_1k": 0.15,
-  "review_file": "reviews/2026-11-04.md",
-  "date": "2026-11-04",
-  "note": "Round 1. SHIP WITH FIXES (lines 1,2,6,7) but reviewer called it filler-tier; well below floor."
- },
- "girl_talks_with_her_hands": {
-  "status": "cut",
-  "reviewer_avg": 4.33,
-  "p_1k": 0.12,
-  "review_file": "reviews/2026-11-04.md",
-  "date": "2026-11-04",
-  "note": "Round 1 CUT. Borderline personality-trait hook (trait hooks score 0 for ~20 scripts); twist borrowed from the makeup winner."
- },
- "girl_always_the_designated_driver": {
-  "status": "cut",
-  "reviewer_avg": 3.33,
-  "p_1k": 0.08,
-  "review_file": "reviews/2026-11-04.md",
-  "date": "2026-11-04",
-  "note": "Round 1 CUT. No 'looks bad' to reframe (pure trait hook); drink-driving adjacency is a distribution/brand risk."
- },
- "boy_always_20_minutes_late": {
-  "status": "cut",
-  "reviewer_avg": 3.33,
-  "p_1k": 0.07,
-  "review_file": "reviews/2026-11-04.md",
-  "date": "2026-11-04",
-  "note": "Round 1 CUT. Beats read as fantasy/invented; line 6 excuses disrespect of partner's time (brand risk)."
- },
- "boy_always_says_sorry_for_things_that_arent_his_fault": {
-  "status": "cut",
-  "reviewer_avg": 3.0,
-  "p_1k": 0.05,
-  "review_file": "reviews/2026-11-04.md",
-  "date": "2026-11-04",
-  "note": "Round 1 CUT. Anxious-trait hook in the same lane as flops (are_you_mad 133, quiet_when_you_cry 118); romanticises compulsive apologising (brand-tone risk)."
- },
- "girl_overpacks_for_trips": {
-  "sha256": "cce288b4b77dec8c50833fc798e3d3658596849e1baab6ac81cefe5b37e8ad5a",
-  "status": "approved",
-  "reviewer_avg": 7.0,
-  "p_1k": 0.4,
-  "review_file": "reviews/2026-11-04.md#round-2",
-  "date": "2026-11-04",
-  "note": "Round 2 (fresh reviewer, separate from round 1). SHIP WITH FIXES: lines 2,5,6,7 replaced word for word. Reviewer: 'ship this one first.'",
-  "scores": {
-   "reach": 7,
-   "engagement": 7,
-   "relatability": 7
-  },
-  "text": [
-   "When a girl packs five \"just in case\" outfits for a two-day trip, she's not being extra.",
-   "Half that suitcase is your charger, your paracetamol and the socks you forgot.",
-   "She packs a tiny first-aid kit that's bailed you out more times than either of you can count.",
-   "She still swears she \"barely packed anything\" while the zipper strains to close.",
-   "If she's the reason you've never once been without a charger on holiday... send this to her.",
-   "But the trip she packs light and there's nothing of yours in her bag... she's not travelling lighter. She's stopped planning for you.",
-   "Because a girl who overpacks for every trip... is packing for two."
-  ]
- },
- "girl_leaves_cupboard_doors_open": {
-  "sha256": "77daf430bda7cf290999e4b6d27b1defb6e1b0a0347b568a2ca08345179bee77",
-  "status": "approved",
-  "reviewer_avg": 7.0,
-  "p_1k": 0.38,
-  "review_file": "reviews/2026-11-04.md#round-2",
-  "date": "2026-11-04",
-  "note": "Round 2 (fresh reviewer, separate from round 1). SHIP WITH FIXES: lines 6,7 replaced word for word.",
-  "scores": {
-   "reach": 7,
-   "engagement": 7,
-   "relatability": 7
-  },
-  "text": [
-   "When a girl leaves every cupboard door open behind her, she's not being careless.",
-   "She grabs what she needs and moves straight on to the next thing, door still swinging.",
-   "You're the one who closes them, every time, without her ever noticing.",
-   "She never once does it at her mum's house, where everything still has to look perfect.",
-   "If you've become the designated door-closer in your own home... send this to her.",
-   "But the day you walk in and every single door is shut... she's not finally being tidy. She's started acting like a guest again.",
-   "Because a girl who leaves every door open around you... has stopped acting like a guest in your home."
-  ]
- },
- "boy_spoils_his_own_favourite_films": {
-  "status": "hold",
-  "reviewer_avg": 6.0,
-  "p_1k": 0.28,
-  "review_file": "reviews/2026-11-04.md#round-2",
-  "date": "2026-11-04",
-  "note": "Round 2. SHIP WITH FIXES (lines 3,6,7) but below the 7.0 floor."
- },
- "girl_laughs_at_her_own_jokes_first": {
-  "status": "hold",
-  "reviewer_avg": 5.7,
-  "p_1k": 0.22,
-  "review_file": "reviews/2026-11-04.md#round-2",
-  "date": "2026-11-04",
-  "note": "Round 2. SHIP WITH FIXES (lines 4,7) but below the 7.0 floor."
- },
- "boy_takes_forever_to_get_ready": {
-  "status": "hold",
-  "reviewer_avg": 4.7,
-  "p_1k": 0.18,
-  "review_file": "reviews/2026-11-04.md#round-2",
-  "date": "2026-11-04",
-  "note": "Round 2. SHIP WITH FIXES (lines 3,4,5,6,7) but well below the floor; narrow recognisable audience."
- },
- "girl_photographs_the_boring_moments": {
-  "status": "hold",
-  "reviewer_avg": 4.3,
-  "p_1k": 0.15,
-  "review_file": "reviews/2026-11-04.md#round-2",
-  "date": "2026-11-04",
-  "note": "Round 2. SHIP WITH FIXES (lines 2,4,6,7) but below floor; breaks the 'looks bad first' rule."
- },
- "boy_forgets_to_put_the_seat_down": {
-  "status": "cut",
-  "reviewer_avg": 5.3,
-  "p_1k": 0.15,
-  "review_file": "reviews/2026-11-04.md#round-2",
-  "date": "2026-11-04",
-  "note": "Round 2 CUT as written: line 6 treats a partner improving as evidence of guilt (brand risk/suspicion-advice); line 2 reads as not washing hands."
- },
- "girl_narrates_everything_she_does": {
-  "status": "cut",
-  "reviewer_avg": 3.7,
-  "p_1k": 0.12,
-  "review_file": "reviews/2026-11-04.md#round-2",
-  "date": "2026-11-04",
-  "note": "Round 2 CUT. Behaviour is never about the partner, so the love reframe has nothing to stand on; close to a trait hook."
- },
- "boy_impulse_buys_weird_gadgets": {
-  "status": "cut",
-  "reviewer_avg": 2.7,
-  "p_1k": 0.06,
-  "review_file": "reviews/2026-11-04.md#round-2",
-  "date": "2026-11-04",
-  "note": "Round 2 CUT. Beats self-contradict (buys only for her vs. impulse-buys for himself; uses in secret vs. hopes she notices); romanticises impulsive spending."
- },
- "girl_rearranges_the_cushions": {
-  "status": "cut",
-  "reviewer_avg": 2.7,
-  "p_1k": 0.05,
-  "review_file": "reviews/2026-11-04.md#round-2",
-  "date": "2026-11-04",
-  "note": "Round 2 CUT. Invented unverifiable psychology; romanticises anxiety/not-feeling-safe, same lane as 118/133-view flops."
- },
- "girl_calls_for_no_reason": {
-  "sha256": "b624b334f7a309b26758c7cb422a78f1867db76cb416dc01bff3f820f89734cf",
-  "status": "approved",
-  "reviewer_avg": 7.33,
-  "p_1k": 0.38,
-  "review_file": "reviews/2026-11-04.md#round-3",
-  "date": "2026-11-04",
-  "note": "Round 3 (final allowed round; fresh reviewer, separate from rounds 1-2). SHIP WITH FIXES: lines 2,5 replaced word for word.",
-  "scores": {
-   "reach": 7,
-   "engagement": 7,
-   "relatability": 8
-  },
-  "text": [
-   "When a girl calls you in the middle of the afternoon for no reason at all, she's not checking up on you.",
-   "She just wants to tell you about a dog she saw on the walk home.",
-   "She stays on the call in silence while she does the washing up, just so the kitchen isn't quiet.",
-   "She hangs up the second you sound busy, before you've even said that you are.",
-   "If you've heard about more random dogs on the phone than you've ever met in real life... send this to her.",
-   "But the week she stops calling for no reason at all... she's not finally respecting your time. She's stopped wanting to share the small stuff with you.",
-   "Because a girl who calls you for nothing... just wants you there for everything, even the boring parts."
-  ]
- },
- "boy_tells_the_same_stories": {
-  "status": "hold",
-  "reviewer_avg": 6.67,
-  "p_1k": 0.32,
-  "review_file": "reviews/2026-11-04.md#round-3",
-  "date": "2026-11-04",
-  "note": "Round 3. SHIP WITH FIXES (lines 6,7) but below floor; closest hold across all 3 rounds, best candidate for a future batch."
- },
- "boy_orders_dessert_to_share": {
-  "status": "hold",
-  "reviewer_avg": 6.33,
-  "p_1k": 0.27,
-  "review_file": "reviews/2026-11-04.md#round-3",
-  "date": "2026-11-04",
-  "note": "Round 3. SHIP WITH FIXES (lines 1,3,5,6,7) but below floor; flagged as a near-clone lane of girl_steals_bites_off_your_plate (approved round 1) \u2014 space apart if ever built."
- },
- "boy_snores": {
-  "status": "hold",
-  "reviewer_avg": 6.0,
-  "p_1k": 0.25,
-  "review_file": "reviews/2026-11-04.md#round-3",
-  "date": "2026-11-04",
-  "note": "Round 3. SHIP WITH FIXES (lines 4,6,7) but below floor."
- },
- "girl_checks_the_weather_for_you": {
-  "status": "hold",
-  "reviewer_avg": 5.67,
-  "p_1k": 0.22,
-  "review_file": "reviews/2026-11-04.md#round-3",
-  "date": "2026-11-04",
-  "note": "Round 3. SHIP WITH FIXES (line 7, which as drafted framed control as love) but below floor."
- },
- "boy_steals_the_aux_cord": {
-  "status": "hold",
-  "reviewer_avg": 5.67,
-  "p_1k": 0.2,
-  "review_file": "reviews/2026-11-04.md#round-3",
-  "date": "2026-11-04",
-  "note": "Round 3. SHIP WITH FIXES (lines 3,5,6) but below floor; low priority."
- },
- "boy_wears_the_same_five_shirts": {
-  "status": "cut",
-  "reviewer_avg": 5.0,
-  "p_1k": 0.12,
-  "review_file": "reviews/2026-11-04.md#round-3",
-  "date": "2026-11-04",
-  "note": "Round 3 CUT. Fantasy-boyfriend beats; line 6 teaches 'a new shirt is a red flag' (paranoia/control brand risk)."
- },
- "boy_leaves_wet_towel_on_the_bed": {
-  "status": "cut",
-  "reviewer_avg": 4.67,
-  "p_1k": 0.1,
-  "review_file": "reviews/2026-11-04.md#round-3",
-  "date": "2026-11-04",
-  "note": "Round 3 CUT. Excuses unequal domestic chore load as the love story (brand risk); invented psychology; weaponised-incompetence beat."
- },
- "girl_takes_long_showers": {
-  "status": "cut",
-  "reviewer_avg": 4.0,
-  "p_1k": 0.08,
-  "review_file": "reviews/2026-11-04.md#round-3",
-  "date": "2026-11-04",
-  "note": "Round 3 CUT. Not a love reframe \u2014 a self-care thesis that explicitly excludes the partner; romanticises burnout."
- },
- "boy_stops_for_street_performers": {
-  "status": "cut",
-  "reviewer_avg": 3.0,
-  "p_1k": 0.05,
-  "review_file": "reviews/2026-11-04.md#round-3",
-  "date": "2026-11-04",
-  "note": "Round 3 CUT. Personality-trait hook (trait hooks score 0 for ~20 scripts); love connection bolted on at the last two words; money-strain and mental-health-decline undertones."
- },
- "boy_plays_his_own_music_in_the_car": {
-  "status": "approved",
-  "reviewer_avg": 7.3,
-  "p_1k": 0.4,
-  "twist": "a",
-  "review_file": "reviews/2026-11-07.md#2-boy_plays_his_own_music_in_the_car-family-a",
-  "date": "2026-11-07",
-  "note": "Round 1. SHIP WITH FIXES (lines 1,4). Fixed avg 7.3/40%.",
-  "sha256": "1dd6e90d8740a1ca63bff1eaeab0d8cf2aeab800a0cb682dda724f6d74432172"
- },
- "boy_starts_double_texting_too": {
-  "status": "approved",
-  "reviewer_avg": 7.7,
-  "p_1k": 0.4,
-  "twist": "e",
-  "review_file": "reviews/2026-11-08.md#boy_starts_double_texting_too-pronoun-fix",
-  "date": "2026-11-08",
-  "note": "Round 1 approval (7 Nov) + 8 Nov text fix: line 3 she->you for POV consistency (flagged by structure review). Re-reviewed fresh, unchanged avg 7.7/40%.",
-  "sha256": "f3ba047f62d0e238dfc26eabdfad5b37393cb88faf04b33e2697d47dd2c98bc3"
- },
- "girl_always_asks_whats_wrong": {
-  "status": "hold",
-  "reviewer_avg": 7.0,
-  "p_1k": 0.32,
-  "twist": "d",
-  "review_file": "reviews/2026-11-07.md#7-girl_always_asks_whats_wrong-family-d",
-  "date": "2026-11-07",
-  "note": "Round 1. SHIP WITH FIXES (line 4) but below P(1k) floor even fixed (32%<35%). Best of the held/cut scripts; bench for a week with no emotional-reassurance posts around it."
- },
- "girl_heating_too_high": {
-  "status": "hold",
-  "reviewer_avg": 6.3,
-  "p_1k": 0.28,
-  "twist": "a",
-  "review_file": "reviews/2026-11-07.md#1-girl_heating_too_high-family-a",
-  "date": "2026-11-07",
-  "note": "Round 1. SHIP WITH FIXES (lines 1,3,4,6,7) but below floor; also too close to girl_cold_feet, space apart if ever built."
- },
- "boy_checks_your_tyres_before_every_trip": {
-  "status": "hold",
-  "reviewer_avg": 6.0,
-  "p_1k": 0.22,
-  "twist": "c",
-  "review_file": "reviews/2026-11-07.md#6-boy_checks_your_tyres_before_every_trip-family-c",
-  "date": "2026-11-07",
-  "note": "Round 1. SHIP WITH FIXES (line 7) but below floor."
- },
- "girl_hides_the_good_snacks": {
-  "status": "cut",
-  "reviewer_avg": 5.0,
-  "p_1k": 0.12,
-  "twist": "c",
-  "review_file": "reviews/2026-11-07.md#5-girl_hides_the_good_snacks-family-c",
-  "date": "2026-11-07",
-  "note": "Round 1 CUT. Internal contradiction (hides snacks from viewer AND saves them for viewer) collapses the script's logic; needs a full rewrite, not line fixes. Also food-themed so close after the plate flop."
- },
- "girl_folds_your_laundry_her_way": {
-  "status": "cut",
-  "reviewer_avg": 5.0,
-  "p_1k": 0.12,
-  "twist": "b",
-  "review_file": "reviews/2026-11-07.md#3-girl_folds_your_laundry_her_way-family-b",
-  "date": "2026-11-07",
-  "note": "Round 1 CUT. Moderate brand risk: frames unpaid domestic labour/self-neglect as romantic (tradwife reading); redoing his folding also reads as mildly controlling."
- },
- "girl_leaves_her_phone_facedown_too": {
-  "status": "cut",
-  "reviewer_avg": 5.0,
-  "p_1k": 0.1,
-  "twist": "e",
-  "review_file": "reviews/2026-11-07.md#10-girl_leaves_her_phone_facedown_too-family-e",
-  "date": "2026-11-07",
-  "note": "Round 1 CUT, high risk. Face-down-phone framing reads as a 'cheating sign' narrative and invites phone-snooping comments; don't rework this theme."
- },
- "girl_leaves_the_porch_light_on": {
-  "status": "cut",
-  "reviewer_avg": 4.3,
-  "p_1k": 0.1,
-  "twist": "d",
-  "review_file": "reviews/2026-11-07.md#8-girl_leaves_the_porch_light_on-family-d",
-  "date": "2026-11-07",
-  "note": "Round 1 CUT. Weak/unrelatable hook (porch light reads as parent behaviour); warning line is a guilt trip about lateness."
- },
- "boy_overwaters_your_desk_plant": {
-  "status": "cut",
-  "reviewer_avg": 4.0,
-  "p_1k": 0.08,
-  "twist": "b",
-  "review_file": "reviews/2026-11-07.md#4-boy_overwaters_your_desk_plant-family-b",
-  "date": "2026-11-07",
-  "note": "Round 1 CUT, weakest of the round. Slug contradicts the script (no overwatering in the text), niche hook, circular warning line."
- },
- "boy_always_lets_you_pick_the_restaurant": {
-  "status": "approved",
-  "reviewer_avg": 7.7,
-  "p_1k": 0.4,
-  "twist": "d",
-  "review_file": "reviews/2026-11-07.md#round-2",
-  "date": "2026-11-07",
-  "note": "Round 2. SHIP WITH FIXES (lines 1,2,3,6,7; 4&5 unchanged). Fixed avg 7.7/40%.",
-  "sha256": "893d0f4332473bba4dbb9252b8a243453813e22928242aa841bed08d701cfc27"
- },
- "boy_steals_the_blanket_at_3am": {
-  "status": "approved",
-  "reviewer_avg": 7.7,
-  "p_1k": 0.38,
-  "twist": "a",
-  "review_file": "reviews/2026-11-07.md#round-2",
-  "date": "2026-11-07",
-  "note": "Round 2. SHIP WITH FIXES (all 7 lines replaced). Fixed avg 7.7/38%.",
-  "sha256": "31ad8ac9d870ceca61517212d123a0386e163aa916948e41c9f7feda226d2f3e"
- },
- "girl_critiques_your_parking_every_time": {
-  "status": "hold",
-  "reviewer_avg": 7.0,
-  "p_1k": 0.32,
-  "twist": "b",
-  "review_file": "reviews/2026-11-07.md#round-2",
-  "date": "2026-11-07",
-  "note": "Round 2. SHIP WITH FIXES (lines 1,3,6,7) but below P(1k) floor even fixed (32%<35%). Good reserve."
- },
- "boy_narrates_the_football_only_to_you": {
-  "status": "hold",
-  "reviewer_avg": 6.0,
-  "p_1k": 0.22,
-  "twist": "b",
-  "review_file": "reviews/2026-11-07.md#round-2",
-  "date": "2026-11-07",
-  "note": "Round 2. SHIP WITH FIXES (lines 1,2,3,6) but below floor."
- },
- "girl_starts_saying_his_dumb_catchphrase": {
-  "status": "hold",
-  "reviewer_avg": 5.7,
-  "p_1k": 0.18,
-  "twist": "e",
-  "review_file": "reviews/2026-11-07.md#round-2",
-  "date": "2026-11-07",
-  "note": "Round 2. SHIP WITH FIXES (lines 1,2,6,7) but below floor even fixed (~6.7/28%)."
- },
- "girl_keeps_your_painkillers_in_her_bag": {
-  "status": "cut",
-  "reviewer_avg": 5.3,
-  "p_1k": 0.15,
-  "twist": "c",
-  "review_file": "reviews/2026-11-07.md#round-2",
-  "date": "2026-11-07",
-  "note": "Round 2 CUT. Nothing looks bad so there's no reframe; rework as 'her bag, half of it is for you' with a funny inventory if revisited."
- },
- "boy_always_answers_how_are_you_with_im_tired": {
-  "status": "cut",
-  "reviewer_avg": 4.7,
-  "p_1k": 0.1,
-  "twist": "d",
-  "review_file": "reviews/2026-11-07.md#round-2",
-  "date": "2026-11-07",
-  "note": "Round 2 CUT. Warning line blames the viewer and contradicts the rest of the script; heavy/withholding territory matches past flops."
- },
- "girl_rewrites_the_grocery_list": {
-  "status": "cut",
-  "reviewer_avg": 4.3,
-  "p_1k": 0.1,
-  "twist": "a",
-  "review_file": "reviews/2026-11-07.md#round-2",
-  "date": "2026-11-07",
-  "note": "Round 2 CUT, brand risk. Romanticises unpaid household admin and frames overriding a partner's choices as care."
- },
- "boy_starts_leaving_her_side_of_the_bed_made": {
-  "status": "cut",
-  "reviewer_avg": 3.7,
-  "p_1k": 0.07,
-  "twist": "e",
-  "review_file": "reviews/2026-11-07.md#round-2",
-  "date": "2026-11-07",
-  "note": "Round 2 CUT, brand risk. Premise is unpaid domestic labour by the woman, romanticised; muddled POV."
- },
- "boy_always_takes_the_aisle_seat": {
-  "status": "cut",
-  "reviewer_avg": 3.3,
-  "p_1k": 0.06,
-  "twist": "c",
-  "review_file": "reviews/2026-11-07.md#round-2",
-  "date": "2026-11-07",
-  "note": "Round 2 CUT, weakest of round. Hidden reason doesn't make logical sense (aisle seat doesn't protect from turbulence); internal contradictions."
- },
- "boy_argues_with_the_tv_only_during_her_shows": {
-  "status": "approved",
-  "reviewer_avg": 7.0,
-  "p_1k": 0.35,
-  "twist": "b",
-  "review_file": "reviews/2026-11-07.md#round-3",
-  "date": "2026-11-07",
-  "note": "Round 3. SHIP WITH FIXES (lines 4,5,6,7; 1-3 unchanged). Fixed avg 7.0/35%.",
-  "sha256": "f7bfa19bbf54befd920ae0880e9a1acf42aaeca333eba01d92a02c4e0137c8ef"
- },
- "boy_always_says_it_wasnt_that_expensive": {
-  "status": "approved",
-  "reviewer_avg": 7.0,
-  "p_1k": 0.38,
-  "twist": "d",
-  "review_file": "reviews/2026-11-07.md#round-3",
-  "date": "2026-11-07",
-  "note": "Round 3. SHIP WITH FIXES (lines 1,2,3,5; 4,6,7 unchanged). Fixed avg 7.0/38%.",
-  "sha256": "525ca5b33c9c512d49a8fae1aad533477d5c75b3d094d39c188da341cd93db4a"
- },
- "boy_starts_saying_her_weird_phone_sign_off": {
-  "status": "approved",
-  "reviewer_avg": 7.3,
-  "p_1k": 0.4,
-  "twist": "e",
-  "review_file": "reviews/2026-11-07.md#round-3",
-  "date": "2026-11-07",
-  "note": "Round 3. SHIP WITH FIXES (lines 2,4,5,6; 1,3,7 unchanged). Fixed avg 7.3/40%.",
-  "sha256": "550900d0b63cf0fe8a77819d10b64b037f1b287e27c728937a32e30e228debb4"
- },
- "boy_never_remembers_who_that_character_is": {
-  "status": "hold",
-  "reviewer_avg": 6.3,
-  "p_1k": 0.25,
-  "twist": "d",
-  "review_file": "reviews/2026-11-07.md#round-3",
-  "date": "2026-11-07",
-  "note": "Round 3. SHIP WITH FIXES (lines 3,4,6,7) but below floor even fixed (~33%); same-batch clone lane of boy_argues_with_the_tv_only_during_her_shows, space apart if ever built."
- },
- "boy_still_sends_you_a_bad_pun_every_day": {
-  "status": "cut",
-  "reviewer_avg": 5.3,
-  "p_1k": 0.18,
-  "twist": "b",
-  "review_file": "reviews/2026-11-07.md#round-3",
-  "date": "2026-11-07",
-  "note": "Round 3 CUT. Niche habit, weak warning line, below floor even with fixes."
- },
- "boy_eats_the_crusts_off_your_sandwich": {
-  "status": "cut",
-  "reviewer_avg": 4.3,
-  "p_1k": 0.08,
-  "twist": "a",
-  "review_file": "reviews/2026-11-07.md#round-3",
-  "date": "2026-11-07",
-  "note": "Round 3 CUT. Food-themed (food has flopped twice); warning line is withdrawal-monitoring with no real stakes."
- },
- "boy_always_grabs_extra_napkins_he_never_uses": {
-  "status": "cut",
-  "reviewer_avg": 4.3,
-  "p_1k": 0.1,
-  "twist": "c",
-  "review_file": "reviews/2026-11-07.md#round-3",
-  "date": "2026-11-07",
-  "note": "Round 3 CUT. Nothing about the behaviour looks bad, so there's no reframe."
- },
- "girl_starts_doing_his_weird_bedtime_stretch": {
-  "status": "cut",
-  "reviewer_avg": 4.7,
-  "p_1k": 0.1,
-  "twist": "e",
-  "review_file": "reviews/2026-11-07.md#round-3",
-  "date": "2026-11-07",
-  "note": "Round 3 CUT. Near-duplicate template of the phone sign-off mirror script; weak/unpicturable hook."
- },
- "girl_sets_five_backup_alarms_for_you": {
-  "status": "cut",
-  "reviewer_avg": 4.0,
-  "p_1k": 0.07,
-  "twist": "a",
-  "review_file": "reviews/2026-11-07.md#round-3",
-  "date": "2026-11-07",
-  "note": "Round 3 CUT, flagged as the most dangerous script of the run: warning line tells viewers to be suspicious when a partner shows trust."
- },
- "girl_owns_four_umbrellas_and_never_has_one": {
-  "status": "cut",
-  "reviewer_avg": 3.7,
-  "p_1k": 0.06,
-  "twist": "c",
-  "review_file": "reviews/2026-11-07.md#round-3",
-  "date": "2026-11-07",
-  "note": "Round 3 CUT, weakest of the round. No behaviour that looks bad; internal contradictions; withdrawal-monitoring warning line."
- },
- "girl_always_checks_he_got_home_safe": {
-  "sha256": "f1d3d193bed2a7f3f924a559f67e688123eec4b1be83d03a79c4e242470b1e72",
-  "status": "approved",
-  "reviewer_avg": 7.7,
-  "p_1k": 0.4,
-  "twist": "d",
-  "review_file": "reviews/2026-11-08.md#gap-fill-round-1-10-brand-new-drafts-12-15-nov-slots",
-  "date": "2026-11-08",
-  "note": "Round 1 gap-fill. SHIP WITH FIXES on lines 3-7, mandatory for risk (original wording tipped into guilt-tripping around \"text me when home\"). Best share mechanic of the batch."
- },
- "girl_starts_narrating_the_tv_show_like_he_does": {
-  "sha256": "ccae04a80f68428776c6f7d3992756e6b0e0b544ea2cad9ded9436654d4d331b",
-  "status": "approved",
-  "reviewer_avg": 7.0,
-  "p_1k": 0.35,
-  "twist": "e",
-  "review_file": "reviews/2026-11-08.md#gap-fill-round-1-10-brand-new-drafts-12-15-nov-slots",
-  "date": "2026-11-08",
-  "note": "Round 1 gap-fill. SHIP WITH FIXES on line 6 (restated the beat instead of turning). At the P(1k) floor exactly (35%)."
- },
- "girl_hums_off_key_in_the_kitchen": {
-  "sha256": "7346efcf5aa57b3a1007d4fee7e09d24639206a300a85fd5b57b33cd2b24cd31",
-  "status": "hold",
-  "reviewer_avg": 6.3,
-  "p_1k": 0.33,
-  "twist": "a",
-  "review_file": "reviews/2026-11-08.md#gap-fill-round-1-10-brand-new-drafts-12-15-nov-slots",
-  "date": "2026-11-08",
-  "text": [
-   "She hums completely off-key every time she cooks, and has no idea she's doing it.",
-   "You used to turn the TV up to drown it out.",
-   "Now you turn the TV down instead, so you can actually hear her.",
-   "You've started listening for it from the other room, just to know she's having a good day.",
-   "Send this to the worst singer you love.",
-   "The day she's cooking in total silence, she's not concentrating. Something's on her mind. That's your cue to ask.",
-   "A terrible, tuneless, happy noise coming from your kitchen is one of the best sounds a house can make."
-  ],
-  "note": "SHIP WITH FIXES per reviewer but below the avg/P(1k) floor (6.3/33%). Kept on hold with its fixed text for a future round."
- },
- "boy_checks_the_front_door_twice_before_bed": {
-  "sha256": "774be4b68be999e40147d701f2b25817fcb7f8e7f597abbf85eff188d450ea85",
-  "status": "hold",
-  "reviewer_avg": 5.7,
-  "p_1k": 0.25,
-  "twist": "c",
-  "review_file": "reviews/2026-11-08.md#gap-fill-round-1-10-brand-new-drafts-12-15-nov-slots",
-  "date": "2026-11-08",
-  "text": [
-   "He checks the front door is locked, then checks it again two minutes later.",
-   "You've called him paranoid for it more than once.",
-   "It's so you don't have to lie there wondering and go check it yourself.",
-   "He'd rather look a little ridiculous than let you lie awake over a door.",
-   "Send this to the one who checks the door twice.",
-   "And if you're the one who used to get up and check? Notice you stopped. That's him.",
-   "Let the ridiculous habit be ridiculous. It's doing its job."
-  ],
-  "note": "SHIP WITH FIXES per reviewer but below the floor (5.7/25%). Shares the \"annoying habit is secretly protective\" skeleton with boy_leaves_the_hallway_light_on \u2014 reviewer said not to post both in the same week even if both are later approved."
- },
- "girl_only_laughs_at_his_bad_puns": {
-  "sha256": "3c73e7c5fc65e941150f9451bfc8fb664b4928bff9ab208ffe02726d145a932c",
-  "status": "hold",
-  "reviewer_avg": 5.7,
-  "p_1k": 0.25,
-  "twist": "b",
-  "review_file": "reviews/2026-11-08.md#gap-fill-round-1-10-brand-new-drafts-12-15-nov-slots",
-  "date": "2026-11-08",
-  "text": [
-   "She groans at every pun on earth. Except yours.",
-   "Yours are objectively just as bad.",
-   "She still laughs at every one of them, like it's the first time she's heard it.",
-   "Even the one about the printer she's heard eleven times.",
-   "If you've got a joke that only ever works on one specific person, send this to them.",
-   "And the day she stops laughing at the printer one, don't get a new joke. Ask her what's wrong.",
-   "Keep the bad jokes coming. She's been laughing at the printer one for two years."
-  ],
-  "note": "SHIP WITH FIXES per reviewer but below the floor (5.7/25%)."
- },
- "boy_remembers_how_you_take_your_coffee_everywhere": {
-  "sha256": "709daeaa16dccf0a4c2e779aea47fb76763953750cfa6ff460e856a3632e5062",
-  "status": "hold",
-  "reviewer_avg": 5.3,
-  "p_1k": 0.28,
-  "twist": "d",
-  "review_file": "reviews/2026-11-08.md#gap-fill-round-1-10-brand-new-drafts-12-15-nov-slots",
-  "date": "2026-11-08",
-  "text": [
-   "He knows your coffee order at every cafe you've ever been to together.",
-   "You never once sat him down and told him. He just picked it up.",
-   "He even knows which cafe's oat milk you don't trust.",
-   "He's still collecting it anyway, one small detail at a time, without being asked.",
-   "If someone remembers the tiny details you never thought mattered enough to mention, send this to them.",
-   "So if you've switched to decaf and haven't told him, tell him. He's been ordering the old one with total confidence.",
-   "Let him order for you. He's been practising."
-  ],
-  "note": "SHIP WITH FIXES per reviewer but below the floor (5.3/28%)."
- },
- "girl_always_takes_the_aisle_seat": {
-  "sha256": "380c9df71773fb6ecfbee2f5d71236d284fb62706ae02c48004c5bf8d942fe01",
-  "status": "hold",
-  "reviewer_avg": 5.0,
-  "p_1k": 0.2,
-  "twist": "c",
-  "review_file": "reviews/2026-11-08.md#gap-fill-round-1-10-brand-new-drafts-12-15-nov-slots",
-  "date": "2026-11-08",
-  "text": [
-   "Every flight, every train, she takes the aisle seat. No discussion.",
-   "You used to think she just liked being in control of the exit.",
-   "It's so you get the window, because you're the one who actually looks out of it.",
-   "And so she can get up without waking you, when you inevitably fall asleep on her shoulder by minute twenty.",
-   "If someone's always quietly taken the worse seat so you could have the better one, send this to them.",
-   "And the one flight she takes the window? She's not tired. She wants your shoulder this time.",
-   "Next trip, let her have the window. Just once."
-  ],
-  "note": "SHIP WITH FIXES per reviewer but below the floor (5.0/20%), lowest priority per reviewer."
- },
- "boy_leaves_the_hallway_light_on": {
-  "sha256": "d3fc960e0ac59ff9ec8dbcef1739fa4bc8f954945fb56c376e0ae1a46a9bb225",
-  "status": "hold",
-  "reviewer_avg": 6.7,
-  "p_1k": 0.35,
-  "twist": "c",
-  "review_file": "reviews/2026-11-08.md#gap-fill-round-1-10-brand-new-drafts-12-15-nov-slots",
-  "date": "2026-11-08",
-  "text": [
-   "He leaves the hallway light on every single night, no matter how many times you ask.",
-   "You've called it lazy. You've called it wasteful.",
-   "It's on so you don't stub your toe walking to the bathroom at three in the morning.",
-   "He worked that out after the first week you lived together, and never once mentioned it.",
-   "Send this to whoever keeps leaving the light on.",
-   "And the first night you finally win and it's off, you'll be the one getting up to switch it back on.",
-   "Some bad habits are just love wearing a lazy disguise."
-  ],
-  "note": "SHIP WITH FIXES per reviewer; P(1k) clears the floor (35%) but avg (6.7) does not."
- },
- "boy_always_has_a_joke_ready": {
-  "status": "cut",
-  "reviewer_avg": 4.3,
-  "p_1k": 0.12,
-  "twist": "a",
-  "review_file": "reviews/2026-11-08.md#gap-fill-round-1-10-brand-new-drafts-12-15-nov-slots",
-  "date": "2026-11-08",
-  "note": "Round 1 gap-fill CUT. Deflecting-pain coping romanticised as a trait, no reframe as love for the partner; close to the \"held it in\" flop family."
- },
- "boy_only_lets_his_guard_down_on_the_drive_home": {
-  "status": "cut",
-  "reviewer_avg": 4.3,
-  "p_1k": 0.12,
-  "twist": "b",
-  "review_file": "reviews/2026-11-08.md#gap-fill-round-1-10-brand-new-drafts-12-15-nov-slots",
-  "date": "2026-11-08",
-  "note": "Round 1 gap-fill CUT. Pure reassurance, no real twist, close to a clone of the \"held it in\" flop (156 views, 7.6s watch)."
- }
 }

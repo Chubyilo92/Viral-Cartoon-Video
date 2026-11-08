@@ -1611,3 +1611,87 @@ a gap gets at least one new attempt every day" — stopping here rather than rus
 "ship fewer videos rather than weaker ones" call. The 6 "hold" scripts from round 1 (text already
 reviewer-fixed, just below the floor) are the obvious first thing for the next run to reconsider before
 writing entirely new drafts.
+
+## 2026-11-08 (continued) — gap-fill round 2: 1 new script scheduled (umbrella), standing instruction to always use all 3 rounds
+
+Chuby gave an explicit standing instruction mid-run: never report a slot as empty after only round 1 —
+use all 3 allowed gap-fill rounds every run before any slot can be called genuinely empty. This does
+**not** relax the reviewer-avg≥7.0/P(1k)≥35% floor or any build gate; it only means rounds 2 and 3 get
+written and run, not skipped. Acting on that instruction now:
+
+**Round 2 — 10 new drafts, 5 twist families (a,b,c,d,e ×2), reviewed with real Metricool performance
+data** (full reviewer verdict, scores and per-line fixes in `reviews/2026-11-08.md`, "Gap-fill round 2"
+section). Only 1 of 10 cleared the floor:
+
+| Slug | Twist | Reviewer avg/P(1k) | Disposition |
+|---|---|---|---|
+| boy_always_gives_you_the_dry_half_of_the_umbrella | d | 7.0/38% | **approved** |
+| girl_always_orders_extra_napkins | c | 6.67/33% | hold (closest miss) |
+| boy_always_taps_the_steering_wheel_to_every_song | a | 5.0/18% | hold |
+| girl_only_dances_in_the_kitchen_with_him | b | 6.0/25% | hold |
+| girl_saves_you_the_last_fry_every_time | d | 6.0/25% | hold |
+| boy_starts_doing_her_weird_stretch_before_bed | e | 5.67/22% | hold |
+| girl_always_doodles_hearts_on_the_shopping_list | a | 4.67/18% | hold |
+| boy_only_takes_his_shoes_off_at_her_place | b | 4.33/13% | cut |
+| boy_always_walks_on_the_street_side | c | 5.33/15% | cut |
+| girl_starts_saving_receipts_like_he_does | e | 3.33/8% | cut |
+
+All 10 drafts passed the Kokoro phonemizer precheck before review. Results recorded in
+`docs/approvals.json` (124 total entries) and `reviews/2026-11-08.md`.
+
+**boy_always_gives_you_the_dry_half_of_the_umbrella build/gate saga.** `prevoice.py` flagged two
+borderline-pace lines at default speed; fixed with `LINE_SPEED = {1: 0.8, 5: 0.82}` (no change to the
+approved BODY_LINES text, hash unaffected). The scene art then went through **7 structure-review
+rounds** (fresh subagent each time, never self-certified) before SHIP:
+
+- Round 1 FAIL: the wet-indicator was too pale/bubble-like; scene 6 had a stray motion-arc; the final
+  scene was a generic reused HUG that didn't pay off "take the wet side". Fixed: solid wet-patch with
+  drip lines, removed the arc, replaced the final scene with a custom reversed-roles scene (girl now
+  holds the umbrella) that persisted through every later round.
+- Round 2 FAIL: umbrella coverage (who's dry vs wet) read as ambiguous/backwards at filmstrip scale;
+  wet patch overlapped a puppy's face/ear in two scenes; scene 6 puppies overlapped and a label clipped
+  off the left frame edge. **Lesson confirmed here independently**: the engine's 1.2x zoom pivoted at
+  x=540 applies to *every* custom-drawn element, not just `bubbleText` — a label at local x=170 clipped
+  because `zoomed_x = 540+(170-540)*1.2 = 96` minus its own half-width went negative.
+- Round 3 FAIL: even after a full `brolly()` redesign (lopsided dome, pole always vertical), the
+  "dry/wet" puppy was positioned fully inside the canopy's horizontal span either way, so coverage was
+  still ambiguous; wet patches read as hip/belly-level, not shoulder; the switched-hands scene still had
+  puppy overlap and a canopy clipping the left edge.
+- Round 4 FAIL: the fix that widened the gap between the canopy and the pole to mark the open/rained-on
+  side made the umbrella look like two disconnected floating pieces rather than one tilted object; the
+  "raised paw" fix for the wet patch didn't actually raise it far enough (still read as hip-level) in 3
+  of 4 umbrella scenes; the switched-hands scene still had an overlapping arm and a paw almost touching
+  the right edge.
+- Round 5 FAIL: same two issues, still not fully landed — this took deliberate, careful rework, not a
+  one-line tweak. **Fix that finally worked**: redrew the umbrella so a thick curved shaft (same colour
+  and near the same thickness as the pole) visibly continues from the pole-top to the canopy's near
+  edge — the umbrella now reads as one bent/tilted object, not two pieces — and raised the exposed
+  puppy's paw all the way up to meet that bend, so the wet patch sits unmistakably on the forearm.
+- Round 6 FAIL: the umbrella-connection and wet-patch fixes landed everywhere except the switched-hands
+  scene, which still had puppies too close together, a patch overlapping the ear, and a paw too close
+  to the right frame edge.
+- Round 7: **SHIP.** Widened the gap between the two puppies in the switched-hands scene, pulled the
+  paw/pole in from the right edge, moved the patch further down the forearm away from the ear, and
+  increased rain density/opacity across all umbrella scenes.
+
+Every fix was geometry/scene-code only — BODY_LINES, LINE_SPEED, IG_LINE/TT_LINE and the approval hash
+were never touched, so `approval.check()` stayed green throughout. Full build (both cuts) →
+`voicecheck.py` (0 flags) → `watchcheck.py` on both the instagram and tiktok muxed mp4s (all 7 lines
+≥45% word-match on both cuts, no edge-clip fails) → round-7 SHIP, in that order, on the final geometry.
+
+**Scheduled** (twist-family spacing: umbrella is family d, needs ≥48h after
+`girl_always_checks_he_got_home_safe` (family d, 13 Nov 10:00) → earliest 15 Nov 10:00; confirmed empty
+via `getScheduledPosts` immediately before scheduling):
+
+| Slot | Slug | Reviewer avg/P(1k) | Twist | File sha256 (IG / TT) | JJCutecouple commit |
+|---|---|---|---|---|---|
+| Sun 15 Nov 10:05/10:14 | boy_always_gives_you_the_dry_half_of_the_umbrella | 7.0/38% | d | 9c2c7701a175c864 / e211c707497032f3 | 090c2aea0f1f4c59 |
+
+Both read back from Metricool after scheduling: caption text identical to the caption files
+(`captions/boy_always_gives_you_the_dry_half_of_the_umbrella_{ig,tt}.txt`), no banned hashtags, correct
+providers (facebook+instagram / tiktok), REEL type, TikTok privacy public, draft false, autoPublish
+true, one media item each.
+
+**4 slots still empty**: 12 Nov 10:00, 14 Nov 10:00, 14 Nov 18:00, 15 Nov 18:00. Per Chuby's standing
+instruction, round 3 (the last of the 3 allowed rounds) is next, targeting these 4 slots — this run is
+not done after round 2.
