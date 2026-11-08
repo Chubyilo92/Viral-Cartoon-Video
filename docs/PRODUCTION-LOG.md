@@ -1515,3 +1515,99 @@ tv_argues, restaurant, double_texting, blanket, expensive, phone_sign_off) are n
 scheduled. Remaining empty slots in the 7-day window as of this entry: 12 Nov 10:00/18:00, 13 Nov
 10:00/18:00, 14 Nov 10:00/18:00, 15 Nov 10:00/18:00 (7 slots — 12 Nov 18:00 may already be filled;
 see next section for the live re-check before any new script round is written).
+
+---
+
+## 2026-11-08 (continued) — gap-fill round 1: 2 new scripts scheduled, 5 slots still empty
+
+Live re-check confirmed 7 empty slots: 12 Nov 10:00; 13 Nov 10:00/18:00; 14 Nov 10:00/18:00; 15 Nov
+10:00/18:00 (12 Nov 18:00 was already filled by `girl_calls_for_no_reason`, scheduled earlier). Backlog
+was empty, so per RULES.md §5b/§4.7 wrote round 1 of 10 brand-new drafts (not resubmissions), spanning
+twist families a(2) b(2) c(3) d(2) e(1), and sent them to a fresh reviewer subagent (opus,
+general-purpose) with real Metricool data pulled fresh this morning: winners "He skips your song"
+1163v, "fights sleep" 1279v, "freezing feet" 1186v, "pyjamas/spot cream" 1252v, "hoodie" 1285v,
+"fries/lied" 1220v (9-12s watch, 4-22 shares, 30-111 interactions); flops "plate says otherwise" 136v,
+"glass of water" 118v, "last ten messages" 134v, "explains three times" 136v, "held it in" 156v,
+"easier to send than say" 139v (4.7-8.4s watch, 0-3 shares, 0-7 interactions). Full review verbatim in
+reviews/2026-11-08.md. All 70 draft lines passed the Kokoro phonemizer precheck before review.
+
+**Reviewer verdicts:** 2 CUT (deflecting-pain/pure-reassurance scripts close to the "held it in" flop
+family), 6 SHIP WITH FIXES but below the RULES.md §4 floor (avg ≥7.0 AND P(1k) ≥35%) — recorded "hold"
+with their fixed text + sha256 for a future round to reconsider, 2 cleared BOTH the avg and P(1k)
+floor and were recorded "approved":
+
+| Slug | Twist | Reviewer avg/P(1k) | Risk note |
+|---|---|---|---|
+| girl_always_checks_he_got_home_safe | d | 7.7/40% | Original wording ("quiet reaction", "went missing", "buys her peace") tipped into guilt-tripping around "text me when home" — reviewer's lines 3-7 fix was mandatory, applied word-for-word, before approval. |
+| girl_starts_narrating_the_tv_show_like_he_does | e | 7.0/35% | None — at the P(1k) floor exactly. |
+
+**Build/gate cycle took 5 rounds of fresh structure-review per script** (unusually many — logging each
+as a reusable lesson, since several are new failure modes not seen in earlier scripts this week):
+
+*girl_always_checks_he_got_home_safe:*
+- Round 1 FAIL (watchcheck, not structure): the TITLE "when a girl always says text me when you're
+  home" was too long for the (non-auto-shrinking) title-pill overlay and ran off the right edge in
+  every frame. **New lesson: TITLE has no auto-shrink (unlike bubbleText/captions) — keep it to
+  roughly 30 characters / 5-6 words**, matching the existing corpus ("when a boy copies her goodbye",
+  "when a boy steals the blanket"). Shortened to "when a girl waits up for you".
+- Round 2 FAIL (structure): scene 1 had no visual "leaving" cue (added a doorway prop); scene 3's
+  `blanket()` call was too narrow for its own hardcoded fold-line geometry, so the second fold line
+  poked out past the blob's right edge as a stray diagonal line (**lesson: `blanket(x0,x1,...)` needs
+  width ≳460px for its fold lines to stay inside the shape — for a narrower cushion, use a plain
+  `blob(rectPts(...))` instead**); scene 7's "sent ✓" card used `win(u,0,.6)` which is a fade *out*
+  starting at u=.6, not a fade-in duration, so the card vanished after 0.6s (**lesson, confirmed
+  independently in the other script below: `win(u,a,b)` = fade in at `a`, hold until `b` — for a prop
+  that should stay up for the whole scene, `b` must be large (e.g. 9), never the scene's own short
+  duration**).
+- Round 3 FAIL (structure): speech-bubble text was unreadable-small (scale .48-.56); enlarging to .78
+  then clipped the left frame edge once the 1.2x zoom transform was applied to an off-center bubble.
+  **New lesson, with the math**: a `bubbleText` pill's half-width ≈ `(textwidth+48)/2`; after the
+  engine's zoom, its rendered half-width is `halfwidth*scale*1.2` and its center shifts to
+  `540+(x-540)*1.2`. For anything off-center (x≠540) with long text, scale beyond ~0.65 risks a clip —
+  keep long bubbles closer to x=540 and scale ≤0.65, or do the arithmetic before picking a bigger scale.
+- Round 4 FAIL (structure): showing both puppies together in the final "sent ✓" scene read as "he came
+  home in person" rather than "he texted from wherever he is" — fixed by showing the girl alone,
+  asleep, on the same cushion reused from the night scene, with the boy absent and only the card
+  representing the text.
+- Round 5 FAIL (structure): the floating hearts added for the final scene's warmth rose straight
+  through the sleeping girl's face. Fixed twice — first attempt still overlapped her face (moved too
+  close), second attempt (`floatHearts(290,780,...)`, well left of and below her head) cleared it.
+- Round 6: SHIP.
+
+*girl_starts_narrating_the_tv_show_like_he_does:*
+- Round 1 FAIL (structure): same TITLE-overflow issue as above — shortened to "when a girl narrates
+  the tv too".
+- Round 2 FAIL (structure): the whole premise is "talking to the TV", but no TV prop appeared anywhere
+  on screen, so both yelling-at-the-screen beats read as the puppies yelling at each other; the
+  frame-6 card text ("sayings • snacks • the sofa") was wider than its own box and spilled past both
+  edges. Added a simple hand-drawn TV prop to scenes 1 and 3 (with both puppies repositioned to face
+  it), and widened the frame-6 card.
+- Round 3 FAIL (structure): the line-3 caption split a quoted phrase across a chunk boundary
+  (`"'don't go"` / `"in there' at"`), reading as a stray apostrophe. **New lesson: the shared `C()`
+  caption tokenizer in `_kit2.py` doesn't special-case quote marks** — fixed without touching the
+  shared engine or the approved text, by building `SCENES` as `spec(...)` for most lines plus one
+  direct `S(custom_cap_list, draw_code)` call for the affected line, with the quoted phrase kept as a
+  single manually-written caption chunk.
+- Round 4: SHIP.
+
+**Scheduled** (twist-family spacing: girl_always_checks_he_got_home_safe is family d, needs ≥48h after
+`boy_always_says_it_wasnt_that_expensive` (family d, 11 Nov 10:00) → earliest 13 Nov 10:00, so 12 Nov
+10:00 stays empty this run; girl_starts_narrating_the_tv_show_like_he_does is family e, needs ≥48h
+after `boy_starts_saying_her_weird_phone_sign_off` (family e, 11 Nov 18:00) → earliest 13 Nov 18:00):
+
+| Slot | Slug | Reviewer avg/P(1k) | Twist | File sha256 (IG / TT) | JJCutecouple commit |
+|---|---|---|---|---|---|
+| Fri 13 Nov 10:05/10:14 | girl_always_checks_he_got_home_safe | 7.7/40% | d | 136b67d31f08ab47 / 520750f40b0cfffa | 40d0b3b342c05b60 |
+| Fri 13 Nov 18:05/18:14 | girl_starts_narrating_the_tv_show_like_he_does | 7.0/35% | e | f7ed2f0116f589fd / 4b8fb61a8d08d312 | 40d0b3b342c05b60 |
+
+Both read back from Metricool after scheduling: caption text identical to the caption files, correct
+providers/REEL types/TikTok privacy, draft false, autoPublish true, one media item each.
+
+**Round 2/3 not run this session.** 5 slots remain empty: 12 Nov 10:00, 14 Nov 10:00/18:00, 15 Nov
+10:00/18:00. RULES.md §4.7 allows up to 3 rounds per run, but round 1 alone (10 drafts, 1 review round,
+6 structure-review rounds across the 2 approved scripts) was already a full day's worth of gated build
+work, and per RULES.md §5b "whatever is still empty after the run is retried by the next day's run, so
+a gap gets at least one new attempt every day" — stopping here rather than rushing rounds 2-3 is the
+"ship fewer videos rather than weaker ones" call. The 6 "hold" scripts from round 1 (text already
+reviewer-fixed, just below the floor) are the obvious first thing for the next run to reconsider before
+writing entirely new drafts.

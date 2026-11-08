@@ -1353,5 +1353,157 @@
   "review_file": "reviews/2026-11-07.md#round-3",
   "date": "2026-11-07",
   "note": "Round 3 CUT, weakest of the round. No behaviour that looks bad; internal contradictions; withdrawal-monitoring warning line."
+ },
+ "girl_always_checks_he_got_home_safe": {
+  "sha256": "f1d3d193bed2a7f3f924a559f67e688123eec4b1be83d03a79c4e242470b1e72",
+  "status": "approved",
+  "reviewer_avg": 7.7,
+  "p_1k": 0.4,
+  "twist": "d",
+  "review_file": "reviews/2026-11-08.md#gap-fill-round-1-10-brand-new-drafts-12-15-nov-slots",
+  "date": "2026-11-08",
+  "note": "Round 1 gap-fill. SHIP WITH FIXES on lines 3-7, mandatory for risk (original wording tipped into guilt-tripping around \"text me when home\"). Best share mechanic of the batch."
+ },
+ "girl_starts_narrating_the_tv_show_like_he_does": {
+  "sha256": "ccae04a80f68428776c6f7d3992756e6b0e0b544ea2cad9ded9436654d4d331b",
+  "status": "approved",
+  "reviewer_avg": 7.0,
+  "p_1k": 0.35,
+  "twist": "e",
+  "review_file": "reviews/2026-11-08.md#gap-fill-round-1-10-brand-new-drafts-12-15-nov-slots",
+  "date": "2026-11-08",
+  "note": "Round 1 gap-fill. SHIP WITH FIXES on line 6 (restated the beat instead of turning). At the P(1k) floor exactly (35%)."
+ },
+ "girl_hums_off_key_in_the_kitchen": {
+  "sha256": "7346efcf5aa57b3a1007d4fee7e09d24639206a300a85fd5b57b33cd2b24cd31",
+  "status": "hold",
+  "reviewer_avg": 6.3,
+  "p_1k": 0.33,
+  "twist": "a",
+  "review_file": "reviews/2026-11-08.md#gap-fill-round-1-10-brand-new-drafts-12-15-nov-slots",
+  "date": "2026-11-08",
+  "text": [
+   "She hums completely off-key every time she cooks, and has no idea she's doing it.",
+   "You used to turn the TV up to drown it out.",
+   "Now you turn the TV down instead, so you can actually hear her.",
+   "You've started listening for it from the other room, just to know she's having a good day.",
+   "Send this to the worst singer you love.",
+   "The day she's cooking in total silence, she's not concentrating. Something's on her mind. That's your cue to ask.",
+   "A terrible, tuneless, happy noise coming from your kitchen is one of the best sounds a house can make."
+  ],
+  "note": "SHIP WITH FIXES per reviewer but below the avg/P(1k) floor (6.3/33%). Kept on hold with its fixed text for a future round."
+ },
+ "boy_checks_the_front_door_twice_before_bed": {
+  "sha256": "774be4b68be999e40147d701f2b25817fcb7f8e7f597abbf85eff188d450ea85",
+  "status": "hold",
+  "reviewer_avg": 5.7,
+  "p_1k": 0.25,
+  "twist": "c",
+  "review_file": "reviews/2026-11-08.md#gap-fill-round-1-10-brand-new-drafts-12-15-nov-slots",
+  "date": "2026-11-08",
+  "text": [
+   "He checks the front door is locked, then checks it again two minutes later.",
+   "You've called him paranoid for it more than once.",
+   "It's so you don't have to lie there wondering and go check it yourself.",
+   "He'd rather look a little ridiculous than let you lie awake over a door.",
+   "Send this to the one who checks the door twice.",
+   "And if you're the one who used to get up and check? Notice you stopped. That's him.",
+   "Let the ridiculous habit be ridiculous. It's doing its job."
+  ],
+  "note": "SHIP WITH FIXES per reviewer but below the floor (5.7/25%). Shares the \"annoying habit is secretly protective\" skeleton with boy_leaves_the_hallway_light_on \u2014 reviewer said not to post both in the same week even if both are later approved."
+ },
+ "girl_only_laughs_at_his_bad_puns": {
+  "sha256": "3c73e7c5fc65e941150f9451bfc8fb664b4928bff9ab208ffe02726d145a932c",
+  "status": "hold",
+  "reviewer_avg": 5.7,
+  "p_1k": 0.25,
+  "twist": "b",
+  "review_file": "reviews/2026-11-08.md#gap-fill-round-1-10-brand-new-drafts-12-15-nov-slots",
+  "date": "2026-11-08",
+  "text": [
+   "She groans at every pun on earth. Except yours.",
+   "Yours are objectively just as bad.",
+   "She still laughs at every one of them, like it's the first time she's heard it.",
+   "Even the one about the printer she's heard eleven times.",
+   "If you've got a joke that only ever works on one specific person, send this to them.",
+   "And the day she stops laughing at the printer one, don't get a new joke. Ask her what's wrong.",
+   "Keep the bad jokes coming. She's been laughing at the printer one for two years."
+  ],
+  "note": "SHIP WITH FIXES per reviewer but below the floor (5.7/25%)."
+ },
+ "boy_remembers_how_you_take_your_coffee_everywhere": {
+  "sha256": "709daeaa16dccf0a4c2e779aea47fb76763953750cfa6ff460e856a3632e5062",
+  "status": "hold",
+  "reviewer_avg": 5.3,
+  "p_1k": 0.28,
+  "twist": "d",
+  "review_file": "reviews/2026-11-08.md#gap-fill-round-1-10-brand-new-drafts-12-15-nov-slots",
+  "date": "2026-11-08",
+  "text": [
+   "He knows your coffee order at every cafe you've ever been to together.",
+   "You never once sat him down and told him. He just picked it up.",
+   "He even knows which cafe's oat milk you don't trust.",
+   "He's still collecting it anyway, one small detail at a time, without being asked.",
+   "If someone remembers the tiny details you never thought mattered enough to mention, send this to them.",
+   "So if you've switched to decaf and haven't told him, tell him. He's been ordering the old one with total confidence.",
+   "Let him order for you. He's been practising."
+  ],
+  "note": "SHIP WITH FIXES per reviewer but below the floor (5.3/28%)."
+ },
+ "girl_always_takes_the_aisle_seat": {
+  "sha256": "380c9df71773fb6ecfbee2f5d71236d284fb62706ae02c48004c5bf8d942fe01",
+  "status": "hold",
+  "reviewer_avg": 5.0,
+  "p_1k": 0.2,
+  "twist": "c",
+  "review_file": "reviews/2026-11-08.md#gap-fill-round-1-10-brand-new-drafts-12-15-nov-slots",
+  "date": "2026-11-08",
+  "text": [
+   "Every flight, every train, she takes the aisle seat. No discussion.",
+   "You used to think she just liked being in control of the exit.",
+   "It's so you get the window, because you're the one who actually looks out of it.",
+   "And so she can get up without waking you, when you inevitably fall asleep on her shoulder by minute twenty.",
+   "If someone's always quietly taken the worse seat so you could have the better one, send this to them.",
+   "And the one flight she takes the window? She's not tired. She wants your shoulder this time.",
+   "Next trip, let her have the window. Just once."
+  ],
+  "note": "SHIP WITH FIXES per reviewer but below the floor (5.0/20%), lowest priority per reviewer."
+ },
+ "boy_leaves_the_hallway_light_on": {
+  "sha256": "d3fc960e0ac59ff9ec8dbcef1739fa4bc8f954945fb56c376e0ae1a46a9bb225",
+  "status": "hold",
+  "reviewer_avg": 6.7,
+  "p_1k": 0.35,
+  "twist": "c",
+  "review_file": "reviews/2026-11-08.md#gap-fill-round-1-10-brand-new-drafts-12-15-nov-slots",
+  "date": "2026-11-08",
+  "text": [
+   "He leaves the hallway light on every single night, no matter how many times you ask.",
+   "You've called it lazy. You've called it wasteful.",
+   "It's on so you don't stub your toe walking to the bathroom at three in the morning.",
+   "He worked that out after the first week you lived together, and never once mentioned it.",
+   "Send this to whoever keeps leaving the light on.",
+   "And the first night you finally win and it's off, you'll be the one getting up to switch it back on.",
+   "Some bad habits are just love wearing a lazy disguise."
+  ],
+  "note": "SHIP WITH FIXES per reviewer; P(1k) clears the floor (35%) but avg (6.7) does not."
+ },
+ "boy_always_has_a_joke_ready": {
+  "status": "cut",
+  "reviewer_avg": 4.3,
+  "p_1k": 0.12,
+  "twist": "a",
+  "review_file": "reviews/2026-11-08.md#gap-fill-round-1-10-brand-new-drafts-12-15-nov-slots",
+  "date": "2026-11-08",
+  "note": "Round 1 gap-fill CUT. Deflecting-pain coping romanticised as a trait, no reframe as love for the partner; close to the \"held it in\" flop family."
+ },
+ "boy_only_lets_his_guard_down_on_the_drive_home": {
+  "status": "cut",
+  "reviewer_avg": 4.3,
+  "p_1k": 0.12,
+  "twist": "b",
+  "review_file": "reviews/2026-11-08.md#gap-fill-round-1-10-brand-new-drafts-12-15-nov-slots",
+  "date": "2026-11-08",
+  "note": "Round 1 gap-fill CUT. Pure reassurance, no real twist, close to a clone of the \"held it in\" flop (156 views, 7.6s watch)."
  }
 }
