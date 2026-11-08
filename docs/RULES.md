@@ -73,11 +73,22 @@ Only `pipeline/original_music.py` beds (synthesized in code). The phone-recorded
    - A script can be held for a stated non-score reason (e.g. brand risk), even if it passes the numbers.
 5. `make_video.py` and `make_short.py` refuse to build (exit) unless the spec's exact text matches an
    approved entry. Editing a line after review changes the hash, so it has to be reviewed again.
-6. Ship fewer videos rather than weaker ones. An empty slot is better than a bad post.
-7. **Rounds (changed 1 Nov 2026, Chuby: "apply it automatically next time"):** if slots are still empty after
-   a round, write a new round of ~10 BRAND-NEW scripts (not resubmissions) and send them to a fresh reviewer.
-   Up to **3 rounds per run**. The floor never moves. On 1 Nov rounds 1-2 produced nothing (best 6.7) and
-   round 3, written to the lessons below, produced 5 approvals (7.3-8.3).
+6. Ship fewer videos rather than weaker ones. **An empty slot is never the finished state of a run** —
+   it is a reason to write another round, not a result to report. The floor (SHIP/SHIP WITH FIXES AND
+   avg ≥7.0 AND P(1k) ≥35%, every build gate) never moves to force a fill, but running out of rounds
+   because of time, cost, or caution is not an acceptable reason to leave a slot empty. Use all 3 rounds
+   below before a slot counts as genuinely empty for this run.
+7. **Rounds (changed 1 Nov 2026, Chuby: "apply it automatically next time"; reinforced 8 Nov 2026, Chuby:
+   "whenever something does not meet the threshold, you start again and you fill in the slots... I do
+   not want excuses, I want results"):** if slots are still empty after a round, immediately write a new
+   round of ~10 BRAND-NEW scripts (not resubmissions — a "hold" script from an earlier round is reused
+   only if substantively rewritten, never resent as-is) and send them to a fresh reviewer. **Do this up
+   to 3 rounds per run, in the same run, before stopping** — do not do one round, see empty slots, and
+   report that back as the outcome; write round 2, then round 3, and only then report whatever is still
+   open. The floor never moves: never lower it, never skip a gate, and never schedule something that
+   fails one, to make a slot fill. On 1 Nov rounds 1-2 produced nothing (best 6.7) and round 3, written
+   to the lessons below, produced 5 approvals (7.3-8.3) — rounds 2 and 3 are often where the real
+   approvals come from, not a sign to give up after round 1.
 
 ### 4a. Script lessons (1 Nov 2026 — what separated round 3 from rounds 1-2)
 
@@ -148,11 +159,14 @@ Anything made outside the scheduled task (tests, one-offs, manual fixes) goes th
 
 - The batch task runs **every day at 06:12 UK** and looks **7 days ahead** (today's 10:00 included).
   If every slot in that window is filled, it stops after the check (cheap). Otherwise it fills them.
-- Order of supply: (1) approved-but-unscheduled backlog, (2) new rounds of ~10 drafts, up to 3 rounds.
+- Order of supply: (1) approved-but-unscheduled backlog, (2) new rounds of ~10 drafts, up to 3 rounds —
+  **use all 3 in the same run if that's what it takes; do not stop at round 1 and report empty slots as
+  the outcome (8 Nov 2026, Chuby).**
 - **If a video fails any gate** (voicecheck, watchcheck, structure review, preflight) and can't be fixed
   in the run, it is NOT scheduled, and its slot counts as still empty: the run immediately writes a
-  replacement in the next round. Whatever is still empty after the run is retried by the next day's
-  run, so a gap gets at least one new attempt every day.
+  replacement in the next round. Only after 3 rounds have genuinely been tried in one run does a
+  leftover gap wait for the next day's run — that fallback is not a substitute for trying rounds 2 and 3
+  today.
 - Approved scripts that don't fit the 7-day window go to the backlog (status "approved", unscheduled),
   so the next run starts with stock instead of from zero.
 - Never fill a gap by lowering a floor, skipping a gate or re-using a script that failed.
