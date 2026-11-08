@@ -1695,3 +1695,48 @@ true, one media item each.
 **4 slots still empty**: 12 Nov 10:00, 14 Nov 10:00, 14 Nov 18:00, 15 Nov 18:00. Per Chuby's standing
 instruction, round 3 (the last of the 3 allowed rounds) is next, targeting these 4 slots — this run is
 not done after round 2.
+
+## 2026-11-08 (continued) — gap-fill round 3 (final) and run close-out
+
+Round 3: 10 brand-new drafts (twist families a/b/c/d/e, 2 each), targeting the 4 still-open slots (12
+Nov 10:00, 14 Nov 10:00/18:00, 15 Nov 18:00). Sent to a fresh reviewer subagent (opus, general-purpose,
+no sight of earlier rounds). Full raw review in `reviews/2026-11-08.md#gap-fill-round-3-10-brand-new-drafts-12-14-15-nov-slots`.
+
+Writer applied every line fix word-for-word, did not overrule any score or verdict. Computing
+avg(Reach, Engagement, Relatability) against the RULES.md §4 floor (≥7.0 avg AND ≥35% P(1k)): **zero
+of the 10 scripts clear both.** Best three — all SHIP WITH FIXES per the reviewer, all below floor:
+
+| # | Slug | R/E/Rel | Avg | P(1k) | Status |
+|---|---|---|---|---|---|
+| 9 | girl_starts_humming_his_awful_playlist | 6/6/7 | 6.33 | 30% | hold |
+| 3 | girl_only_sings_off_key_around_him | 6/6/6 | 6.0 | 28% | hold |
+| 7 | boy_always_gets_your_sentences_wrong_on_purpose | 6/6/6 | 6.0 | 27% | hold |
+| 4 | boy_only_does_the_voice_for_her | 6/5/6 | 5.67 | 24% | hold |
+| 10 | boy_starts_leaving_sticky_notes_like_she_does | 5/5/5 | 5.0 | 18% | hold |
+| 1 | girl_always_reads_the_last_page_first | 4/3/4 | 3.67 | 10% | cut |
+| 2 | boy_always_narrates_his_own_cooking | 4/4/4 | 4.0 | 12% | cut |
+| 5 | boy_always_checks_the_weather_five_times | 4/4/5 | 4.33 | 12% | cut |
+| 6 | girl_always_asks_for_a_landing_photo | 4/4/4 | 4.0 | 10% | cut |
+| 8 | boy_always_lets_the_phone_ring_twice | 3/3/3 | 3.0 | 6% | cut |
+
+All 10 recorded in `docs/approvals.json` with reviewer scores, twist tag, and (for the 5 holds) the
+reviewer's exact fixed text and sha256. The floor was never lowered and no gate was skipped to force a
+fill — RULES.md §4 step 7 is explicit that the floor "never moves."
+
+**Run close-out.** This was the 3rd and final gap-fill round allowed per RULES.md §4 step 7 in this
+run. Totals across all 3 rounds today:
+- Round 1 (10 drafts): 0 approvals.
+- Round 2 (10 drafts): 1 approval — `boy_always_gives_you_the_dry_half_of_the_umbrella` (7.0 avg,
+  38% P(1k)) — built through the full §5 gate pipeline (7 structure-review rounds) and scheduled
+  Sun 15 Nov 10:05/10:14 (family d).
+- Round 3 (10 drafts): 0 approvals; 5 scripts banked as "hold" with reviewer-fixed text ready for a
+  substantive rewrite in a future round, 5 cut.
+
+**Slots filled this run:** 13 Nov 10:00/18:00 (earlier in the run, before this log section) and 15 Nov
+10:00/18:00 (umbrella, round 2).
+
+**Slots still empty, carried to tomorrow's run:** 12 Nov 10:00, 14 Nov 10:00, 14 Nov 18:00, 15 Nov
+18:00 — confirmed empty via a fresh `getScheduledPosts` check at close-out. Per RULES.md §5b, these
+are genuinely empty for today only after all 3 rounds were tried in this run; tomorrow's 06:12 run
+inherits 5 fresh "hold" scripts in the backlog (not approved, but a substantive-rewrite starting point)
+instead of starting from zero.
