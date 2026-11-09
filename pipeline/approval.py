@@ -1,23 +1,15 @@
-"""Script approval lock (added 28 Oct 2026; numeric floor dropped 9 Nov 2026).
+"""Script approval lock.
 
-The 25 Oct batch was built from scripts the writer approved and scored itself. Now a script can only
-be built if its EXACT text is recorded in docs/approvals.json by the independent reviewer step
-(docs/REVIEWER.md), with status "approved". make_video.py, make_short.py and preflight.py all call
-check(); any edit to the text after approval changes the hash and blocks the build until it is
-re-reviewed.
-
-9 Nov 2026 (Chuby): the MIN_AVG/MIN_P1K numeric gate below is REMOVED. It produced a ~1-in-30 approval
-rate because the passing zone (floor 7.0, nothing the reviewer ever scored above 8.5) was a sliver at
-the very top of the reviewer's own range — not a meaningful quality signal, closer to a lottery. The
-floor is now docs/WINNERS-BLUEPRINT.md: a script is only marked "approved" in approvals.json if the
-reviewer can name which current top-5 real performer it matches or beats and say why (see RULES.md §4
-and WINNERS-BLUEPRINT.md). reviewer_avg/p_1k are still recorded for trend tracking but are no longer
-checked here. MIN_AVG/MIN_P1K are kept below, unused, only so old approvals.json entries and review
-files that cite them still make sense when read historically.
+A script can only be built if its EXACT text is recorded in docs/approvals.json by the independent
+reviewer step (docs/REVIEWER.md), with status "approved". make_video.py, make_short.py and preflight.py
+all call check(); any edit to the text after approval changes the hash and blocks the build until it is
+re-reviewed. "Approved" means the reviewer judged the script MATCHES or BEATS a named script from the
+current top-5 in docs/WINNERS-BLUEPRINT.md — there is no numeric threshold here or anywhere else in the
+pipeline; the benchmark judgment itself is the gate.
 
 approvals.json entry:
   "boy_cries": {"sha256": "...", "status": "approved" | "hold" | "cut",
-                "reviewer_avg": 7.25, "p_1k": 0.40, "benchmark": "matches girl_no_makeup",
+                "benchmark": "matches girl_no_makeup",
                 "review_file": "reviews/2026-10-27.md", "date": "2026-10-27", "note": "..."}
 """
 import hashlib, json, os, sys
@@ -27,8 +19,6 @@ CANDIDATES = [
     '/home/claude/viral-cartoon-video/docs/approvals.json',
     os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'docs', 'approvals.json'),
 ]
-MIN_AVG = 7.0    # historical reference only, no longer enforced — see module docstring (9 Nov 2026)
-MIN_P1K = 0.35  # historical reference only, no longer enforced — see module docstring (9 Nov 2026)
 
 
 def script_text(spec):

@@ -56,89 +56,49 @@ Only `pipeline/original_music.py` beds (synthesized in code). The phone-recorded
 28 Oct. Never add user-supplied, downloaded or "trending" audio files. Every builder writes
 `<file>.music.json`, and preflight fails if it's missing or doesn't point at an `original*.wav`.
 
-## 4. Scripts: written by one agent, judged by another
+## 4. Scripts: written by one agent, judged by another (rebuilt from a clean slate, 9 Nov 2026)
 
-1. Write ~10 BRAND-NEW drafts per docs/REVIEWER.md "Writing rules" and the lessons in §4a below.
-2. Spawn a separate reviewer subagent with the prompt template in docs/REVIEWER.md, filled with fresh
-   Metricool numbers. Each round uses a FRESH reviewer that has not seen earlier rounds. Save its full raw answer verbatim to `reviews/<YYYY-MM-DD>.md` and commit it.
-3. Apply its line fixes word for word. You may not overrule a FAIL or a CUT, or change its scores.
-4. **Floor changed 9 Nov 2026 (Chuby: a 1-in-30 pass rate under the numeric floor meant something was
-   wrong with the process, not that the bar was working — use the 5 best REAL performing videos as the
-   floor instead).** `docs/WINNERS-BLUEPRINT.md` is binding again (it was marked background-only on 28
-   Oct; that's reversed). Status is "approved" only if the reviewer can name which of the current top-5
-   real scripts in WINNERS-BLUEPRINT.md this one matches or beats, and say specifically why (same
-   specificity of beats, as strong a line-6 turn, as quotable a line 7) — **not** a free-floating 1-10
-   score. "SHIP WITH FIXES, avg 7.3" with no named comparison is not a floor pass by itself anymore.
-   `pipeline/approval.py` no longer hard-gates on a numeric avg/P(1k) threshold (see its own 9 Nov note);
-   recording reviewer scores in `docs/approvals.json` is still required for trend tracking, just not the
-   gate. Otherwise "hold" or "cut".
-   - Why the old numeric floor was dropped: RULES.md used to note that nothing the reviewer ever scored
-     reached 8.5, and that the 1,000+ view winners themselves would likely only score 7-8 under it — with
-     the floor at 7.0, the passing zone was a sliver at the very top of the reviewer's own achievable
-     range, which is most of why only ~1 script in 10-30 cleared it per round regardless of how good the
-     writing was. Benchmarking against real, named winners instead of an abstract number is meant to fix
-     that squeeze, not just relabel it.
-   - A script can still be held for a stated non-score reason (e.g. brand risk), even if it matches a
-     winner.
-5. `make_video.py` and `make_short.py` refuse to build (exit) unless the spec's exact text matches an
-   approved entry. Editing a line after review changes the hash, so it has to be reviewed again.
-6. Ship fewer videos rather than weaker ones. **An empty slot is never the finished state of a run** —
-   it is a reason to write another round, not a result to report. The floor (SHIP/SHIP WITH FIXES AND
-   matches-or-beats a named WINNERS-BLUEPRINT.md top-5 script — see step 4 above — every build gate)
-   never moves to force a fill, but running out of rounds because of time, cost, or caution is not an
-   acceptable reason to leave a slot empty. Use all 3 rounds below before a slot counts as genuinely
-   empty for this run.
-7. **Rounds (changed 1 Nov 2026, Chuby: "apply it automatically next time"; reinforced 8 Nov 2026, Chuby:
-   "whenever something does not meet the threshold, you start again and you fill in the slots... I do
-   not want excuses, I want results"):** if slots are still empty after a round, immediately write a new
-   round of ~10 BRAND-NEW scripts (not resubmissions — a "hold" script from an earlier round is reused
-   only if substantively rewritten, never resent as-is) and send them to a fresh reviewer. **Do this up
-   to 3 rounds per run, in the same run, before stopping** — do not do one round, see empty slots, and
-   report that back as the outcome; write round 2, then round 3, and only then report whatever is still
-   open. The floor never moves: never lower it, never skip a gate, and never schedule something that
-   fails one, to make a slot fill. On 1 Nov rounds 1-2 produced nothing (best 6.7) and round 3, written
-   to the lessons below, produced 5 approvals (7.3-8.3) — rounds 2 and 3 are often where the real
-   approvals come from, not a sign to give up after round 1.
+**9 Nov 2026, Chuby: stop patching the approval rules — rebuild them from nothing but what the 5 real
+best-performing scripts actually are.** Every rule in this section is either (a) something directly
+true of all 5 scripts in `docs/WINNERS-BLUEPRINT.md`, cited there line by line, or (b) a bare mechanical
+safeguard (fresh reviewer, hash lock, phonemizer check) that has nothing to do with judging content.
+Nothing else survives — no invented scoring rubric, no twist-family taxonomy, no accumulated "lessons"
+from past batches. If `docs/WINNERS-BLUEPRINT.md` and this section ever disagree on what a script should
+contain, WINNERS-BLUEPRINT.md is correct and this section is stale; fix this section to match it.
 
-### 4a. Script lessons (1 Nov 2026 — what separated round 3 from rounds 1-2; **corrected 9 Nov 2026**)
-
-- **9 Nov 2026 correction, Chuby:** the "must look bad first" rule directly below does not match the
-  actual top-5 real performers in `docs/WINNERS-BLUEPRINT.md` — none of them open with a behaviour that
-  looks bad; all five state the trait and reframe it in the same breath (see that file's point 1). That
-  rule is likely part of why the pass rate stayed near zero even after 1 Nov: scripts were being steered
-  toward annoying-first premises that the real audience doesn't actually reward. **Do not require the
-  behaviour to look bad first.** A plain, already-warm, specific behaviour with a one-clause reason is
-  fine — judge it against WINNERS-BLUEPRINT.md's actual examples, not this old heuristic. Line struck
-  through below for history, not to be followed:
-  - ~~The behaviour must LOOK bad first (annoying, needy, cold, messy-in-a-bad-way), then be reframed as
-    love. Sweet behaviours that already look good (fixing a chair, carrying a bag, keeping a ticket
-    stub) flop and the reviewer scores them 4-6.~~
-- Don't use one skeleton for every script. Vary the beats (not "She'll / She'll / She'll").
-- Line 6 must be a real turn, never a restatement ("turns the light off… she's stopped waiting up" = FAIL).
-  The strongest warnings turn on the VIEWER's behaviour ("if you keep saying 'I'm fine'…").
-- **Twist weighting (added 9 Nov 2026):** of the 5 current real winners, 4 use family (d) viewer-turn
-  and 1 uses family (a) withdrawal-warning for line 6. **Zero use (c) hidden-reason or (e) mirror** —
-  and those two families have also cut most often in review since the 6 Nov twist-variety rule started
-  (hidden-reason premises keep contradicting themselves; mirror hooks keep reading as unrecognisable).
-  Families (c) and (e) are still allowed for variety, but are not owed an equal-weight slot every round
-  just to hit the 4-family-minimum below — lean each round toward (d) and (a) first.
-- **Twist variety (changed 6 Nov 2026, Chuby).** The old 7-day spacing pushed 4 approved videos weeks
-  out (14 Nov-5 Dec) and left the week of 3-8 Nov with 7 empty slots, because all 5 approvals of 4 Nov
-  shared one twist. New rule, enforced at WRITING time, not scheduling time:
-  - Every round of ~10 drafts spans **at least 4 twist families, max 3 drafts per family**. Families:
-    (a) withdrawal warning — "the day she stops X… she's not Y, she's Z";
-    (b) only-with-you — she does it with you and never with anyone else, and why;
-    (c) hidden reason — the annoying thing is secretly protecting/helping you;
-    (d) viewer-turn — line 6 flips onto the viewer ("if you keep saying 'I'm fine'…");
-    (e) mirror — he/she has quietly started doing it too, and what that means.
-    Label each draft's family in the reviewer submission and in approvals.json (`"twist": "a"`).
-  - Scheduling: same family **max once per calendar day and at least 48 h apart**. Never push an approved
-    video more than 7 days out for spacing; if it can't fit within 7 days, it goes in the backlog
-    (approved, unscheduled) for the next run to use first.
-- **Read-aloud check BEFORE review:** run every line through Kokoro's phonemizer
-  (`Kokoro(...).tokenizer.phonemize(line,'en-us')`). No emoji in BODY_LINES (Kokoro reads the emoji's name),
-  no distinctions that exist only in spelling ("ok" vs "okay" sound identical). If a reviewed line fails
-  this, send that line back to the same reviewer for a replacement and a re-score; never edit it yourself.
+1. Read `docs/WINNERS-BLUEPRINT.md` in full before writing anything. It is the only definition of what a
+   script should be.
+2. Write ~10 BRAND-NEW drafts, each matching the template in WINNERS-BLUEPRINT.md. Vary which real
+   behaviour/trait each draft is about — don't write 10 drafts that are the same trait reworded.
+3. Spawn a separate reviewer subagent (never the writer grading itself — this is the one process rule
+   with its own incident history: the 25 Oct batch shipped nonsense lines after self-scoring 9/10) with
+   the prompt template in `docs/REVIEWER.md`, filled with the current top-5 table from
+   `docs/WINNERS-BLUEPRINT.md` pulled fresh. Each round uses a FRESH reviewer that has not seen earlier
+   rounds. Save its full raw answer verbatim to `reviews/<YYYY-MM-DD>.md` and commit it.
+4. Apply its line fixes word for word. You may not overrule a FAIL or a CUT.
+5. **The floor:** a script is "approved" only if the reviewer names a specific one of the 5 real
+   scripts in WINNERS-BLUEPRINT.md and says this draft matches or beats it, line-structure for
+   line-structure (same kind of hook, same kind of concrete beats, a "But..." turn as real as theirs, a
+   "Because..." closer as quotable as theirs). No number replaces this judgment — there is no rubric to
+   fill in, no score to average. If the reviewer can't honestly make that comparison, it's "hold" or
+   "cut." A script can still be held for a stated non-score reason (e.g. brand risk) even if it matches.
+6. `make_video.py` and `make_short.py` refuse to build (exit) unless the spec's exact text matches an
+   approved entry in `docs/approvals.json`. Editing a line after review changes the hash, so it has to
+   be reviewed again.
+7. **Read-aloud check BEFORE review:** run every line through Kokoro's phonemizer
+   (`Kokoro(...).tokenizer.phonemize(line,'en-us')`). No emoji in BODY_LINES (Kokoro reads the emoji's
+   name), no distinctions that exist only in spelling ("ok" vs "okay" sound identical). If a reviewed
+   line fails this, send that line back to the same reviewer for a replacement; never edit it yourself.
+8. Ship fewer videos rather than weaker ones. An empty slot is never the finished state of a run — it's
+   a reason to write another round, not a result to report. The floor in step 5 never moves to force a
+   fill. If slots are still empty after a round, immediately write a new round of ~10 BRAND-NEW scripts
+   (not resubmissions — a "hold" script is reused only if substantively rewritten, never resent as-is)
+   and send them to a fresh reviewer. Do this up to 3 rounds per run, in the same run, before stopping —
+   write round 2, then round 3, and only then report whatever is still open.
+9. Scheduling spacing: don't schedule two approved scripts about the same specific behaviour within 7
+   days of each other — check this by reading them, not by a label. Never push an approved video more
+   than 7 days out to satisfy this; if it can't fit, it goes to the backlog (approved, unscheduled) for
+   the next run to use first.
 
 ## 5. Build → gate → schedule (in this order, no skipping)
 

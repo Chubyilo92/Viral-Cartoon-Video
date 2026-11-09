@@ -1,63 +1,26 @@
 # Independent script review (mandatory before any JJ script is built)
 
-Added 27 Oct 2026 after the 25 Oct batch shipped lines that made no sense ("When he finally meets
-your parents, the nerves are the whole point") and the writer scored its own work 9.0. The writer is
-never allowed to grade its own scripts again.
+The writer never grades its own scripts. A separate, fresh subagent reviews every draft against
+`docs/WINNERS-BLUEPRINT.md` — the only definition of what a script should be — and nothing else decides
+approval.
 
 ## How it works
 
-1. The writer drafts scripts into a file (one `## slug` section each, numbered lines).
+1. The writer drafts scripts into a file (one `## slug` section each, numbered lines), each one written
+   to match the template in `docs/WINNERS-BLUEPRINT.md`.
 2. The writer spawns a **separate subagent** (Agent tool, general-purpose, opus) that has NOT seen the
-   writer's notes or scores. It gets: the real winners/flops table from `WINNERS-BLUEPRINT.md` (script
-   text + IG views), the known-bad examples below, and the draft file. Use the prompt in
-   §"Reviewer prompt" verbatim, filling in the current data.
+   writer's notes. It gets the current top-5 table and full scripts from `WINNERS-BLUEPRINT.md`, pulled
+   fresh from Metricool if that file is more than a few days old, and the draft file. Use the prompt in
+   "Reviewer prompt" below verbatim, filling in the current data.
 3. The reviewer paraphrases every line in plain words. Any line it can't paraphrase cleanly is FAIL and
-   it writes the replacement. It scores each script, gives SHIP / SHIP WITH FIXES / CUT, and — **changed
-   9 Nov 2026** — names which of the current top-5 real performers in `docs/WINNERS-BLUEPRINT.md` each
-   SHIP/SHIP WITH FIXES script matches or beats, and why.
+   it writes the replacement. For each script it names the ONE top-5 script this draft is closest to and
+   says plainly whether it MATCHES, BEATS, or FALLS SHORT of it, structurally, line for line — then
+   gives SHIP / SHIP WITH FIXES / CUT.
 4. The writer applies the reviewer's line fixes word-for-word (or cuts the script). The writer may NOT
-   overrule a FAIL or a CUT, and may NOT raise the reviewer's score. Reported scores = reviewer's scores.
-5. **Changed 9 Nov 2026 (Chuby: the numeric floor was producing a ~1-in-30 pass rate — a sign the floor
-   itself was broken, not that it was working).** Only scripts the reviewer marks SHIP / SHIP WITH FIXES
-   **and** can name a specific WINNERS-BLUEPRINT.md top-5 script it matches or beats are recorded as
-   approved in `docs/approvals.json`. Reach/Engagement/Relatability and P(1k) are still recorded for
-   trend tracking, but `pipeline/approval.py` no longer hard-gates on them numerically — see RULES.md §4
-   and WINNERS-BLUEPRINT.md for the full reasoning. Save the reviewer's raw answer to `reviews/<date>.md`.
-
-## Known-bad examples (always include in the reviewer prompt)
-
-- "When he finally meets your parents, the nerves are the whole point." (point of what?)
-- "That's not moving in, that's just visiting longer." / "That's not distance, that's hesitation." /
-  "That's not love, that's convenience" (said about someone who goes quiet when you're grieving).
-  The "that's not X, that's Y" slot produces nonsense when filled mechanically. Only allowed when X and
-  Y both literally describe the same behaviour (e.g. "that's not mystery, that's her not being sure").
-- "When she's the one... you stop looking." (abstract, nothing to see, 117 views)
-- Abstract thesis openers: "the exhaustion either breaks a couple or quietly rebuilds them".
-
-## What the data actually says (27 Oct 2026, all JJ videos since 5 Oct)
-
-- IG is bimodal: ~1,200 views or ~130, almost nothing between. 11 of ~45 hit the ~1,200 tier. Best ever
-  1,754. Nothing has gone viral (10k+) yet.
-- Near-identical clones split: "girl who's been hurt" 1,754 vs "girl who's been cheated on" 124;
-  "a loyal man" 1,521 vs "a loyal woman" 125. Script text sets the floor; it does not decide the result.
-  Never claim a script "will" hit. Honest ceiling for a strong script is ~35-50%.
-- Measurable separator: winners average 10-22s watch time and 4-33 shares; flops 4-9s and 0-1 shares.
-  So line 1-2 (stop + keep watching) and "would I send this to my partner" are what to optimise.
-- Personality-trait hooks: 0 for ~20. Never use them.
-- TikTok views are flat 225-250 per video regardless of content (≈700 early Oct): a distribution
-  problem, not a content signal. Don't use TikTok views to judge scripts.
-
-## Writing rules that come out of this
-
-1. Line 1 names a big audience (a girl / a boy / a man / a woman) AND a specific behaviour people
-   recognise from their own life, then flips it in the same or next sentence ("she'll ask the same
-   question twice. Not because she thinks you're lying. It's because the last one did."). A "not
-   because... because..." reason is ALLOWED when it states a real, concrete reason. It is never
-   required, and filling it mechanically is what produced the 25 Oct nonsense.
-2. Every beat is one picture you could draw, in plain words a 19-year-old reads once and gets.
-3. The warning line must be a real turn that follows from the beats, readable alone.
-4. No abstract thesis lines, no "that's not X, that's Y" fill-ins, no therapy words.
-5. After 72h: ≥1,000 IG views → make 2 more in that exact shape. <200 → don't repeat that shape.
+   overrule a FAIL or a CUT, and may NOT change the reviewer's benchmark verdict.
+5. Only scripts the reviewer marks SHIP / SHIP WITH FIXES **and** MATCHES or BEATS a named top-5 script
+   are recorded as approved in `docs/approvals.json`. There is no numeric score to meet — the benchmark
+   comparison in step 3 is the whole decision. Save the reviewer's raw answer to `reviews/<date>.md`.
 
 ## Reviewer prompt (template — fill the {braces}, send to a general-purpose subagent, model opus)
 
@@ -65,42 +28,38 @@ never allowed to grade its own scripts again.
 You are an independent, harsh script reviewer. Judgment only: do not edit files. You did not write
 these scripts and you have no stake in them passing.
 
-CONTEXT: A small Instagram/TikTok account posts ~50-second cartoon videos of two puppies with a calm
-male narrator reading a short script (captions on screen). Format: name a big audience, take a
-behaviour that LOOKS bad and reframe it as love, 2-3 concrete beats, a "send this to..." line, a
-warning line with a turn, a closing line. Past failures to catch: lines that sound deep but mean
-nothing ({paste the known-bad examples from this file}). The writer used to score its own work 9/10;
-your scores replace the writer's.
+CONTEXT: A small Instagram/TikTok account posts ~50-second narrated cartoon videos of two puppies, a
+calm male narrator reading a short script with captions on screen.
 
-THE FLOOR (changed 9 Nov 2026 — read this, not just the numbers): a script passes only if you can name
-which ONE of the 5 below it most resembles and say honestly whether it matches or falls short of that
-one. A free-floating 1-10 score with no named comparison is not a verdict anymore.
+THE FLOOR: a script passes only if you can name which ONE of the 5 real scripts below it most
+resembles and say honestly whether it MATCHES, BEATS, or FALLS SHORT of it — structurally, line for
+line (same kind of hook, same kind of concrete beats, a "But..." turn as real as theirs, a
+"Because..." closer as quotable as theirs). There is no numeric score. Only MATCHES or BEATS can carry
+a SHIP or SHIP WITH FIXES verdict.
 
-CURRENT TOP-5 REAL PERFORMERS (paste the full "The current top 5" section of docs/WINNERS-BLUEPRINT.md
-here verbatim, including all 5 full scripts and their real share/view numbers — re-pull fresh from
-Metricool if that file is more than a few days old; do not reuse a stale copy):
+THE 5 REAL SCRIPTS THIS ACCOUNT HAS ACTUALLY HAD WORK (paste the full "The current top 5" section of
+docs/WINNERS-BLUEPRINT.md here verbatim — all 5 full scripts and their real share numbers; re-pull from
+Metricool first if that file is more than a few days old):
 {paste WINNERS-BLUEPRINT.md's top-5 table and full scripts here}
-
-FLOPS (for contrast — 4-6 flops with views, including near-clones of winners that flopped):
-{paste 4-6 flops with views, from fresh Metricool data}
 
 TASK: review the scripts in {draft file path}. For EACH:
 1. Line check: paraphrase every line in a few plain words. If a line is unclear, a riddle, a
-   contradiction, a fortune cookie, or needs context, mark it FAIL and write a replacement.
-2. Hook check: would line 1 stop the target viewer in 2 seconds? Recognisable? Real surprise?
-3. Send check: would someone send it to their partner? Why or why not?
-4. Twist check: is line 6 a real turn addressed to the viewer (or a withdrawal-warning), not a
-   hidden-reason or mirror twist that contradicts its own premise?
-5. Risk check: anything that could read as endorsing controlling/toxic behaviour.
-6. Benchmark verdict: name the ONE top-5 script this is closest to, and say plainly MATCHES / BEATS /
-   FALLS SHORT OF it, with the specific reason (beat specificity, line-6 strength, line-7 quotability).
-   Only MATCHES or BEATS can go with a SHIP/SHIP WITH FIXES verdict.
-7. Score 1-10: Reach, Engagement, Relatability (the page is growing its audience; don't score
-   conversion); plus P(beats 1,000 IG views) as a percentage. Still recorded for trend tracking, but the
-   benchmark verdict in #6 is what decides approval now, not this number on its own.
-8. Verdict: SHIP / SHIP WITH FIXES (exact replacement lines) / CUT.
-Finish with a ranking, the weakest named, and whether any script is clearly better than the current
-top-5. Use a compact score table that includes the benchmark column from #6.
+   contradiction, or needs context to make sense, mark it FAIL and write a replacement.
+2. Hook check: does line 1 name a broad, general subject and state one specific, concrete behaviour,
+   the way all 5 real scripts do?
+3. Beat check: are the middle lines concrete, physical, one-picture actions, all illustrating the SAME
+   behaviour — not a chain of different claims?
+4. Send check: is there a direct "If [condition]... send this to [a specific person]" line, the way 4
+   of the 5 real scripts have one?
+5. Turn check: does the turn line start with "But" and land as a real consequence (addressed to the
+   viewer, or naming a specific future moment), not a restatement of the beats?
+6. Closer check: does the last line start with "Because" and compress the whole trait into one short,
+   standalone, quotable sentence?
+7. Risk check: anything that could read as endorsing controlling or toxic behaviour, regardless of how
+   it benchmarks structurally.
+8. Benchmark verdict: name the ONE real script this is closest to. Say MATCHES / BEATS / FALLS SHORT OF
+   it, and exactly why.
+9. Verdict: SHIP / SHIP WITH FIXES (exact replacement lines) / CUT.
+Finish with a ranking, the weakest named, and whether any script is clearly better than the current top
+5. Use a compact table with the benchmark column from #7.
 ```
-
-The first use of this template (27 Oct 2026) is in docs/SCRIPTS.md "Reviewed batch of 2026-10-27".
