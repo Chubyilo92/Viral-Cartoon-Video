@@ -4,7 +4,9 @@ captions and some drifted from the voice)."""
 import re
 from _kit import S, HUG, SHARE  # noqa
 
-TT_STD = "We're two little pups trying to find a thousand people who love like this... If this made you think of someone... follow us. We'll keep making them for you."
+TT_STD = ("We're two little pups trying to find a thousand people who love like this... "
+          "If this one's you, follow us. We post a new one every day, so don't miss the one "
+          "that's actually yours.")
 
 
 def C(line, emoji=None, maxw=3):

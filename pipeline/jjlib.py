@@ -52,13 +52,17 @@ def end_ig(caps, result_label='Quality Time', callback=None):
     ctx.font='15px Poppins';ctx.fillText('is your love language',0,-96);
     ctx.strokeStyle='#e0a8b4';ctx.lineWidth=3;ctx.beginPath();ctx.roundRect(-46,-70,92,26,13);ctx.stroke();ctx.font='13px Poppins';ctx.fillText('your result ✨',0,-53);
   });
-  if(u>1.2){ctx.save();ctx.globalAlpha=win(u,1.2,DUR_END_IG-.4);ctx.font='bold 34px Poppins';ctx.textAlign='center';ctx.fillStyle='#fff8e8';ctx.strokeStyle=INK;ctx.lineWidth=6;ctx.lineJoin='round';ctx.strokeText('🔗 60-sec test in bio',540,1620);ctx.fillText('🔗 60-sec test in bio',540,1620);ctx.restore();}
+  if(u>1.2){ctx.save();ctx.globalAlpha=win(u,1.2,DUR_END_IG-.4);ctx.textAlign='center';ctx.fillStyle='#fff8e8';ctx.strokeStyle=INK;ctx.lineJoin='round';
+    ctx.font='bold 34px Poppins';ctx.lineWidth=6;ctx.strokeText('🔗 60-sec test in bio',540,1600);ctx.fillText('🔗 60-sec test in bio',540,1600);
+    ctx.font='bold 24px Poppins';ctx.lineWidth=5;ctx.strokeText('💌 follow — we are rooting for you two',540,1648);ctx.fillText('💌 follow — we are rooting for you two',540,1648);
+  ctx.restore();}
 }}''' % (capjs, json.dumps(result_label))
 
 
 def end_tt(count):
     caps = ["we're two little", "pups 🐾", "trying to find", "a thousand people", "who love like this 🤍",
-            "if this made you", "think of someone 💭", "follow us 💌", "we'll keep making", "them for you 🤍"]
+            "if this one's you", "follow us 💌", "we post a new one", "every day", "so don't miss",
+            "the one that's", "actually yours 🤍"]
     return '''{cap:%s,draw(u){
   room('#3d4b6c','#303b57','rgba(255,255,255,.05)');
   const lg=ctx.createRadialGradient(540,760,20,540,760,560);lg.addColorStop(0,'rgba(255,200,120,.35)');lg.addColorStop(1,'rgba(255,200,120,0)');ctx.fillStyle=lg;ctx.fillRect(-100,-100,W+200,H+200);
