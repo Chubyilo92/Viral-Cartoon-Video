@@ -7,7 +7,7 @@ through. QA is now code that exits non-zero. Follow `docs/RULES.md` §5. In shor
 
 | Check | Enforced by | Fails when |
 |---|---|---|
-| Script text approved by the independent reviewer, unchanged since | `approval.py` (called by both builders and preflight) | slug missing, status not "approved", text hash differs, reviewer avg < 8.5 or P(1k) < 40% |
+| Script text approved by the independent reviewer, unchanged since | `approval.py` (called by both builders and preflight) | slug missing, status not "approved", text hash differs. "Approved" itself means the reviewer named a specific script from the real top-5 in `docs/WINNERS-BLUEPRINT.md` and said this one matches or beats it, structurally — there is no numeric score anywhere in this gate |
 | Voice lines don't overlap; duration; size | builder writes `<file>.qa.json`; preflight fails if any `*_ok` is false | overlap, 35-75 s (long) / 15-25 s (short), > 25 MB |
 | Narration pace, rising endings, pauses, mispronunciation (long only) | `voicecheck.py` exits 1 on any FLAG; preflight requires `<slug>.voicecheck.json` with 0 flags | any FLAG |
 | Music is original | builder writes `<file>.music.json`; preflight | record missing or not `original*.wav` |
