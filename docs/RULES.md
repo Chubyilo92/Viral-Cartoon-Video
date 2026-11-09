@@ -1,9 +1,11 @@
 # RULES — the only binding rulebook for JJ puppy videos (28 Oct 2026, updated 1 Nov and 6 Nov 2026)
 
 **Precedence:** the scheduled task prompt → this file → everything else. Every other doc in this repo
-(BUILD-METHOD, GROWTH-STRATEGY, WINNERS-BLUEPRINT, SHORT-FORMAT, QA-CHECKLIST, PRODUCTION-LOG, SCRIPTS,
-VIRAL-BLUEPRINT, DIALOGUE-AD-TEMPLATE) is background and history. Where it disagrees with this file,
-this file wins. If you find a conflict, follow this file and note the conflict in your final report.
+(BUILD-METHOD, GROWTH-STRATEGY, SHORT-FORMAT, QA-CHECKLIST, PRODUCTION-LOG, SCRIPTS, VIRAL-BLUEPRINT,
+DIALOGUE-AD-TEMPLATE) is background and history. Where it disagrees with this file, this file wins. If
+you find a conflict, follow this file and note the conflict in your final report. **One named exception,
+added 9 Nov 2026:** `docs/WINNERS-BLUEPRINT.md` is binding, not background, specifically for what counts
+as "approved" in §4 — this file defers to it there on purpose, it is not a conflict to flag.
 
 Why this exists: the pipeline kept failing in ways its own checks claimed to cover. 25 Oct: scripts that
 made no sense, self-scored 9/10. 28 Oct: a video published MUTE (its music was a phone-recorded clip,
@@ -60,24 +62,32 @@ Only `pipeline/original_music.py` beds (synthesized in code). The phone-recorded
 2. Spawn a separate reviewer subagent with the prompt template in docs/REVIEWER.md, filled with fresh
    Metricool numbers. Each round uses a FRESH reviewer that has not seen earlier rounds. Save its full raw answer verbatim to `reviews/<YYYY-MM-DD>.md` and commit it.
 3. Apply its line fixes word for word. You may not overrule a FAIL or a CUT, or change its scores.
-4. Record every reviewed script in `docs/approvals.json` (`python3 approval.py hash <slug>` gives the
-   sha256 once the spec exists). Use the REVIEWER's numbers. Status is "approved" only if the reviewer
-   said SHIP or SHIP WITH FIXES **and** the average of **Reach, Engagement and Relatability** is ≥ **7.0**
-   **and** P(beats 1,000 IG views) ≥ **35%**. Otherwise "hold" or "cut".
-   - 30 Oct 2026, Chuby: the page's goal right now is **growing the audience, not converting**. So
-     Conversion is no longer scored or averaged. (It was usually the lowest score and was dragging
-     scripts under the bar.) The P(1k) floor went from 40% to 35% so the channel doesn't go silent.
-   - The floor went from Chuby's earlier 8.5 to 7.0 on 30 Oct. The independent reviewer marks far harder
-     than the old self-scores: nothing it has scored has reached 8.5, and the 1,000+ view winners would
-     likely score 7-8 under it.
-   - A script can be held for a stated non-score reason (e.g. brand risk), even if it passes the numbers.
+4. **Floor changed 9 Nov 2026 (Chuby: a 1-in-30 pass rate under the numeric floor meant something was
+   wrong with the process, not that the bar was working — use the 5 best REAL performing videos as the
+   floor instead).** `docs/WINNERS-BLUEPRINT.md` is binding again (it was marked background-only on 28
+   Oct; that's reversed). Status is "approved" only if the reviewer can name which of the current top-5
+   real scripts in WINNERS-BLUEPRINT.md this one matches or beats, and say specifically why (same
+   specificity of beats, as strong a line-6 turn, as quotable a line 7) — **not** a free-floating 1-10
+   score. "SHIP WITH FIXES, avg 7.3" with no named comparison is not a floor pass by itself anymore.
+   `pipeline/approval.py` no longer hard-gates on a numeric avg/P(1k) threshold (see its own 9 Nov note);
+   recording reviewer scores in `docs/approvals.json` is still required for trend tracking, just not the
+   gate. Otherwise "hold" or "cut".
+   - Why the old numeric floor was dropped: RULES.md used to note that nothing the reviewer ever scored
+     reached 8.5, and that the 1,000+ view winners themselves would likely only score 7-8 under it — with
+     the floor at 7.0, the passing zone was a sliver at the very top of the reviewer's own achievable
+     range, which is most of why only ~1 script in 10-30 cleared it per round regardless of how good the
+     writing was. Benchmarking against real, named winners instead of an abstract number is meant to fix
+     that squeeze, not just relabel it.
+   - A script can still be held for a stated non-score reason (e.g. brand risk), even if it matches a
+     winner.
 5. `make_video.py` and `make_short.py` refuse to build (exit) unless the spec's exact text matches an
    approved entry. Editing a line after review changes the hash, so it has to be reviewed again.
 6. Ship fewer videos rather than weaker ones. **An empty slot is never the finished state of a run** —
    it is a reason to write another round, not a result to report. The floor (SHIP/SHIP WITH FIXES AND
-   avg ≥7.0 AND P(1k) ≥35%, every build gate) never moves to force a fill, but running out of rounds
-   because of time, cost, or caution is not an acceptable reason to leave a slot empty. Use all 3 rounds
-   below before a slot counts as genuinely empty for this run.
+   matches-or-beats a named WINNERS-BLUEPRINT.md top-5 script — see step 4 above — every build gate)
+   never moves to force a fill, but running out of rounds because of time, cost, or caution is not an
+   acceptable reason to leave a slot empty. Use all 3 rounds below before a slot counts as genuinely
+   empty for this run.
 7. **Rounds (changed 1 Nov 2026, Chuby: "apply it automatically next time"; reinforced 8 Nov 2026, Chuby:
    "whenever something does not meet the threshold, you start again and you fill in the slots... I do
    not want excuses, I want results"):** if slots are still empty after a round, immediately write a new
@@ -90,14 +100,28 @@ Only `pipeline/original_music.py` beds (synthesized in code). The phone-recorded
    to the lessons below, produced 5 approvals (7.3-8.3) — rounds 2 and 3 are often where the real
    approvals come from, not a sign to give up after round 1.
 
-### 4a. Script lessons (1 Nov 2026 — what separated round 3 from rounds 1-2)
+### 4a. Script lessons (1 Nov 2026 — what separated round 3 from rounds 1-2; **corrected 9 Nov 2026**)
 
-- The behaviour must LOOK bad first (annoying, needy, cold, messy-in-a-bad-way), then be reframed as love.
-  Sweet behaviours that already look good (fixing a chair, carrying a bag, keeping a ticket stub) flop and
-  the reviewer scores them 4-6.
+- **9 Nov 2026 correction, Chuby:** the "must look bad first" rule directly below does not match the
+  actual top-5 real performers in `docs/WINNERS-BLUEPRINT.md` — none of them open with a behaviour that
+  looks bad; all five state the trait and reframe it in the same breath (see that file's point 1). That
+  rule is likely part of why the pass rate stayed near zero even after 1 Nov: scripts were being steered
+  toward annoying-first premises that the real audience doesn't actually reward. **Do not require the
+  behaviour to look bad first.** A plain, already-warm, specific behaviour with a one-clause reason is
+  fine — judge it against WINNERS-BLUEPRINT.md's actual examples, not this old heuristic. Line struck
+  through below for history, not to be followed:
+  - ~~The behaviour must LOOK bad first (annoying, needy, cold, messy-in-a-bad-way), then be reframed as
+    love. Sweet behaviours that already look good (fixing a chair, carrying a bag, keeping a ticket
+    stub) flop and the reviewer scores them 4-6.~~
 - Don't use one skeleton for every script. Vary the beats (not "She'll / She'll / She'll").
 - Line 6 must be a real turn, never a restatement ("turns the light off… she's stopped waiting up" = FAIL).
   The strongest warnings turn on the VIEWER's behaviour ("if you keep saying 'I'm fine'…").
+- **Twist weighting (added 9 Nov 2026):** of the 5 current real winners, 4 use family (d) viewer-turn
+  and 1 uses family (a) withdrawal-warning for line 6. **Zero use (c) hidden-reason or (e) mirror** —
+  and those two families have also cut most often in review since the 6 Nov twist-variety rule started
+  (hidden-reason premises keep contradicting themselves; mirror hooks keep reading as unrecognisable).
+  Families (c) and (e) are still allowed for variety, but are not owed an equal-weight slot every round
+  just to hit the 4-family-minimum below — lean each round toward (d) and (a) first.
 - **Twist variety (changed 6 Nov 2026, Chuby).** The old 7-day spacing pushed 4 approved videos weeks
   out (14 Nov-5 Dec) and left the week of 3-8 Nov with 7 empty slots, because all 5 approvals of 4 Nov
   shared one twist. New rule, enforced at WRITING time, not scheduling time:
