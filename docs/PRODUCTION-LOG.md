@@ -1740,3 +1740,79 @@ run. Totals across all 3 rounds today:
 are genuinely empty for today only after all 3 rounds were tried in this run; tomorrow's 06:12 run
 inherits 5 fresh "hold" scripts in the backlog (not approved, but a substantive-rewrite starting point)
 instead of starting from zero.
+
+## 2026-11-09 — daily gap-fill run (06:12 UK, scheduled task)
+
+**Step 0 gap check** (`getScheduledPosts`, one day per call, today through 16 Nov, UTC offset computed
+with `zoneinfo.ZoneInfo('Europe/London')` — confirmed GMT/+00:00 for the whole window, BST resumes 28
+Mar 2027): 6 empty slots found (12 Nov 10:00, 14 Nov 10:00, 14 Nov 18:00, 15 Nov 18:00, 16 Nov 10:00,
+16 Nov 18:00) and zero approved-but-unscheduled backlog older than 3 days, so the run continued per
+RULES.md §5b.
+
+**Rounds.** Wrote 3 full rounds of ~10 brand-new scripts (30 total, every round spanning ≥4 twist
+families, max 3 drafts/family per RULES.md §4a), each sent to a fresh independent reviewer subagent
+(opus, general-purpose, no sight of earlier rounds). Full raw reviews in `reviews/2026-11-09.md`.
+
+| Round | Drafts | Approved | Hold | Cut |
+|---|---|---|---|---|
+| 1 | 10 | 0 | 7 | 3 |
+| 2 | 10 | 0 | 6 | 4 |
+| 3 | 10 | **1** | 4 | 5 |
+
+Only `girl_always_makes_you_taste_test_her_cooking_first` (round 3, twist family b — "only with you")
+cleared the RULES.md §4 floor: reviewer scores Reach 7 / Engagement 7 / Relatability 8, avg **7.33**,
+P(1k) **36%**, verdict SHIP WITH FIXES. The reviewer's exact replacement text for lines 3, 4 and 7 was
+pasted in word-for-word (no score or verdict overruled). Recorded "approved" in `docs/approvals.json`.
+13 other scripts across the 3 rounds banked "hold" with reviewer-fixed text + sha256 for a future
+round's substantive-rewrite starting point (never resent as-is); 12 "cut" with no rework path. Run
+totals section at the end of `reviews/2026-11-09.md`.
+
+**Build → gate → schedule** for the one approval:
+- New prop library written (`pipeline/specs/_kitchenprops.py`: stove, steam, pot, wooden spoon, plate,
+  checklist card) — no kitchen/taste-test visual vocabulary existed in the codebase before this script.
+- Pre-build per-line phonemizer + voicecheck precheck: 0 flags, no LINE_SPEED overrides needed.
+- `preview.py` caught the spoon prop floating disconnected from both puppies' mouths (guessed
+  coordinates, not accounting for the G=1180 ground line) — fixed by working out the `pup()` paw-world
+  transform and repositioning both spoon calls; re-previewed and confirmed visually before building.
+- Full build (`make_video.py ... both`, TT_COUNT=8): both cuts passed build QA (overlap/duration/
+  audio/size all true; IG 57.9s/17.2MB, TikTok 56.5s/17.5MB); `.music.json` confirms
+  `music/original2.wav` (original synthesized bed, not the banned phone-recorded clips).
+- Manually reviewed frames `ig_f0,f1,f5` / `tt_f0,f5` — spoon reaches the boy's mouth correctly after
+  the fix; noted the "Words of Affirmation" result label looks visually tight inside the quiz-card
+  phone mock, but this is a pre-existing shared `end_ig()` template characteristic already shipped on
+  ~15 other videos, not a defect introduced here.
+- `voicecheck.py`: PASSED, 0 flags (all 9 lines 2.4-3.2 w/s, all within range).
+- `watchcheck.py`: PASSED for both cuts (word-match 62-93% per line, all ≥45%; no edge-clip fails);
+  wrote `watch_sheet.png`.
+- Structure review (fresh reviewer subagent, full detail in `reviews/2026-11-09.md`): **PASS** on all
+  5 questions. Two non-blocking notes (frame-6 twist-plate small/edge-pushed, frame-3 checklist text
+  small) logged for a future visual-polish pass, not acted on.
+- `preflight.py` local pass: both cuts PASSED (no banned tags, correct duration/size/audio, original
+  music confirmed, approved-text sha match).
+- Pushed both mp4s to JJCutecouple (`videos/2026-11-12-girl-always-makes-you-taste-test-her-cooking-first-{instagram,tiktok}.mp4`, commit `84cf5bcd22d631690b16d094fc2710e04f1c183d`).
+- `preflight.py --url` (commit-pinned raw URL): both cuts PASSED, `url_sha256` byte-identical to the
+  local file that passed; `.pass.json` written for each.
+
+**Scheduled** (earliest eligible slot; family b has no other post in the 9-16 Nov window, so no 48h/
+same-day spacing conflict):
+
+| Slot | Slug | Reviewer avg/P(1k) | Twist | File sha256 (IG / TT) | JJCutecouple commit |
+|---|---|---|---|---|---|
+| Thu 12 Nov 10:05/10:14 | girl_always_makes_you_taste_test_her_cooking_first | 7.33/36% | b | 2b7b1f8997b3a66d / 2ed7f6514a8068ff | 84cf5bcd22d631690b |
+
+Both read back from Metricool after scheduling: caption text identical to the caption files
+(`captions/girl_always_makes_you_taste_test_her_cooking_first_{ig,tt}.txt`), no banned hashtags, correct
+providers (facebook+instagram REEL / tiktok PUBLIC_TO_EVERYONE), right times (10:05/10:14), draft false,
+autoPublish true, one media item each.
+
+**5 slots still empty, carried to tomorrow's run:** 14 Nov 10:00, 14 Nov 18:00, 15 Nov 18:00, 16 Nov
+10:00, 16 Nov 18:00 — confirmed empty via the fresh `getScheduledPosts` check done before scheduling
+today's post. Per RULES.md §5b these are genuinely empty for today only after all 3 rounds were tried
+in this run; tomorrow's 06:12 run inherits 13 fresh "hold" scripts in the backlog instead of starting
+from zero.
+
+**No rule conflicts found** between RULES.md and the other docs read this run (REVIEWER.md,
+QA-CHECKLIST.md, GROWTH-RESEARCH-2026-11-01.md, pipeline/README.md).
+
+**vidIQ:** not called (unattended run, per RULES.md §1). No vidIQ data was judged necessary to fill
+this run's slots, so nothing is proposed for Chuby's approval this time.
