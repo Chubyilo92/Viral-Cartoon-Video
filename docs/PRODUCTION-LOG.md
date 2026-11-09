@@ -1763,7 +1763,7 @@ Only `girl_always_makes_you_taste_test_her_cooking_first` (round 3, twist family
 cleared the RULES.md §4 floor: reviewer scores Reach 7 / Engagement 7 / Relatability 8, avg **7.33**,
 P(1k) **36%**, verdict SHIP WITH FIXES. The reviewer's exact replacement text for lines 3, 4 and 7 was
 pasted in word-for-word (no score or verdict overruled). Recorded "approved" in `docs/approvals.json`.
-13 other scripts across the 3 rounds banked "hold" with reviewer-fixed text + sha256 for a future
+17 other scripts across the 3 rounds banked "hold" with reviewer-fixed text + sha256 for a future
 round's substantive-rewrite starting point (never resent as-is); 12 "cut" with no rework path. Run
 totals section at the end of `reviews/2026-11-09.md`.
 
@@ -1808,7 +1808,7 @@ autoPublish true, one media item each.
 **5 slots still empty, carried to tomorrow's run:** 14 Nov 10:00, 14 Nov 18:00, 15 Nov 18:00, 16 Nov
 10:00, 16 Nov 18:00 — confirmed empty via the fresh `getScheduledPosts` check done before scheduling
 today's post. Per RULES.md §5b these are genuinely empty for today only after all 3 rounds were tried
-in this run; tomorrow's 06:12 run inherits 13 fresh "hold" scripts in the backlog instead of starting
+in this run; tomorrow's 06:12 run inherits 17 fresh "hold" scripts in the backlog instead of starting
 from zero.
 
 **No rule conflicts found** between RULES.md and the other docs read this run (REVIEWER.md,
