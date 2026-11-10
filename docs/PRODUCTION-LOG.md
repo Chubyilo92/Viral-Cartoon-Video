@@ -1816,3 +1816,42 @@ QA-CHECKLIST.md, GROWTH-RESEARCH-2026-11-01.md, pipeline/README.md).
 
 **vidIQ:** not called (unattended run, per RULES.md §1). No vidIQ data was judged necessary to fill
 this run's slots, so nothing is proposed for Chuby's approval this time.
+
+## 2026-11-10 — daily gap-fill run (scheduled task)
+
+**Step 0 gap check:** 7 empty slots carried in from 9 Nov's run (14 Nov 10:00, 14 Nov 18:00, 15 Nov
+18:00, 16 Nov 10:00, 16 Nov 18:00, 17 Nov 10:00, 17 Nov 18:00). 4 scripts already sat "approved" in
+`docs/approvals.json` from round 1 of 9 Nov's backlog (never built/scheduled): `boy_warms_your_side_of_the_bed`,
+`girl_keeps_a_photo_of_you_as_her_lock_screen`, `girl_keeps_your_charger_in_her_bag`,
+`boy_keeps_the_receipt_from_your_first_date`. Per RULES.md §5b these 4 were run through the full
+build→gate→schedule pipeline first, before any new drafting rounds.
+
+**boy_warms_your_side_of_the_bed** — 4 structure-review rounds (door-overlap, tap/basin ambiguity, blanket
+edge-clip, headboard overlap, all fixed via scene-code-only changes; no text changes; full detail in
+`reviews/2026-11-10.md`). voicecheck PASSED (0 flags). watchcheck PASSED both cuts. preflight PASSED
+locally and against commit-pinned URL (sha256: IG `4d420b5d36dae891ccb6fe681418e40ef1fe6dce4f67580f2d94f6cd1b512726`,
+TT `b96a256088678d1ba504801e9e7153f4d0022cfb5527e5dace07a795331a7ffe`). Pushed to JJCutecouple
+(`videos/2026-11-14-boy-warms-your-side-of-the-bed-{instagram,tiktok}.mp4`, commit `a6a480cce3e6bb0679aa25feb5a2fe7f0e759010`).
+**Scheduled Sat 14 Nov 10:05/10:14 UK.**
+
+**girl_keeps_a_photo_of_you_as_her_lock_screen** — 2 structure-review rounds (scene 4 teasing-friend
+indistinguishable from the main girl, fixed with sunglasses + a mini lock-screen phone prop; full detail
+in `reviews/2026-11-10.md`). voicecheck PASSED. watchcheck PASSED both cuts. preflight PASSED locally
+and against commit-pinned URL (sha256: IG `d2d7d0c6a0cf13d98250b1241737511ed3fc87ce867b5470228b0b708b956f6b`,
+TT `cf5f716c310e35fe4864916801af35a4aa6d0e34e8cdca8256931c9804863f93`). Pushed to JJCutecouple
+(`videos/2026-11-14-girl-keeps-a-photo-of-you-as-her-lock-screen-{instagram,tiktok}.mp4`, commit
+`bc112d1bcfc8326f51e803d6a1d6b5df9898fbed`). **Scheduled Sat 14 Nov 18:05/18:14 UK.**
+
+**girl_keeps_your_charger_in_her_bag** — 7 structure-review rounds, the longest remediation chain of the
+day (scene spacing/overlap, an ambiguous frayed-cable icon read as a lightning bolt, a glitched/floating
+paw, a floating un-grounded prop, and a prop clipped at the left frame edge by the zoom transform — each
+fixed in turn via scene-code-only changes, full round-by-round detail in `reviews/2026-11-10.md`).
+voicecheck PASSED (0 flags) on the final build. watchcheck PASSED both cuts. preflight PASSED locally
+and against commit-pinned URL (sha256: IG `f50ff9e43667e3db82727f1d1d49005ed37f0094fad1578b4eb89a4c6e1f8d6e`,
+TT `b4ff650b1afcb73b86c66fba5098aceb65014d673fa57f60cb709b8df0484bce`). Pushed to JJCutecouple
+(`videos/2026-11-15-girl-keeps-your-charger-in-her-bag-{instagram,tiktok}.mp4`, commit
+`019181cfd012f38372388a961aa7024f7cc2d226`). **Scheduled Sun 15 Nov 18:05/18:14 UK.**
+
+All three read back from Metricool after scheduling: caption text identical to the caption files, no
+banned hashtags, correct providers (facebook+instagram REEL / tiktok PUBLIC_TO_EVERYONE), right times,
+draft false, autoPublish true, one media item each.
