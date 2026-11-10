@@ -1852,6 +1852,23 @@ TT `b4ff650b1afcb73b86c66fba5098aceb65014d673fa57f60cb709b8df0484bce`). Pushed t
 (`videos/2026-11-15-girl-keeps-your-charger-in-her-bag-{instagram,tiktok}.mp4`, commit
 `019181cfd012f38372388a961aa7024f7cc2d226`). **Scheduled Sun 15 Nov 18:05/18:14 UK.**
 
-All three read back from Metricool after scheduling: caption text identical to the caption files, no
+**boy_keeps_the_receipt_from_your_first_date** — 6 structure-review rounds (the strongest round-1 script
+per the original reviewer, but the longest visual remediation: a new WALLET/RECEIPT/FOLDED/BIN prop set
+had to be built from scratch; the `blob()` engine primitive's heavy automatic corner-rounding made the
+first trash-bin prop read as a vase until it was rebuilt with straight-line edges; two separate attempts
+at a paw-holds-receipt closer glitched before settling on the same "prop floats between two close
+puppies" pattern already proven in the charger script; full round-by-round detail in
+`reviews/2026-11-10.md`). voicecheck PASSED (0 flags). watchcheck PASSED both cuts. preflight PASSED
+locally and against commit-pinned URL (sha256: IG `2eec05731d0b774a32d8a1461df840c1a3766d2369688257d7e77034cb2021b3`,
+TT `e09d63340f679c0807962c9f67e49db6340ebc0ca2daa16cd01dce714ec2cdfb`). Pushed to JJCutecouple
+(`videos/2026-11-16-boy-keeps-the-receipt-from-your-first-date-{instagram,tiktok}.mp4`, commit
+`3130f9f8a09be0b0de71966e07b7821e813f1992`). **Scheduled Mon 16 Nov 10:05/10:14 UK.**
+
+All four read back from Metricool after scheduling: caption text identical to the caption files, no
 banned hashtags, correct providers (facebook+instagram REEL / tiktok PUBLIC_TO_EVERYONE), right times,
 draft false, autoPublish true, one media item each.
+
+**All 4 round-1 approved scripts from the inherited backlog are now shipped.** 3 slots remain empty for
+today's run (16 Nov 18:00, 17 Nov 10:00, 17 Nov 18:00) — confirmed via a fresh `getScheduledPosts` check
+after scheduling the receipt script. Per the standing instruction to always use all 3 drafting rounds
+before reporting any slot as still empty, round 2 of ~10 fresh scripts begins next.
