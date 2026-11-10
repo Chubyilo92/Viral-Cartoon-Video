@@ -2634,5 +2634,29 @@
     "review_file": "reviews/2026-11-10.md",
     "date": "2026-11-10",
     "note": "Round 1 (daily gap-fill run) CUT. Weakest of the round. Confusing hook (calls vs. texts, why his mum needs to know), send-line requires reading his texts, turn and closer are both riddles."
+  },
+  "boy_shows_up_even_when_its_inconvenient": {
+    "sha256": "c43a2f7be1ad83d5f958b853ebcb78b60ca5744cfe0c82dd67edba7e87e9e607",
+    "status": "approved",
+    "benchmark": "matches fidelity",
+    "review_file": "reviews/2026-11-10.md",
+    "date": "2026-11-10",
+    "note": "Round 2 of the 10 Nov gap-fill run. Independent reviewer: best script in the batch, MATCHES fidelity with its fixes to lines 6-7 (line 2's 'drives 45 min after a double shift' beat judged more concrete than any fidelity beat; closer slightly less quotable than fidelity's own). Reviewer's exact replacement text applied verbatim to lines 6-7 (converting its unicode ellipsis to the house '...' for TTS/caption consistency only, no wording change)."
+  },
+  "boy_learns_the_rules_of_your_favorite_sport": {
+    "sha256": "207fdfb6a698d6a398a9d2d1107fe8cbf2273472aeb2019fb7b6839f98070a1a",
+    "status": "approved",
+    "benchmark": "matches girl_steals_hoodie",
+    "review_file": "reviews/2026-11-10.md",
+    "date": "2026-11-10",
+    "note": "Round 2 of the 10 Nov gap-fill run. Independent reviewer: MATCHES girl_steals_hoodie with the fix to line 6 (beats as concrete as the hoodie script's, with less longing). Reviewer's exact replacement text applied verbatim to line 6 (ellipsis normalised to '...')."
+  },
+  "girl_never_makes_you_choose_between_her_and_your_friends": {
+    "sha256": "927a45330058ccdfdb25241724127ace1d4b56697fa002637660ec4551f5625f",
+    "status": "approved",
+    "benchmark": "matches fidelity",
+    "review_file": "reviews/2026-11-10.md",
+    "date": "2026-11-10",
+    "note": "Round 2 of the 10 Nov gap-fill run. Independent reviewer: MATCHES fidelity with the fixes to lines 4, 6 and 7 (beats still judged less physical than fidelity's 'hands you his phone' / 'leaves the party early'). Reviewer's exact replacement text applied verbatim to lines 4, 6, 7 (ellipsis normalised to '...')."
   }
 }

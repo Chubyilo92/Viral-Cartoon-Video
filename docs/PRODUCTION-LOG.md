@@ -1872,3 +1872,69 @@ draft false, autoPublish true, one media item each.
 today's run (16 Nov 18:00, 17 Nov 10:00, 17 Nov 18:00) — confirmed via a fresh `getScheduledPosts` check
 after scheduling the receipt script. Per the standing instruction to always use all 3 drafting rounds
 before reporting any slot as still empty, round 2 of ~10 fresh scripts begins next.
+
+### Round 2 — boy_shows_up_even_when_its_inconvenient (16 Nov 18:00 slot)
+
+Independent reviewer (reviews/2026-11-10.md round-2 section): MATCHES `fidelity`, with its own
+replacement text applied verbatim to lines 6-7. Fresh structure reviewer: PASS (story reads from
+pictures alone, no clipped pups/no props over faces, narration natural, turn/payoff both land; two
+non-blocking cosmetic notes logged, nothing fixed because nothing was broken).
+prevoice.py: 1 flag (L3 pace 4.1 w/s) -> fixed with LINE_SPEED={3:0.75} -> 0 flags.
+voicecheck.py: PASSED (0 flags). watchcheck.py: PASSED on both cuts (word-match >=45% every line, no
+edge-color hits).
+Approved sha256: c43a2f7be1ad83d5f958b853ebcb78b60ca5744cfe0c82dd67edba7e87e9e607.
+Shipped to JJCutecouple as videos/2026-11-16-boy-shows-up-even-when-its-inconvenient-{instagram,tiktok}.mp4,
+commit 819c366b52bf50f6a7d3f3bfa5c81a1d5696f608.
+File sha256 (from preflight --url pass): IG cee675c24632c40c7d5f385ad17ce6a47e83b67045ee630b718905356598cd3a,
+TT 0855f7e80a38ded33f207433071acca3c538541148a407c1063ba2b474f4a1b6.
+Scheduled: Metricool post ids 423089340 (IG+FB, 2026-11-16T18:05 Europe/London) and 423089473
+(TikTok, 2026-11-16T18:14 Europe/London). Read back and verified: caption text identical to the
+caption files, no banned hashtags, right providers/time, draft false, one media item each.
+
+### Round 2 — boy_learns_the_rules_of_your_favorite_sport (17 Nov 10:00 slot)
+
+Independent reviewer: MATCHES `girl_steals_hoodie`, with its own replacement text applied verbatim to
+line 6. Fresh structure reviewer round 1: FAIL (panel 2's phone chat-text ran past the screen edge;
+panel 4's jersey read as a flat number badge, not a shirt). Fixed both as layout/prop-only changes
+(rebuilt JERSEY with a real collar+sleeve silhouette plus a small soccer-ball prop, shortened/
+repositioned the phone chat text to fit inside the screen with margin) -- BODY_LINES text untouched,
+approval hash unchanged. Round 2: PASS, ship as-is (two further optional-polish notes logged, not
+acted on).
+prevoice.py: 0 flags. voicecheck.py: PASSED (0 flags). watchcheck.py: PASSED on both cuts (word-match
+>=45% on every line, no edge-color hits) both before and after the layout fix.
+Approved sha256: 207fdfb6a698d6a398a9d2d1107fe8cbf2273472aeb2019fb7b6839f98070a1a.
+Shipped to JJCutecouple as videos/2026-11-17-boy-learns-the-rules-of-your-favorite-sport-{instagram,tiktok}.mp4,
+commit 19b491e91251ddf8002dd7fdec02d716136af1af.
+File sha256 (from preflight --url pass): IG 19d49ca4fbe00c7246729f5f44cea6b60454b85e14b794f58a6242f54811b6b7,
+TT 7dbf47e919b44dd213be2b3b3ac1ccd246d5775097c554872eaaa0defa5327bb.
+Scheduled: Metricool post ids 423112531 (IG+FB, 2026-11-17T10:05 Europe/London) and 423112655
+(TikTok, 2026-11-17T10:14 Europe/London). Read back and verified: caption text identical, no banned
+hashtags, right providers/time, draft false, one media item each.
+
+### Round 2 — girl_never_makes_you_choose_between_her_and_your_friends (17 Nov 18:00 slot)
+
+Independent reviewer: MATCHES `fidelity`, with its own replacement text applied verbatim to lines 4, 6
+and 7. Fresh structure reviewer round 1: FAIL (panel 6's dark-turn picture showed only the same lone,
+sad boy with nothing distinguishing it from "the same couple broke up" -- the turn is meant to warn
+about a DIFFERENT, controlling partner, not imply the hook's girl turned controlling). Fixed as a
+layout/prop-only change: added a PRESSURE_PHONE prop (red "12" notification badge, two pressure-text
+bubbles "where are you?" / "it's me or them") as the deliberate mirror of line 4's calm "no new texts"
+phone, with the girl puppy entirely absent from the panel -- BODY_LINES text untouched, approval hash
+unchanged. Round 2: PASS, ship as-is (one optional-only legibility note logged, not acted on).
+prevoice.py: 0 flags. voicecheck.py: PASSED (0 flags). watchcheck.py: PASSED on both cuts (word-match
+>=45% on every line, no edge-color hits) both before and after the layout fix.
+Approved sha256: 927a45330058ccdfdb25241724127ace1d4b56697fa002637660ec4551f5625f.
+Shipped to JJCutecouple as videos/2026-11-17-girl-never-makes-you-choose-between-her-and-your-friends-{instagram,tiktok}.mp4,
+commit 7d10d96fd73434adf75132874a44d568ee53bc4c.
+File sha256 (from preflight --url pass): IG 264538b7a99a9e8ddbfc7452042a89706175492a74d17a4f7a329a00cff3146a,
+TT a7d14c2a730b758fbcef725c29391c0265a5637251e28b5e2b5abc8c90280b55.
+Scheduled: Metricool post ids 423135906 (IG+FB, 2026-11-17T18:05 Europe/London) and 423136203
+(TikTok, 2026-11-17T18:14 Europe/London). Read back and verified: caption text identical, no banned
+hashtags, right providers/time, draft false, one media item each.
+
+**All 3 remaining empty slots for this run (16 Nov 18:00, 17 Nov 10:00, 17 Nov 18:00) are now filled
+from round 2 of fresh drafts. Round 3 was not needed -- round 2's independent reviewer produced exactly
+3 scripts that reached SHIP WITH FIXES + MATCHES a named WINNERS-BLUEPRINT.md top-5 script, enough to
+fill every open slot. 4 reserve/backlog candidates (1 further SHIP WITH FIXES at reserve tier, 4 CUT)
+are logged in reviews/2026-11-10.md's round-2 section for a future run if any of today's 3 ever need
+replacing.**
