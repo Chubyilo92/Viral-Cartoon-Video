@@ -1938,3 +1938,72 @@ from round 2 of fresh drafts. Round 3 was not needed -- round 2's independent re
 fill every open slot. 4 reserve/backlog candidates (1 further SHIP WITH FIXES at reserve tier, 4 CUT)
 are logged in reviews/2026-11-10.md's round-2 section for a future run if any of today's 3 ever need
 replacing.**
+
+## 2026-11-11 — daily gap-fill run (06:12 UK, scheduled task)
+
+**Step 0 gap check:** 7-day lookahead (11-18 Nov) found exactly 2 empty slots, 18 Nov 10:00 and 18 Nov
+18:00; every other 10:00/18:00 slot through 17 Nov was already filled (confirmed by `getScheduledPosts`,
+one day per call). No approved-but-unscheduled backlog older than 3 days (the inherited round-1 backlog
+from 9/10 Nov had already been fully shipped). `docs/WINNERS-BLUEPRINT.md`'s top-5 re-verified against a
+fresh Metricool pull — still accurate, no file edit needed.
+
+Read in full before any drafting, per the run's own instructions: RULES.md, WINNERS-BLUEPRINT.md,
+REVIEWER.md, QA-CHECKLIST.md, approvals.json, pipeline/README.md, GROWTH-RESEARCH-2026-11-01.md, and
+the 6/9 Nov PRODUCTION-LOG entries. No pre-9-Nov numeric score floor or twist-family taxonomy carried
+forward.
+
+**Round 1:** 10 brand-new scripts drafted (scratchpad/drafts-2026-11-11-round1.md), sent to a fresh
+independent opus reviewer (reviews/2026-11-11.md). 4 reached SHIP / SHIP WITH FIXES and were recorded
+"approved" in approvals.json: `boy_keeps_your_favourite_snack_hidden_for_your_bad_days` (clean SHIP,
+MATCHES girl_steals_hoodie), `girl_still_brags_about_you_to_strangers` (SHIP WITH FIXES, line 3
+replaced, MATCHES girl_no_makeup), `boy_saves_you_a_seat_with_his_jacket_before_you_arrive` and
+`boy_remembers_your_familys_birthdays_better_than_you_do` (both approved but not built this run — only
+2 slots open; banked as backlog for the next run per RULES.md §4 step 9, seat script skipped as this
+run's build pick because its jacket-on-cinema-seat prop has no precedent in the codebase and risked
+several structure-review rounds). 6 drafts cut: her-mum-not-a-stranger (t-shirt/hoodie re-skin reasons
+also applied to two more), full cut/hold detail in reviews/2026-11-11.md.
+
+**boy_keeps_your_favourite_snack_hidden_for_your_bad_days** (18 Nov 10:00 slot) — built, then caught a
+title-overflow bug: TITLE "when a boy hides your favourite snack" measured a 1129px pill against the
+1080px canvas and clipped both edges on nearly every sampled frame (watchcheck's edge_hits). Verified
+with a Playwright canvas `measureText` before and after; shortened to "when a boy hides your snack"
+(882px pill, ~99px margin per side) — layout-only, BODY_LINES/approval hash untouched. voicecheck
+flagged line 5 at 3.6 w/s pre-fix; `LINE_SPEED={4:0.8}` fixed it, re-rendered to 0 flags (2.5-3.6 w/s
+all lines). watchcheck PASSED both cuts after the title fix. Fresh structure-review subagent: SHIP (one
+cosmetic-only note not applied: the line-5 hug frame doesn't show the snack prop). preflight PASSED
+locally and against commit-pinned URL (sha256: IG
+2260c86a5d1a1ca5b7040654b95310bcff8a2cdf458586637d3e98bff9a49eeb, TT
+d200fc4c92cb5daff695bcb06301cc2421c176278c2b4eb09ddca3f73bbd6dc4). Pushed to JJCutecouple
+(`videos/2026-11-18-boy-keeps-your-favourite-snack-hidden-for-your-bad-days-{instagram,tiktok}.mp4`,
+commit `272fd87c40d9caecdc49a186fe712ce49c472b8c`). **Scheduled Wed 18 Nov 10:05/10:14 UK** (Metricool
+post ids 424099425 IG+FB, 424099442 TikTok).
+
+**girl_still_brags_about_you_to_strangers** (18 Nov 18:00 slot) — built with the reviewer's line-3
+replacement already applied. Line 5 flagged at 3.6 w/s by voicecheck pre-fix; `LINE_SPEED={4:0.8}`
+fixed it, re-rendered to 0 flags (2.69-3.33 w/s all lines). watchcheck PASSED both cuts. Fresh
+structure-review subagent: FAIL on question 2 (scene-3 speech bubble "...and he never even asked!" read
+as a narrator aside rather than the girl's own dialogue to the taxi driver; scene-4 bubble "one oat
+latte for HIM" showed her ordering rather than naming him first). Fixed as scene-code/bubble-text-only
+changes (BODY_LINES/approval hash untouched, no re-approval needed): bubble 3 -> "and that's how we
+met!"; bubble 4 -> "his order first, please!". Rebuilt, re-gated clean (voicecheck 0 flags, watchcheck
+PASSED both cuts, edge_hits empty). preflight PASSED locally and against commit-pinned URL (sha256: IG
+e81ccf1579816bef674789d6eb45045ddb5676dca330d1381e6a5093f2da5639, TT
+91250d052824d5e9fd34f34d7360d5cb6e8cf391dc3fc787962c06c3785dd2f6). Pushed to JJCutecouple
+(`videos/2026-11-18-girl-still-brags-about-you-to-strangers-{instagram,tiktok}.mp4`, commit
+`272fd87c40d9caecdc49a186fe712ce49c472b8c`). **Scheduled Wed 18 Nov 18:05/18:14 UK** (Metricool post
+ids 424099535 IG+FB, 424099574 TikTok).
+
+Both read back from Metricool after scheduling: caption text identical to the caption files, no banned
+hashtags, correct providers (facebook+instagram REEL / tiktok PUBLIC_TO_EVERYONE), right times, draft
+false, autoPublish true, one media item each. Full 7-18 Nov window re-checked after scheduling: every
+10:00/18:00 slot filled, no gaps, no spacing conflicts (neither new script's specific behaviour
+duplicates any other post in the 7-day window).
+
+**All slots filled this run — no remaining gap.** Backlog after this run: 2 approved-unbuilt scripts
+(`boy_saves_you_a_seat_with_his_jacket_before_you_arrive`, `boy_remembers_your_familys_birthdays_better_than_you_do`)
+for the next run to use first per RULES.md §4 step 9.
+
+TikTok follower count: 8 (unchanged since 8 Nov). vidIQ: not called this run (per the run's own
+instruction) -- no candidate call identified as worth proposing this time; nothing in this run's
+research turned up a clear vidIQ use case beyond background music, which already runs through
+`original_music.py` only.
