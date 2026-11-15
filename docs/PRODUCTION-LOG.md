@@ -2007,3 +2007,125 @@ TikTok follower count: 8 (unchanged since 8 Nov). vidIQ: not called this run (pe
 instruction) -- no candidate call identified as worth proposing this time; nothing in this run's
 research turned up a clear vidIQ use case beyond background music, which already runs through
 `original_music.py` only.
+
+
+## 2026-11-15 — daily gap-fill run (06:12 UK, scheduled task)
+
+**Step 0 gap check:** 7-day lookahead (15-22 Nov) found exactly 2 empty slots, 19 Nov 10:00 and 19 Nov
+18:00; every other 10:00/18:00 slot through 18 Nov was already filled. `WINNERS-BLUEPRINT.md`'s top-5
+re-verified against a fresh Metricool pull -- still accurate. Read in full before drafting: RULES.md,
+WINNERS-BLUEPRINT.md, REVIEWER.md, QA-CHECKLIST.md, approvals.json, pipeline/README.md, and recent
+PRODUCTION-LOG entries.
+
+**Backlog screen before drafting:** `girl_saves_you_the_last_bite_she_actually_wanted` (approved in an
+earlier run, hash on file, never built) was tested first via a standalone TTS pre-check script. Its
+hook line (L1) carries an unfixable "ends rising" pitch-trend flaw -- LINE_SPEED sweep 0.8-1.3 tested;
+no value removes the rising-ending flag without introducing a new pace-too-fast flag or degrading ASR
+word-recall (1.22->+26.4%, 1.25->+0.3% [noise, non-monotonic re-check], 1.28->+23.1%). Per RULES.md
+Section 5b this cannot ship as-is. **Decision: held out of this run, flagged below for a future
+reword/re-review cycle rather than being silently left in the approved-unbuilt pool.**
+
+**Round 1:** 10 brand-new scripts drafted (scratchpad/drafts-2026-11-15-round1.md), sent to a fresh
+independent opus reviewer (reviews/2026-11-15.md, "Round 1" section). 5 reached SHIP / SHIP WITH FIXES
+and were recorded "approved" in approvals.json with the reviewer's line-fixes applied:
+`boy_saves_you_a_seat_with_his_jacket_before_you_arrive` (SHIP WITH FIXES, L3+L5, MATCHES
+girl_steals_hoodie), `boy_remembers_your_familys_birthdays_better_than_you_do` (SHIP WITH FIXES, L3+L6,
+MATCHES girl_steals_hoodie), `boy_walks_on_the_road_side_of_the_pavement` (SHIP WITH FIXES, 2 lines), and
+`girl_still_laughs_at_the_same_joke_youve_told_a_hundred_times` (SHIP WITH FIXES, 1 line). (A fifth
+script in this batch, `girl_saves_you_the_last_bite_she_actually_wanted`, had already been approved in
+an earlier run and was not re-reviewed here.) 5 drafts cut:
+girl_memorizes_your_coffee_order_before_her_own, boy_double_checks_the_door_is_locked_so_you_dont_have_to
+(premise itself carries risk), boy_keeps_the_aux_cord_on_your_playlist_the_whole_drive,
+girl_keeps_a_running_list_of_restaurants_youve_said_youd_try,
+boy_never_lets_the_car_get_below_half_a_tank_when_youre_driving_it -- full line-by-line detail in
+reviews/2026-11-15.md.
+
+**Round 2 (gap-fill backlog build):** since only 2 slots were open this run but a healthy backlog is
+worth having banked, 10 more brand-new scripts were drafted and sent to a second independent opus
+reviewer pass (reviews/2026-11-15.md, "Round 2" section). 6 reached SHIP WITH FIXES and were recorded
+approved: `boy_always_warms_up_the_car_before_you_get_in`, `girl_learns_to_cook_your_mums_recipe_so_you_dont_miss_home`,
+`girl_always_takes_the_photo_from_your_good_side_without_being_told`,
+`boy_never_checks_his_phone_during_dinner_with_you`, `girl_always_saves_you_a_plate_when_youre_late_to_dinner`,
+`boy_always_lets_you_win_the_board_game_on_a_bad_day` (fixed lines reconstructed in
+scratchpad/round2_texts.json and committed verbatim). 4 cut: boy_lets_you_control_the_thermostat_even_though_hes_always_cold,
+boy_always_introduces_you_by_name_never_my_girlfriend, girl_keeps_a_spare_key_to_your_place_just_in_case,
+girl_always_claps_the_loudest_at_your_work_things.
+
+**Batch voice pre-check:** before investing build time, all 10 remaining approved-but-unbuilt scripts
+(the 3 unbuilt round-1 approvals + all 6 round-2 approvals + the re-tested joke/birthdays pair) were
+TTS'd line-by-line at default speed 0.9 and run through voicecheck's `check()` logic in one batch
+(scratchpad/batch_precheck.py). Only 4 came back fully CLEAN: `boy_remembers_your_familys_birthdays_better_than_you_do`,
+`girl_still_laughs_at_the_same_joke_youve_told_a_hundred_times`,
+`girl_always_takes_the_photo_from_your_good_side_without_being_told`, `boy_never_checks_his_phone_during_dinner_with_you`.
+The other 6 each carry a single flagged line (mostly pace 3.6-3.8 w/s, one "ends rising +17.2%") that
+would need a LINE_SPEED fix or reword before their own build. **This run built the 2 CLEAN scripts
+needed to fill both open slots**, banking the other 2 CLEAN scripts and all 6 flagged scripts as
+backlog (see end of entry).
+
+**boy_remembers_your_familys_birthdays_better_than_you_do** (19 Nov 10:00 slot) -- built. First full
+build's watchcheck FAILED (`text touching frame edge` across most sampled frames) despite an initial
+plain-`sans-serif` measureText estimate (1026px) suggesting the title pill would fit; root cause was
+Chromium's real fallback metrics for the unloaded "Poppins" family differing from a bare sans-serif
+fallback. Fixed by re-measuring with the `'Poppins, sans-serif'` stack (correctly predicted the
+overflow) and shortening TITLE from "when a boy remembers her birthdays" (1106px) down to "he remembers
+her family" (791px) -- also triggered by a fresh structure-reviewer FAIL flagging the longer title as
+misleading (implied it was about the girlfriend's own birthday, not her family's). Two z-order bugs
+found and fixed (scene 3's gift cards and scene 4's calendar were drawn before the pups and so hidden
+behind them) -- layout-only, BODY_LINES/approval hash untouched throughout. voicecheck: 0 flags both
+cuts. watchcheck: PASSED both cuts after the title fix (0 edge hits). Fresh structure-review subagent:
+SHIP. preflight PASSED locally and against the commit-pinned raw URL (sha256 IG
+a587b5ec49d75046d114eeb7ca4dd50228463045194ac478ac4e1cf11ce34e0f, TikTok
+05e6cdc2a33c9897e94704e565c078766331f2d01b5a7425971151b8f376f542). Pushed to JJCutecouple
+(`videos/2026-11-19-boy-remembers-your-familys-birthdays-better-than-you-do-{instagram,tiktok}.mp4`,
+commit `0c014b58d9b3a9be7e0b257ffd6d699fa868d31f`). **Scheduled Thu 19 Nov 10:05/10:14 UK** (Metricool
+post ids 428665431 IG+FB, 428665486 TikTok).
+
+**girl_still_laughs_at_the_same_joke_youve_told_a_hundred_times** (19 Nov 18:00 slot) -- built. Scene 4
+("brings it up to strangers") took 4 structure-review rounds to pass: round 1 FAIL (no strangers shown
+at all, boy's expression misread as wincing); round 2 FAIL (strangers added but clipped by the frame's
+right edge, too small/low); round 3 FAIL (the "strangers" were faded copies of the same boy/girl
+kind+palette and read as ghost clones of the real couple rather than distinct third parties); round 4
+PASS after adding a new `PAL.stranger` palette and a single distinct-coloured `pup({kind:'stranger',...})`
+positioned fully inside frame and away from the main duo. Also fixed: scene 3's "wait, that's not it!"
+correction bubble was misattributed to the girl (who tells the joke wrong) instead of the boy (who
+corrects her) -- moved to his position. Self-caught content-accuracy fix (not reviewer-flagged):
+`IG_RESULT` was left as "Acts of Service" from a copy-paste of a template script, which doesn't match
+this script's actual theme (being listened to / validated, not served) -- changed to "Words of
+Affirmation" and only the IG cut's end-card was rebuilt (TikTok cut unaffected by this field). voicecheck:
+0 flags both cuts. watchcheck: PASSED both cuts from the first build (no edge-clip issues, unlike the
+birthdays script). preflight PASSED locally and against the commit-pinned raw URL (sha256 IG
+542eafd4ef16d5b1ca414ad290ca05ac801f1bf71ca06ecb13201ba5107966a1, TikTok
+b7f4b46bbcfcce90531d3096256a295acc9c3c9f974136f3039b8d227acd43e1). Pushed to JJCutecouple
+(`videos/2026-11-19-girl-still-laughs-at-the-same-joke-youve-told-a-hundred-times-{instagram,tiktok}.mp4`,
+commit `fb96b11306e2ded900c6cbdd9f79dea0acc7c069`). **Scheduled Thu 19 Nov 18:05/18:14 UK** (Metricool
+post ids 428694388 IG+FB, 428694431 TikTok).
+
+Both read back from Metricool after scheduling: caption text identical to the finalized caption files,
+no banned hashtags, correct providers (facebook+instagram REEL / tiktok PUBLIC_TO_EVERYONE), right
+times, draft false, autoPublish true, one media item each. Full 15-22 Nov window re-checked after
+scheduling: every 10:00/18:00 slot through 19 Nov filled, no gaps, no two scripts about the same
+specific behaviour within 7 days of each other.
+
+**All slots filled this run -- no remaining gap through 19 Nov.** Backlog after this run: 9
+approved-but-unbuilt scripts -- `boy_saves_you_a_seat_with_his_jacket_before_you_arrive` (1 flagged
+line, pace), `boy_walks_on_the_road_side_of_the_pavement` (1 flagged line, pace),
+`boy_always_warms_up_the_car_before_you_get_in` (1 flagged line, rising ending +17.2%),
+`girl_learns_to_cook_your_mums_recipe_so_you_dont_miss_home` (1 flagged line, pace),
+`girl_always_takes_the_photo_from_your_good_side_without_being_told` (CLEAN precheck),
+`boy_never_checks_his_phone_during_dinner_with_you` (CLEAN precheck),
+`girl_always_saves_you_a_plate_when_youre_late_to_dinner` (1 flagged line, pace),
+`boy_always_lets_you_win_the_board_game_on_a_bad_day` (2 flagged lines, pace) -- plus, separately,
+`girl_saves_you_the_last_bite_she_actually_wanted`, flagged above as needing a reword/re-review cycle
+before it can ship (not a simple LINE_SPEED fix). Next run should prefer the 2 CLEAN-precheck scripts
+first per RULES.md's own-pick ordering, and run a fresh TTS pre-check on each flagged script immediately
+before its own build to confirm a LINE_SPEED fix actually clears it.
+
+TikTok follower count: 8 (unchanged since 8 Nov). Instagram followers: 11 (down from 12 earlier in the
+week -- within normal day-to-day noise at this account size). Last batch's real IG reel numbers (14 Nov,
+the two posts immediately before this run): 18:00 slot ("lock screen...") 130 views, 6.9s avg watch,
+0 shares, 117 reach; 10:00 slot ("warms your side of the bed...") 142 views, 6.9s avg watch, 0 shares,
+136 reach -- both in the account's normal low-hundreds range, no outlier since the 11 Nov "price tag"
+post (1160 views, 9 shares, 1041 reach). vidIQ: not called this run (per the run's own instruction) --
+no candidate call identified as clearly worth proposing; nothing in this run's research or the flat
+recent-numbers pattern turned up a specific vidIQ use case beyond what's already covered by
+`original_music.py` and the existing hashtag set.
