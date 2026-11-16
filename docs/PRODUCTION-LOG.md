@@ -2129,3 +2129,110 @@ post (1160 views, 9 shares, 1041 reach). vidIQ: not called this run (per the run
 no candidate call identified as clearly worth proposing; nothing in this run's research or the flat
 recent-numbers pattern turned up a specific vidIQ use case beyond what's already covered by
 `original_music.py` and the existing hashtag set.
+
+---
+
+## 16 Nov 2026 run (fired 06:12 UK)
+
+**Step 0 gap check:** 7-day lookahead (16-23 Nov) found 8 empty slots: 20 Nov 10:00/18:00, 21 Nov
+10:00/18:00, 22 Nov 10:00/18:00, 23 Nov 10:00/18:00. No fresh-script round drafted this run -- the
+backlog from the 15 Nov run already held 10 approved-but-unbuilt scripts (9 flagged-for-pace plus
+`girl_saves_you_the_last_bite_she_actually_wanted`), more than enough to fill all 8 gaps, so this run's
+own-pick ordering (RULES.md) started straight from the 2 CLEAN-precheck scripts per the prior run's
+recommendation.
+
+**girl_always_takes_the_photo_from_your_good_side_without_being_told** (20 Nov 10:00 slot) and
+**boy_never_checks_his_phone_during_dinner_with_you** (20 Nov 18:00 slot) -- both were CLEAN on their
+TTS pre-check from the 15 Nov run and built cleanly this run: voicecheck 0 flags, watchcheck PASSED
+both cuts on the first build (no edge-clip or disconnected-prop issues), fresh structure-review PASS
+with no fix rounds needed. preflight PASSED locally and against the commit-pinned raw URL. Pushed to
+JJCutecouple and **scheduled Fri 20 Nov 10:05/10:14 UK** (Metricool post ids 429694231 IG+FB,
+429694349 TikTok) and **Fri 20 Nov 18:05/18:14 UK** (429703379 IG+FB, 429703489 TikTok) respectively.
+
+**boy_saves_you_a_seat_with_his_jacket_before_you_arrive** (21 Nov 10:00 slot) -- built from the
+1-flagged-line (pace) backlog entry; voicecheck 0 flags, watchcheck PASSED both cuts, fresh
+structure-review PASS. preflight PASSED locally and against the commit-pinned raw URL. Pushed to
+JJCutecouple and **scheduled Sat 21 Nov 10:05/10:14 UK** (Metricool post ids 429711769 IG+FB, 429711871
+TikTok).
+
+**boy_walks_on_the_road_side_of_the_pavement** (21 Nov 18:00 slot) -- a labelCard positioning fix
+(chip y moved so the text wasn't crowding the frame edge) was re-verified via preview.py and an
+independent fresh-reviewer PASS; BODY_LINES/approval hash untouched (`f512fd...49195f3`). voicecheck
+0 flags, watchcheck PASSED both cuts. preflight PASSED locally and against the commit-pinned raw URL.
+Pushed to JJCutecouple (commit `1cd8ad1f0b32fd931c5b0710ed112bd919e21022`) and **scheduled Sat 21 Nov
+18:05/18:14 UK** (Metricool post ids 429729860 IG+FB, 429729981 TikTok).
+
+**boy_always_warms_up_the_car_before_you_get_in** (22 Nov 10:00 slot) -- two scene-code fixes, approval
+hash unchanged (`ef943610...1228c`): (1) the girl's position in scene 5 was clipped by the real-video-
+only 1.2x zoom transform (invisible in preview.py screenshots but caught by watchcheck's edge-pixel
+check on the actual mp4) -- fixed over two iterations, x:950->890 (still failed) then x:890->800
+(passed); (2) in scene 2 the boy's ice-scraper prop was visually disconnected from his paw --
+root-caused to the `ctx.scale(s*flip,s)` sign convention inverting the expected local paw-offset sign
+for `flip:-1` puppies, fixed by flipping the paw x sign and repositioning the boy closer to the
+scraper. Fresh structure-review PASS after both fixes. voicecheck 0 flags, watchcheck PASSED both cuts
+post-fix. preflight PASSED locally (sha256 IG `4bc67e57ba6287b2fa6a7adebff7e39d28919cfd6a79761c5884f41
+40cf247eb`, TikTok `b36e6330559b317a1bd25c9720369f2b629bb6f9758d226833dd004a75e82fd0`) and against the
+commit-pinned raw URL. Pushed to JJCutecouple (commit `f45d21c54357dd90051df0c3c54f8d628c98bf7a`) and
+**scheduled Sun 22 Nov 10:05/10:14 UK** (Metricool post ids 429861515 IG+FB, 429861566 TikTok).
+
+**girl_learns_to_cook_your_mums_recipe_so_you_dont_miss_home** (22 Nov 18:00 slot) -- approval hash
+unchanged (`3f1643a4...9743aa`). Scene 3's `windowBox` custom sky callback was drawing outside the
+window's actual clip region (the callback runs with no translate, so it needs the window's own
+absolute x/y, not local-feeling offsets) -- rewritten across 3 iterations, also fixing an edge-clip and
+a moon/title overlap along the way. Scene 5 had a floating, disconnected spoon prop with no stove under
+it -- replaced with a `stove()` plus a tasting paw gesture on the girl. Fresh structure-review PASS
+after fixes. voicecheck 0 flags, watchcheck PASSED both cuts post-fix. preflight PASSED locally (sha256
+IG `5494016edebe4cadd321dedd75fde9c5a33c457e6ea2e590cb6e868f416d8c52`, TikTok `a2f4f76d6ed2635b5164661
+31b011998798c7adafb4803b47c1e486072f8c957`) and against the commit-pinned raw URL. Pushed to
+JJCutecouple (same commit `f45d21c`) and **scheduled Sun 22 Nov 18:05/18:14 UK** (Metricool post ids
+429861731 IG+FB, 429861790 TikTok).
+
+**girl_always_saves_you_a_plate_when_youre_late_to_dinner** (23 Nov 10:00 slot) -- approval hash
+unchanged (`3de4af65...336f1`). Scene 2 had the foil-covered plate floating with no stove beneath it --
+fixed by adding `stove()` and repositioning the girl and the time-chip label. First review round
+flagged a "speech bubble" that doesn't exist in the scene -- traced to my own review prompt having used
+placeholder/approximate BODY_LINES text instead of the verbatim spec lines; re-sent the review with the
+exact text from the real spec file and got a clean PASS on the real issue (missing stove) with the
+speech-bubble claim correctly dropped. voicecheck 0 flags, watchcheck PASSED both cuts post-fix.
+preflight PASSED locally (sha256 IG `3f02f48303532590bc6b24ed30bc8b7b9b8db7cc2837eb42727724377a9b40a8`,
+TikTok `36a704f6d7fa94e79807f1ecd283d7e0333d44803458aa86beb480e298c8f481`) and against the commit-pinned
+raw URL. Pushed to JJCutecouple (same commit `f45d21c`) and **scheduled Mon 23 Nov 10:05/10:14 UK**
+(Metricool post ids 429861852 IG+FB, 429861907 TikTok).
+
+**boy_always_lets_you_win_the_board_game_on_a_bad_day** (23 Nov 18:00 slot) -- approval hash unchanged
+(`1bbc5a8c...8719e`). Panel 2 used `playCard()`, which actually renders a phone/video-UI mockup (dark
+rect + play triangle + progress bar), not a playing card -- replaced with a custom inline-drawn card
+shape (`blob(rectPts(...))` + a discarded heart), and fixed the same `s*flip` paw-sign issue on the
+boy's hand. Panel 3 had the two pawn props swapped relative to scene 0/3, visually showing "he's
+winning" one line early and contradicting the narration -- restored the correct pawn positions. Fresh
+structure-review PASS after both fixes. voicecheck 0 flags, watchcheck PASSED both cuts post-fix.
+preflight PASSED locally (sha256 IG `d97768b5f0a5b77bfc7c9a070bba0ea85783dc53c6b58f8a385d686d077b6a7a`,
+TikTok `3c86ea4a30a71f8afec7d6ea7779968823b56783501e6cc7f91cb393bd50c654`) and against the commit-pinned
+raw URL. Pushed to JJCutecouple (same commit `f45d21c`) and **scheduled Mon 23 Nov 18:05/18:14 UK**
+(Metricool post ids 429861987 IG+FB, 429862041 TikTok).
+
+All 8 posts read back from Metricool after scheduling: caption text identical to the finalized caption
+files, no banned hashtags, correct providers (facebook+instagram REEL / tiktok PUBLIC_TO_EVERYONE),
+right times, draft false, autoPublish true. Full 16-23 Nov window re-checked after scheduling: every
+10:00/18:00 slot through 23 Nov filled, no gaps, no two scripts about the same specific behaviour within
+7 days of each other.
+
+**All 8 slots filled this run -- no remaining gap through 23 Nov.** Two new reusable fixes identified
+and worth carrying forward: (1) `preview.py` screenshots do NOT apply the real render pipeline's
+time-based + permanent 1.2x zoom transform that every exported mp4 gets, so an element can look safe in
+preview but clip at the edge in the real video -- only watchcheck's actual-mp4 edge-pixel check reliably
+catches this; approx safe-x formula noted in scratch notes for future script authoring. (2) `pup()`'s
+`ctx.scale(s*flip,s)` means a puppy's local paw-offset x sign flips for `flip:-1` -- a disconnected-prop
+visual in review is often this sign bug, not a positioning-distance problem.
+
+Backlog after this run: 1 approved-but-unbuilt script -- `girl_saves_you_the_last_bite_she_actually_wanted`
+(flagged for an unfixable rising-ending TTS flaw; needs a reword-and-re-review cycle, not attempted this
+run per the run's own instruction to leave it for a dedicated pass).
+
+TikTok follower count: 8 (last checked 15 Nov, unchanged since 8 Nov). Instagram followers: 11 (last
+checked 15 Nov). Most recent real IG reel numbers on file (14 Nov, still the latest checked): 18:00 slot
+("lock screen...") 130 views, 0 shares, 117 reach; 10:00 slot ("warms your side of the bed...") 142
+views, 0 shares, 136 reach -- both in the account's normal low-hundreds range. vidIQ: not called this
+run (per the run's standing instruction for unattended runs) -- no candidate call identified as clearly
+worth proposing; the account's flat recent-numbers pattern didn't surface a specific vidIQ use case
+beyond what `original_music.py` and the existing hashtag set already cover.
