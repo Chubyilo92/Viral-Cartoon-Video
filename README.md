@@ -1,3 +1,5 @@
+> **19 Nov 2026: JJ now runs the Dinkly remake format only — start at [`docs/DINKLY-FORMAT.md`](docs/DINKLY-FORMAT.md)** (CoupleIn app account quiz reels: [`docs/LOVELEE-FORMAT.md`](docs/LOVELEE-FORMAT.md); JJ builders `pipeline/make_note.py`, `pipeline/make_split.py`; specs `pipeline/specs/dk_*.py`; week 1 schedule `docs/dinkly-week1-posting.csv`).
+
 # Viral Cartoon Video — JJ puppy video pipeline
 
 > **28 Oct 2026: background/history only.** The binding rules are in `docs/RULES.md`. Where this file disagrees with RULES.md, RULES.md wins. (Known stale here: anything saying the music is the user's clips, that posts are drafts the owner approves, that the writer scores its own scripts, or that topics can be invented freely.)

@@ -1,3 +1,5 @@
+> **19 Nov 2026 — JJ format replaced.** Chuby decided remakes of @dinklygame's winners completely replace every earlier JJ format. For JJ, `docs/DINKLY-FORMAT.md` is binding and wins over this file wherever they differ (format, music, captions, narration, scheduling). The rest of this file is history for the old formats.
+
 # RULES — the only binding rulebook for JJ puppy videos (28 Oct 2026, updated 1 Nov and 6 Nov 2026)
 
 **Precedence:** the scheduled task prompt → this file → everything else. Every other doc in this repo
