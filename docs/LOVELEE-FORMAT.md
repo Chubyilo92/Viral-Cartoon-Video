@@ -30,8 +30,7 @@ Looks:
   (cropped from Missionandbond `images/bond-screens.png`, in `pipeline/assets/`).
 
 The App Store card is drawn to look like the real one (search field typing "couplein", icon, name,
-subtitle "Two selfies. One reveal.", blue GET). The app icon is a drawn stand-in heart until the official
-logo file is supplied.
+subtitle "Two selfies. One reveal.", blue GET). The app icon is the official CoupleIn logo hearts on a white tile (`pipeline/assets/couplein_icon.png`, made from Chuby's `couplein_logo.png`, 19 Nov 2026).
 
 ## Build
 

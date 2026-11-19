@@ -120,7 +120,7 @@ clean lines (no wobble/boil). `old:1` adds white hair tufts + round glasses (for
 - Blankets/quilts must sit below mouths; umbrella poles between the pups, not through a face.
 - White text on a light background is unreadable — set `col` dark (Dinkly does the same).
 - Phone/app visuals must look like a real iPhone (frosted-glass banner, real app icon) — `notif` does
-  this. The CoupleIn icon is still a drawn stand-in heart; swap in the official logo when available.
+  this. The CoupleIn icon now uses the official logo (`pipeline/assets/couplein_icon.png`).
 
 ## CoupleIn pitch variants (unproven)
 

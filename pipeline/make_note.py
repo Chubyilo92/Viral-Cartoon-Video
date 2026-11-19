@@ -44,9 +44,9 @@ function text(s,o){if(!s)return;o=o||{};const st=o.style||STYLE;ctx.save();ctx.t
     const ls=wrapT(s,o.w||920);const y0=y-(ls.length-1)*sz*.52;ls.forEach((l,i)=>ctx.fillText(l,540,y0+i*sz*1.04));}
   ctx.restore();}
 
-function appIcon(x,y,s){ctx.save();ctx.translate(x,y);ctx.fillStyle='#FF6B9D';ctx.beginPath();ctx.roundRect(0,0,s,s,s*.24);ctx.fill();
-  ctx.fillStyle='#ffffff';const h=(cx,cy,r)=>{ctx.beginPath();ctx.moveTo(cx,cy+r*.9);ctx.bezierCurveTo(cx-r*1.3,cy-r*.1,cx-r*.6,cy-r*1.1,cx,cy-r*.45);ctx.bezierCurveTo(cx+r*.6,cy-r*1.1,cx+r*1.3,cy-r*.1,cx,cy+r*.9);ctx.fill();};
-  h(s*.42,s*.56,s*.26);ctx.globalAlpha=.75;h(s*.62,s*.46,s*.18);ctx.restore();}
+function appIcon(x,y,s){ctx.save();ctx.translate(x,y);ctx.beginPath();ctx.roundRect(0,0,s,s,s*.23);ctx.save();ctx.clip();
+  if(typeof ICONIMG!=='undefined'&&ICONIMG.complete&&ICONIMG.naturalWidth){ctx.drawImage(ICONIMG,0,0,s,s);}else{ctx.fillStyle='#ffffff';ctx.fillRect(0,0,s,s);}ctx.restore();
+  ctx.strokeStyle='rgba(0,0,0,.12)';ctx.lineWidth=2;ctx.stroke();ctx.restore();}
 function wrapF(txt,maxw){const ws=txt.split(' ');const out=[];let c='';for(const w of ws){const t=c?c+' '+w:w;if(ctx.measureText(t).width>maxw&&c){out.push(c);c=w;}else c=t;}out.push(c);return out;}
 function notif(n,u){const d=n.at||0.25;if(u<d)return;const k=ease((u-d)/.35);
   const x=40,w=1000,y=lerp(540,600,k);ctx.save();ctx.font='40px Inter';const lines=wrapF(n.body,w-190);const h=100+lines.length*50;
@@ -71,7 +71,7 @@ window.render=render;window.TOTAL=TOTAL;
 def build():
     beats = ['{text:%s,o:%s,draw(u){\n%s\n}}' % (json.dumps(b[0], ensure_ascii=False), json.dumps(b[3] if len(b) > 3 else {}), b[1]) for b in spec.BEATS]
     js = (J.HEAD.replace('amp=o.amp??2.4','amp=o.amp??0.7').replace('jit(pts,o.j??1.2)','jit(pts,o.j??0.3)').replace('jit(pts,o.j??1.8)','jit(pts,o.j??0.4)') + '\n' + J.COMMON + '\n' + SHORT_PROPS + '\n' + EXTRA + '\n' + getattr(spec, 'PRELUDE', '') + '\n' +
-          'const TARGET=%r, STYLE=%s;\n' % (spec.TARGET, json.dumps(getattr(spec, 'STYLE', 'soft'))) +
+          'const TARGET=%r, STYLE=%s;\nconst ICONIMG=new Image();ICONIMG.src=%s;\n' % (spec.TARGET, json.dumps(getattr(spec, 'STYLE', 'soft')), json.dumps('data:image/png;base64,'+__import__('base64').b64encode(open('/home/claude/jj/assets/couplein_icon.png','rb').read()).decode())) +
           'const BEATS=[\n' + ',\n'.join(beats) + '];\n' + TAIL % (json.dumps(durs), getattr(spec,'ZOOM',1.48)) + '\n</script></body></html>')
     p = f'{W}/note.html'
     open(p, 'w').write(js)
@@ -84,6 +84,7 @@ def page(p, html):
     pg.on('pageerror', lambda e: errs.append(str(e)))
     pg.goto('file://' + html)
     pg.evaluate("async()=>{await document.fonts.load('bold 80px Poppins');await document.fonts.load('64px Itim');await document.fonts.load('100px \"Patrick Hand\"');await document.fonts.load('100px Neucha');await document.fonts.load('600 36px Inter');await document.fonts.load('34px Inter');await document.fonts.load('900 74px Nunito');}")
+    pg.evaluate("async()=>{if(typeof ICONIMG!=='undefined'){await ICONIMG.decode().catch(()=>{});} if(typeof IMGS!=='undefined'){await Promise.all(IMGS.map(i=>i.decode().catch(()=>{})));}}")
     return b, pg, errs
 
 

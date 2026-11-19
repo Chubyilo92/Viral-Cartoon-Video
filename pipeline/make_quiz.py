@@ -105,9 +105,9 @@ function appCard(cy,u){const w=920,h=330,x=540-w/2,y=cy-h/2;ctx.save();ctx.shado
   ctx.fillStyle='#8e8e93';ctx.font='400 32px '+FONT;ctx.fillText('Two selfies. One reveal.',x+220,y+244);ctx.font='400 28px '+FONT;ctx.fillText('★★★★★  Lifestyle',x+220,y+286);
   ctx.fillStyle='#0a84ff';ctx.beginPath();ctx.roundRect(x+w-200,y+186,150,70,35);ctx.fill();ctx.fillStyle='#ffffff';ctx.font='700 36px '+FONT;ctx.textAlign='center';ctx.fillText('GET',x+w-125,y+234);ctx.restore();
   for(let i=0;i<4;i++){const a=.5+.5*Math.sin(T*4+i*1.7);sparkle([x+w-30,x+w-70,x+20,x+w-20][i],[y+150,y+300,y+20,y-20][i],28+i*4,a,'#ffd75e');}}
-function appIcon(x,y,s){ctx.save();ctx.translate(x,y);const g=ctx.createLinearGradient(0,0,s,s);g.addColorStop(0,'#ff8fb5');g.addColorStop(1,'#FF6B9D');ctx.fillStyle=g;ctx.beginPath();ctx.roundRect(0,0,s,s,s*.23);ctx.fill();
-  ctx.fillStyle='#ffffff';const h=(cx,cy,r)=>{ctx.beginPath();ctx.moveTo(cx,cy+r*.9);ctx.bezierCurveTo(cx-r*1.3,cy-r*.1,cx-r*.6,cy-r*1.1,cx,cy-r*.45);ctx.bezierCurveTo(cx+r*.6,cy-r*1.1,cx+r*1.3,cy-r*.1,cx,cy+r*.9);ctx.fill();};
-  h(s*.42,s*.56,s*.26);ctx.globalAlpha=.75;h(s*.62,s*.46,s*.18);ctx.restore();}
+function appIcon(x,y,s){ctx.save();ctx.translate(x,y);ctx.beginPath();ctx.roundRect(0,0,s,s,s*.23);ctx.save();ctx.clip();
+  if(typeof ICONIMG!=='undefined'&&ICONIMG.complete&&ICONIMG.naturalWidth){ctx.drawImage(ICONIMG,0,0,s,s);}else{ctx.fillStyle='#ffffff';ctx.fillRect(0,0,s,s);}ctx.restore();
+  ctx.strokeStyle='rgba(0,0,0,.12)';ctx.lineWidth=2;ctx.stroke();ctx.restore();}
 function phoneShot(img,x,y,w){const h=w*img.height/img.width;ctx.save();ctx.shadowColor='rgba(0,0,0,.35)';ctx.shadowBlur=24;ctx.fillStyle='#111';ctx.beginPath();ctx.roundRect(x-8,y-8,w+16,h+16,w*.13);ctx.fill();ctx.restore();
   ctx.save();ctx.beginPath();ctx.roundRect(x,y,w,h,w*.11);ctx.clip();ctx.drawImage(img,x,y,w,h);ctx.restore();}
 '''
@@ -153,7 +153,7 @@ def build():
     S.setdefault('label', ''); S['seed'] = spec['n'] * 3; S.setdefault('colors', ['#c4677e', '#5d68b3', '#d8893a', '#6b7f3f', '#8a62b8', '#3f8a8a'])
     S.setdefault('title_bg', '#3f7f86'); S.setdefault('kind', 'open'); S.setdefault('solo', False); S.setdefault('numbered', False); S.setdefault('sign', '')
     js = (head + '\n' + J.COMMON + '\n' + SHORT_PROPS + '\n' + DK_JS + '\n' + QJS + '\n' +
-          'const S=%s;\nconst BOND=%s;\n' % (json.dumps(S, ensure_ascii=False), json.dumps([b64(f'{ASSETS}/bond{i}.png') for i in (1, 2, 3)])) +
+          'const S=%s;\nconst BOND=%s;\nconst ICONIMG=new Image();ICONIMG.src=%s;\n' % (json.dumps(S, ensure_ascii=False), json.dumps([b64(f'{ASSETS}/bond{i}.png') for i in (1, 2, 3)]), json.dumps(b64(f'{ASSETS}/couplein_icon.png'))) +
           TAIL % (json.dumps(cuts), T) + '\n</script></body></html>')
     p = f'{W}/quiz.html'; open(p, 'w').write(js); return p
 
@@ -164,6 +164,7 @@ def page(p, html):
     pg.on('pageerror', lambda e: errs.append(str(e)))
     pg.goto('file://' + html)
     pg.evaluate("async()=>{await document.fonts.load('800 80px Inter');await document.fonts.load('600 70px \"Pixelify Sans\"');await document.fonts.load('700 40px Inter');await document.fonts.load('400 40px Inter');await new Promise(r=>setTimeout(r,300));}")
+    pg.evaluate("async()=>{if(typeof ICONIMG!=='undefined'){await ICONIMG.decode().catch(()=>{});} if(typeof IMGS!=='undefined'){await Promise.all(IMGS.map(i=>i.decode().catch(()=>{})));}}")
     return b, pg, errs
 
 
