@@ -64,6 +64,7 @@ first render are in `02-POST-EDIT-RULES.md`.
 - **Spell-check every wall/banner/sheet image by eye** (Gemini misspells). If text is wrong, regenerate or use a
   clean plate + animated overlay (§4 *Written reveals*).
 - The hero's name when written (wall etc.) is **"TestaQ"**.
+- **5-minute rule (Gemini):** no single image may hold up the queue for more than 5 minutes. After 5 min: stop it, skip it, move to the next, and retry all skipped images once at the end. Check the queue every 2–3 minutes, never leave it unwatched for 10+ minutes. If Gemini hangs on a reply (Stop button stuck), reload the chat and resume from the saved position (queue + progress kept in the page's localStorage). Runner: `code/engine/gemini_runner5.js`.
 - Gemini ops notes: PRO plan has a rolling window plus a weekly limit; when it stalls, stop, reload, redefine helpers, retry; when the limit hits, resume at reset. Keep a fallback image per shot in `mkplan.py` (`FB` map) so a failed image never blocks a render — then list every fallback in the QA list.
 
 ## 4. Story-continuity rules (learned from Ep2 feedback — each one was a real complaint)
