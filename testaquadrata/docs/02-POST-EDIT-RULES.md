@@ -83,3 +83,24 @@ real portone at 7:47; no body-less phone; Antonelli's context; last minute remad
 zombie; Ep1 phone message call-back; check all background noise; rewatch with the story in mind.
 Ep3: two fixes only — (1) at 0:32 / 3:02 the two hands must check *her* pulse, not his; (2) remove the watch from his face in the pulse picture.
 Second-pass list left unfixed by the creator's choice: lock-in fallback image, wedge on the front door instead of the bathroom door, `e1_door_sit` continuity mismatch, static shutters, Giulia on the stairs before she decides, a calm ending, a night image used on a day scene, Ostia bite only implied.
+
+## 8. Reel captions (burned-in subtitles) — approved 26 Nov 2026
+Every Instagram and TikTok reel carries burned-in captions. Rules, approved by the creator after three rounds:
+1. **Never ahead of the voice.** A caption word may appear only when that word is spoken. Time captions against the
+   CLEAN voice track (episode `voice16.wav` / Ep1 `reel2/voice_full.wav`), never the mixed reel audio: the day sting and
+   music at the start of a reel fooled the detector and put the first 10 s of captions up to 1 s early.
+   - Find the reel inside the clean voice by cross-correlation (offset + corr > 0.9).
+   - Words come from Whisper on pause-split chunks; word times are spread by syllables inside voiced sub-intervals.
+   - Then three snaps: any word with no voice in the 150 ms after it → moved to the voice onset; any word after
+     punctuation → moved to the next voiced onset (unless it already sits on one); unmatched words → next onset.
+   - Final check: zero words shown with no voice in the following 150 ms.
+2. **Text = what was actually said**, not the script. Script spelling is used only where the spoken word matches;
+   recognition errors are fixed by hand and doubtful words listed for the creator to check by ear.
+3. **Look:** Poppins Bold 58 px on a 1080×1920 frame (22% smaller than the 74 px draft), white, black outline, all caps,
+   max 3 words / 18 characters per chunk; the word being spoken turns gold (#F2C14E, the title underline colour).
+4. **Position:** centred ~85 px UNDER the picture (y = 1350), clear of the image and above the app's caption/buttons area.
+5. **Don't collide with the follow card.** Instagram's "SEGUICI per la Parte N" card + arrow sit under the picture for
+   4–5 s → during that window captions move to the strip above the picture (y = 612). TikTok's card sits above the
+   picture → captions stay under it. Detect the card window from the uncaptioned reel by frame brightness.
+6. Work in batches of 3 reels, closest publish date first. Keep originals; captioned copies go to
+   `TESTAQUADRATA PRONTI\Sottotitolati`.
